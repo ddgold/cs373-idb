@@ -44,7 +44,7 @@ Game (*title, dateReleased, publisher, ESRB_Rating, genre)
 
 
                           ~model and REST api reference~
-Put: 	
+	
 Developer	
 	company Name(pk)
 	date Established()
@@ -65,8 +65,6 @@ Game
 	publisher()
 	genre()
 	
-Get:
+this is the link to our google doc that holds the paper:
 
-Post:
-
-Delete:
+https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/edit?usp=sharing
