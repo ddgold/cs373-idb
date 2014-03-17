@@ -1,41 +1,255 @@
 FORMAT: 1A
-HOST: http://www.google.com
 
-# idb
-Notes API is a *short texts saving* service similar to its physical paper presence on your table.
+# vgdb
+RESTful API for the Video Game Data Base
 
-# Group Notes
-Notes related resources of the **Notes API**
+## Developer Collection [/developers]
 
-
-## Collection [/{class}]
-
-+ Parameters
-    + class (required, string) ... String value, name of class.
-
-### List all objects [GET]
+### List all Developers [GET]
 + Response 200 (application/json)
     
         [{
-          "id": 1, "title": "Jogging in park"
-        }, {
-          "id": 2, "title": "Pick-up posters from post-office"
+            'name': 'Platinum Games',
+            'date_founded': 2006,
+            'num_employees': 120,
+            'status': 'Active'
         }]
 
-### Create an object [POST]
+### Create a Developer [POST]
 + Request (application/json)
 
-        { "title": "Buy cheese and bread for breakfast." }
+        [{
+            'name': 'Platinum Games',
+            'date_founded': 2006,
+            'num_employees': 120,
+            'status': 'Active'
+        }]
 
 + Response 201 (application/json)
 
-        { "id": 3, "title": "Buy cheese and bread for breakfast." }
+        [{
+            'name': 'Platinum Games'
+        }]
 
-
-## Object [/{class}/{id}]
+## Developer [/developers/{name}]
 
 + Parameters
-    + class (required, string) ... String value, name of class.
-    + id (required, number) ... Numeric id of object.
+    + name (required, string, `platinum_games`) ... String `name` of the Developer to perform action with. Has example value.
+
+### Retrieve a Developer [GET]
++ Response 200 (application/json)
+
+        [{
+            'name': 'Platinum Games',
+            'date_founded': 2006,
+            'num_employees': 120,
+            'status': 'Active'
+        }]
+
+### Update a Developer [PUT]
++ Response 204
+
+### Remove a Developer [DELETE]
++ Response 204
+
+## Developer's Games [/developers/{name}/games]
+
++ Parameters
+    + name (required, string, `platinum_games`) ... String `name` of the Developer to perform action with. Has example value.
+
+### Retrieve related Games [GET]
++ Response 200 (application/json)
+
+        [{
+            'title': 'The Wonderful 101',
+            'release_date': 09-15-2013,
+            'publisher': 'Nintendo',
+            'ESRB_rating': 'T',
+            'genre': 'Action'
+        }]
+
+## Developer's Platforms [/developers/{name}/platforms]
+
++ Parameters
+    + name (required, string, `platinum_games`) ... String `name` of the Developer to perform action with. Has example value.
+
+### Retrieve related Platforms [GET]
++ Response 200 (application/json)
+
+        [{
+            'name': 'Wii U',
+            'manufacturer': 'Nintendo',
+            'release_date': 11-18-2012,
+            'generation': 'Physical (disks) and digital',
+            'media_format': 8
+        }]
 
 
+
+## Game Collection [/games]
+
+### List all Games [GET]
++ Response 200 (application/json)
+    
+        [{
+            'title': 'The Wonderful 101',
+            'release_date': 09-15-2013,
+            'publisher': 'Nintendo',
+            'ESRB_rating': 'T',
+            'genre': 'Action'
+        }]
+
+### Create a Developer [POST]
++ Request (application/json)
+
+        [{
+            'title': 'The Wonderful 101',
+            'release_date': 09-15-2013,
+            'publisher': 'Nintendo',
+            'ESRB_rating': 'T',
+            'genre': 'Action'
+        }]
+
++ Response 201 (application/json)
+
+        [{
+            'title': 'The Wonderful 101'
+        }]
+
+## Game [/game/{title}]
+
++ Parameters
+    + title (required, string, `the_wonderful_101`) ... String `title` of the Gane to perform action with. Has example value.
+
+### Retrieve a Game [GET]
++ Response 200 (application/json)
+
+        [{
+            'title': 'The Wonderful 101',
+            'release_date': 09-15-2013,
+            'publisher': 'Nintendo',
+            'ESRB_rating': 'T',
+            'genre': 'Action'
+        }]
+
+### Update a Game [PUT]
++ Response 204
+
+### Remove a Game [DELETE]
++ Response 204
+
+## Game's Developers [/game/{title}/developers]
+
++ Parameters
+    + title (required, string, `the_wonderful_101`) ... String `title` of the Gane to perform action with. Has example value.
+
+### Retrieve related Developers [GET]
++ Response 200 (application/json)
+
+        [{
+            'name': 'Platinum Games',
+            'date_founded': 2006,
+            'num_employees': 120,
+            'status': 'Active'
+        }]
+
+## Game's Platforms [/games/{title}/platforms]
+
++ Parameters
+    + title (required, string, `the_wonderful_101`) ... String `title` of the Gane to perform action with. Has example value.
+
+### Retrieve related Platforms [GET]
++ Response 200 (application/json)
+
+        [{
+            'name': 'Wii U',
+            'manufacturer': 'Nintendo',
+            'release_date': 11-18-2012,
+            'generation': 'Physical (disks) and digital',
+            'media_format': 8
+        }]
+
+
+
+## Platform Collection [/platforms]
+
+### List all Platforms [GET]
++ Response 200 (application/json)
+    
+        [{
+            'name': 'Wii U',
+            'manufacturer': 'Nintendo',
+            'release_date': 11-18-2012,
+            'generation': 'Physical (disks) and digital',
+            'media_format': 8
+        }]
+
+### Create a Platform [POST]
++ Request (application/json)
+
+        [{
+            'name': 'Wii U',
+            'manufacturer': 'Nintendo',
+            'release_date': 11-18-2012,
+            'generation': 'Physical (disks) and digital',
+            'media_format': 8
+        }]
+
++ Response 201 (application/json)
+
+        [{
+            'name': 'Wii U'
+        }]
+
+## Platform [/platforms/{name}]
+
++ Parameters
+    + name (required, string, `wii_u`) ... String `name` of the Platform to perform action with. Has example value.
+
+### Retrieve a Platform [GET]
++ Response 200 (application/json)
+
+        [{
+            'name': 'Wii U',
+            'manufacturer': 'Nintendo',
+            'release_date': 11-18-2012,
+            'generation': 'Physical (disks) and digital',
+            'media_format': 8
+        }]
+
+### Update a Platform [PUT]
++ Response 204
+
+### Remove a Platform [DELETE]
++ Response 204
+
+## Platform's Developers [/platforms/{name}/developers]
+
++ Parameters
+    + name (required, string, `wii_u`) ... String `name` of the Platform to perform action with. Has example value.
+
+### Retrieve related Developers [GET]
++ Response 200 (application/json)
+
+        [{
+            'name': 'Platinum Games',
+            'date_founded': 2006,
+            'num_employees': 120,
+            'status': 'Active'
+        }]
+
+## Platform's Games [/platforms/{name}/games]
+
++ Parameters
+    + name (required, string, `wii_u`) ... String `name` of the Platform to perform action with. Has example value.
+
+### Retrieve related Games [GET]
++ Response 200 (application/json)
+
+        [{
+            'title': 'The Wonderful 101',
+            'release_date': 09-15-2013,
+            'publisher': 'Nintendo',
+            'ESRB_rating': 'T',
+            'genre': 'Action'
+        }]
