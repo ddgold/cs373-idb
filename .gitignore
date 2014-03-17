@@ -55,3 +55,4 @@ staticfiles
 docs/_build/
 
 .idea
+db.sqlite3
