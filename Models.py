@@ -34,7 +34,7 @@ class Developer(models.Model):
 
 
 class Platform(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, primary_key=True)
     manufacturer = models.CharField(max_length=255)
     release_date = models.DateTimeField('release date')
     generation = models.SmallIntegerField()
