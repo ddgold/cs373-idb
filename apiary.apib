@@ -1,0 +1,41 @@
+FORMAT: 1A
+HOST: http://www.google.com
+
+# idb
+Notes API is a *short texts saving* service similar to its physical paper presence on your table.
+
+# Group Notes
+Notes related resources of the **Notes API**
+
+
+## Collection [/{class}]
+
++ Parameters
+    + class (required, string) ... String value, name of class.
+
+### List all objects [GET]
++ Response 200 (application/json)
+    
+        [{
+          "id": 1, "title": "Jogging in park"
+        }, {
+          "id": 2, "title": "Pick-up posters from post-office"
+        }]
+
+### Create an object [POST]
++ Request (application/json)
+
+        { "title": "Buy cheese and bread for breakfast." }
+
++ Response 201 (application/json)
+
+        { "id": 3, "title": "Buy cheese and bread for breakfast." }
+
+
+## Object [/{class}/{id}]
+
++ Parameters
+    + class (required, string) ... String value, name of class.
+    + id (required, number) ... Numeric id of object.
+
+

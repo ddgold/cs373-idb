@@ -42,3 +42,30 @@ Game (*title, dateReleased, publisher, ESRB_Rating, genre)
     ('Doom 64', 03-31-1997, 'Midway Games', 'M', 'First-person shooting')
     ('Final Fantasy XIII', 03-09-2010, 'Square Enix', 'T', 'Turn-based role-playing')
 }
+                          ~model and REST api reference~
+Put: 	
+Developer	
+	company Name(pk)
+	date Established()
+	num Employees()
+	status(can be default)
+	
+Platform
+	name(pk)
+	manufactorer()
+	dateReleased()
+	media()
+	generation()
+
+Game
+	title(pk)
+	dateReleased(set)
+	esrb rating()
+	publisher()
+	genre()
+	
+Get:
+
+Post:
+
+Delete:
