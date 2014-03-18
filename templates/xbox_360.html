@@ -1,23 +1,29 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset= "utf-8">
-		<title>Platform | Xbox 360</title>
-	</head>
+{% extends 'base.html' %}
 
-	<body>
-		<h1>Xbox 360</h1>
-		<img src="http://cdn.fansided.com/wp-content/blogs.dir/281/files/2014/02/Xbox-360.jpg" alt="Xbox 360" height="240" width="285"/>
-		<ul>
-			<li><b>Manufacturer:</b> Microsoft</li>
-			<li><b>Release Date:</b> November 22, 2005</li>
-			<li><b>Media:</b> Physical (disks) and digital</li>
-			<li><b>Generation:</b> 7th</li>
-		</ul>
+{% block title %}
+IVGDb &middot; Platform | Xbox 360
+{% endblock title %}
 
-		<ul>
-			<li><b>Developer(s):</b> <a href="infinity_ward.html">Infinity Ward</a></li>
-			<li><b>Game(s):</b> <a href="call_of_duty_4.html">Call of Duty 4: Modern Warfare</a></li>
-		</ul>
-	</body>
-</html>
+{% block content %}
+<div class="container">
+	<div class="panel panel-default">
+	  <!-- Default panel contents -->
+	  <div class="panel-heading"><h1>Xbox 360</h1></div>
+	  <div class="panel-body">
+			<img class="img-rounded" img src="http://cdn.fansided.com/wp-content/blogs.dir/281/files/2014/02/Xbox-360.jpg" alt="Xbox 360">
+			</img>
+	  </div>
+
+	  <!-- List group -->
+	  <ul class="list-group">
+	    <li class="list-group-item"><b>Manufacturer:</b> Microsoft</li>
+	    <li class="list-group-item"><b>Release Date:</b> November 22, 2005</li>
+	    <li class="list-group-item"><b>Media:</b> Physical (disk) and digital</li>
+	    <li class="list-group-item"><b>Generation:</b> 7th </li>
+	    <li class="list-group-item"><b>Developer(s): </b> <a href="infinity_ward.html">Infinity Ward</a></li>
+	    <li class="list-group-item"><b>Game(s):</b> <a href="call_of_duty_4.html">Call of Duty 4: Modern Warfare</a></li>
+	  </ul>
+	</div>
+
+</div>
+{% endblock content %}
