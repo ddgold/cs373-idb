@@ -103,3 +103,15 @@ class test_API(TestCase) :
 		request.get_method = lambda: 'DELETE'
 		response = urlopen(request)
 		self.assertTrue(response.getcode() == 204)
+		
+	def test_API_delete_game(self):
+		request = Request("http://vgdb.apiary.io/platforms/wonderful_101")
+		request.get_method = lambda: 'DELETE'
+		response = urlopen(request)
+		self.assertTrue(response.getcode() == 204)
+		
+	def test_API_delete_developer(self):
+		request = Request("http://vgdb.apiary.io/platforms/platinum_games")
+		request.get_method = lambda: 'DELETE'
+		response = urlopen(request)
+		self.assertTrue(response.getcode() == 204)
