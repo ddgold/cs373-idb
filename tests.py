@@ -93,3 +93,13 @@ class test_API(TestCase) :
 		request.get_method = lambda: 'PUT'
 		response = urlopen(request)
 		self.assertTrue(response.getcode() == 204)
+
+	# ---
+	# delete
+	# ---
+
+	def test_API_delete_platform(self):
+		request = Request("http://vgdb.apiary.io/platforms/wii_u")
+		request.get_method = lambda: 'DELETE'
+		response = urlopen(request)
+		self.assertTrue(response.getcode() == 204)
