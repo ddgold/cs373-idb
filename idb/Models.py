@@ -11,11 +11,11 @@ class Platform(models.Model):
     media_format = models.CharField(max_length=255)
 
     def __unicode__(self):
-	return self.name
+        return self.name
 
     class Meta:
-	ordering = ['name']
-	verbose_name_plural = "Platforms"
+        ordering = ['name']
+        verbose_name_plural = "Platforms"
 
 
 class Developer(models.Model):
@@ -27,11 +27,11 @@ class Developer(models.Model):
     platforms = models.ManyToManyField(Platform)
 
     def __unicode__(self):
-	return self.name
+        return self.name
 
     class Meta:
-	ordering = ['name']
-	verbose_name_plural = "Developers"
+        ordering = ['name']
+        verbose_name_plural = "Developers"
 
 
 class Game(models.Model):
@@ -45,8 +45,8 @@ class Game(models.Model):
     platforms = models.ManyToManyField(Platform)
 
     def __unicode__(self):
-	return self.title
+        return self.title
 
     class Meta:
-	ordering = ['title']
-	verbose_name_plural = "Games"
+        ordering = ['title']
+        verbose_name_plural = "Games"
