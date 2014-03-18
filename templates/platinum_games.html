@@ -1,22 +1,28 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset= "utf-8">
-		<title>Developer | Platinum Games</title>
-	</head>
+{% extends 'base.html' %}
 
-	<body>
-		<h1>Platinum Games</h1>	
-		<img src="http://upload.wikimedia.org/wikipedia/en/9/9e/PlatinumGames.png" alt="Platinum Games">
-		<ul>
-			<li><b>Founded:</b> August 1, 2006</li>
-			<li><b>Company Size:</b> 120</li>
-			<li><b>Status:</b> Active</li>		
-		</ul>
+{% block title %}
+IVGDb &middot; Developer | Platinum Games
+{% endblock title %}
 
-		<ul>
-			<li><b>Platform(s):</b> <a href="wii_u.html">Wii U</a></li>
-			<li><b>Game(s):</b> <a href="the_wonderful_101.html">The Wonderful 101</a></li>
-		</ul>
-	</body>
-</html>
+{% block content %}
+<div class="container">
+	<div class="panel panel-default">
+	  <!-- Default panel contents -->
+	  <div class="panel-heading"><h1>Platinum games</h1></div>
+	  <div class="panel-body">
+			<img class="img-rounded" src="http://upload.wikimedia.org/wikipedia/en/9/9e/PlatinumGames.png" alt="Platinum Games">
+			</img>
+	  </div>
+
+	  <!-- List group -->
+	  <ul class="list-group">
+	    <li class="list-group-item"><b>Founded:</b> August 1, 2006</li>
+	    <li class="list-group-item"><b>Company Size:</b> 120</li>
+	    <li class="list-group-item"><b>Status:</b> Active</li>
+	    <li class="list-group-item"><b>Platform(s):</b><a href="wii_u.html"> Wii U</a></li>
+	    <li class="list-group-item"><b>Game(s):</b> <a href="the_wonderful_101.html">The Wonderful 101</a></li>
+	  </ul>
+	</div>
+
+</div>
+{% endblock content %}

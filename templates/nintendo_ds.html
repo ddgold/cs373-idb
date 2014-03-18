@@ -1,23 +1,29 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset= "utf-8">
-		<title>Platform | Nintendo DS</title>
-	</head>
+{% extends 'base.html' %}
 
-	<body>
-		<h1>Nintendo DS</h1>
-		<img src="http://upload.wikimedia.org/wikipedia/commons/4/42/Nintendo-DS-Fat-Blue.jpg" alt="Nintendo DS" height="240" width="264"/>
-		<ul>
-			<li><b>Manufacturer:</b> Nintendo</li>
-			<li><b>Release Date:</b> November 21, 2004</li>
-			<li><b>Media:</b> Physical (cartridges) and digital</li>
-			<li><b>Generation:</b> 7th</li>
-		</ul>
+{% block title %}
+IVGDb &middot; Platform | Nintendo DS
+{% endblock title %}
 
-		<ul>
-			<li><b>Developer(s):</b> <a href="cing.html">Cing</a></li>
-			<li><b>Game(s):</b> <a href="hotel_dusk.html">Hotel Dusk: Room 215</a></li>
-		</ul>
-	</body>
-</html>
+{% block content %}
+<div class="container">
+	<div class="panel panel-default">
+	  <!-- Default panel contents -->
+	  <div class="panel-heading"><h1>Nintendo DS</h1></div>
+	  <div class="panel-body">
+			<img class="img-rounded" src="http://static.trustedreviews.com/94/9ca9c7/4f7f/5948-ds1.jpg" alt="Nintendo DS">
+			</img>
+	  </div>
+
+	  <!-- List group -->
+	  <ul class="list-group">
+	    <li class="list-group-item"><b>Manufacturer:</b> Nintendo</li>
+	    <li class="list-group-item"><b>Release Date:</b> November 21, 2004</li>
+	    <li class="list-group-item"><b>Media:</b> Physical (cartridges) and digital</li>
+	    <li class="list-group-item"><b>Generation:</b> 7th </li>
+	    <li class="list-group-item"><b>Developer(s): </b> <a href="cing.html">Cing</a></li>
+	    <li class="list-group-item"><b>Game(s):</b> <a href="hotel_dusk.html">Hotel Dusk: Room 215</a></li>
+	  </ul>
+	</div>
+
+</div>
+{% endblock content %}
