@@ -76,3 +76,20 @@ class test_API(TestCase) :
 	# ---
 	# put
 	# ---
+	def test_API_put_platforms(self):
+		request = Request("http://vgdb.apiary.io/platforms/wii_u")
+		request.get_method = lambda: 'PUT'
+		response = urlopen(request)
+		self.assertTrue(response.getcode() == 204)
+
+	def test_API_put_game(self):
+		request = Request("http://vgdb.apiary.io/game/the_wonderful_101")
+		request.get_method = lambda: 'PUT'
+		response = urlopen(request)
+		self.assertTrue(response.getcode() == 204)
+
+	def test_API_put_developer(self):
+		request = Request("http://vgdb.apiary.io/developers/platinum_games")
+		request.get_method = lambda: 'PUT'
+		response = urlopen(request)
+		self.assertTrue(response.getcode() == 204)
