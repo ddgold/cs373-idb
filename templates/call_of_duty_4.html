@@ -1,23 +1,29 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset= "utf-8">
-		<title>Game | Call of Duty 4: Modern Warfare</title>
-	</head>
+{% extends 'base.html' %}
 
-	<body>
-		<h1>Call of Duty 4: Modern Warfare</h1>
-		<img src="http://upload.wikimedia.org/wikipedia/en/5/5f/Call_of_Duty_4_Modern_Warfare.jpg" alt="Call of Duty 4: Modern Warfare" />
-		<ul>
-			<li><b>Publisher:</b> Activision</li>
-			<li><b>Release Date:</b> November 5, 2007</li>
-			<li><b>ESRB Rating:</b> M</li>
-			<li><b>Genre:</b> First-person shooting</li>
-		</ul>
+{% block title %}
+IVGDb &middot; Game | Call of Duty 4: Modern Warfare
+{% endblock title %}
 
-		<ul>
-			<li><b>Developer:</b> <a href="infinity_ward.html">Infinity Ward</a></li>
-			<li><b>Platform(s):</b> Microsoft Windows, PlayStation 3, <a href="xbox_360.html">Xbox 360</a>, OS X, Wii</li>
-		</ul>
-	</body>
-</html>
+{% block content %}
+<div class="container">
+	<div class="panel panel-default">
+	  <!-- Default panel contents -->
+	  <div class="panel-heading"><h1>Call of Duty 4: Modern Warfare</h1></div>
+	  <div class="panel-body">
+			<img src="http://upload.wikimedia.org/wikipedia/en/5/5f/Call_of_Duty_4_Modern_Warfare.jpg" alt="Call of Duty 4: Modern Warfare">
+			</img>
+	  </div>
+
+	  <!-- List group -->
+	  <ul class="list-group">
+	    <li class="list-group-item"><b>Publisher:</b> Activision</li>
+	    <li class="list-group-item"><b>US Release Date:</b> November 5, 2007</li>
+	    <li class="list-group-item"><b>ESRB Rating:</b> M</li>
+	    <li class="list-group-item"><b>Genre:</b> First-person shooting</li>
+	    <li class="list-group-item"><b>Developed by:</b> <a href="infinity_ward.html">Infinity Ward</a></li>
+	    <li class="list-group-item"><b>Platform(s):</b> <a href="xbox_360.html">Xbox 360</a></li>
+	  </ul>
+	</div>
+
+</div>
+{% endblock content %}
