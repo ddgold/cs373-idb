@@ -1,23 +1,29 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset= "utf-8">
-		<title>Game | The Wonderful 101</title>
-	</head>
+{% extends 'base.html' %}
 
-	<body>
-		<h1>The Wonderful 101</h1>
-		<img src="http://upload.wikimedia.org/wikipedia/en/e/ee/Wonderful_101_box_artwork.jpg" alt="The Wonderful 101" />
-		<ul>
-			<li><b>Publisher:</b> Nintendo</li>
-			<li><b>Release Date:</b> September 15, 2013</li>
-			<li><b>ESRB Rating:</b> T</li>
-			<li><b>Genre:</b> Action</li>
-		</ul>
+{% block title %}
+IVGDb &middot; Game | The Wonderful 101
+{% endblock title %}
 
-		<ul>
-			<li><b>Developer:</b> <a href="platinum_games.html">Platinum Games</a></li>
-			<li><b>Platform(s):</b> <a href="wii_u.html">Wii U</a></li>
-		</ul>
-	</body>
-</html>
+{% block content %}
+<div class="container">
+	<div class="panel panel-default">
+	  <!-- Default panel contents -->
+	  <div class="panel-heading"><h1>The Wonderful 101</h1></div>
+	  <div class="panel-body">
+			<img src="http://upload.wikimedia.org/wikipedia/en/e/ee/Wonderful_101_box_artwork.jpg" alt="The Wonderful 101">
+			</img>
+	  </div>
+
+	  <!-- List group -->
+	  <ul class="list-group">
+	    <li class="list-group-item"><b>Publisher:</b> Nintendo</li>
+	    <li class="list-group-item"><b>US Release Date:</b> September 15, 2013</li>
+	    <li class="list-group-item"><b>ESRB Rating:</b> T</li>
+	    <li class="list-group-item"><b>Genre:</b> Action</li>
+	    <li class="list-group-item"><b>Developed by:</b> <a href="platinum_games.html">Platinum Games</a></li>
+	    <li class="list-group-item"><b>Platform(s):</b> <a href="wii_u.html">Wii U</a></li>
+	  </ul>
+	</div>
+
+</div>
+{% endblock content %}
