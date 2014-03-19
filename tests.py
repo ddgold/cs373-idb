@@ -1,6 +1,6 @@
 from django.test import TestCase
 from urllib2 import Request, urlopen
-from json import dumps
+from json import dumps, loads
 
 class test_API(TestCase) :
 
@@ -14,8 +14,10 @@ class test_API(TestCase) :
 
 	def test_API_get_developers_object_response(self) :
 		request = Request("http://vgdb.apiary.io/developers/platinum_games")
-		response = urlopen(request)
-		self.assertTrue(response.getcode() == 200)
+		response_body = urlopen(request).read().decode("utf-8")
+		response = loads(response_body)
+		print(response_body)
+		#self.assertTrue(response.getcode() == 200)
 
 	def test_API_get_developers_object_games_response(self) :
 		request = Request("http://vgdb.apiary.io/developers/platinum_games/games")
