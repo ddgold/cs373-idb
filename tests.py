@@ -12,22 +12,60 @@ class test_API(TestCase) :
 		response = urlopen(request)
 		self.assertTrue(response.getcode() == 200)
 
+	def test_API_get_developers_object_response(self) :
+		request = Request("http://vgdb.apiary.io/developers/platinum_games")
+		response = urlopen(request)
+		self.assertTrue(response.getcode() == 200)
+
+	def test_API_get_developers_object_games_response(self) :
+		request = Request("http://vgdb.apiary.io/developers/platinum_games/games")
+		response = urlopen(request)
+		self.assertTrue(response.getcode() == 200)
+
+	def test_API_get_developers_object_platforms_response(self) :
+		request = Request("http://vgdb.apiary.io/developers/platinum_games/platforms")
+		response = urlopen(request)
+		self.assertTrue(response.getcode() == 200)
+
 	def test_API_get_games_response(self) :
 		request = Request("http://vgdb.apiary.io/games")
 		response = urlopen(request)
 		self.assertTrue(response.getcode() == 200)
 
-	def test_API_get_games_title_response(self) :
-		request = Request("http://vgdb.apiary.io/game/the_wonderful_101")
+	def test_API_get_games_object_response(self) :
+		request = Request("http://vgdb.apiary.io/games/the_wonderful_101")
 		response = urlopen(request)
 		self.assertTrue(response.getcode() == 200)
 
+	def test_API_get_games_object_developers_response(self) :
+		request = Request("http://vgdb.apiary.io/games/the_wonderful_101/developers")
+		response = urlopen(request)
+		self.assertTrue(response.getcode() == 200)
+
+	def test_API_get_games_object_platforms_response(self) :
+		request = Request("http://vgdb.apiary.io/games/the_wonderful_101/platforms")
+		response = urlopen(request)
+		self.assertTrue(response.getcode() == 200)
 
 	def test_API_get_platforms_response(self) :
 		request = Request("http://vgdb.apiary.io/platforms")
 		response = urlopen(request)
 		self.assertTrue(response.getcode() == 200)
 
+	def test_API_get_platforms_object_response(self) :
+		request = Request("http://vgdb.apiary.io/platforms/wii_u")
+		response = urlopen(request)
+		self.assertTrue(response.getcode() == 200)
+
+	def test_API_get_platforms_object_developers_response(self) :
+		request = Request("http://vgdb.apiary.io/platforms/wii_u/developers")
+		response = urlopen(request)
+		self.assertTrue(response.getcode() == 200)
+
+	def test_API_get_platforms_object_games_response(self) :
+		request = Request("http://vgdb.apiary.io/platforms/wii_u/games")
+		response = urlopen(request)
+		self.assertTrue(response.getcode() == 200)
 
 	# ---
 	# post
