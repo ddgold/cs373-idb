@@ -288,4 +288,6 @@ class test_API(unittest.TestCase) :
 		self.assertTrue(response_content == [wii_u])
 
 
+	print("Done")
+
 unittest.main()
