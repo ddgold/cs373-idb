@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 
-from django.test import TestCase
-from urllib2 import Request, urlopen #python2
-#from urllib.request import urlopen, Request #python3
+# from django.test import TestCase
+# # from urllib2 import Request, urlopen #python2
+# from urllib.request import urlopen, Request #python3
+# from json import dumps, loads
+
+from urllib.request import urlopen
+from urllib.request import Request
 from json import dumps, loads
-
-
+import json
+import unittest
 
 
 platinum_games = {
@@ -42,7 +46,7 @@ wii_u = {
 
 
 
-class test_API(TestCase) :
+class test_API(unittest.TestCase) :
 
 	# ----------
 	# Developers
@@ -89,7 +93,7 @@ class test_API(TestCase) :
 		response_code = response.getcode()
 		self.assertTrue(response_code == 204)
 
-		response_content = response.read()
+		response_content = response.read().decode("utf-8")
 		self.assertTrue(response_content == "")
 
 	def test_API_delete_developer(self) :
@@ -100,7 +104,7 @@ class test_API(TestCase) :
 		response_code = response.getcode()
 		self.assertTrue(response_code == 204)
 
-		response_content = response.read()
+		response_content = response.read().decode("utf-8")
 		self.assertTrue(response_content == "")
 
 	def test_API_get_developer_games(self) :
@@ -169,7 +173,7 @@ class test_API(TestCase) :
 		response_code = response.getcode()
 		self.assertTrue(response_code == 204)
 
-		response_content = response.read()
+		response_content = response.read().decode("utf-8")
 		self.assertTrue(response_content == "")
 
 	def test_API_delete_platform(self) :
@@ -180,7 +184,7 @@ class test_API(TestCase) :
 		response_code = response.getcode()
 		self.assertTrue(response_code == 204)
 
-		response_content = response.read()
+		response_content = response.read().decode("utf-8")
 		self.assertTrue(response_content == "")
 
 	def test_API_get_platform_developers(self) :
@@ -249,7 +253,7 @@ class test_API(TestCase) :
 		response_code = response.getcode()
 		self.assertTrue(response_code == 204)
 
-		response_content = response.read()
+		response_content = response.read().decode("utf-8")
 		self.assertTrue(response_content == "")
 
 	def test_API_delete_game(self) :
@@ -260,7 +264,7 @@ class test_API(TestCase) :
 		response_code = response.getcode()
 		self.assertTrue(response_code == 204)
 
-		response_content = response.read()
+		response_content = response.read().decode("utf-8")
 		self.assertTrue(response_content == "")
 
 	def test_API_get_game_developers(self) :
@@ -282,3 +286,6 @@ class test_API(TestCase) :
 
 		response_content = loads(response.read().decode("utf-8"))
 		self.assertTrue(response_content == [wii_u])
+
+
+unittest.main()
