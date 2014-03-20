@@ -6,7 +6,7 @@ from django.db import models
 class Platform(models.Model):
     name = models.CharField(max_length=255, primary_key=True)
     manufacturer = models.CharField(max_length=255)
-    release_date = models.DateTimeField('release date')
+    release_date = models.DateField('release date')
     media_format = models.CharField(max_length=255)
     generation = models.SmallIntegerField()
     youtube_link = models.CharField(max_length=255)
@@ -24,7 +24,7 @@ class Platform(models.Model):
 
 class Developer(models.Model):
     name = models.CharField(max_length=255, primary_key=True)
-    date_founded = models.DateTimeField('date established')
+    date_founded = models.DateField('date established')
     num_employees = models.IntegerField()
     status = models.CharField(max_length=255)
     image_link = models.CharField(max_length=255)
@@ -43,7 +43,7 @@ class Developer(models.Model):
 
 class Game(models.Model):
     title = models.CharField(max_length=255, primary_key=True)
-    release_date = models.DateTimeField('release date')
+    release_date = models.DateField('release date')
     genre = models.CharField(max_length=255)
     publisher = models.CharField(max_length=255)
     ESRB_rating = models.CharField(max_length=255)
