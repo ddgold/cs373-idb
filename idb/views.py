@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from idb.models import Game, Developer, Platform
+from idb.Models import Game, Developer, Platform
 
 
 def home(request):
