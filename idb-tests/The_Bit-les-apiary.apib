@@ -1,0 +1,428 @@
+--- CS373 Music API ---
+
+---
+Documents our RESTful API for our music database similar to IMDB that contains artists, albums, and record companies. GET requests displays information, POST requests will create a new entry, PUT requests will update an entry, And DELETE requests will delete an entry.
+
+These are the corresponding HTTP status codes :
+- 200 `OK` - the request was successful (some API calls may return 201 instead).
+- 201 `Created` - the request was successful and a resource was created.
+- 204 `No Content` - the request was successful but there is no representation to return (i.e. the response is empty).
+- 400 `Bad Request` - the request could not be understood or was missing required parameters.
+- 401 `Unauthorized` - authentication failed or user doesn't have permissions for requested operation.
+- 403 `Forbidden` - access denied.
+- 404 `Not Found` - resource was not found
+- 405 `Method Not Allowed` - requested method is not supported for resource.
+---
+
+--
+Album Data
+--
+Lists the albums in the database
+GET /api/albums
+< 200
+< Content-Type: application/json
+[
+    {
+        "id": "twist_and_shout",
+        "name": "Twist and Shout",
+        "artists": ["KEY_beatles"],
+        "date_released": 1964,
+        "labels": ["KEY_capitol"]
+    }
+]
+
+Displays the information for a specific album, id is the database primary key
+GET /api/albums/{id}
+< 200
+< Content-Type: application/json
+{
+    "id": "twist_and_shout",
+    "name": "Twist and Shout",
+    "artists": ["KEY_beatles"],
+    "date_released": 1964,
+    "tracks": ["Anna (Go to Him)",
+               "Chains",
+               "Boys",
+               "Ask Me Why",
+               "Please Please Me",
+               "Love Me Do",
+               "From Me to You",
+               "P.S. I Love You",
+               "Baby It's You",
+               "Do You Want to Know a Secret",
+               "Taste of Honey",
+               "There's a Place",
+               "Twist and Shout",
+               "She Loves You"],
+    "genre":["Pop"],
+    "peak_chart": null,
+    "videos": "http://www.youtube.com/watch?v=pVlr4g5-r18",
+    "length": 1903,
+    "labels": ["KEY_capitol"],
+    "producers": ["George Martin"],
+    "sales" : 300000,
+    "artwork": "http://upload.wikimedia.org/wikipedia/en/6/61/BeatlesTwistanShoutSingle.jpg",
+    "sellers": "http://www.amazon.com/Twist-Shout-Beatles-Canadian-Pressing/dp/B00B7C0ET2/ref=sr_1_15?ie=UTF8&qid=1395101443&sr=8-15&keywords=twist+and+shout+the+beatles",
+    "description": "The Beatles' second album released in Canada in mono by Capitol Records."
+}
+
+Create a new entry for album.
+POST /api/albums
+> Content-Type: application/json
+{
+    "id": "twist_and_shout",
+    "name": "Twist and Shout",
+    "artists": ["KEY_beatles"],
+    "date_released": 1964,
+    "tracks": ["Anna (Go to Him)",
+               "Chains",
+               "Boys",
+               "Ask Me Why",
+               "Please Please Me",
+               "Love Me Do",
+               "From Me to You",
+               "P.S. I Love You",
+               "Baby It's You",
+               "Do You Want to Know a Secret",
+               "Taste of Honey",
+               "There's a Place",
+               "Twist and Shout",
+               "She Loves You"],
+    "genre":["Pop"],
+    "peak_chart": null,
+    "videos": "http://www.youtube.com/watch?v=pVlr4g5-r18",
+    "length": 1903,
+    "labels": ["KEY_capitol"],
+    "producers": ["George Martin"],
+    "sales" : 300000,
+    "artwork": "http://upload.wikimedia.org/wikipedia/en/6/61/BeatlesTwistanShoutSingle.jpg",
+    "sellers": "http://www.amazon.com/Twist-Shout-Beatles-Canadian-Pressing/dp/B00B7C0ET2/ref=sr_1_15?ie=UTF8&qid=1395101443&sr=8-15&keywords=twist+and+shout+the+beatles",
+    "description": "The Beatles' second album released in Canada in mono by Capitol Records."
+}
+< 201
+< Content-Type: application/json
+{ id: "twist_and_shout"}
+
+Update an existing album.
+PUT /api/albums/{id}
+> Content-Type: application/json
+{
+    "id": "twist_and_shout",
+    "name": "Twist and Shout",
+    "artists": ["KEY_beatles"],
+    "date_released": 1964,
+    "tracks": ["Anna (Go to Him)",
+               "Chains",
+               "Boys","Ask Me Why",
+               "Please Please Me",
+               "Love Me Do",
+               "From Me to You",
+               "P.S. I Love You",
+               "Baby It's You",
+               "Do You Want to Know a Secret",
+               "Taste of Honey",
+               "There's a Place",
+               "Twist and Shout",
+               "She Loves You"],
+    "genre":["Pop"],
+    "peak_chart": null,
+    "videos": "http://www.youtube.com/watch?v=pVlr4g5-r18",
+    "length": 1903,
+    "labels": ["KEY_capitol"],
+    "producers": ["George Martin"],
+    "sales" : 300000,
+    "artwork": "http://upload.wikimedia.org/wikipedia/en/6/61/BeatlesTwistanShoutSingle.jpg",
+    "sellers": "http://www.amazon.com/Twist-Shout-Beatles-Canadian-Pressing/dp/B00B7C0ET2/ref=sr_1_15?ie=UTF8&qid=1395101443&sr=8-15&keywords=twist+and+shout+the+beatles",
+    "description": "The Beatles' second album released in Canada in mono by Capitol Records."
+}
+< 204
+
+Delete an existing album
+DELETE /api/albums/{id}
+< 204
+
+
+List all related labels
+GET /api/albums/{id}/labels
+< 200
+< Content-Type: application/json
+[
+    {
+        "id": "capitol",
+        "name": "Capitol Records",
+        "founded": 1942,
+        "ended": -1,
+        "location": "Los Angeles, CA"
+    }
+]
+
+List all related artists
+GET /api/albums/{id}/artists
+< 200
+< Content-Type: application/json
+[
+    {
+        "id": "beatles",
+        "band_name": "The Beatles",
+        "hometown": "Liverpool, England",
+        "start_year": 1960,
+        "end_year": 1970
+    }
+]
+
+--
+Artist Data
+--
+Lists the artists in the database
+GET /api/artists
+< 200
+< Content-Type: application/json
+[
+    {
+        "id": "beatles",
+        "band_name": "The Beatles",
+        "hometown": "Liverpool, England",
+        "start_year": 1960,
+        "end_year": 1970
+    }
+]
+
+Displays the information for a specific artist, id is the database primary key
+GET /api/artists/{id}
+< 200
+< Content-Type: application/json
+{
+    "id": "beatles",
+    "members":["John Lennon", "Paul McCartney", "George Harrison", "Ringo Starr"],
+    "band_name": "The Beatles",
+    "hometown": "Liverpool, England",
+    "start_year": 1960,
+    "end_year": 1970,
+    "albums": ["KEY_twist_and_shout"],
+    "labels": ["KEY_capitol"],
+    "images": "http://2.bp.blogspot.com/_xzXp2k6_nh0/TSCZBEyuudI/AAAAAAAABA4/tnOe-vsHx1w/s1600/TheBeatlesLogo2+-+copia.jpg",
+    "facebook": "https://facebook.com/thebeatles",
+    "twitter": "https://twitter.com/thebeatles",
+    "google_map": "https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Liverpool,+England,+United+Kingdom&amp;aq=0&amp;oq=Liverpool+england&amp;sll=53.408371,-2.991573&amp;sspn=0.214685,0.506058&amp;ie=UTF8&amp;hq=&amp;hnear=Liverpool,+Merseyside,+United+Kingdom&amp;t=m&amp;z=12&amp;ll=53.408371,-2.991573&amp;output=embed"
+}
+
+Create a new entry for an artist.
+POST /api/artists
+> Content-Type: application/json
+{
+    "id": "beatles",
+    "members":["John Lennon", "Paul McCartney", "George Harrison", "Ringo Starr"],
+    "band_name": "The Beatles",
+    "hometown": "Liverpool, England",
+    "start_year": 1960,
+    "end_year": 1970,
+    "albums": ["KEY_twist_and_shout"],
+    "labels": ["KEY_capitol"],
+    "images": "http://2.bp.blogspot.com/_xzXp2k6_nh0/TSCZBEyuudI/AAAAAAAABA4/tnOe-vsHx1w/s1600/TheBeatlesLogo2+-+copia.jpg",
+    "facebook": "https://facebook.com/thebeatles",
+    "twitter": "https://twitter.com/thebeatles",
+    "google_map": "https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Liverpool,+England,+United+Kingdom&amp;aq=0&amp;oq=Liverpool+england&amp;sll=53.408371,-2.991573&amp;sspn=0.214685,0.506058&amp;ie=UTF8&amp;hq=&amp;hnear=Liverpool,+Merseyside,+United+Kingdom&amp;t=m&amp;z=12&amp;ll=53.408371,-2.991573&amp;output=embed"
+}
+< 201
+< Content-Type: application/json
+{ id: "beatles"}
+
+Update an existing artist.
+PUT /api/artists/{id}
+> Content-Type: application/json
+{
+    "id": "beatles",
+    "members":["John Lennon", "Paul McCartney", "George Harrison", "Ringo Starr"],
+    "band_name": "The Beatles",
+    "hometown": "Liverpool, England",
+    "start_year": 1960,
+    "end_year": 1970,
+    "albums": ["KEY_twist_and_shout"],
+    "labels": ["KEY_capitol"],
+    "images": "http://2.bp.blogspot.com/_xzXp2k6_nh0/TSCZBEyuudI/AAAAAAAABA4/tnOe-vsHx1w/s1600/TheBeatlesLogo2+-+copia.jpg",
+    "facebook": "https://facebook.com/thebeatles",
+    "twitter": "https://twitter.com/thebeatles",
+    "google_map": "https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Liverpool,+England,+United+Kingdom&amp;aq=0&amp;oq=Liverpool+england&amp;sll=53.408371,-2.991573&amp;sspn=0.214685,0.506058&amp;ie=UTF8&amp;hq=&amp;hnear=Liverpool,+Merseyside,+United+Kingdom&amp;t=m&amp;z=12&amp;ll=53.408371,-2.991573&amp;output=embed"
+}
+< 204
+
+Delete an existing artist
+DELETE /api/artists/{id}
+< 204
+
+
+List all related albums
+GET /api/artists/{id}/albums
+< 200
+< Content-Type: application/json
+[
+    {
+        "id": "twist_and_shout",
+        "name": "Twist and Shout",
+        "artists": ["KEY_beatles"],
+        "date_released": 1964,
+        "labels": ["KEY_capitol"]
+    }
+]
+
+List all related labels
+GET /api/artists/{id}/labels
+< 200
+< Content-Type: application/json
+[
+    {
+        "id": "capitol",
+        "name": "Capitol Records",
+        "founded": 1942,
+        "ended": -1,
+        "location": "Los Angeles, CA"
+    }
+]
+
+--
+Label Data
+--
+Lists the labels in the database
+GET /api/labels
+< 200
+< Content-Type: application/json
+[
+    {
+        "id": "capitol",
+        "name": "Capitol Records",
+        "founded": 1942,
+        "ended": -1,
+        "location": "Los Angeles, CA"
+    }
+]
+
+Displays the information for a specific label, id is the database primary key
+GET /api/labels/{id}
+< 200
+< Content-Type: application/json
+{
+    "id": "capitol",
+    "name": "Capitol Records",
+    "albums": ["Bad Animals", 
+               "KEY_twist_and_shout", 
+               "Bazooka!!!", 
+               "Catarsis", 
+               "As Far as Siam", 
+               "Honky Tonk"],
+    "artists": ["KEY_beatles", 
+                "50_cent", 
+                "Avicii", 
+                "Red Hot Chili Peppers", 
+                "Katy Perry", 
+                "The Beach Boys"],
+    "founded": 1942,
+    "ended": -1,
+    "founders": ["Johnny Mercer", "Buddy DeSylva", "Glenn Wallichs"],
+    "location": "Los Angeles, CA",
+    "google_map": "https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=capitol+records&amp;aq=&amp;sll=34.098444,-118.297691&amp;sspn=0.298227,0.506058&amp;ie=UTF8&amp;hq=capitol+records&amp;hnear=&amp;t=m&amp;ll=34.098444,-118.297691&amp;spn=0.298227,0.506058",
+    "parent": "Universal Music Group",
+    "website": "http://www.capitolrecords.com/",
+    "logo": "http://upload.wikimedia.org/wikipedia/en/8/8f/CapitolRecords_Logo.png",
+    "facebook": "https://www.facebook.com/capitolrecords",
+    "twitter": "https://twitter.com/CapitolRecords",
+    "description": "Capitol Records is a major American record label that is part of the Capitol Music Group"
+}
+
+Create a new entry for a label.
+POST /api/labels
+> Content-Type: application/json
+{
+    "id": "capitol",
+    "name": "Capitol Records",
+    "albums": ["Bad Animals", 
+               "KEY_twist_and_shout", 
+               "Bazooka!!!", 
+               "Catarsis", 
+               "As Far as Siam", 
+               "Honky Tonk"],
+    "artists": ["KEY_beatles", 
+                "50_cent", 
+                "Avicii", 
+                "Red Hot Chili Peppers", 
+                "Katy Perry", 
+                "The Beach Boys"],
+    "founded": 1942,
+    "ended": -1,
+    "founders": ["Johnny Mercer", "Buddy DeSylva", "Glenn Wallichs"],
+    "location": "Los Angeles, CA",
+    "google_map": "https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=capitol+records&amp;aq=&amp;sll=34.098444,-118.297691&amp;sspn=0.298227,0.506058&amp;ie=UTF8&amp;hq=capitol+records&amp;hnear=&amp;t=m&amp;ll=34.098444,-118.297691&amp;spn=0.298227,0.506058",
+    "parent": "Universal Music Group",
+    "website": "http://www.capitolrecords.com/",
+    "logo": "http://upload.wikimedia.org/wikipedia/en/8/8f/CapitolRecords_Logo.png",
+    "facebook": "https://www.facebook.com/capitolrecords",
+    "twitter": "https://twitter.com/CapitolRecords",
+    "description": "Capitol Records is a major American record label that is part of the Capitol Music Group"
+}
+< 201
+< Content-Type: application/json
+{ id: "capitol"}
+
+Update an existing label.
+PUT /api/labels/{id}
+> Content-Type: application/json
+{
+    "id": "capitol",
+    "name": "Capitol Records",
+    "albums": ["Bad Animals", 
+               "KEY_twist_and_shout", 
+               "Bazooka!!!", 
+               "Catarsis", 
+               "As Far as Siam", 
+               "Honky Tonk"],
+    "artists": ["KEY_beatles", 
+                "50_cent", 
+                "Avicii", 
+                "Red Hot Chili Peppers", 
+                "Katy Perry", 
+                "The Beach Boys"],
+    "founded": 1942,
+    "ended": -1,
+    "founders": ["Johnny Mercer", "Buddy DeSylva", "Glenn Wallichs"],
+    "location": "Los Angeles, CA",
+    "google_map": "https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=capitol+records&amp;aq=&amp;sll=34.098444,-118.297691&amp;sspn=0.298227,0.506058&amp;ie=UTF8&amp;hq=capitol+records&amp;hnear=&amp;t=m&amp;ll=34.098444,-118.297691&amp;spn=0.298227,0.506058",
+    "parent": "Universal Music Group",
+    "website": "http://www.capitolrecords.com/",
+    "logo": "http://upload.wikimedia.org/wikipedia/en/8/8f/CapitolRecords_Logo.png",
+    "facebook": "https://www.facebook.com/capitolrecords",
+    "twitter": "https://twitter.com/CapitolRecords",
+    "description": "Capitol Records is a major American record label that is part of the Capitol Music Group"
+}
+< 204
+
+Delete an existing label
+DELETE /api/labels/{id}
+< 204
+
+
+List all related albums
+GET /api/labels/{id}/albums
+< 200
+< Content-Type: application/json
+[
+    {
+        "id": "twist_and_shout",
+        "name": "Twist and Shout",
+        "artists": ["KEY_beatles"],
+        "date_released": 1964,
+        "labels": ["KEY_capitol"]
+    }
+]
+
+List all related artists
+GET /api/labels/{id}/artists
+< 200
+< Content-Type: application/json
+[
+    {
+        "id": "beatles",
+        "band_name": "The Beatles",
+        "hometown": "Liverpool, England",
+        "start_year": 1960,
+        "end_year": 1970
+    }
+]

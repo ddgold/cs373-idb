@@ -1,0 +1,306 @@
+FORMAT: 1A
+HOST: http://www.google.com
+
+# cs373loldbapi
+Notes API is a *short texts saving* service similar to its physical paper presence on your table.
+
+# LOL DB
+Notes related resources of the **Notes API**
+        
+
+
+## Players Collection [/players]
+### List all Players [GET]
++ Response 200 (application/json)
+
+        [{
+        "playername": "TheOddOne",
+        "id": 1,
+        "summonericonid": 627
+        },
+        {
+        "playername": "Dyrus",
+        "id": 2,
+        "summonericonid": 627
+        },
+        {
+        "playername": "Bjergsen",
+        "id": 3,
+        "summonericonid": 641
+        },
+        {
+        "playername": "WildTurtle",
+        "id": 4,
+        "summonericonid": 558
+        },
+        {
+        "playername": "Xpecial",
+        "id": 5,
+        "summonericonid": 627
+        },
+        {
+        "playername": "Cruzerthebruzer",
+        "id": 6,
+        "summonericonid": 625
+        },
+        {
+        "playername": "Crumbzz",
+        "id": 7,
+        "summonericonid": 625
+        },
+        {
+        "playername": "scarra",
+        "id": 8,
+        "summonericonid": 556
+        },
+        {
+        "playername": "Imaqtpie",
+        "id": 9,
+        "summonericonid": 23
+        },
+        {
+        "playername": "KiWiKiD",
+        "id": 10,
+        "summonericonid": 556
+        }]
+        
+### Create a Player [POST]
++ Request (application/json)
+
+        { "playername": "Dyrus", "teamname": "Team SoloMid", "summonerlevel": 30, 
+            "championkills": 3715, "minionkills": 90658, "wins": 880,
+            "soloqueuedivisionname": "Vladimir's Maulers", "region": "NA", "summonericonid": 627}
+
++ Response 201 (application/json)
+
+        {"playername": "Dyrus", "id": 2}
+        
+### Edit a Player [PUT]
++ Request (application/json)
+
+        { "playername": "Dyrus", "teamname": "Team SoloMid", "summonerlevel": 30, 
+            "championkills": 3715, "minionkills": 90658, "wins": 880,
+            "soloqueuedivisionname": "Vladimir's Maulers", "region": "NA", "summonericonid": 627}
+
++ Response 204 
+
+        
+## Player [/players/{id}]
+A single Player object with all its details
+
++ Parameters
+    + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
+
++ Model (application/json)
+ 
+    + Body
+ 
+            {
+                "playername": "Dyrus",
+                "id": 2,
+                "teamids": [1],
+                "summonerlevel": 30,
+                "championkills": 3715,
+                "minionkills": 90658,
+                "wins": 880,
+                "soloqueuedivisonid": 3,
+                "region": "NA",
+                "summonericonid": 627
+            }
+
+### Retrieve a Player [GET]
++ Response 200 (application/json)
+
+        [{
+        "playername": "Dyrus",
+        "id": 2,
+        "teamids": [1],
+        "summonerlevel": 30,
+        "championkills": 3715,
+        "minionkills": 90658,
+        "wins": 880,
+        "soloqueuedivisonid": 3,
+        "region": "NA",
+        "summonericonid": 627
+        }]
+        
+### Remove a Player [DELETE]
++ Response 204
+
+
+
+
+
+
+
+
+
+
+
+
+## Teams Collection [/teams]
+### List all Teams [GET]
++ Response 200 (application/json)
+
+        [{
+        "teamname": "Team SoloMid",
+        "id": 1,
+        "memberids": [1,2,3,4,5],
+        "3v3divisionid": 1,
+        "5v5divisionid": 1,
+        "logoid": 1
+        },
+        {
+        "teamname": "Team Dignitas",
+        "id": 2,
+        "memberids": [6,7,8,9,10],
+        "3v3divisionid": 2,
+        "5v5divisionid": 2,
+        "logoid": 2
+        }]
+        
+### Create a Team [POST]
++ Request (application/json)
+
+        { "teamname": "Team Dignitas", "memberids": [6,7,8,9,10], "wins": 500, 
+        "3v3divisionname": "Katarina's Brawlers", "5v5divisionname": "Wukong's Lancers", "logoid": 2, "region": "NA"}
+
++ Response 201 (application/json)
+
+        {"teamname": "Team Dignitas", "id": 2}
+        
+### Edit a Team [PUT]
++ Request (application/json)
+
+        { "teamname": "Team Dignitas", "memberids": [6,7,8,9,10], "wins": 500, 
+        "3v3divisionname": "Katarina's Brawlers", "5v5divisionname": "Wukong's Lancers", "logoid": 2, "region": "NA"}
+
++ Response 204
+        
+## Team [/teams/{id}]
+A single Team object with all its details
+
++ Parameters
+    + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
+    
++ Model (application/json)
+ 
+    + Body
+ 
+            {
+                "teamname": "Team SoloMid",
+                "id": 1,
+                "memberids": [1,2,3,4,5],
+                "wins": 700,
+                "3v3divisionid": 1,
+                "5v5divisionid": 1,
+                "logoid": 1,
+                "region": "NA"
+            }
+
+
+### Retrieve a Team [GET]
++ Response 200 (application/json)
+
+        [{
+        "teamname": "Team SoloMid",
+        "id": 1,
+        "memberids": [1,2,3,4,5],
+        "wins": 700,
+        "3v3divisionid": 1,
+        "5v5divisionid": 1,
+        "logoid": 1,
+        "region": "NA"
+        }]
+        
+### Remove a Team [DELETE]
++ Response 204
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Divisions Collection [/divisions]
+### List all Divisions [GET]
++ Response 200 (application/json)
+
+        [{
+        "divisionname": "Hecarim's Duelists",
+        "id": 1
+        },
+        {
+        "divisionname": "Wukong's Lancers",
+        "id": 2
+        },
+        {
+        "divisionname": "Vladimir's Maulers",
+        "id": 3
+        }]
+        
+### Create a Division [POST]
++ Request (application/json)
+
+        { "divisionname": "Wukong's Lancers", "region": "NA" }
+
++ Response 201 (application/json)
+
+        {"divisionname": "Wukong's Lancers", "id": 2}
+        
+### Edit a Division [PUT]
++ Request (application/json)
+
+        { "divisionname": "Wukong's Lancers", "region": "NA"} 
+
++ Response 204
+        
+## Division [/divisions/{id}]
+A single Division object with all its details
+
++ Parameters
+    + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
+
++ Model (application/json)
+ 
+    + Body
+ 
+            {
+                "divisionname": "Hecarim's Duelists",
+                "id": 1,
+                "teamids": [1,10,201],
+                "tier": "Challenger",
+                "subtier": "I",
+                "region": "NA"
+            }
+
+### Retrieve a Division [GET]
++ Response 200 (application/json)
+
+        [{
+        "divisionname": "Hecarim's Duelists",
+        "id": 1,
+        "teamids": [1,10,201],
+        "tier": "Challenger",
+        "subtier": "I", 
+        "region": "NA"
+        }]
+        
+### Remove a Player [DELETE]
++ Response 204
