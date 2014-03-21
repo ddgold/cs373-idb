@@ -3,35 +3,34 @@ FORMAT: 1A
 # vgdb
 RESTful API for the Video Game Data Base
 
-## Developer Collection [/developers]
+## Developer Collection [/api/developers]
 
 ### List all Developers [GET]
 + Response 200 (application/json)
     
         [{
-            'name': 'Platinum Games',
-            'date_founded': 2006,
-            'num_employees': 120,
-            'status': 'Active'
+            "name": "Platinum Games"
         }]
 
 ### Create a Developer [POST]
 + Request (application/json)
 
-        [{
-            'name': 'Platinum Games',
-            'date_founded': 2006,
-            'num_employees': 120,
-            'status': 'Active'
-        }]
+        {
+            "name": "Platinum Games",
+            "date_founded": "8-1-2006",
+            "num_employees": 120,
+            "status": "Active",
+            "image_link": "http://upload.wikimedia.org/wikipedia/en/9/9e/PlatinumGames.png",
+            "map_link": "https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&amp;aq=&amp;sll=34.704426,135.485297&amp;sspn=0.004397,0.008256&amp;ie=UTF8&amp;hq=&amp;hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&amp;ll=34.70533,135.489699&amp;spn=0.035033,0.066047&amp;t=m&amp;z=14&amp;output=embed"
+        }
 
 + Response 201 (application/json)
 
-        [{
-            'name': 'Platinum Games'
-        }]
+        {
+            "name": "Platinum Games"
+        }
 
-## Developer [/developers/{name}]
+## Developer [/api/developers/{name}]
 
 + Parameters
     + name (required, string, `platinum_games`) ... String `name` of the Developer to perform action with. Has example value.
@@ -39,12 +38,14 @@ RESTful API for the Video Game Data Base
 ### Retrieve a Developer [GET]
 + Response 200 (application/json)
 
-        [{
-            'name': 'Platinum Games',
-            'date_founded': 2006,
-            'num_employees': 120,
-            'status': 'Active'
-        }]
+        {
+            "name": "Platinum Games",
+            "date_founded": "8-1-2006",
+            "num_employees": 120,
+            "status": "Active",
+            "image_link": "http://upload.wikimedia.org/wikipedia/en/9/9e/PlatinumGames.png",
+            "map_link": "https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&amp;aq=&amp;sll=34.704426,135.485297&amp;sspn=0.004397,0.008256&amp;ie=UTF8&amp;hq=&amp;hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&amp;ll=34.70533,135.489699&amp;spn=0.035033,0.066047&amp;t=m&amp;z=14&amp;output=embed"
+        }
 
 ### Update a Developer [PUT]
 + Response 204
@@ -52,7 +53,7 @@ RESTful API for the Video Game Data Base
 ### Remove a Developer [DELETE]
 + Response 204
 
-## Developer's Games [/developers/{name}/games]
+## Developer's Games [/api/developers/{name}/games]
 
 + Parameters
     + name (required, string, `platinum_games`) ... String `name` of the Developer to perform action with. Has example value.
@@ -61,14 +62,16 @@ RESTful API for the Video Game Data Base
 + Response 200 (application/json)
 
         [{
-            'title': 'The Wonderful 101',
-            'release_date': 09-15-2013,
-            'publisher': 'Nintendo',
-            'ESRB_rating': 'T',
-            'genre': 'Action'
+            "title": "The Wonderful 101",
+            "release_date": "09-15-2013",
+            "publisher": "Nintendo",
+            "ESRB_rating": "T",
+            "genre": "Action",
+            "image_link": "http://upload.wikimedia.org/wikipedia/en/e/ee/Wonderful_101_box_artwork.jpg",
+            "youtube_link": "//www.youtube.com/embed/bNefE89DZds"
         }]
 
-## Developer's Platforms [/developers/{name}/platforms]
+## Developer's Platforms [/api/developers/{name}/platforms]
 
 + Parameters
     + name (required, string, `platinum_games`) ... String `name` of the Developer to perform action with. Has example value.
@@ -77,46 +80,47 @@ RESTful API for the Video Game Data Base
 + Response 200 (application/json)
 
         [{
-            'name': 'Wii U',
-            'manufacturer': 'Nintendo',
-            'release_date': 11-18-2012,
-            'generation': 'Physical (disks) and digital',
-            'media_format': 8
+            "name": "Wii U",
+            "manufacturer": "Nintendo",
+            "release_date": "11-18-2012",
+            "generation": "Physical (disks) and digital",
+            "media_format": 8,
+            "image_link": "http://timenerdworld.files.wordpress.com/2012/11/top10_gadgets_wiiu.jpg?w=480&h=320&crop=1",
+            "youtube_link": "//www.youtube.com/embed/qhlDHeCT-Q8",
+            "twitter_link": "https://twitter.com/wiiudaily"
         }]
 
 
 
-## Game Collection [/games]
+## Game Collection [/api/games]
 
 ### List all Games [GET]
 + Response 200 (application/json)
     
         [{
-            'title': 'The Wonderful 101',
-            'release_date': 09-15-2013,
-            'publisher': 'Nintendo',
-            'ESRB_rating': 'T',
-            'genre': 'Action'
+            "title": "The Wonderful 101"
         }]
 
-### Create a Developer [POST]
+### Create a Game [POST]
 + Request (application/json)
 
-        [{
-            'title': 'The Wonderful 101',
-            'release_date': 09-15-2013,
-            'publisher': 'Nintendo',
-            'ESRB_rating': 'T',
-            'genre': 'Action'
-        }]
+        {
+            "title": "The Wonderful 101",
+            "release_date": "09-15-2013",
+            "publisher": "Nintendo",
+            "ESRB_rating": "T",
+            "genre": "Action",
+            "image_link": "http://upload.wikimedia.org/wikipedia/en/e/ee/Wonderful_101_box_artwork.jpg",
+            "youtube_link": "//www.youtube.com/embed/bNefE89DZds"
+        }
 
 + Response 201 (application/json)
 
-        [{
-            'title': 'The Wonderful 101'
-        }]
+        {
+            "title": "The Wonderful 101"
+        }
 
-## Game [/game/{title}]
+## Game [/api/games/{title}]
 
 + Parameters
     + title (required, string, `the_wonderful_101`) ... String `title` of the Gane to perform action with. Has example value.
@@ -124,13 +128,15 @@ RESTful API for the Video Game Data Base
 ### Retrieve a Game [GET]
 + Response 200 (application/json)
 
-        [{
-            'title': 'The Wonderful 101',
-            'release_date': 09-15-2013,
-            'publisher': 'Nintendo',
-            'ESRB_rating': 'T',
-            'genre': 'Action'
-        }]
+        {
+            "title": "The Wonderful 101",
+            "release_date": "09-15-2013",
+            "publisher": "Nintendo",
+            "ESRB_rating": "T",
+            "genre": "Action",
+            "image_link": "http://upload.wikimedia.org/wikipedia/en/e/ee/Wonderful_101_box_artwork.jpg",
+            "youtube_link": "//www.youtube.com/embed/bNefE89DZds"
+        }
 
 ### Update a Game [PUT]
 + Response 204
@@ -138,7 +144,7 @@ RESTful API for the Video Game Data Base
 ### Remove a Game [DELETE]
 + Response 204
 
-## Game's Developers [/game/{title}/developers]
+## Game's Developers [/api/games/{title}/developers]
 
 + Parameters
     + title (required, string, `the_wonderful_101`) ... String `title` of the Gane to perform action with. Has example value.
@@ -147,13 +153,15 @@ RESTful API for the Video Game Data Base
 + Response 200 (application/json)
 
         [{
-            'name': 'Platinum Games',
-            'date_founded': 2006,
-            'num_employees': 120,
-            'status': 'Active'
+            "name": "Platinum Games",
+            "date_founded": "8-1-2006",
+            "num_employees": 120,
+            "status": "Active",
+            "image_link": "http://upload.wikimedia.org/wikipedia/en/9/9e/PlatinumGames.png",
+            "map_link": "https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&amp;aq=&amp;sll=34.704426,135.485297&amp;sspn=0.004397,0.008256&amp;ie=UTF8&amp;hq=&amp;hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&amp;ll=34.70533,135.489699&amp;spn=0.035033,0.066047&amp;t=m&amp;z=14&amp;output=embed"
         }]
 
-## Game's Platforms [/games/{title}/platforms]
+## Game's Platforms [/api/games/{title}/platforms]
 
 + Parameters
     + title (required, string, `the_wonderful_101`) ... String `title` of the Gane to perform action with. Has example value.
@@ -162,46 +170,48 @@ RESTful API for the Video Game Data Base
 + Response 200 (application/json)
 
         [{
-            'name': 'Wii U',
-            'manufacturer': 'Nintendo',
-            'release_date': 11-18-2012,
-            'generation': 'Physical (disks) and digital',
-            'media_format': 8
+            "name": "Wii U",
+            "manufacturer": "Nintendo",
+            "release_date": "11-18-2012",
+            "generation": "Physical (disks) and digital",
+            "media_format": 8,
+            "image_link": "http://timenerdworld.files.wordpress.com/2012/11/top10_gadgets_wiiu.jpg?w=480&h=320&crop=1",
+            "youtube_link": "//www.youtube.com/embed/qhlDHeCT-Q8",
+            "twitter_link": "https://twitter.com/wiiudaily"
         }]
 
 
 
-## Platform Collection [/platforms]
+## Platform Collection [/api/platforms]
 
 ### List all Platforms [GET]
 + Response 200 (application/json)
     
         [{
-            'name': 'Wii U',
-            'manufacturer': 'Nintendo',
-            'release_date': 11-18-2012,
-            'generation': 'Physical (disks) and digital',
-            'media_format': 8
+            "name": "Wii U"
         }]
 
 ### Create a Platform [POST]
 + Request (application/json)
 
-        [{
-            'name': 'Wii U',
-            'manufacturer': 'Nintendo',
-            'release_date': 11-18-2012,
-            'generation': 'Physical (disks) and digital',
-            'media_format': 8
-        }]
+        {
+            "name": "Wii U",
+            "manufacturer": "Nintendo",
+            "release_date": "11-18-2012",
+            "generation": "Physical (disks) and digital",
+            "media_format": 8,
+            "image_link": "http://timenerdworld.files.wordpress.com/2012/11/top10_gadgets_wiiu.jpg?w=480&h=320&crop=1",
+            "youtube_link": "//www.youtube.com/embed/qhlDHeCT-Q8",
+            "twitter_link": "https://twitter.com/wiiudaily"
+        }
 
 + Response 201 (application/json)
 
-        [{
-            'name': 'Wii U'
-        }]
+        {
+            "name": "Wii U"
+        }
 
-## Platform [/platforms/{name}]
+## Platform [/api/platforms/{name}]
 
 + Parameters
     + name (required, string, `wii_u`) ... String `name` of the Platform to perform action with. Has example value.
@@ -209,13 +219,16 @@ RESTful API for the Video Game Data Base
 ### Retrieve a Platform [GET]
 + Response 200 (application/json)
 
-        [{
-            'name': 'Wii U',
-            'manufacturer': 'Nintendo',
-            'release_date': 11-18-2012,
-            'generation': 'Physical (disks) and digital',
-            'media_format': 8
-        }]
+        {
+            "name": "Wii U",
+            "manufacturer": "Nintendo",
+            "release_date": "11-18-2012",
+            "generation": "Physical (disks) and digital",
+            "media_format": 8,
+            "image_link": "http://timenerdworld.files.wordpress.com/2012/11/top10_gadgets_wiiu.jpg?w=480&h=320&crop=1",
+            "youtube_link": "//www.youtube.com/embed/qhlDHeCT-Q8",
+            "twitter_link": "https://twitter.com/wiiudaily"
+        }
 
 ### Update a Platform [PUT]
 + Response 204
@@ -223,7 +236,7 @@ RESTful API for the Video Game Data Base
 ### Remove a Platform [DELETE]
 + Response 204
 
-## Platform's Developers [/platforms/{name}/developers]
+## Platform's Developers [/api/platforms/{name}/developers]
 
 + Parameters
     + name (required, string, `wii_u`) ... String `name` of the Platform to perform action with. Has example value.
@@ -232,13 +245,15 @@ RESTful API for the Video Game Data Base
 + Response 200 (application/json)
 
         [{
-            'name': 'Platinum Games',
-            'date_founded': 2006,
-            'num_employees': 120,
-            'status': 'Active'
+            "name": "Platinum Games",
+            "date_founded": "8-1-2006",
+            "num_employees": 120,
+            "status": "Active",
+            "image_link": "http://upload.wikimedia.org/wikipedia/en/9/9e/PlatinumGames.png",
+            "map_link": "https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&amp;aq=&amp;sll=34.704426,135.485297&amp;sspn=0.004397,0.008256&amp;ie=UTF8&amp;hq=&amp;hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&amp;ll=34.70533,135.489699&amp;spn=0.035033,0.066047&amp;t=m&amp;z=14&amp;output=embed"
         }]
 
-## Platform's Games [/platforms/{name}/games]
+## Platform's Games [/api/platforms/{name}/games]
 
 + Parameters
     + name (required, string, `wii_u`) ... String `name` of the Platform to perform action with. Has example value.
@@ -247,9 +262,11 @@ RESTful API for the Video Game Data Base
 + Response 200 (application/json)
 
         [{
-            'title': 'The Wonderful 101',
-            'release_date': 09-15-2013,
-            'publisher': 'Nintendo',
-            'ESRB_rating': 'T',
-            'genre': 'Action'
+            "title": "The Wonderful 101",
+            "release_date": "09-15-2013",
+            "publisher": "Nintendo",
+            "ESRB_rating": "T",
+            "genre": "Action",
+            "image_link": "http://upload.wikimedia.org/wikipedia/en/e/ee/Wonderful_101_box_artwork.jpg",
+            "youtube_link": "//www.youtube.com/embed/bNefE89DZds"
         }]
