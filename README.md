@@ -13,6 +13,48 @@ Developer (*companyName, yearFounded, numEmployees, status)
     ('Konami', 1969, 5759, 'Active')
     ('Midway Games', 1988, 540, 'Defunct')
     ('Square Enix', 2003, 3242, 'Active')
+    
+    Platinum Games
+    -
+    -
+    -
+    Infinity Ward
+    -
+    -
+    -
+    Cing
+    -
+    -
+    -
+    Rockstar Games
+    -http://a1.s6img.com/cdn/0023/p/9307314_1824545_lz.jpg
+    -http://cdn3.whatculture.com/wp-content/uploads/2013/09/rockstar-games-source-944553.jpg
+    -http://cdn.cultofandroid.com/wp-content/uploads/2012/12/rockstargames.jpg
+    Dimps
+    -http://1.bp.blogspot.com/-j6uN4WlB6-c/UWRBgVq_vlI/AAAAAAAACOc/T-9JhqQCMAc/s640/url.png
+    -http://i.kinja-img.com/gawker-media/image/upload/18hh1ux83kghvjpg.jpg
+    -http://blogs.popzara.com/media/12/20100217-sonic_dimps_01.jpg
+    HAL Laboratories
+    -http://media.ignimgs.com/media/ign/imgs/minisites/topN/video-game-makers/top-50-video-game-makers_hal.jpg
+    -http://www.blogcdn.com/www.joystiq.com/media/2011/03/nint-gdc11-keynote-0022.jpg
+    -http://img.gamefaqs.net/screens/c/c/4/gfs_28117_1_2.jpg
+    Monolith Soft
+    -http://gimmegimmegames.com/wp-content/uploads/2012/05/Monolith-Soft-logo.jpg
+    -http://www.gengame.net/wp-content/uploads/2013/02/monolith-soft-3ds.jpg
+    -http://www.blogcdn.com/www.joystiq.com/media/2012/09/monolith-soft.png
+    Konami
+    -https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDMfGhamdXjRpdIO3g-qCrvLso4wlK3Uk_utuA_Xe-sMFZ6sxt
+    -https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRy2iKIhXqjX0V53uOc9whm5k5eDBSJw8bcL1F-8MmKPbXnQdl_
+    -https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYZW55Pr_rojW7OmQOFYL8JnHPgrYXlC4HZAVxqUByk73W2rg5
+    Midway Games
+    -http://ts1.mm.bing.net/th?id=HN.608036973997393664&w=266&h=70&c=7&rs=1&pid=1.7
+    -https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdIanG-CCPXmV-9wbi3mBtuIOcpTa9lSVnBYoVOnBRND0zfwuq
+    -https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSQeCWJ9gfhUHnL7xFopPNk_88KEBew8MUXph_tM82yCRM5Cdv
+    Square Enix
+    -http://ts1.mm.bing.net/th?id=HN.608020111957558560&w=288&h=188&c=7&rs=1&pid=1.7
+    -http://ts3.mm.bing.net/th?id=HN.608052375752346609&w=277&h=125&c=7&rs=1&pid=1.7
+    -http://ts4.mm.bing.net/th?id=HN.607988878956560414&w=252&h=175&c=7&rs=1&pid=1.7
+    
 
 
 Platform (*name, manufacturer, dateReleased, mediaFormat, generation)
