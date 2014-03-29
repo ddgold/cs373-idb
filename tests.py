@@ -13,6 +13,7 @@ import unittest
 
 
 platinum_games = {
+	"id": 1,
 	"name": "Platinum Games",
 	"date_founded": "8-1-2006",
 	"num_employees": 120,
@@ -22,6 +23,7 @@ platinum_games = {
  }
 
 the_wonderful_101 = {
+	"id": 1,
 	"title": "The Wonderful 101",
 	"release_date": "09-15-2013",
 	"publisher": "Nintendo",
@@ -32,6 +34,7 @@ the_wonderful_101 = {
 }
 
 wii_u = {
+	"id": 1,
 	"name": "Wii U",
 	"manufacturer": "Nintendo",
 	"release_date": "11-18-2012",
@@ -59,7 +62,7 @@ class test_API(unittest.TestCase) :
 		self.assertTrue(response_code == 200)
 
 		response_content = loads(response.read().decode("utf-8"))
-		self.assertTrue(response_content == [{"name": platinum_games["name"]}])
+		self.assertTrue(response_content == [{"id": platinum_games["id"], "name": platinum_games["name"]}])
 
 	def test_API_post_developers(self) :
 		values = dumps(platinum_games).encode("utf-8")
@@ -71,7 +74,7 @@ class test_API(unittest.TestCase) :
 		self.assertTrue(response_code == 201)
 
 		response_content = loads(response.read().decode("utf-8"))
-		self.assertTrue(response_content == {"name": platinum_games["name"]})
+		self.assertTrue(response_content == {"id": platinum_games["id"], "name": platinum_games["name"]})
 
 	def test_API_get_developer(self) :
 		request = Request("http://vgdb.apiary-mock.com/api/developers/platinum_games")
@@ -139,7 +142,7 @@ class test_API(unittest.TestCase) :
 		self.assertTrue(response_code == 200)
 
 		response_content = loads(response.read().decode("utf-8"))
-		self.assertTrue(response_content == [{"name": wii_u["name"]}])
+		self.assertTrue(response_content == [{"id": wii_u["id"], "name": wii_u["name"]}])
 
 	def test_API_post_platforms(self) :
 		values = dumps(wii_u).encode("utf-8")
@@ -151,7 +154,7 @@ class test_API(unittest.TestCase) :
 		self.assertTrue(response_code == 201)
 
 		response_content = loads(response.read().decode("utf-8"))
-		self.assertTrue(response_content == {"name": wii_u["name"]})
+		self.assertTrue(response_content == {"id": wii_u["id"], "name": wii_u["name"]})
 
 	def test_API_get_platform(self) :
 		request = Request("http://vgdb.apiary-mock.com/api/platforms/wii_u")
@@ -219,7 +222,7 @@ class test_API(unittest.TestCase) :
 		self.assertTrue(response_code == 200)
 
 		response_content = loads(response.read().decode("utf-8"))
-		self.assertTrue(response_content == [{"title": the_wonderful_101["title"]}])
+		self.assertTrue(response_content == [{"id": the_wonderful_101["id"], "title": the_wonderful_101["title"]}])
 
 	def test_API_post_games(self) :
 		values = dumps(the_wonderful_101).encode("utf-8")
@@ -231,7 +234,7 @@ class test_API(unittest.TestCase) :
 		self.assertTrue(response_code == 201)
 
 		response_content = loads(response.read().decode("utf-8"))
-		self.assertTrue(response_content == {"title": the_wonderful_101["title"]})
+		self.assertTrue(response_content == {"id": the_wonderful_101["id"], "title": the_wonderful_101["title"]})
 
 	def test_API_get_game(self) :
 		request = Request("http://vgdb.apiary-mock.com/api/games/the_wonderful_101")
