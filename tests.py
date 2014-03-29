@@ -18,7 +18,7 @@ platinum_games = {
 	"date_founded": "8-1-2006",
 	"num_employees": 120,
 	"status": "Active",
-	"image_link": "http://upload.wikimedia.org/wikipedia/en/9/9e/PlatinumGames.png",
+	"image_link": ["http://upload.wikimedia.org/wikipedia/en/9/9e/PlatinumGames.png"],
 	"map_link": "https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&amp;aq=&amp;sll=34.704426,135.485297&amp;sspn=0.004397,0.008256&amp;ie=UTF8&amp;hq=&amp;hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&amp;ll=34.70533,135.489699&amp;spn=0.035033,0.066047&amp;t=m&amp;z=14&amp;output=embed"
  }
 
@@ -29,7 +29,7 @@ the_wonderful_101 = {
 	"publisher": "Nintendo",
 	"ESRB_rating": "T",
 	"genre": "Action",
-	"image_link": "http://upload.wikimedia.org/wikipedia/en/e/ee/Wonderful_101_box_artwork.jpg",
+	"image_link": ["http://upload.wikimedia.org/wikipedia/en/e/ee/Wonderful_101_box_artwork.jpg"],
 	"youtube_link": "//www.youtube.com/embed/bNefE89DZds"
 }
 
@@ -40,7 +40,7 @@ wii_u = {
 	"release_date": "11-18-2012",
 	"generation": "Physical (disks) and digital",
 	"media_format": 8,
-	"image_link": "http://timenerdworld.files.wordpress.com/2012/11/top10_gadgets_wiiu.jpg?w=480&h=320&crop=1",
+	"image_link": ["http://timenerdworld.files.wordpress.com/2012/11/top10_gadgets_wiiu.jpg?w=480&h=320&crop=1"],
 	"youtube_link": "//www.youtube.com/embed/qhlDHeCT-Q8",
 	"twitter_link": "https://twitter.com/wiiudaily"
 }

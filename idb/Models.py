@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Platform(models.Model):
-    name = models.CharField(max_length=255, primary_key=True)
+    name = models.CharField(max_length=255)
     manufacturer = models.CharField(max_length=255)
     release_date = models.DateField('release date')
     media_format = models.CharField(max_length=255)
@@ -23,7 +23,7 @@ class Platform(models.Model):
 
 
 class Developer(models.Model):
-    name = models.CharField(max_length=255, primary_key=True)
+    name = models.CharField(max_length=255)
     date_founded = models.DateField('date established')
     num_employees = models.IntegerField()
     status = models.CharField(max_length=255)
@@ -42,7 +42,7 @@ class Developer(models.Model):
 
 
 class Game(models.Model):
-    title = models.CharField(max_length=255, primary_key=True)
+    title = models.CharField(max_length=255)
     release_date = models.DateField('release date')
     genre = models.CharField(max_length=255)
     publisher = models.CharField(max_length=255)
