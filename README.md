@@ -41,9 +41,30 @@ Game (*title, dateReleased, publisher, ESRB_Rating, genre)
     ('Metal Gear', 07-07-1987, 'Konami', 'N/A', 'Stealth')
     ('Doom 64', 03-31-1997, 'Midway Games', 'M', 'First-person shooting')
     ('Final Fantasy XIII', 03-09-2010, 'Square Enix', 'T', 'Turn-based role-playing')
+	The Wonderful 101
+	http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png
+	http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg
+	http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg
 
+	Call of Duty 4
+	http://www.maclife.com/files/u220903/call_of_duty_4_modern_warfare_620px.png
+	http://cdn.macrumors.com/article-new/2012/06/NewImage32.png
+	http://img3.wikia.nocookie.net/__cb20120604062555/callofduty/images/7/7e/Operation_Kingfish_2013_group_crop.png
+
+	Grand Theft Auto III
+	http://www.slashgear.com/wp-content/uploads/2011/12/gta_3_android_0.png
+	http://cdn.appstorm.net/ipad.appstorm.net/files/2011/12/gtaIII_2.png
+	http://www.gouranga.com/images/gta3/gta3_394.jpg
+	
+	Sonic Advance
+	http://img841.imageshack.us/img841/5249/s2built002.png
+	http://img.youtube.com/vi/WTwA1O3eumk/0.jpg
+	http://www.friendcodes.com/blog/wp-content/uploads/2013/12/Sonic-Advance-2-Review.png
 
                           ~model and REST api reference~
+	
+	
+	
 	
 Developer	
 	company Name(pk)
