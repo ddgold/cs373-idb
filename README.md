@@ -41,9 +41,58 @@ Game (*title, dateReleased, publisher, ESRB_Rating, genre)
     ('Metal Gear', 07-07-1987, 'Konami', 'N/A', 'Stealth')
     ('Doom 64', 03-31-1997, 'Midway Games', 'M', 'First-person shooting')
     ('Final Fantasy XIII', 03-09-2010, 'Square Enix', 'T', 'Turn-based role-playing')
+	The Wonderful 101
+	http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png
+	http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg
+	http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg
 
+	Call of Duty 4
+	http://www.maclife.com/files/u220903/call_of_duty_4_modern_warfare_620px.png
+	http://cdn.macrumors.com/article-new/2012/06/NewImage32.png
+	http://img3.wikia.nocookie.net/__cb20120604062555/callofduty/images/7/7e/Operation_Kingfish_2013_group_crop.png
+
+	Grand Theft Auto III
+	http://www.slashgear.com/wp-content/uploads/2011/12/gta_3_android_0.png
+	http://cdn.appstorm.net/ipad.appstorm.net/files/2011/12/gtaIII_2.png
+	http://www.gouranga.com/images/gta3/gta3_394.jpg
+	
+	Sonic Advance
+	http://img841.imageshack.us/img841/5249/s2built002.png
+	http://img.youtube.com/vi/WTwA1O3eumk/0.jpg
+	http://www.friendcodes.com/blog/wp-content/uploads/2013/12/Sonic-Advance-2-Review.png
+
+	Super Smash Bros. Melee
+	http://img.gamefaqs.net/box/0/8/7/14087_front.jpg
+	http://faqsmedia.ign.com/faqs/image/ali1mg_ssbm_010.jpg
+	http://www.technologytell.com/gaming/files/2013/07/smash-bros.-melee.jpg
+
+
+	Xenoblade Chronicles
+	http://upload.wikimedia.org/wikipedia/en/d/d9/Xenoblade_box_artwork.png
+	http://www.vgchartz.com/games/pics/xenoblade-chronicles-958102.jpg
+	http://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Xenoblade-Landscape.jpg/280px-Xenoblade-Landscape.jpg
+
+	Metal Gear
+	http://upload.wikimedia.org/wikipedia/en/b/bd/Metal_Gear_cover.jpg
+	http://static.giantbomb.com/uploads/original/0/4648/2019227-solid.jpg
+	http://einfogames.com/hub/files/2014/02/nes-metal-gear-jeu.jpg
+
+
+	Doom 64
+	http://img1.wikia.nocookie.net/__cb20080510223920/doom/images/b/b7/Doom_64-box-cover.jpg
+	http://www.pixlbit.com/media/products/6773/57131.jpg
+	http://colinappleby.com/Photos/Doom%2064.jpg
+
+
+	Final Fantasy XIII
+	http://img3.wikia.nocookie.net/__cb20120614005423/finalfantasy/images/9/94/Final_Fantasy_XIII_Logo.jpg
+	http://86bb71d19d3bcb79effc-d9e6924a0395cb1b5b9f03b7640d26eb.r91.cf1.rackcdn.com/wp-content/uploads/2010/03/final-fantasy-xiii-ps3-theme-unlockable-artwork.jpg
+	http://fc06.deviantart.net/fs51/i/2009/330/1/f/Final_Fantasy_XIII_characters_by_Cloudfan174.png
 
                           ~model and REST api reference~
+	
+	
+	
 	
 Developer	
 	company Name(pk)
