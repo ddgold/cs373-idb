@@ -98,9 +98,9 @@ Platform (*name, manufacturer, dateReleased, mediaFormat, generation)
 	-http://warrencbennett.files.wordpress.com/2013/12/600px-wii-console.png
 	-http://i00.i.aliimg.com/wsphoto/v4/832076106_1/1PCS-Wireless-font-b-Remote-b-font-font-b-Controller-b-font-for-font-b-Nintendo.jpg
     MSX
-	-
-	-
-	-
+	-http://img295.imageshack.us/img295/8623/msxmainmenu.jpg
+	-http://pdroms.de/wp-content/uploads/2011/07/20110708_fmsx_v3.5.1_(beta)_(msx_emu_for_android).png
+	-http://jscustom.theoldcomputer.com/images/manufacturers_systems/MSX/MSX2-Plus/893416MSX2+%20Sony_HB-F1XV_12.jpg
     Nintendo 64
 	-http://m1.behance.net/rendition/modules/30406417/disp/c08385272ae074ace11227af39b3cdea.jpg
 	-http://cleangeeks.com/wp-content/uploads/2013/10/zelda-gray-600x600.jpg
