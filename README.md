@@ -15,13 +15,13 @@ Developer (*companyName, yearFounded, numEmployees, status)
     ('Square Enix', 2003, 3242, 'Active')
     
     Platinum Games
-    -
-    -
-    -
+    -http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg
+    -http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg
+    -http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg
     Infinity Ward
-    -
-    -
-    -
+    -http://markderidder.squarespace.com/storage/InfinityWard.jpg?__SQUARESPACE_CACHEVERSION=1294423775776
+    -http://i1-news.softpedia-static.com/images/news2/Infinity-Ward-Might-Work-on-New-IP-2.jpg
+    -http://www.infinityward.com/content/dam/atvi/infinityward/web/home-carousel/iw-lobby3.jpg
     Cing
     -
     -
@@ -69,6 +69,48 @@ Platform (*name, manufacturer, dateReleased, mediaFormat, generation)
     ('MSX', 'Microsoft', 06-16-1983, 'Physical (cartridges)', 2)
     ('Nintendo 64', 'Nintendo', 09-29-1996, 'Physical (cartridges)', 5)
     ('Playstation 3', 'Sony', 11-17-2006, 'Physical (disks) and digital', 7)
+    Wii U
+	-
+	-
+	-
+    Xbox 360
+	-
+	-
+	-
+    Nintendo DS
+	-
+	-
+	-
+    Playstation 2
+	-
+	-
+	-
+    Game Boy Advance
+	-
+	-
+	-
+    Nintendo Gamecube
+	-http://fontmeme.com/images/Gamecube-Logo.jpg
+	-http://previewcf.turbosquid.com/Preview/Content_2009_07_14__05_36_27/gamecube-0000.jpgf7efe6c7-766d-4b04-a71e-ea86d373f79eLarger.jpg
+	-http://img.bhs4.com/19/a/19ad5b043abb2ce916a1febd86a3f493028b8758_large.jpg
+    Nintendo Wii
+	-http://fontmeme.com/images/Wii-Logo.jpg
+	-http://warrencbennett.files.wordpress.com/2013/12/600px-wii-console.png
+	-http://i00.i.aliimg.com/wsphoto/v4/832076106_1/1PCS-Wireless-font-b-Remote-b-font-font-b-Controller-b-font-for-font-b-Nintendo.jpg
+    MSX
+	-
+	-
+	-
+    Nintendo 64
+	-http://m1.behance.net/rendition/modules/30406417/disp/c08385272ae074ace11227af39b3cdea.jpg
+	-http://cleangeeks.com/wp-content/uploads/2013/10/zelda-gray-600x600.jpg
+	-http://www.nowhereelse.fr/wp-content/uploads/2013/11/Nintendo-N64-Couleur-Lekki-01.jpg
+    Playstation 3
+	-http://s3.thcdn.com/productimg/0/600/600/59/10243759-1283942237-622000.jpg
+	-http://gamefans.com/wp-content/uploads/2012/11/ps3-games-collection.jpg
+	-http://img-new.cgtrader.com/items/10715/sony_playstation_3_3d_model_83ad3219-884a-42ff-b5e5-139458c0a981.jpg
+
+funny:http://a.tgcdn.net/images/products/zoom/1762_nerdtendo_gamebooze_8oz_flask.jpg
 
 
 Game (*title, dateReleased, publisher, ESRB_Rating, genre)
