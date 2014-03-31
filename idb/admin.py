@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from idb.Models import Game, Platform, Developer
+from idb.models import Game, Platform, Developer
 
 class GameAdmin(admin.ModelAdmin):
     list_display = ('title',)

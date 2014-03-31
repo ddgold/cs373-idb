@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}
+IVGDb &middot; Game | {{ game.title }}
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+	<div class="panel panel-default">
+	  <!-- Default panel contents -->
+	  <div class="panel-heading"><h1>{{ game.title }}</h1></div>
+	  <div class="panel-body">
+			<img class="img-responsive" src={{ game.image_link1 }}>
+			</img>
+	  </div>
+
+	  <!-- List group -->
+	  <ul class="list-group">
+	    <li class="list-group-item"><b>Publisher:</b> {{ game.publisher }}</li>
+	    <li class="list-group-item"><b>US Release Date:</b> {{ game.release_date }}</li>
+	    <li class="list-group-item"><b>ESRB Rating:</b> {{ game.ESRB_rating }}</li>
+	    <li class="list-group-item"><b>Genre:</b> {{ game.genre }}</li>
+	    <li class="list-group-item"><b>Developed by:</b> <a href="/developers/{{ game.developer.pk }}/">{{ game.developer.name }}</a></li>
+	    <li class="list-group-item"><b>Platform(s):</b>
+		{% for p in game.platforms.all %}
+			<a href="/platforms/{{ p.pk }}/">{{ p.name }}  </a>
+		{% endfor %}
+	    </li>
+	    <div class="row">
+		    <div class="col-md-6">
+			<li class="list-group-item">
+				<div class="media-container">
+					<iframe src="//www.youtube.com/embed/LhuIjNSg7Gg" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</li>
+		</div>
+	</div>
+	  </ul>
+	</div>
+
+
+</div>
+{% endblock content %}
