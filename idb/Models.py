@@ -29,6 +29,7 @@ class Developer(models.Model):
     date_founded = models.DateField('date established')
     num_employees = models.IntegerField()
     status = models.CharField(max_length=255)
+    address = models.CharField(max_length=255)
     map_link = models.CharField(max_length=255)
     image_link1 = models.CharField(max_length=255)
     image_link2 = models.CharField(max_length=255)
