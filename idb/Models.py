@@ -14,7 +14,7 @@ class Platform(models.Model):
     image_link1 = models.CharField(max_length=255)
     image_link2 = models.CharField(max_length=255)
     image_link3 = models.CharField(max_length=255)
-    map_link = models.CharField(max_length=255)
+    
 
     def __unicode__(self):
         return self.name
