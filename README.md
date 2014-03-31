@@ -70,25 +70,25 @@ Platform (*name, manufacturer, dateReleased, mediaFormat, generation)
     ('Nintendo 64', 'Nintendo', 09-29-1996, 'Physical (cartridges)', 5)
     ('Playstation 3', 'Sony', 11-17-2006, 'Physical (disks) and digital', 7)
     Wii U
-	-
-	-
-	-
+	-http://www.nintendo.com/images/wiiu/features/hw-gallery/black1.jpg
+	-http://www.nintendo.com/images/wiiu/builtinsoftware/miistudio/img_camera.jpg
+	-http://media.t3.com/img/resized/ni/xl_NintendoWiiU_7_624.jpg
     Xbox 360
-	-
-	-
-	-
+	-http://cdn3.sbnation.com/products/large/1701/xbox360.jpg?1316097758
+	-http://hothardware.com/articleimages/Item1242/xbox360balllogolarge.jpg
+	-http://cdn.redmondpie.com/wp-content/uploads/2012/10/99-Xbox-360.png
     Nintendo DS
-	-
-	-
-	-
+	-http://img3.wikia.nocookie.net/__cb20090830175543/aceattorney/images/b/b2/Dsorg.jpg
+	-http://shockingvideogamesecrets.files.wordpress.com/2012/01/ds.jpg
+	-http://www.slipperybrick.com/wp-content/uploads/2008/11/ds-bundle-mario-1.jpg
     Playstation 2
-	-
-	-
-	-
+	-http://www.blogcdn.com/www.joystiq.com/media/2013/01/ps2.jpg
+	-http://static.giantbomb.com/uploads/scale_small/3/30036/909758-image.php.jpg
+	-http://www.logodesignblog.net/logos/playstation2logo-logo.jpg
     Game Boy Advance
-	-
-	-
-	-
+	-http://img1.wikia.nocookie.net/__cb20121027143449/nintendo/en/images/a/aa/Game_Boy_Advance_Purple_Model.png
+	-http://ecx.images-amazon.com/images/I/41WXX6GQR5L.jpg
+	-http://www.cashforgamers.com/images/C/Game_Boy_Advance-logo-BDC4BB1A9E-seeklogo.com.jpg
     Nintendo Gamecube
 	-http://fontmeme.com/images/Gamecube-Logo.jpg
 	-http://previewcf.turbosquid.com/Preview/Content_2009_07_14__05_36_27/gamecube-0000.jpgf7efe6c7-766d-4b04-a71e-ea86d373f79eLarger.jpg
