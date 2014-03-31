@@ -113,91 +113,132 @@ Platform (*name, manufacturer, dateReleased, mediaFormat, generation)
 funny:http://a.tgcdn.net/images/products/zoom/1762_nerdtendo_gamebooze_8oz_flask.jpg
 
 
-Game (*title, dateReleased, publisher, ESRB_Rating, genre)
 
-    ('The Wonderful 101', 09-15-2013, 'Nintendo', 'T', 'Action')
-    ('Call of Duty 4: Modern Warfare', 11-05-2007, 'Activision', 'M', 'First-person shooting')
-    ('Hotel Dusk: Room 215', 01-22-2007, 'Nintendo', 'T', 'Point-and-click adventure')
-    ('Grand Theft Auto III', 10-22-2001, 'Rockstar Games', 'M', 'Open-world action-adventure')
-    ('Sonic Advance', 02-03-2002, 'THQ', 'E', 'Platformer')
-    ('Super Smash Bros. Melee', 12-03-2001, 'Nintendo', 'T', 'Fighting')
-    ('Xenoblade Chronicles', 04-06-2012, 'Nintendo', 'T', 'Action role-playing')
-    ('Metal Gear', 07-07-1987, 'Konami', 'N/A', 'Stealth')
-    ('Doom 64', 03-31-1997, 'Midway Games', 'M', 'First-person shooting')
-    ('Final Fantasy XIII', 03-09-2010, 'Square Enix', 'T', 'Turn-based role-playing')
-	The Wonderful 101
+
+# Game Date
+
+Game (*id, title, release_date, genre, publisher, ESRB_Rating, youtube_link, image_link1, image_link2, image_link1)
+
+## The Wonderful 101
+
+	'The Wonderful 101'
+	09-15-2013
+	'Action'
+	'Nintendo'
+	'T'
+	//www.youtube.com/embed/z9ueBmNNGus
 	http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png
 	http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg
 	http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg
 
-	Call of Duty 4
+## Call of Duty 4
+
+	'Call of Duty 4: Modern Warfare'
+	11-05-2007
+	'First-person shooting'
+	'Activision'
+	'M'
+	//www.youtube.com/embed/JmZ1WQ_GEKg
 	http://www.maclife.com/files/u220903/call_of_duty_4_modern_warfare_620px.png
 	http://cdn.macrumors.com/article-new/2012/06/NewImage32.png
 	http://img3.wikia.nocookie.net/__cb20120604062555/callofduty/images/7/7e/Operation_Kingfish_2013_group_crop.png
 
-	Grand Theft Auto III
+## Hotel Dusk
+
+	'Hotel Dusk: Room 215'
+	01-22-2007
+	'Point-and-click adventure'
+	'Nintendo'
+	'T'
+	//www.youtube.com/embed/6iVfUWVDLPk
+	http://upload.wikimedia.org/wikipedia/en/5/51/Hotel_Dusk.jpg
+	http://oyster.ignimgs.com/wordpress/write.ign.com/86032/2011/12/dunning.jpg
+	http://www.geekshow.us/wp/wp-content/uploads/2009/03/hotel-dusk-louie.jpg
+
+## Grand Theft Auto III
+
+	'Grand Theft Auto III'
+	10-22-2001
+	'Open-world action-adventure'
+	'Rockstar Games'
+	'M'
+	//www.youtube.com/embed/WUi3davvBmM
 	http://www.slashgear.com/wp-content/uploads/2011/12/gta_3_android_0.png
 	http://cdn.appstorm.net/ipad.appstorm.net/files/2011/12/gtaIII_2.png
 	http://www.gouranga.com/images/gta3/gta3_394.jpg
 	
-	Sonic Advance
+## Sonic Advance
+
+	'Sonic Advance'
+	02-03-2002
+	'Platformer'
+	'THQ'
+	'E'
+	//www.youtube.com/embed/uKuF9v_MWEI
 	http://img841.imageshack.us/img841/5249/s2built002.png
 	http://img.youtube.com/vi/WTwA1O3eumk/0.jpg
 	http://www.friendcodes.com/blog/wp-content/uploads/2013/12/Sonic-Advance-2-Review.png
 
-	Super Smash Bros. Melee
+##Super Smash Bros. Melee
+
+	'Super Smash Bros. Melee'
+	12-03-2001
+	'Fighting'
+	'Nintendo'
+	'T'
+	//www.youtube.com/embed/O0O173xIuO0
 	http://img.gamefaqs.net/box/0/8/7/14087_front.jpg
 	http://faqsmedia.ign.com/faqs/image/ali1mg_ssbm_010.jpg
 	http://www.technologytell.com/gaming/files/2013/07/smash-bros.-melee.jpg
 
+## Xenoblade Chronicles
 
-	Xenoblade Chronicles
+	'Xenoblade Chronicles'
+	04-06-2012
+	'Action role-playing'
+	'Nintendo'
+	'T'
+	//www.youtube.com/embed/N7Xc6in86rs
 	http://upload.wikimedia.org/wikipedia/en/d/d9/Xenoblade_box_artwork.png
 	http://www.vgchartz.com/games/pics/xenoblade-chronicles-958102.jpg
 	http://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Xenoblade-Landscape.jpg/280px-Xenoblade-Landscape.jpg
 
-	Metal Gear
+## Metal Gear
+
+	'Metal Gear'
+	07-07-1987
+	'Stealth'
+	'Konami'
+	'N/A'
+	//www.youtube.com/embed/caG6dkbhAK4
 	http://upload.wikimedia.org/wikipedia/en/b/bd/Metal_Gear_cover.jpg
 	http://static.giantbomb.com/uploads/original/0/4648/2019227-solid.jpg
 	http://einfogames.com/hub/files/2014/02/nes-metal-gear-jeu.jpg
 
+## Doom 64
 
-	Doom 64
+	'Doom 64'
+	03-31-1997
+	'First-person shooting'
+	'Midway Games'
+	'M'
+    //www.youtube.com/embed/eUjItXOa-GM
 	http://img1.wikia.nocookie.net/__cb20080510223920/doom/images/b/b7/Doom_64-box-cover.jpg
 	http://www.pixlbit.com/media/products/6773/57131.jpg
 	http://colinappleby.com/Photos/Doom%2064.jpg
 
+## Final Fantasy XIII
 
-	Final Fantasy XIII
+	'Final Fantasy XIII'
+	03-09-2010
+	'Turn-based role-playing'
+	'Square Enix'
+	'T'
+	//www.youtube.com/embed/eJPbozRomX4
 	http://img3.wikia.nocookie.net/__cb20120614005423/finalfantasy/images/9/94/Final_Fantasy_XIII_Logo.jpg
 	http://86bb71d19d3bcb79effc-d9e6924a0395cb1b5b9f03b7640d26eb.r91.cf1.rackcdn.com/wp-content/uploads/2010/03/final-fantasy-xiii-ps3-theme-unlockable-artwork.jpg
 	http://fc06.deviantart.net/fs51/i/2009/330/1/f/Final_Fantasy_XIII_characters_by_Cloudfan174.png
-
-                          ~model and REST api reference~
 	
-	
-	
-	
-Developer	
-	company Name(pk)
-	date Established()
-	num Employees()
-	status(can be default)
-	
-Platform
-	name(pk)
-	manufactorer()
-	dateReleased()
-	media()
-	generation()
-
-Game
-	title(pk)
-	dateReleased(set)
-	esrb rating()
-	publisher()
-	genre()
-	
-this is the link to our google doc that holds the paper:
+# Google Doc
 
 https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/edit?usp=sharing
