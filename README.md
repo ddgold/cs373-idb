@@ -1,60 +1,130 @@
 cs373-idb
 =========
 
-Developer (*companyName, yearFounded, numEmployees, status)
+# Developer Data
 
-    ('Platinum Games', 2006, 120, 'Active')
-    ('Infinity Ward', 2002, 125, 'Active')
-    ('Cing', 1999, 29, 'Defunct')
-    ('Rockstar Games', 1998, 900, 'Active')
-    ('Dimps', 1990, 181, 'Active')
-    ('HAL Laboratories', 1980, 145, 'Active')
-    ('Monolith Soft', 1999, 108, 'Active')
-    ('Konami', 1969, 5759, 'Active')
-    ('Midway Games', 1988, 540, 'Defunct')
-    ('Square Enix', 2003, 3242, 'Active')
-    
-    Platinum Games
-    -http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg
-    -http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg
-    -http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg
-    Infinity Ward
-    -http://markderidder.squarespace.com/storage/InfinityWard.jpg?__SQUARESPACE_CACHEVERSION=1294423775776
-    -http://i1-news.softpedia-static.com/images/news2/Infinity-Ward-Might-Work-on-New-IP-2.jpg
-    -http://www.infinityward.com/content/dam/atvi/infinityward/web/home-carousel/iw-lobby3.jpg
-    Cing
-    -
-    -
-    -
-    Rockstar Games
-    -http://a1.s6img.com/cdn/0023/p/9307314_1824545_lz.jpg
-    -http://cdn3.whatculture.com/wp-content/uploads/2013/09/rockstar-games-source-944553.jpg
-    -http://cdn.cultofandroid.com/wp-content/uploads/2012/12/rockstargames.jpg
-    Dimps
-    -http://1.bp.blogspot.com/-j6uN4WlB6-c/UWRBgVq_vlI/AAAAAAAACOc/T-9JhqQCMAc/s640/url.png
-    -http://i.kinja-img.com/gawker-media/image/upload/18hh1ux83kghvjpg.jpg
-    -http://blogs.popzara.com/media/12/20100217-sonic_dimps_01.jpg
-    HAL Laboratories
-    -http://media.ignimgs.com/media/ign/imgs/minisites/topN/video-game-makers/top-50-video-game-makers_hal.jpg
-    -http://www.blogcdn.com/www.joystiq.com/media/2011/03/nint-gdc11-keynote-0022.jpg
-    -http://img.gamefaqs.net/screens/c/c/4/gfs_28117_1_2.jpg
-    Monolith Soft
-    -http://gimmegimmegames.com/wp-content/uploads/2012/05/Monolith-Soft-logo.jpg
-    -http://www.gengame.net/wp-content/uploads/2013/02/monolith-soft-3ds.jpg
-    -http://www.blogcdn.com/www.joystiq.com/media/2012/09/monolith-soft.png
-    Konami
-    -https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDMfGhamdXjRpdIO3g-qCrvLso4wlK3Uk_utuA_Xe-sMFZ6sxt
-    -https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRy2iKIhXqjX0V53uOc9whm5k5eDBSJw8bcL1F-8MmKPbXnQdl_
-    -https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYZW55Pr_rojW7OmQOFYL8JnHPgrYXlC4HZAVxqUByk73W2rg5
-    Midway Games
-    -http://ts1.mm.bing.net/th?id=HN.608036973997393664&w=266&h=70&c=7&rs=1&pid=1.7
-    -https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdIanG-CCPXmV-9wbi3mBtuIOcpTa9lSVnBYoVOnBRND0zfwuq
-    -https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSQeCWJ9gfhUHnL7xFopPNk_88KEBew8MUXph_tM82yCRM5Cdv
-    Square Enix
-    -http://ts1.mm.bing.net/th?id=HN.608020111957558560&w=288&h=188&c=7&rs=1&pid=1.7
-    -http://ts3.mm.bing.net/th?id=HN.608052375752346609&w=277&h=125&c=7&rs=1&pid=1.7
-    -http://ts4.mm.bing.net/th?id=HN.607988878956560414&w=252&h=175&c=7&rs=1&pid=1.7
-    
+	Developer (*id, name, date_founded, num_employees, status, address, map_link, image_link1, image_link2, image_link3)
+
+### Platinum Games
+
+	'Platinum Games'
+	2006
+	120
+	'Active'
+	'Umeda Sky Building Tower West 8F,\n1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108'
+	https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed
+	http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg
+	-http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg
+	http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg
+
+### Infinity Ward
+
+	'Infinity Ward'
+	2002
+	125
+	'Active'
+	'15821 Ventura Boulevard,\nSuite 590, Encino, CA 91436'
+	https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=15821+Ventura+Boulevard,+Suite+590,+Encino,+CA+91436&aq=&sll=34.70533,135.489699&sspn=0.008758,0.016512&g=1-1-30+Oyodonaka,+Kita-ku,+Osaka,+531-6108&ie=UTF8&hq=&hnear=15821+Ventura+Blvd,+Encino,+California+91436&ll=34.156041,-118.478162&spn=0.002204,0.004128&t=m&z=14&output=embed
+	http://markderidder.squarespace.com/storage/InfinityWard.jpg?__SQUARESPACE_CACHEVERSION=1294423775776
+	http://i1-news.softpedia-static.com/images/news2/Infinity-Ward-Might-Work-on-New-IP-2.jpg
+	http://www.infinityward.com/content/dam/atvi/infinityward/web/home-carousel/iw-lobby3.jpg
+
+### Cing
+
+	'Cing'
+	1999
+	29
+	'Defunct'
+	'Fukuoka, Japan'
+	null
+	http://elblogdemanu.com/wordpress/wp-content/uploads/2007/08/cing.png
+	https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLZlODn9tXFteFVmJzcyEV7mIRGy0CwawhzO8MXBhl7j8TngH9
+	http://businessboombolton.files.wordpress.com/2011/11/cing.jpg
+
+### Rockstart Games
+
+	'Rockstar Games'
+	1998
+	900
+	'Active'
+	'622 Broadway,\nNew York, NY 10012'
+	https://maps.google.com/maps?client=ubuntu-browser&amp;q=622+Broadway+New+York,+NY+10012&amp;ie=UTF8&amp;hq=&amp;hnear=622+Broadway,+New+York,+10012&amp;t=m&amp;z=14&amp;ll=40.725807,-73.996195&amp;output=embed
+	http://a1.s6img.com/cdn/0023/p/9307314_1824545_lz.jpg
+	http://cdn3.whatculture.com/wp-content/uploads/2013/09/rockstar-games-source-944553.jpg
+	http://cdn.cultofandroid.com/wp-content/uploads/2012/12/rockstargames.jpg
+
+### Dimps
+
+	'Dimps'
+	1990
+	181
+	'Active'
+	4-4-6, Nishinakajima, Yodogawa-ku, Osaka-shi,\nOsaka, 532-0011, Japan
+	https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=4-4-6,+Nishinakajima,+Yodogawa-ku,+Osaka-shi,+Osaka,+532-0011,+Japan&amp;aq=&amp;sll=35.6956,139.769727&amp;sspn=0.017304,0.012381&amp;ie=UTF8&amp;hq=&amp;hnear=Japan,+%C5%8Csaka-fu,+%C5%8Csaka-shi,+Yodogawa-ku,+Nishinakajima,+4+Chome%E2%88%923%E2%88%924+%E3%83%81%E3%82%B5%E3%83%B3%E7%AC%AC%EF%BC%96%E6%96%B0%E5%A4%A7%E9%98%AA&amp;t=m&amp;z=14&amp;ll=34.727226,135.497759&amp;output=embed
+	http://1.bp.blogspot.com/-j6uN4WlB6-c/UWRBgVq_vlI/AAAAAAAACOc/T-9JhqQCMAc/s640/url.png
+	http://i.kinja-img.com/gawker-media/image/upload/18hh1ux83kghvjpg.jpg
+	http://blogs.popzara.com/media/12/20100217-sonic_dimps_01.jpg
+
+### HAL Laboratories
+
+	'HAL Laboratories'
+	1980
+	145
+	'Active'
+	1-22, Kandasuda-cho, Chiyoda-ku,\nTokyo 101-0041, Japan
+	https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Kanda+Sudacho,+Chiyoda,+Tokyo,+Japan&amp;aq=&amp;sll=35.677178,139.736124&amp;sspn=0.017308,0.012381&amp;ie=UTF8&amp;hq=&amp;hnear=Kanda+Sudacho,+Chiyoda,+Tokyo,+Japan&amp;t=m&amp;z=14&amp;ll=35.6956,139.769727&amp;output=embed
+	http://media.ignimgs.com/media/ign/imgs/minisites/topN/video-game-makers/top-50-video-game-makers_hal.jpg
+	http://www.blogcdn.com/www.joystiq.com/media/2011/03/nint-gdc11-keynote-0022.jpg
+	http://img.gamefaqs.net/screens/c/c/4/gfs_28117_1_2.jpg
+
+### Monolith Soft
+
+	'Monolith Soft'
+	1999
+	108
+	'Active'
+	Tokyo, Japan
+	null
+	http://blogocio.net/imagenes/logos-empresas_87622_pp.jpg
+	http://wiiudaily.com/wp-content/uploads/2011/06/xenoblade-wii-u.jpg 
+	http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/06/a4/06a427e42a91d6fa76e50e3be469503a.jpg?itok=Kc1akgeA
+
+### Konami
+
+	'Konami'
+	1969
+	5759
+	'Active'
+	9-7-2, Akasaka, Minato-ku,\nTokyo 107-8323, Japan
+	https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=9-7-2,+Akasaka,+Minato-ku,+Tokyo+107-8323,+Japan&amp;aq=&amp;sll=35.696615,139.708657&amp;sspn=0.017304,0.012381&amp;ie=UTF8&amp;hq=&amp;hnear=Japan,+T%C5%8Dky%C5%8D-to,+Minato-ku,+Akasaka,+3+Chome%E2%88%929%E2%88%9215+%E7%AC%AC%EF%BC%92%E3%82%AF%E3%83%AF%E3%83%A0%E3%83%A9%E3%83%93%E3%83%AB&amp;t=m&amp;z=14&amp;ll=35.677178,139.736124&amp;output=embed
+	http://media1.gameinformer.com/imagefeed/featured/konami/konamilogo125.gif
+	http://bulk2.destructoid.com/ul/134757-konami_header.jpg
+	http://ocremix.org/files/images/games/ps1/8/metal-gear-solid-ps1-cover-front-eu-47060.jpg
+
+### Midway Game
+
+	'Midway Games'
+	1988
+	540
+	'Defunct'
+	Chicago, Illinois, U.S.
+	null
+	http://cdn1-www.playstationlifestyle.net/assets/uploads/2009/08/midway-logo.jpg
+	http://img3.wikia.nocookie.net/__cb20100825154942/mk_/images/8/81/MK_2011_2ndlogo.png
+	http://gamingtrend.com/wp-content/uploads/2012/11/midway_logo-533x400.jpg
+
+### Square Enix
+
+	'Square Enix'
+	2003
+	3242
+	'Active'
+	6-27-30 Shinjuku, Shinjuku-ku,\nTokyo 160-8430, Japan
+	https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=6-27-30+Shinjuku,+Shinjuku-ku,+Tokyo+160-8430,+Japan&amp;aq=&amp;sll=35.696615,139.708657&amp;sspn=0.017304,0.012381&amp;ie=UTF8&amp;hq=&amp;hnear=6+Chome-27-30+Shinjuku,+Shinjuku-ku,+T%C5%8Dky%C5%8D-to,+Japan&amp;t=m&amp;z=14&amp;ll=35.696615,139.708657&amp;output=embed
+	http://www.dsksic.com/images/media/66_Square_Enix_logo.jpg
+	http://www.nonfictiongaming.com/wp-content/uploads/2012/08/squaresoft.gif
+	http://wikicheats.gametrailers.com/images/b/b3/Final_Fantasy_VII_Front_Page.jpg
+
 
 
 Platform (*name, manufacturer, dateReleased, mediaFormat, generation)
@@ -70,25 +140,25 @@ Platform (*name, manufacturer, dateReleased, mediaFormat, generation)
     ('Nintendo 64', 'Nintendo', 09-29-1996, 'Physical (cartridges)', 5)
     ('Playstation 3', 'Sony', 11-17-2006, 'Physical (disks) and digital', 7)
     Wii U
-	-http://www.nintendo.com/images/wiiu/features/hw-gallery/black1.jpg
-	-http://www.nintendo.com/images/wiiu/builtinsoftware/miistudio/img_camera.jpg
-	-http://media.t3.com/img/resized/ni/xl_NintendoWiiU_7_624.jpg
+	-
+	-
+	-
     Xbox 360
-	-http://cdn3.sbnation.com/products/large/1701/xbox360.jpg?1316097758
-	-http://hothardware.com/articleimages/Item1242/xbox360balllogolarge.jpg
-	-http://cdn.redmondpie.com/wp-content/uploads/2012/10/99-Xbox-360.png
+	-
+	-
+	-
     Nintendo DS
-	-http://img3.wikia.nocookie.net/__cb20090830175543/aceattorney/images/b/b2/Dsorg.jpg
-	-http://shockingvideogamesecrets.files.wordpress.com/2012/01/ds.jpg
-	-http://www.slipperybrick.com/wp-content/uploads/2008/11/ds-bundle-mario-1.jpg
+	-
+	-
+	-
     Playstation 2
-	-http://www.blogcdn.com/www.joystiq.com/media/2013/01/ps2.jpg
-	-http://static.giantbomb.com/uploads/scale_small/3/30036/909758-image.php.jpg
-	-http://www.logodesignblog.net/logos/playstation2logo-logo.jpg
+	-
+	-
+	-
     Game Boy Advance
-	-http://img1.wikia.nocookie.net/__cb20121027143449/nintendo/en/images/a/aa/Game_Boy_Advance_Purple_Model.png
-	-http://ecx.images-amazon.com/images/I/41WXX6GQR5L.jpg
-	-http://www.cashforgamers.com/images/C/Game_Boy_Advance-logo-BDC4BB1A9E-seeklogo.com.jpg
+	-
+	-
+	-
     Nintendo Gamecube
 	-http://fontmeme.com/images/Gamecube-Logo.jpg
 	-http://previewcf.turbosquid.com/Preview/Content_2009_07_14__05_36_27/gamecube-0000.jpgf7efe6c7-766d-4b04-a71e-ea86d373f79eLarger.jpg
@@ -110,16 +180,13 @@ Platform (*name, manufacturer, dateReleased, mediaFormat, generation)
 	-http://gamefans.com/wp-content/uploads/2012/11/ps3-games-collection.jpg
 	-http://img-new.cgtrader.com/items/10715/sony_playstation_3_3d_model_83ad3219-884a-42ff-b5e5-139458c0a981.jpg
 
-funny:http://a.tgcdn.net/images/products/zoom/1762_nerdtendo_gamebooze_8oz_flask.jpg
 
 
+# Game Data
 
+	Game (*id, title, release_date, genre, publisher, ESRB_Rating, youtube_link, image_link1, image_link2, image_link3)
 
-# Game Date
-
-Game (*id, title, release_date, genre, publisher, ESRB_Rating, youtube_link, image_link1, image_link2, image_link1)
-
-## The Wonderful 101
+### The Wonderful 101
 
 	'The Wonderful 101'
 	09-15-2013
@@ -131,7 +198,7 @@ Game (*id, title, release_date, genre, publisher, ESRB_Rating, youtube_link, ima
 	http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg
 	http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg
 
-## Call of Duty 4
+### Call of Duty 4
 
 	'Call of Duty 4: Modern Warfare'
 	11-05-2007
@@ -143,7 +210,7 @@ Game (*id, title, release_date, genre, publisher, ESRB_Rating, youtube_link, ima
 	http://cdn.macrumors.com/article-new/2012/06/NewImage32.png
 	http://img3.wikia.nocookie.net/__cb20120604062555/callofduty/images/7/7e/Operation_Kingfish_2013_group_crop.png
 
-## Hotel Dusk
+### Hotel Dusk
 
 	'Hotel Dusk: Room 215'
 	01-22-2007
@@ -155,7 +222,7 @@ Game (*id, title, release_date, genre, publisher, ESRB_Rating, youtube_link, ima
 	http://oyster.ignimgs.com/wordpress/write.ign.com/86032/2011/12/dunning.jpg
 	http://www.geekshow.us/wp/wp-content/uploads/2009/03/hotel-dusk-louie.jpg
 
-## Grand Theft Auto III
+### Grand Theft Auto III
 
 	'Grand Theft Auto III'
 	10-22-2001
@@ -167,7 +234,7 @@ Game (*id, title, release_date, genre, publisher, ESRB_Rating, youtube_link, ima
 	http://cdn.appstorm.net/ipad.appstorm.net/files/2011/12/gtaIII_2.png
 	http://www.gouranga.com/images/gta3/gta3_394.jpg
 	
-## Sonic Advance
+### Sonic Advance
 
 	'Sonic Advance'
 	02-03-2002
@@ -179,7 +246,7 @@ Game (*id, title, release_date, genre, publisher, ESRB_Rating, youtube_link, ima
 	http://img.youtube.com/vi/WTwA1O3eumk/0.jpg
 	http://www.friendcodes.com/blog/wp-content/uploads/2013/12/Sonic-Advance-2-Review.png
 
-##Super Smash Bros. Melee
+### Super Smash Bros. Melee
 
 	'Super Smash Bros. Melee'
 	12-03-2001
@@ -191,7 +258,7 @@ Game (*id, title, release_date, genre, publisher, ESRB_Rating, youtube_link, ima
 	http://faqsmedia.ign.com/faqs/image/ali1mg_ssbm_010.jpg
 	http://www.technologytell.com/gaming/files/2013/07/smash-bros.-melee.jpg
 
-## Xenoblade Chronicles
+### Xenoblade Chronicles
 
 	'Xenoblade Chronicles'
 	04-06-2012
@@ -203,7 +270,7 @@ Game (*id, title, release_date, genre, publisher, ESRB_Rating, youtube_link, ima
 	http://www.vgchartz.com/games/pics/xenoblade-chronicles-958102.jpg
 	http://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Xenoblade-Landscape.jpg/280px-Xenoblade-Landscape.jpg
 
-## Metal Gear
+### Metal Gear
 
 	'Metal Gear'
 	07-07-1987
@@ -215,7 +282,7 @@ Game (*id, title, release_date, genre, publisher, ESRB_Rating, youtube_link, ima
 	http://static.giantbomb.com/uploads/original/0/4648/2019227-solid.jpg
 	http://einfogames.com/hub/files/2014/02/nes-metal-gear-jeu.jpg
 
-## Doom 64
+### Doom 64
 
 	'Doom 64'
 	03-31-1997
@@ -227,7 +294,7 @@ Game (*id, title, release_date, genre, publisher, ESRB_Rating, youtube_link, ima
 	http://www.pixlbit.com/media/products/6773/57131.jpg
 	http://colinappleby.com/Photos/Doom%2064.jpg
 
-## Final Fantasy XIII
+### Final Fantasy XIII
 
 	'Final Fantasy XIII'
 	03-09-2010
@@ -238,7 +305,9 @@ Game (*id, title, release_date, genre, publisher, ESRB_Rating, youtube_link, ima
 	http://img3.wikia.nocookie.net/__cb20120614005423/finalfantasy/images/9/94/Final_Fantasy_XIII_Logo.jpg
 	http://86bb71d19d3bcb79effc-d9e6924a0395cb1b5b9f03b7640d26eb.r91.cf1.rackcdn.com/wp-content/uploads/2010/03/final-fantasy-xiii-ps3-theme-unlockable-artwork.jpg
 	http://fc06.deviantart.net/fs51/i/2009/330/1/f/Final_Fantasy_XIII_characters_by_Cloudfan174.png
-	
+
+
+
 # Google Doc
 
 https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/edit?usp=sharing
