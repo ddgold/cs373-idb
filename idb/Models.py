@@ -11,7 +11,9 @@ class Platform(models.Model):
     generation = models.SmallIntegerField()
     youtube_link = models.CharField(max_length=255)
     twitter_link = models.CharField(max_length=255)
-    image_link = models.CharField(max_length=255)
+    image_link1 = models.CharField(max_length=255)
+    image_link2 = models.CharField(max_length=255)
+    image_link3 = models.CharField(max_length=255)
     map_link = models.CharField(max_length=255)
 
     def __unicode__(self):
@@ -27,9 +29,11 @@ class Developer(models.Model):
     date_founded = models.DateField('date established')
     num_employees = models.IntegerField()
     status = models.CharField(max_length=255)
-    image_link = models.CharField(max_length=255)
     map_link = models.CharField(max_length=255)
-
+    image_link1 = models.CharField(max_length=255)
+    image_link2 = models.CharField(max_length=255)
+    image_link3 = models.CharField(max_length=255)
+    
     platforms = models.ManyToManyField(Platform)
 
 
@@ -48,8 +52,10 @@ class Game(models.Model):
     publisher = models.CharField(max_length=255)
     ESRB_rating = models.CharField(max_length=255)
     youtube_link = models.CharField(max_length=255)
-    image_link = models.CharField(max_length=255)
-
+    image_link1 = models.CharField(max_length=255)
+    image_link2 = models.CharField(max_length=255)
+    image_link3 = models.CharField(max_length=255)
+    
     developer = models.ForeignKey(Developer)
     platforms = models.ManyToManyField(Platform)
 
