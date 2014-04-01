@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}
+IVGDb &middot; Developer | {{ developer.name }}
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading"><h1>{{ developer.name }}</h1></div>
+    <div class="panel-body">
+      <img class="img-responsive" src="{{ developer.image_link1 }}">
+      </img>
+    </div>
+
+    <!-- List group -->
+    <ul class="list-group">
+      <li class="list-group-item"><b>Founded:</b> {{ developer.date_founded }}</li>
+      <li class="list-group-item"><b>Number of Employees:</b> {{ developer.num_employees }}</li>
+      <li class="list-group-item"><b>Status:</b> {{ developer.status }}</li>
+      <li class="list-group-item"><b>Platform(s):</b> 
+        {% for p in developer.platforms.all %}
+          <a href="/platform/{{ p.pk }}/">{{ p.name }} </a>
+        {% endfor %}
+      </li>
+      <li class="list-group-item"><b>Game(s):</b> 
+        {% for g in developer.game_set.all %}
+          <a href="/game/{{ g.pk }}/">{{ g.title }} </a>
+        {% endfor %}
+      </li>
+      <div class="row">
+        <div class="col-md-6">
+          <li class="list-group-item">
+            <b>Headquarters:</b><br />
+            15821 Ventura Boulevard, <br />
+            Suite 590, Encino, CA 91436<br />
+            <div class="media-container">
+              <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=15821+Ventura+Boulevard,+Suite+590,+Encino,+CA+91436&amp;aq=&amp;sll=34.70533,135.489699&amp;sspn=0.008758,0.016512&amp;g=1-1-30+Oyodonaka,+Kita-ku,+Osaka,+531-6108&amp;ie=UTF8&amp;hq=&amp;hnear=15821+Ventura+Blvd,+Encino,+California+91436&amp;ll=34.156041,-118.478162&amp;spn=0.002204,0.004128&amp;t=m&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=15821+Ventura+Boulevard,+Suite+590,+Encino,+CA+91436&amp;aq=&amp;sll=34.70533,135.489699&amp;sspn=0.008758,0.016512&amp;g=1-1-30+Oyodonaka,+Kita-ku,+Osaka,+531-6108&amp;ie=UTF8&amp;hq=&amp;hnear=15821+Ventura+Blvd,+Encino,+California+91436&amp;ll=34.156041,-118.478162&amp;spn=0.002204,0.004128&amp;t=m&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+            </div>
+          </li>
+        </div>
+      </div>
+      <li class="list-group-item">
+      
+      </li>
+    </ul>
+  </div>
+
+</div>
+{% endblock content %}
