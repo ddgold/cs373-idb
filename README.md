@@ -19,7 +19,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	'Umeda Sky Building Tower West 8F,\n1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108'
 	https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed
 	http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg
-	-http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg
+	http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg
 	http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg
 
 ### Infinity Ward
@@ -46,7 +46,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLZlODn9tXFteFVmJzcyEV7mIRGy0CwawhzO8MXBhl7j8TngH9
 	http://businessboombolton.files.wordpress.com/2011/11/cing.jpg
 
-### Rockstart Games
+### Rockstar Games
 
 	'Rockstar Games'
 	1998
@@ -143,7 +143,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	11-18-2012
 	'Physical (disks) and digital'
 	8
-	http://www.youtube.com/embed/qhlDHeCT-Q8
+	//http://www.youtube.com/embed/qhlDHeCT-Q8
 	https://twitter.com/wiiudaily
 	http://g-ecx.images-amazon.com/images/G/01/aplus/detail-page/B009AGXH64hardware.jpg
 	http://www.dailynintendo.nl/wp-content/uploads/2011/05/wii-u.jpg
@@ -156,7 +156,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	11-22-2005
 	'Physical (disks) and digital'
 	7
-	http://www.youtube.com/embed/n0VOM7e5Hug
+	//http://www.youtube.com/embed/n0VOM7e5Hug
 	https://twitter.com/Xbox
 	http://static.giantbomb.com/uploads/scale_small/2/26636/2352651-xbox_360_busca_descontos.jpg
 	http://bitwisecomputerrepair.com/wp-content/uploads/2010/11/xbox-360-versions.jpg
@@ -169,7 +169,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	11-21-2004
 	'Physical (cartridges) and digital'
 	7
-	http://www.youtube.com/embed/TaA-lYUQom0
+	//http://www.youtube.com/embed/TaA-lYUQom0
 	https://twitter.com/NintendoDSNews
 	http://rotthq.com/wp-content/uploads/nintendo_ds.jpg
 	http://www.atuonline.org/wp-content/uploads/2013/11/nintendo-ds.jpg
