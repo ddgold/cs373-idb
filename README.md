@@ -140,7 +140,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 
 	'Wii U'
 	'Nintendo'
-	11-18-2012
+	11/18/2012
 	'Physical (disks) and digital'
 	8
 	//http://www.youtube.com/embed/qhlDHeCT-Q8
@@ -153,7 +153,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 
 	'Xbox 360'
 	'Microsoft'
-	11-22-2005
+	11/22/2005
 	'Physical (disks) and digital'
 	7
 	//http://www.youtube.com/embed/n0VOM7e5Hug
@@ -166,7 +166,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 
 	'Nintendo DS'
 	'Nintendo'
-	11-21-2004
+	11/21/2004
 	'Physical (cartridges) and digital'
 	7
 	//http://www.youtube.com/embed/TaA-lYUQom0
@@ -179,7 +179,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 
 	'Playstation 2'
 	'Sony'
-	03-04-2000
+	03/04/2000
 	'Physical (disks)'
 	6
 	//www.youtube.com/embed/xtPyB6b-Pjc
@@ -192,7 +192,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 
 	'Game Boy Advance'
 	'Nintendo'
-	06-11-2001
+	06/11/2001
 	'Physical (cartridges)'
 	6
 	//www.youtube.com/embed/pC1HNYNg04I
@@ -205,7 +205,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 
 	'Gamecube'
 	'Nintendo'
-	09-18-2001
+	09/18/2001
 	'Physical (mini-disks)'
 	6
 	//www.youtube.com/embed/nXmksX1t3Bg
@@ -218,7 +218,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 
 	'Wii'
 	'Nintendo'
-	11-19-2006
+	11/19/2006
 	'Physical (disks) and digital'
 	7
 	//www.youtube.com/embed/EqqtQQYIch8
@@ -231,7 +231,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 
 	'MSX'
 	'Microsoft'
-	06-16-1983
+	06/16/1983
 	'Physical (cartridges)'
 	3
 	//www.youtube.com/embed/HxS-cY4xEpw
@@ -244,7 +244,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 
 	'64'
 	'Nintendo'
-	09-29-1996
+	09/29/1996
 	'Physical (cartridges)'
 	5
 	//www.youtube.com/embed/lDoZBnkdvOU
@@ -257,7 +257,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 
 	'Playstation 3'
 	'Sony'
-	11-17-2006
+	11/17/2006
 	'Physical (disks) and digital'
 	7
 	//www.youtube.com/embed/qKt3HzKtEls
@@ -275,11 +275,11 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 ### The Wonderful 101
 
 	'The Wonderful 101'
-	09-15-2013
+	09/15/2013
 	'Action'
 	'Nintendo'
 	'T'
-	//www.youtube.com/embed/z9ueBmNNGus
+	www.youtube.com/embed/z9ueBmNNGus
 	http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png
 	http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg
 	http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg
@@ -287,11 +287,11 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 ### Call of Duty 4
 
 	'Call of Duty 4: Modern Warfare'
-	11-05-2007
+	11/05/2007
 	'First-person shooting'
 	'Activision'
 	'M'
-	//www.youtube.com/embed/JmZ1WQ_GEKg
+	www.youtube.com/embed/JmZ1WQ_GEKg
 	http://www.maclife.com/files/u220903/call_of_duty_4_modern_warfare_620px.png
 	http://cdn.macrumors.com/article-new/2012/06/NewImage32.png
 	http://img3.wikia.nocookie.net/__cb20120604062555/callofduty/images/7/7e/Operation_Kingfish_2013_group_crop.png
@@ -299,11 +299,11 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 ### Hotel Dusk
 
 	'Hotel Dusk: Room 215'
-	01-22-2007
+	01/22/2007
 	'Point-and-click adventure'
 	'Nintendo'
 	'T'
-	//www.youtube.com/embed/6iVfUWVDLPk
+	www.youtube.com/embed/6iVfUWVDLPk
 	http://upload.wikimedia.org/wikipedia/en/5/51/Hotel_Dusk.jpg
 	http://oyster.ignimgs.com/wordpress/write.ign.com/86032/2011/12/dunning.jpg
 	http://www.geekshow.us/wp/wp-content/uploads/2009/03/hotel-dusk-louie.jpg
@@ -311,11 +311,11 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 ### Grand Theft Auto III
 
 	'Grand Theft Auto III'
-	10-22-2001
+	10/22/2001
 	'Open-world action-adventure'
 	'Rockstar Games'
 	'M'
-	//www.youtube.com/embed/WUi3davvBmM
+	www.youtube.com/embed/WUi3davvBmM
 	http://www.slashgear.com/wp-content/uploads/2011/12/gta_3_android_0.png
 	http://cdn.appstorm.net/ipad.appstorm.net/files/2011/12/gtaIII_2.png
 	http://www.gouranga.com/images/gta3/gta3_394.jpg
@@ -323,11 +323,11 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 ### Sonic Advance
 
 	'Sonic Advance'
-	02-03-2002
+	02/03/2002
 	'Platformer'
 	'THQ'
 	'E'
-	//www.youtube.com/embed/uKuF9v_MWEI
+	www.youtube.com/embed/uKuF9v_MWEI
 	http://img841.imageshack.us/img841/5249/s2built002.png
 	http://img.youtube.com/vi/WTwA1O3eumk/0.jpg
 	http://www.friendcodes.com/blog/wp-content/uploads/2013/12/Sonic-Advance-2-Review.png
@@ -335,11 +335,11 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 ### Super Smash Bros. Melee
 
 	'Super Smash Bros. Melee'
-	12-03-2001
+	12/03/2001
 	'Fighting'
 	'Nintendo'
 	'T'
-	//www.youtube.com/embed/O0O173xIuO0
+	www.youtube.com/embed/O0O173xIuO0
 	http://img.gamefaqs.net/box/0/8/7/14087_front.jpg
 	http://faqsmedia.ign.com/faqs/image/ali1mg_ssbm_010.jpg
 	http://www.technologytell.com/gaming/files/2013/07/smash-bros.-melee.jpg
@@ -347,11 +347,11 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 ### Xenoblade Chronicles
 
 	'Xenoblade Chronicles'
-	04-06-2012
+	04/06/2012
 	'Action role-playing'
 	'Nintendo'
 	'T'
-	//www.youtube.com/embed/N7Xc6in86rs
+	www.youtube.com/embed/N7Xc6in86rs
 	http://upload.wikimedia.org/wikipedia/en/d/d9/Xenoblade_box_artwork.png
 	http://www.vgchartz.com/games/pics/xenoblade-chronicles-958102.jpg
 	http://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Xenoblade-Landscape.jpg/280px-Xenoblade-Landscape.jpg
@@ -359,11 +359,11 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 ### Metal Gear
 
 	'Metal Gear'
-	07-07-1987
+	07/07/1987
 	'Stealth'
 	'Konami'
 	'N/A'
-	//www.youtube.com/embed/caG6dkbhAK4
+	www.youtube.com/embed/caG6dkbhAK4
 	http://upload.wikimedia.org/wikipedia/en/b/bd/Metal_Gear_cover.jpg
 	http://static.giantbomb.com/uploads/original/0/4648/2019227-solid.jpg
 	http://einfogames.com/hub/files/2014/02/nes-metal-gear-jeu.jpg
@@ -371,11 +371,11 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 ### Doom 64
 
 	'Doom 64'
-	03-31-1997
+	03/31/1997
 	'First-person shooting'
 	'Midway Games'
 	'M'
-    //www.youtube.com/embed/eUjItXOa-GM
+    www.youtube.com/embed/eUjItXOa-GM
 	http://img1.wikia.nocookie.net/__cb20080510223920/doom/images/b/b7/Doom_64-box-cover.jpg
 	http://www.pixlbit.com/media/products/6773/57131.jpg
 	http://colinappleby.com/Photos/Doom%2064.jpg
@@ -383,11 +383,11 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 ### Final Fantasy XIII
 
 	'Final Fantasy XIII'
-	03-09-2010
+	03/09/2010
 	'Turn-based role-playing'
 	'Square Enix'
 	'T'
-	//www.youtube.com/embed/eJPbozRomX4
+	www.youtube.com/embed/eJPbozRomX4
 	http://img3.wikia.nocookie.net/__cb20120614005423/finalfantasy/images/9/94/Final_Fantasy_XIII_Logo.jpg
 	http://86bb71d19d3bcb79effc-d9e6924a0395cb1b5b9f03b7640d26eb.r91.cf1.rackcdn.com/wp-content/uploads/2010/03/final-fantasy-xiii-ps3-theme-unlockable-artwork.jpg
 	http://fc06.deviantart.net/fs51/i/2009/330/1/f/Final_Fantasy_XIII_characters_by_Cloudfan174.png
