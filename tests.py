@@ -38,8 +38,8 @@ wii_u = {
 	"name": "Wii U",
 	"manufacturer": "Nintendo",
 	"release_date": "11-18-2012",
-	"generation": "Physical (disks) and digital",
-	"media_format": 8,
+	"generation": 8,
+	"media_format": "Physical (disks) and digital",
 	"image_link": ["http://timenerdworld.files.wordpress.com/2012/11/top10_gadgets_wiiu.jpg?w=480&h=320&crop=1"],
 	"youtube_link": "//www.youtube.com/embed/qhlDHeCT-Q8",
 	"twitter_link": "https://twitter.com/wiiudaily"
