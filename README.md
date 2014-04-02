@@ -144,7 +144,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	'Physical (disks) and digital'
 	8
 	//http://www.youtube.com/embed/qhlDHeCT-Q8
-	https://twitter.com/wiiudaily
+	446085251077373952
 	http://g-ecx.images-amazon.com/images/G/01/aplus/detail-page/B009AGXH64hardware.jpg
 	http://www.dailynintendo.nl/wp-content/uploads/2011/05/wii-u.jpg
 	http://blogs-images.forbes.com/erikkain/files/2012/11/blackcontroller_big-1.jpg
@@ -157,7 +157,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	'Physical (disks) and digital'
 	7
 	//http://www.youtube.com/embed/n0VOM7e5Hug
-	https://twitter.com/Xbox
+	446089933564805120
 	http://static.giantbomb.com/uploads/scale_small/2/26636/2352651-xbox_360_busca_descontos.jpg
 	http://bitwisecomputerrepair.com/wp-content/uploads/2010/11/xbox-360-versions.jpg
 	http://www.maximumpc.com/files/u69/xbox_360_0.jpg
@@ -170,7 +170,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	'Physical (cartridges) and digital'
 	7
 	//http://www.youtube.com/embed/TaA-lYUQom0
-	https://twitter.com/NintendoDSNews
+	446090501683294208
 	http://rotthq.com/wp-content/uploads/nintendo_ds.jpg
 	http://www.atuonline.org/wp-content/uploads/2013/11/nintendo-ds.jpg
 	http://images.allstarvideogames.com/console/47.jpg
@@ -183,7 +183,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	'Physical (disks)'
 	6
 	//www.youtube.com/embed/xtPyB6b-Pjc
-	https://twitter.com/PlayStation
+	451487729121890304
 	http://img4.wikia.nocookie.net/__cb20110306023908/sonic/images/4/42/7932420_440_1.gif
 	https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2HanJNmxrIiHUQZKqgRMSe5cYhtFM3GzQ6bko4v23tRuKrrNVcQ
 	http://cdn.us.playstation.com/pscomauth/groups/public/documents/webasset/ps_bg_ps2_landing_overview.png
@@ -194,14 +194,14 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	'Nintendo'
 	06-11-2001
 	'Physical (cartridges)'
-	5
+	6
 	//www.youtube.com/embed/pC1HNYNg04I
-	https://twitter.com/NintendoAmerica
+	451488919134027776
 	http://www.actiontrip.com/images/nintendo-game-boy-advance.jpg
 	http://ecx.images-amazon.com/images/I/41X3B28XR7L.jpg
 	http://1.bp.blogspot.com/-P9X8G_gKZ6w/TmM_2oEF_5I/AAAAAAAAAPM/7sPxkMEYVxs/s1600/a-lot-16-pokemon-gba-games-for-gameboy-advance-sp-nds-0e5e5.JPG
 
-### Gamecude
+### Gamecube
 
 	'Gamecube'
 	'Nintendo'
@@ -209,7 +209,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	'Physical (mini-disks)'
 	6
 	//www.youtube.com/embed/nXmksX1t3Bg
-	https://twitter.com/NintendoAmerica
+	451488919134027776
 	http://fontmeme.com/images/Gamecube-Logo.jpg
 	http://previewcf.turbosquid.com/Preview/Content_2009_07_14__05_36_27/gamecube-0000.jpgf7efe6c7-766d-4b04-a71e-ea86d373f79eLarger.jpg
 	http://img.bhs4.com/19/a/19ad5b043abb2ce916a1febd86a3f493028b8758_large.jpg
@@ -222,7 +222,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	'Physical (disks) and digital'
 	7
 	//www.youtube.com/embed/EqqtQQYIch8
-	https://twitter.com/NewNintendoWiiU
+    451489591527104512
 	http://fontmeme.com/images/Wii-Logo.jpg
 	http://warrencbennett.files.wordpress.com/2013/12/600px-wii-console.png
 	http://i00.i.aliimg.com/wsphoto/v4/832076106_1/1PCS-Wireless-font-b-Remote-b-font-font-b-Controller-b-font-for-font-b-Nintendo.jpg
@@ -233,9 +233,9 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	'Microsoft'
 	06-16-1983
 	'Physical (cartridges)'
-	2
+	3
 	//www.youtube.com/embed/HxS-cY4xEpw
-	https://twitter.com/Microsoft
+    451490288708497408
 	http://img295.imageshack.us/img295/8623/msxmainmenu.jpg
 	http://pdroms.de/wp-content/uploads/2011/07/20110708_fmsx_v3.5.1_(beta)_(msx_emu_for_android).png
 	http://jscustom.theoldcomputer.com/images/manufacturers_systems/MSX/MSX2-Plus/893416MSX2+%20Sony_HB-F1XV_12.jpg
@@ -248,7 +248,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	'Physical (cartridges)'
 	5
 	//www.youtube.com/embed/lDoZBnkdvOU
-	https://twitter.com/NintendoAmerica
+    451488919134027776
 	http://m1.behance.net/rendition/modules/30406417/disp/c08385272ae074ace11227af39b3cdea.jpg
 	http://cleangeeks.com/wp-content/uploads/2013/10/zelda-gray-600x600.jpg
 	http://www.nowhereelse.fr/wp-content/uploads/2013/11/Nintendo-N64-Couleur-Lekki-01.jpg
@@ -261,7 +261,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	'Physical (disks) and digital'
 	7
 	//www.youtube.com/embed/qKt3HzKtEls
-	https://twitter.com/PlayStation
+	451487729121890304
 	http://s3.thcdn.com/productimg/0/600/600/59/10243759-1283942237-622000.jpg
 	http://gamefans.com/wp-content/uploads/2012/11/ps3-games-collection.jpg
 	http://img-new.cgtrader.com/items/10715/sony_playstation_3_3d_model_83ad3219-884a-42ff-b5e5-139458c0a981.jpg

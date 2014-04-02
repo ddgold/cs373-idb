@@ -1,0 +1,162 @@
+[
+    {
+        "model": "idb.platform",
+        "pk": 1,
+        "fields": {
+            "name": "Wii U",
+            "manufacturer": "Nintendo",
+            "release_date": "2012-11-18",
+            "media_format": "Physical (disks) and digital",
+            "generation": 8,
+            "youtube_link": "http://www.youtube.com/embed/qhlDHeCT-Q8",
+            "twitter_link": "446085251077373952",
+            "image_link1": "http://g-ecx.images-amazon.com/images/G/01/aplus/detail-page/B009AGXH64hardware.jpg",
+            "image_link2": "http://www.dailynintendo.nl/wp-content/uploads/2011/05/wii-u.jpg",
+            "image_link3": "http://blogs-images.forbes.com/erikkain/files/2012/11/blackcontroller_big-1.jpg"
+        }
+    },
+    {
+        "model": "idb.platform",
+        "pk": 2,
+        "fields": {
+            "name": "Xbox 360",
+            "manufacturer": "Microsoft",
+            "release_date": "2005-11-15",
+            "media_format": "Physical (disks) and digital",
+            "generation": 7,
+            "youtube_link": "http://www.youtube.com/embed/n0VOM7e5Hug",
+            "twitter_link": "446089933564805120",
+            "image_link1": "http://static.giantbomb.com/uploads/scale_small/2/26636/2352651-xbox_360_busca_descontos.jpg",
+            "image_link2": "http://bitwisecomputerrepair.com/wp-content/uploads/2010/11/xbox-360-versions.jpg",
+            "image_link3": "http://www.maximumpc.com/files/u69/xbox_360_0.jpg"
+        }
+    },
+    {
+        "model": "idb.platform",
+        "pk": 3,
+        "fields": {
+            "name": "Nintendo DS",
+            "manufacturer": "Nintendo",
+            "release_date": "2004-11-24",
+            "media_format": "Physical (cartridges) and digital",
+            "generation": 7,
+            "youtube_link": "http://www.youtube.com/embed/TaA-lYUQom0",
+            "twitter_link": "446090501683294208",
+            "image_link1": "http://rotthq.com/wp-content/uploads/nintendo_ds.jpg",
+            "image_link2": "http://www.atuonline.org/wp-content/uploads/2013/11/nintendo-ds.jpg",
+            "image_link3": "http://images.allstarvideogames.com/console/47.jpg"
+        }
+    },
+    {
+        "model": "idb.platform",
+        "pk": 4,
+        "fields": {
+            "name": "Playstation 2",
+            "manufacturer": "Sony",
+            "release_date": "2000-03-04",
+            "media_format": "Physical (disks)",
+            "generation": 6,
+            "youtube_link": "http://www.youtube.com/embed/xtPyB6b-Pjc",
+            "twitter_link": "451487729121890304",
+            "image_link1": "http://img4.wikia.nocookie.net/__cb20110306023908/sonic/images/4/42/7932420_440_1.gif",
+            "image_link2": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2HanJNmxrIiHUQZKqgRMSe5cYhtFM3GzQ6bko4v23tRuKrrNVcQ",
+            "image_link3": "http://cdn.us.playstation.com/pscomauth/groups/public/documents/webasset/ps_bg_ps2_landing_overview.png"
+        }
+    },
+    {
+        "model": "idb.platform",
+        "pk": 5,
+        "fields": {
+            "name": "Game Boy Advance",
+            "manufacturer": "Nintendo",
+            "release_date": "2001-09-18",
+            "media_format": "Physical (cartridges)",
+            "generation": 6,
+            "youtube_link": "http://www.youtube.com/embed/pC1HNYNg04I",
+            "twitter_link": "451488919134027776",
+            "image_link1": "http://www.actiontrip.com/images/nintendo-game-boy-advance.jpg",
+            "image_link2": "http://ecx.images-amazon.com/images/I/41X3B28XR7L.jpg",
+            "image_link3": "http://1.bp.blogspot.com/-P9X8G_gKZ6w/TmM_2oEF_5I/AAAAAAAAAPM/7sPxkMEYVxs/s1600/a-lot-16-pokemon-gba-games-for-gameboy-advance-sp-nds-0e5e5.JPG"
+        }
+    },
+    {
+        "model": "idb.platform",
+        "pk": 6,
+        "fields": {
+            "name": "GameCube",
+            "manufacturer": "Nintendo",
+            "release_date": "2001-06-11",
+            "media_format": "Physical (mini-disks)",
+            "generation": 6,
+            "youtube_link": "http://www.youtube.com/embed/nXmksX1t3Bg",
+            "twitter_link": "451488919134027776",
+            "image_link1": "http://fontmeme.com/images/Gamecube-Logo.jpg",
+            "image_link2": "http://previewcf.turbosquid.com/Preview/Content_2009_07_14__05_36_27/gamecube-0000.jpgf7efe6c7-766d-4b04-a71e-ea86d373f79eLarger.jpg",
+            "image_link3": "http://img.bhs4.com/19/a/19ad5b043abb2ce916a1febd86a3f493028b8758_large.jpg"
+        }
+    },
+    {
+        "model": "idb.platform",
+        "pk": 7,
+        "fields": {
+            "name": "Wii",
+            "manufacturer": "Nintendo",
+            "release_date": "2006-11-19",
+            "media_format": "Physical (disks) and digital",
+            "generation": 7,
+            "youtube_link": "http://www.youtube.com/embed/EqqtQQYIch8",
+            "twitter_link": "451489591527104512",
+            "image_link1": "http://fontmeme.com/images/Wii-Logo.jpg",
+            "image_link2": "http://warrencbennett.files.wordpress.com/2013/12/600px-wii-console.png",
+            "image_link3": "http://i00.i.aliimg.com/wsphoto/v4/832076106_1/1PCS-Wireless-font-b-Remote-b-font-font-b-Controller-b-font-for-font-b-Nintendo.jpg"
+        }
+    },
+    {
+        "model": "idb.platform",
+        "pk": 8,
+        "fields": {
+            "name": "MSX",
+            "manufacturer": "Microsoft",
+            "release_date": "1983-06-16",
+            "media_format": "Physical (cartridges)",
+            "generation": 3,
+            "youtube_link": "http://www.youtube.com/embed/HxS-cY4xEpw",
+            "twitter_link": "451490288708497408",
+            "image_link1": "http://img295.imageshack.us/img295/8623/msxmainmenu.jpg",
+            "image_link2": "http://pdroms.de/wp-content/uploads/2011/07/20110708_fmsx_v3.5.1_(beta)_(msx_emu_for_android).png",
+            "image_link3": "http://jscustom.theoldcomputer.com/images/manufacturers_systems/MSX/MSX2-Plus/893416MSX2+%20Sony_HB-F1XV_12.jpg"
+        }
+    },
+    {
+        "model": "idb.platform",
+        "pk": 9,
+        "fields": {
+            "name": "Nintendo 64",
+            "manufacturer": "Nintendo",
+            "release_date": "1996-09-29",
+            "media_format": "Physical (cartridges)",
+            "generation": 5,
+            "youtube_link": "http://www.youtube.com/embed/lDoZBnkdvOU",
+            "twitter_link": "451488919134027776",
+            "image_link1": "http://m1.behance.net/rendition/modules/30406417/disp/c08385272ae074ace11227af39b3cdea.jpg",
+            "image_link2": "http://cleangeeks.com/wp-content/uploads/2013/10/zelda-gray-600x600.jpg",
+            "image_link3": "http://www.nowhereelse.fr/wp-content/uploads/2013/11/Nintendo-N64-Couleur-Lekki-01.jpg"
+        }
+    },
+    {
+        "model": "idb.platform",
+        "pk": 10,
+        "fields": {
+            "name": "Playstation 3",
+            "manufacturer": "Sony",
+            "release_date": "2006-11-17",
+            "media_format": "Physical (disks) and digital",
+            "generation": 7,
+            "youtube_link": "http://www.youtube.com/embed/qKt3HzKtEls",
+            "twitter_link": "451487729121890304",
+            "image_link1": "http://s3.thcdn.com/productimg/0/600/600/59/10243759-1283942237-622000.jpg",
+            "image_link2": "http://gamefans.com/wp-content/uploads/2012/11/ps3-games-collection.jpg",
+            "image_link3": "http://img-new.cgtrader.com/items/10715/sony_playstation_3_3d_model_83ad3219-884a-42ff-b5e5-139458c0a981.jpg"
+        }
+    }
+]
