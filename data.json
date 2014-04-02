@@ -17,7 +17,7 @@
     },
     {
         "model": "idb.platform",
-        "pk": 2,
+        "pk": 2, 
         "fields": {
             "name": "Xbox 360",
             "manufacturer": "Microsoft",
@@ -32,7 +32,7 @@
         }
     },
     {
-        "model": "idb.platform",
+        "model": "idb.platform", 
         "pk": 3,
         "fields": {
             "name": "Nintendo DS",
