@@ -2,7 +2,6 @@ from django.shortcuts import render, get_object_or_404, get_list_or_404
 
 from idb.models import Game, Developer, Platform
 
-
 def home(request):
     developer_list = get_list_or_404(Developer)
     platform_list = get_list_or_404(Platform)
