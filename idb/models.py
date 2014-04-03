@@ -30,7 +30,7 @@ class Developer(models.Model):
     num_employees = models.IntegerField()
     status = models.CharField(max_length=255)
     address = models.CharField(max_length=255)
-    map_link = models.CharField(max_length=200)
+    map_link = models.CharField(max_length=511)
     image_link1 = models.CharField(max_length=255)
     image_link2 = models.CharField(max_length=255)
     image_link3 = models.CharField(max_length=255)
