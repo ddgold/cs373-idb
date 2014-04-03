@@ -1,10 +1,17 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, get_list_or_404
 
 from idb.models import Game, Developer, Platform
 
 
 def home(request):
-    return render(request, 'home.html')
+    developer_list = get_list_or_404(Developer)
+    platform_list = get_list_or_404(Platform)
+    game_list = get_list_or_404(Game)
+    return render(request, 'home.html', {
+    'developer_list': developer_list,
+    'platform_list': platform_list,
+    'game_list': game_list,
+    })
 
 def game(request, game_id):
     game = get_object_or_404(Game, pk=game_id)
