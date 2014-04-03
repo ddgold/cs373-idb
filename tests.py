@@ -1,16 +1,10 @@
 #!/usr/bin/env python3
 
-# from django.test import TestCase
-# # from urllib2 import Request, urlopen #python2
-# from urllib.request import urlopen, Request #python3
-# from json import dumps, loads
-
 from urllib.request import urlopen
 from urllib.request import Request
 from json import dumps, loads
 from django.test import TestCase
 import json
-import unittest
 
 platinum_games = {
 	"id": 1,
@@ -59,7 +53,7 @@ wii_u = {
 
 
 
-class test_API(unittest.TestCase) :
+class test_API(TestCase) :
 
 	# ----------
 	# Developers
@@ -302,5 +296,3 @@ class test_API(unittest.TestCase) :
 
 
 	print("Done")
-
-unittest.main()
