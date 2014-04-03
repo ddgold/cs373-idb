@@ -201,9 +201,9 @@
             "status": "Defunct",
             "address": "Fukuoka, Japan",
             "map_link": "NULL",
-            "image_link1": "http://elblogdemanu.com/wordpress/wp-content/uploads/2007/08/cing.png",
+            "image_link1": "http://i.imgur.com/QFR1BYR.png",
             "image_link2": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLZlODn9tXFteFVmJzcyEV7mIRGy0CwawhzO8MXBhl7j8TngH9",
-            "image_link3": "http://businessboombolton.files.wordpress.com/2011/11/cing.jpg",
+            "image_link3": "http://i.imgur.com/orPseLp.jpg",
             "platforms": [3]
         }
     },
@@ -265,9 +265,9 @@
             "status": "Active",
             "address": "Tokyo, Japan",
             "map_link": "NULL",
-            "image_link1": "http://blogocio.net/imagenes/logos-empresas_87622_pp.jpg",
+            "image_link1": "http://gimmegimmegames.com/wp-content/uploads/2012/05/Monolith-Soft-logo.jpg",
             "image_link2": "http://wiiudaily.com/wp-content/uploads/2011/06/xenoblade-wii-u.jpg ",
-            "image_link3": "http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/06/a4/06a427e42a91d6fa76e50e3be469503a.jpg?itok=Kc1akgeA",
+            "image_link3": "http://www.level30.nl/wp-content/uploads/2012/10/disaster.jpg",
             "platforms": [7]
         }
     },
@@ -314,8 +314,8 @@
             "address": "6-27-30 Shinjuku, Shinjuku-ku,\nTokyo 160-8430, Japan",
             "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=6-27-30+Shinjuku,+Shinjuku-ku,+Tokyo+160-8430,+Japan&aq=&sll=35.696615,139.708657&sspn=0.017304,0.012381&ie=UTF8&hq=&hnear=6+Chome-27-30+Shinjuku,+Shinjuku-ku,+T%C5%8Dky%C5%8D-to,+Japan&t=m&z=14&ll=35.696615,139.708657&output=embed",
             "image_link1": "http://www.dsksic.com/images/media/66_Square_Enix_logo.jpg",
-            "image_link2": "http://www.nonfictiongaming.com/wp-content/uploads/2012/08/squaresoft.gif",
-            "image_link3": "http://wikicheats.gametrailers.com/images/b/b3/Final_Fantasy_VII_Front_Page.jpg",
+            "image_link2": "http://www.vgblogger.com/wp-content/uploads/2008/11/11/SquareEnixQ109.jpg",
+            "image_link3": "http://i1265.photobucket.com/albums/jj511/sgarmer05/SquareEnixLogo_zps95005137.jpg",
             "platforms": [10]
         }
     },
@@ -401,9 +401,9 @@
             "publisher": "THQ",
             "ESRB_rating": "E",
             "youtube_link": "www.youtube.com/embed/_75jMO4v2Vs",
-            "image_link1": "http://img841.imageshack.us/img841/5249/s2built002.png",
-            "image_link2": "http://img.youtube.com/vi/WTwA1O3eumk/0.jpg",
-            "image_link3": "http://www.friendcodes.com/blog/wp-content/uploads/2013/12/Sonic-Advance-2-Review.png",
+            "image_link1": "http://bulk.destructoid.com/ul/user/1/14375-194296-SonicAdvancetitlescreenjpg-620x.jpg",
+            "image_link2": "http://img841.imageshack.us/img841/5249/s2built002.png",
+            "image_link3": "http://fc00.deviantart.net/fs71/i/2011/018/1/7/sonic_advance_2__sonic_final_by_iamsupersonic-d37iz9y.png",
             "developer": 5, 
             "platforms":[5]
         }
@@ -439,7 +439,7 @@
             "youtube_link": "www.youtube.com/embed/N7Xc6in86rs",
             "image_link1": "http://upload.wikimedia.org/wikipedia/en/d/d9/Xenoblade_box_artwork.png",
             "image_link2": "http://www.vgchartz.com/games/pics/xenoblade-chronicles-958102.jpg",
-            "image_link3": "http://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Xenoblade-Landscape.jpg/280px-Xenoblade-Landscape.jpg",
+            "image_link3": "http://i.imgur.com/drijgxV.jpg",
             "developer": 7, 
             "platforms":[7]
         }
@@ -475,7 +475,7 @@
             "youtube_link": "www.youtube.com/embed/eUjItXOa-GM",
             "image_link1": "http://img1.wikia.nocookie.net/__cb20080510223920/doom/images/b/b7/Doom_64-box-cover.jpg",
             "image_link2": "http://www.pixlbit.com/media/products/6773/57131.jpg",
-            "image_link3": "http://colinappleby.com/Photos/Doom%2064.jpg",
+            "image_link3": "http://i.imgur.com/YgemoOh.jpg",
             "developer": 9, 
             "platforms":[9]
         }
