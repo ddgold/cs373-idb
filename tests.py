@@ -59,7 +59,7 @@ wii_u = {
 
 
 
-class test_API(unittest.TestCase) :
+class test_API(testCase) :
 
 	# ----------
 	# Developers
