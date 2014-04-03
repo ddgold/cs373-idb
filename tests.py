@@ -8,6 +8,7 @@
 from urllib.request import urlopen
 from urllib.request import Request
 from json import dumps, loads
+from django.test import TestCase
 import json
 import unittest
 
