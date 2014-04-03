@@ -8,45 +8,45 @@ IVGDb &middot; Home
 
 {% block content %}
 <div class="container jumbotron">
-  <h1>IVGDb</h1>
-  <p>The Internet Video Game Database</p>
-  <p><a class="btn btn-primary btn-lg" role="button" href="http://www.cs.utexas.edu/users/downing/cs373/drupal/idb1/">Learn more</a></p>
-  <p style="color:#707070; font-size: 100%; margin-top: 30px">By <strong>The Pirates of Silicon Valley</strong> (Noah Cho, Cristhian Escobar, Arash Ghoreyshi, Doug Goldstein, Robert Hammond, and Richard Lage)</p>
+    <h1>IVGDb</h1>
+    <p>The Internet Video Game Database</p>
+    <p><a class="btn btn-primary btn-lg" role="button" href="http://www.cs.utexas.edu/users/downing/cs373/drupal/idb1/">Learn more</a></p>
+    <p style="color:#707070; font-size: 100%; margin-top: 30px">By <strong>The Pirates of Silicon Valley</strong> (Noah Cho, Cristhian Escobar, Arash Ghoreyshi, Doug Goldstein, Robert Hammond, and Richard Lage)</p>
 </div>
 <div class="container">
-  <div class="row">
-    <ul style="list-style-type: none">
-      <div class="col-sm-4">
-	<li>
-	  <h2>Developers</h2>
-	  <ul style="list-style-type: none">
-	  	{% for d in developer_list %}
-	    	<li><a href="/developer/{{ d.pk }}">{{d.name}}</a></li>
-        {% endfor %}
-	  </ul>
-	</li>
-      </div>
-      <div class="col-sm-4">
-	<li>
-	  <h2>Platforms</h2>
-	  <ul style="list-style-type: none">
-	    {% for p in platform_list %}
-	    	<li><a href="/platform/{{ p.pk }}">{{p.name}}</a></li>
-        {% endfor %}
-	  </ul>
-	</li>
-      </div>
-      <div class="col-sm-4">
-	<li>
-	  <h2>Games</h2>
-	  <ul style="list-style-type: none">
-	    {% for g in game_list %}
-	    	<li><a href="/game/{{ g.pk }}">{{g.title}}</a></li>
-        {% endfor %}
-	  </ul>
-	</li>
-      </div>
-    </ul>
-  </div>
+    <div class="row">
+        <ul style="list-style-type: none">
+            <div class="col-sm-4">
+                <li>
+                    <h2>Developers</h2>
+                    <ul style="list-style-type: none">
+                        {% for d in developer_list %}
+                            <li><a href="/developer/{{ d.pk }}">{{d.name}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            </div>
+            <div class="col-sm-4">
+                <li>
+                    <h2>Platforms</h2>
+                    <ul style="list-style-type: none">
+                        {% for p in platform_list %}
+                            <li><a href="/platform/{{ p.pk }}">{{p.name}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            </div>
+            <div class="col-sm-4">
+                <li>
+                    <h2>Games</h2>
+                    <ul style="list-style-type: none">
+                        {% for g in game_list %}
+                            <li><a href="/game/{{ g.pk }}">{{g.title}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            </div>
+        </ul>
+    </div>
 </div>
 {% endblock content %}
