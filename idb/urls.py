@@ -13,9 +13,9 @@ v1_api.register(GameResource())
 
 urlpatterns = patterns('',
     url(r'^$', 'idb.views.home', name='home'),
-    url(r'^game/(?P<game_title>[\w|\W]+)/$', 'idb.views.game', name='game'),
-    url(r'^platform/(?P<platform_name>[\w|\W]+)/$', 'idb.views.platform', name='platform'),
-    url(r'^developer/(?P<developer_name>[\w|\W]+)/$', 'idb.views.developer', name='developer'),
+    url(r'^game/(?P<game_id>\d+)/$', 'idb.views.game', name='game'),
+    url(r'^platform/(?P<platform_id>\d+)/$', 'idb.views.platform', name='platform'),
+    url(r'^developer/(?P<developer_id>\d+)/$', 'idb.views.developer', name='developer'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api/', include(v1_api.urls)),
 )
