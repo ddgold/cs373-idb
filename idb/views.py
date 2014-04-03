@@ -13,8 +13,8 @@ def home(request):
     'game_list': game_list,
     })
 
-def game(request, game_id):
-    game = get_object_or_404(Game, pk=game_id)
+def game(request, game_title):
+    game = get_object_or_404(Game, title=game_title)
     return render(request, 'game.html', {
     'game': game,
     'developer_list': developer_list,
@@ -22,8 +22,8 @@ def game(request, game_id):
     'game_list': game_list,
     })
 
-def platform(request, platform_id):
-    platform = get_object_or_404(Platform, pk=platform_id)
+def platform(request, platform_name):
+    platform = get_object_or_404(Platform, name=platform_name)
     return render(request, 'platform.html', {
     'platform': platform,
     'developer_list': developer_list,
@@ -31,8 +31,8 @@ def platform(request, platform_id):
     'game_list': game_list,
     })
 
-def developer(request, developer_id):
-    developer = get_object_or_404(Developer, pk=developer_id)
+def developer(request, developer_name):
+    developer = get_object_or_404(Developer, name=developer_name)
     return render(request, 'developer.html', {
     'developer': developer,
     'developer_list': developer_list,
