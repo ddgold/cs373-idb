@@ -21,7 +21,7 @@ IVGDb &middot; Home
                     <h2>Developers</h2>
                     <ul style="list-style-type: none">
                         {% for d in developer_list %}
-                            <li><a href="/developer/{{ d.pk }}">{{d.name}}</a></li>
+                            <li><a href="/developer/{{ d.name }}">{{d.name}}</a></li>
                         {% endfor %}
                     </ul>
                 </li>
@@ -31,7 +31,7 @@ IVGDb &middot; Home
                     <h2>Platforms</h2>
                     <ul style="list-style-type: none">
                         {% for p in platform_list %}
-                            <li><a href="/platform/{{ p.pk }}">{{p.name}}</a></li>
+                            <li><a href="/platform/{{ p.name }}">{{p.name}}</a></li>
                         {% endfor %}
                     </ul>
                 </li>
@@ -41,7 +41,7 @@ IVGDb &middot; Home
                     <h2>Games</h2>
                     <ul style="list-style-type: none">
                         {% for g in game_list %}
-                            <li><a href="/game/{{ g.pk }}">{{g.title}}</a></li>
+                            <li><a href="/game/{{ g.title }}">{{g.title}}</a></li>
                         {% endfor %}
                     </ul>
                 </li>
