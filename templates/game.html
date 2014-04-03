@@ -58,7 +58,7 @@ IVGDb &middot; Game | {{ game.title }}
 	    <li class="list-group-item"><b>Developed by:</b> <a href="/developer/{{ game.developer.name }}/">{{ game.developer.name }}</a></li>
 	    <li class="list-group-item"><b>Platform(s):</b>
 		{% for p in game.platforms.all %}
-			<a href="/platform/{{ p.name }}/">{{ p.name }}  </a>
+			<a href="/platform/{{ p.name }}/">{{ p.name }}</a>{% if not forloop.last %},  {% endif %}
 		{% endfor %}
 	    </li>
 	    <div class="row">

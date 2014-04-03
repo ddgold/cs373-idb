@@ -56,12 +56,12 @@ IVGDb &middot; Platform | {{ platform.name }}
       <li class="list-group-item"><b>Generation:</b> {{ platform.generation }}</li>
       <li class="list-group-item"><b>Developer(s): </b> 
         {% for d in platform.developer_set.all %}
-          <a href="/developer/{{ d.name }}/">{{ d.name }} </a>
+          <a href="/developer/{{ d.name }}/">{{ d.name }}</a>{% if not forloop.last %},  {% endif %}
         {% endfor %}
       </li>
       <li class="list-group-item"><b>Game(s):</b> 
         {% for g in platform.game_set.all %}
-          <a href="/game/{{ g.title }}/">{{ g.title }} </a>
+          <a href="/game/{{ g.title }}/">{{ g.title }}</a>{% if not forloop.last %},  {% endif %}
         {% endfor %}
       </li>
       <div class="row">
