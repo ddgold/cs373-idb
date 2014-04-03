@@ -15,34 +15,44 @@ import unittest
 platinum_games = {
 	"id": 1,
 	"name": "Platinum Games",
-	"date_founded": "8-1-2006",
+	"date_founded": "2006-04-08",
 	"num_employees": 120,
 	"status": "Active",
-	"image_link": ["http://upload.wikimedia.org/wikipedia/en/9/9e/PlatinumGames.png"],
-	"map_link": "https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&amp;aq=&amp;sll=34.704426,135.485297&amp;sspn=0.004397,0.008256&amp;ie=UTF8&amp;hq=&amp;hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&amp;ll=34.70533,135.489699&amp;spn=0.035033,0.066047&amp;t=m&amp;z=14&amp;output=embed"
- }
+	"address": "Umeda Sky Building Tower West 8F,\n1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108",
+	"map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed",
+	"image_link1": "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg",
+	"image_link2": "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg",
+	"image_link3": "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg",
+	"platforms": [1]
+}
 
 the_wonderful_101 = {
 	"id": 1,
 	"title": "The Wonderful 101",
-	"release_date": "09-15-2013",
+	"release_date": "2013-09-15",
+	"genre": "Action",
 	"publisher": "Nintendo",
 	"ESRB_rating": "T",
-	"genre": "Action",
-	"image_link": ["http://upload.wikimedia.org/wikipedia/en/e/ee/Wonderful_101_box_artwork.jpg"],
-	"youtube_link": "//www.youtube.com/embed/bNefE89DZds"
-}
+	"youtube_link": "www.youtube.com/embed/z9ueBmNNGus",
+	"image_link1": "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png",
+	"image_link2": "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg",
+	"image_link3": "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg",
+	"developer": 1, 
+	"platforms":[1]
+	}
 
 wii_u = {
 	"id": 1,
 	"name": "Wii U",
 	"manufacturer": "Nintendo",
-	"release_date": "11-18-2012",
-	"generation": 8,
+	"release_date": "2012-11-18",
 	"media_format": "Physical (disks) and digital",
-	"image_link": ["http://timenerdworld.files.wordpress.com/2012/11/top10_gadgets_wiiu.jpg?w=480&h=320&crop=1"],
-	"youtube_link": "//www.youtube.com/embed/qhlDHeCT-Q8",
-	"twitter_link": "https://twitter.com/wiiudaily"
+	"generation": 8,
+	"youtube_link": "http://www.youtube.com/embed/qhlDHeCT-Q8",
+	"twitter_link": "446085251077373952",
+	"image_link1": "http://g-ecx.images-amazon.com/images/G/01/aplus/detail-page/B009AGXH64hardware.jpg",
+	"image_link2": "http://www.dailynintendo.nl/wp-content/uploads/2011/05/wii-u.jpg",
+	"image_link3": "http://blogs-images.forbes.com/erikkain/files/2012/11/blackcontroller_big-1.jpg"
 }
 
 
@@ -278,7 +288,7 @@ class test_API(unittest.TestCase) :
 		self.assertTrue(response_code == 200)
 
 		response_content = loads(response.read().decode("utf-8"))
-		self.assertTrue(response_content == [platinum_games])
+		self.assertTrue(response_content == platinum_games)
 
 	def test_API_get_game_platforms(self) :
 		request = Request("http://vgdb.apiary-mock.com/api/games/the_wonderful_101/platforms")
