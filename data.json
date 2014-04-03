@@ -283,7 +283,7 @@
             "map_link": "https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=9-7-2,+Akasaka,+Minato-ku,+Tokyo+107-8323,+Japan&amp;aq=&amp;sll=35.696615,139.708657&amp;sspn=0.017304,0.012381&amp;ie=UTF8&amp;hq=&amp;hnear=Japan,+T%C5%8Dky%C5%8D-to,+Minato-ku,+Akasaka,+3+Chome%E2%88%929%E2%88%9215+%E7%AC%AC%EF%BC%92%E3%82%AF%E3%83%AF%E3%83%A0%E3%83%A9%E3%83%93%E3%83%AB&amp;t=m&amp;z=14&amp;ll=35.677178,139.736124&amp;output=embed",
             "image_link1": "http://media1.gameinformer.com/imagefeed/featured/konami/konamilogo125.gif",
             "image_link2": "http://bulk2.destructoid.com/ul/134757-konami_header.jpg",
-            "image_link3": "http://ocremix.org/files/images/games/ps1/8/metal-gear-solid-ps1-cover-front-eu-47060.jpg",
+            "image_link3": "http://www.plughitzlive.com/images/news/logos/konami.png",
             "platforms": [8]
         }
     },
@@ -318,5 +318,5 @@
             "image_link3": "http://wikicheats.gametrailers.com/images/b/b3/Final_Fantasy_VII_Front_Page.jpg",
             "platforms": [10]
         }
-    },
+    }
 ]
