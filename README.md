@@ -104,7 +104,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=9-7-2,+Akasaka,+Minato-ku,+Tokyo+107-8323,+Japan&amp;aq=&amp;sll=35.696615,139.708657&amp;sspn=0.017304,0.012381&amp;ie=UTF8&amp;hq=&amp;hnear=Japan,+T%C5%8Dky%C5%8D-to,+Minato-ku,+Akasaka,+3+Chome%E2%88%929%E2%88%9215+%E7%AC%AC%EF%BC%92%E3%82%AF%E3%83%AF%E3%83%A0%E3%83%A9%E3%83%93%E3%83%AB&amp;t=m&amp;z=14&amp;ll=35.677178,139.736124&amp;output=embed
 	http://media1.gameinformer.com/imagefeed/featured/konami/konamilogo125.gif
 	http://bulk2.destructoid.com/ul/134757-konami_header.jpg
-	http://ocremix.org/files/images/games/ps1/8/metal-gear-solid-ps1-cover-front-eu-47060.jpg
+	http://www.plughitzlive.com/images/news/logos/konami.png
 
 ### Midway Game
 
@@ -327,7 +327,7 @@ https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/
 	'Platformer'
 	'THQ'
 	'E'
-	www.youtube.com/embed/uKuF9v_MWEI
+	www.youtube.com/embed/_75jMO4v2Vs
 	http://img841.imageshack.us/img841/5249/s2built002.png
 	http://img.youtube.com/vi/WTwA1O3eumk/0.jpg
 	http://www.friendcodes.com/blog/wp-content/uploads/2013/12/Sonic-Advance-2-Review.png

@@ -318,10 +318,7 @@
             "image_link3": "http://wikicheats.gametrailers.com/images/b/b3/Final_Fantasy_VII_Front_Page.jpg",
             "platforms": [10]
         }
-    }
-
-//Game---------------->
-
+    },
     {
         "model": "idb.game",
         "pk": 1,
@@ -335,8 +332,8 @@
             "image_link1": "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png",
             "image_link2": "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg",
             "image_link3": "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg",
-            "developer": , 
-            "platforms":[]
+            "developer": 1, 
+            "platforms":[1]
         }
     },
 
@@ -353,8 +350,8 @@
             "image_link1": "http://www.maclife.com/files/u220903/call_of_duty_4_modern_warfare_620px.png",
             "image_link2": "http://cdn.macrumors.com/article-new/2012/06/NewImage32.png",
             "image_link3": "http://img3.wikia.nocookie.net/__cb20120604062555/callofduty/images/7/7e/Operation_Kingfish_2013_group_crop.png",
-            "developer": , 
-            "platforms":[]
+            "developer": 2, 
+            "platforms":[2,10]
         }
     },
 
@@ -371,8 +368,8 @@
             "image_link1": "http://upload.wikimedia.org/wikipedia/en/5/51/Hotel_Dusk.jpg",
             "image_link2": "http://oyster.ignimgs.com/wordpress/write.ign.com/86032/2011/12/dunning.jpg",
             "image_link3": "http://www.geekshow.us/wp/wp-content/uploads/2009/03/hotel-dusk-louie.jpg",
-            "developer": , 
-            "platforms":[]
+            "developer": 3, 
+            "platforms":[3]
         }
     },
 
@@ -389,8 +386,8 @@
             "image_link1": "http://www.slashgear.com/wp-content/uploads/2011/12/gta_3_android_0.png",
             "image_link2": "http://cdn.appstorm.net/ipad.appstorm.net/files/2011/12/gtaIII_2.png",
             "image_link3": "http://www.gouranga.com/images/gta3/gta3_394.jpg",
-            "developer": , 
-            "platforms":[]
+            "developer": 4, 
+            "platforms":[4]
         }
     },
 
@@ -403,12 +400,12 @@
             "genre": "Platformer",
             "publisher": "THQ",
             "ESRB_rating": "E",
-            "youtube_link": "www.youtube.com/embed/uKuF9v_MWEI",
+            "youtube_link": "www.youtube.com/embed/_75jMO4v2Vs",
             "image_link1": "http://img841.imageshack.us/img841/5249/s2built002.png",
             "image_link2": "http://img.youtube.com/vi/WTwA1O3eumk/0.jpg",
             "image_link3": "http://www.friendcodes.com/blog/wp-content/uploads/2013/12/Sonic-Advance-2-Review.png",
-            "developer": , 
-            "platforms":[]
+            "developer": 5, 
+            "platforms":[5]
         }
     },
 
@@ -425,8 +422,8 @@
             "image_link1": "http://img.gamefaqs.net/box/0/8/7/14087_front.jpg",
             "image_link2": "http://faqsmedia.ign.com/faqs/image/ali1mg_ssbm_010.jpg",
             "image_link3": "http://www.technologytell.com/gaming/files/2013/07/smash-bros.-melee.jpg",
-            "developer": , 
-            "platforms":[]
+            "developer": 6, 
+            "platforms":[6]
         }
     },
 
@@ -443,8 +440,8 @@
             "image_link1": "http://upload.wikimedia.org/wikipedia/en/d/d9/Xenoblade_box_artwork.png",
             "image_link2": "http://www.vgchartz.com/games/pics/xenoblade-chronicles-958102.jpg",
             "image_link3": "http://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Xenoblade-Landscape.jpg/280px-Xenoblade-Landscape.jpg",
-            "developer": , 
-            "platforms":[]
+            "developer": 7, 
+            "platforms":[7]
         }
     },
 
@@ -461,8 +458,8 @@
             "image_link1": "http://upload.wikimedia.org/wikipedia/en/b/bd/Metal_Gear_cover.jpg",
             "image_link2": "http://static.giantbomb.com/uploads/original/0/4648/2019227-solid.jpg",
             "image_link3": "http://einfogames.com/hub/files/2014/02/nes-metal-gear-jeu.jpg",
-            "developer": , 
-            "platforms":[]
+            "developer": 8, 
+            "platforms":[8]
         }
     },
 
@@ -479,8 +476,8 @@
             "image_link1": "http://img1.wikia.nocookie.net/__cb20080510223920/doom/images/b/b7/Doom_64-box-cover.jpg",
             "image_link2": "http://www.pixlbit.com/media/products/6773/57131.jpg",
             "image_link3": "http://colinappleby.com/Photos/Doom%2064.jpg",
-            "developer": , 
-            "platforms":[]
+            "developer": 9, 
+            "platforms":[9]
         }
     },
 
@@ -497,11 +494,8 @@
             "image_link1": "http://img3.wikia.nocookie.net/__cb20120614005423/finalfantasy/images/9/94/Final_Fantasy_XIII_Logo.jpg",
             "image_link2": "http://86bb71d19d3bcb79effc-d9e6924a0395cb1b5b9f03b7640d26eb.r91.cf1.rackcdn.com/wp-content/uploads/2010/03/final-fantasy-xiii-ps3-theme-unlockable-artwork.jpg",
             "image_link3": "http://fc06.deviantart.net/fs51/i/2009/330/1/f/Final_Fantasy_XIII_characters_by_Cloudfan174.png",
-            "developer": , 
-            "platforms":[]
+            "developer": 10, 
+            "platforms":[2,10]
         }
-    },
-
-
-
+    }
 ]
