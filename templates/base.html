@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="{% block navbar_home %}{% endblock %}"><a href="/">Home</a></li>
-                    <li class="dropdown">
+                    <li class="dropdown {% block navbar_developer %}{% endblock %}">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             {% for d in developer_list %}
@@ -38,7 +38,7 @@
                             {% endfor %}
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown {% block navbar_platform %}{% endblock %}">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Platforms<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             {% for p in platform_list %}
@@ -46,7 +46,7 @@
                             {% endfor %}
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown {% block navbar_game %}{% endblock %}">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Games<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             {% for g in game_list %}
