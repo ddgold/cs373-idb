@@ -6,7 +6,7 @@ from idb.models import Platform, Developer, Game
 class PlatformResource(ModelResource):
     class Meta:
         queryset = Platform.objects.all()
-        resource_name = 'platforms'
+        resource_name = 'platform'
         authorization = Authorization()
         allowed_methods = ['get', 'post', 'put']
         filtering = {
@@ -22,7 +22,7 @@ class DeveloperResource(ModelResource):
     platforms = fields.ToManyField(PlatformResource, 'platforms')
     class Meta:
         queryset = Developer.objects.all()
-        resource_name = 'developers'
+        resource_name = 'developer'
         authorization = Authorization()
         allowed_methods = ['get', 'post', 'put']
         filtering = {
@@ -34,11 +34,11 @@ class DeveloperResource(ModelResource):
         }
 
 class GameResource(ModelResource):
-    developer = fields.ForeignKey(DeveloperResource, 'developers')
+    developer = fields.ForeignKey(DeveloperResource, 'developer')
     platforms = fields.ToManyField(PlatformResource, 'platforms')
     class Meta:
         queryset = Game.objects.all()
-        resource_name = 'games'
+        resource_name = 'game'
         authorization = Authorization()
         allowed_methods = ['get', 'post', 'put', 'delete']
         filtering = {
