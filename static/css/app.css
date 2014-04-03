@@ -1,17 +1,25 @@
-.carousel {
-  position: relative;
-  height: 500px;
+.media-container { 
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
 } 
-.carousel .item {
-  height: 500px;
+
+.media-container iframe, 
+.media-container object, 
+.media-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	max-width: 560px;
+	height: 100%;
+	max-height: 315px;
 }
 
-.carousel-inner > .item > img {
-    position:absolute;
-    height:100%;
-    width:100%;
-}
-.carousel-inner {
-  position: relative;
-  overflow: hidden;
+.carousel img {
+	display: block;
+	width: auto;
+	margin: 0 auto;
 }
