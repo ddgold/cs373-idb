@@ -1,10 +1,19 @@
 #!/usr/bin/env python3
-
+from django.conf.urls import patterns, include, url
 from urllib.request import urlopen
 from urllib.request import Request
 from json import dumps, loads
 from django.test import TestCase
+from tastypie.api import Api
+from idb.resources import PlatformResource, DeveloperResource, GameResource
 import json
+
+admin.autodiscover()
+v1_api = Api(api_name='v1')
+v1_api.register(PlatformResource())
+v1_api.register(DeveloperResource())
+v1_api.register(GameResource())
+
 
 platinum_games = {
 	"id": 1,
@@ -58,7 +67,7 @@ class test_API(TestCase) :
 	# Developers
 	# ----------
 	def test_API_get_developers(self) :
-		request = Request("http://vgdb.apiary-mock.com/api/developers")
+		request = Request(patterns(r'^api/', include(v1_api.urls)))
 		response = urlopen(request)
 		
 		response_code = response.getcode()
