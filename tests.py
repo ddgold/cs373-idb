@@ -52,7 +52,6 @@ wii_u = {
 
 
 
-
 class test_API(TestCase) :
 
 	# ----------
