@@ -34,7 +34,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             {% for d in developer_list %}
-                                <li><a href="/developer/{{ d.name }}">{{d.name}}</a></li>
+                                <li><a href="/developer/{{ d.pk }}">{{d.name}}</a></li>
                             {% endfor %}
                         </ul>
                     </li>
@@ -42,7 +42,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Platforms<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             {% for p in platform_list %}
-                                <li><a href="/platform/{{ p.name }}">{{p.name}}</a></li>
+                                <li><a href="/platform/{{ p.pk }}">{{p.name}}</a></li>
                             {% endfor %}
                         </ul>
                     </li>
@@ -50,7 +50,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Games<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             {% for g in game_list %}
-                                <li><a href="/game/{{ g.title }}">{{g.title}}</a></li>
+                                <li><a href="/game/{{ g.pk }}">{{g.title}}</a></li>
                             {% endfor %}
                         </ul>
                     </li>

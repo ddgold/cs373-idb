@@ -55,10 +55,10 @@ IVGDb &middot; Game | {{ game.title }}
 	    <li class="list-group-item"><b>US Release Date:</b> {{ game.release_date }}</li>
 	    <li class="list-group-item"><b>ESRB Rating:</b> {{ game.ESRB_rating }}</li>
 	    <li class="list-group-item"><b>Genre:</b> {{ game.genre }}</li>
-	    <li class="list-group-item"><b>Developed by:</b> <a href="/developer/{{ game.developer.name }}/">{{ game.developer.name }}</a></li>
+	    <li class="list-group-item"><b>Developed by:</b> <a href="/developer/{{ game.developer.pk }}/">{{ game.developer.name }}</a></li>
 	    <li class="list-group-item"><b>Platform(s):</b>
 		{% for p in game.platforms.all %}
-			<a href="/platform/{{ p.name }}/">{{ p.name }}</a>{% if not forloop.last %},  {% endif %}
+			<a href="/platform/{{ p.pk }}/">{{ p.name }}</a>{% if not forloop.last %},  {% endif %}
 		{% endfor %}
 	    </li>
 	    <div class="row">

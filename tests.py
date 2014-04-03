@@ -11,7 +11,6 @@ from json import dumps, loads
 import json
 import unittest
 
-
 platinum_games = {
 	"id": 1,
 	"name": "Platinum Games",
