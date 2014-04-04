@@ -8,33 +8,58 @@ RESTful API for the Video Game Data Base
 ### List all Developers [GET]
 + Response 200 (application/json)
     
-        [{
-            "id": 1,
-            "name": "Platinum Games"
-        }]
+        {
+            meta:
+            {
+                limit: 20,
+                next: null,
+                offset: 0,
+                previous: null,
+                total_count: 1
+            },
+            objects:
+            [
+                {
+                    id: 1,
+                    name: "Platinum Games",
+                    date_founded: "2006-04-08",
+                    num_employees: 120,
+                    status: "Active",
+                    address: "Umeda Sky Building Tower West 8F, 1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108",
+                    map_link: "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed",
+                    image_link1: "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg",
+                    image_link2: "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg",
+                    image_link3: "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg",
+                    resource_uri: "/api/v1/developer/1/",
+                    platforms:
+                    [
+                        "/api/v1/platform/1/"
+                    ]
+                }
+            ]
+        }
 
 ### Create a Developer [POST]
 + Request (application/json)
 
         {
-            "name": "Platinum Games",
-            "date_founded": "2006-04-08",
-            "num_employees": 120,
-            "status": "Active",
-            "address": "Umeda Sky Building Tower West 8F,\n1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108",
-            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed",
-            "image_link1": "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg",
-            "image_link2": "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg",
-            "image_link3": "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg",
-            "platforms": [1]
+            name: "Platinum Games",
+            date_founded: "2006-04-08",
+            num_employees: 120,
+            status: "Active",
+            address: "Umeda Sky Building Tower West 8F, 1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108",
+            map_link: "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed",
+            image_link1: "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg",
+            image_link2: "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg",
+            image_link3: "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg",
+            resource_uri: "/api/v1/developer/1/",
+            platforms:
+            [
+                "/api/v1/platform/1/"
+            ]
         }
 
-+ Response 201 (application/json)
-
-        {
-            "id": 1,
-            "name": "Platinum Games"
-        }
++ Response 201
 
 ## Developer [/api/v1/developer/{id}]
 
@@ -45,33 +70,40 @@ RESTful API for the Video Game Data Base
 + Response 200 (application/json)
 
         {
-            "id": 1,
-            "name": "Platinum Games",
-            "date_founded": "2006-04-08",
-            "num_employees": 120,
-            "status": "Active",
-            "address": "Umeda Sky Building Tower West 8F,\n1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108",
-            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed",
-            "image_link1": "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg",
-            "image_link2": "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg",
-            "image_link3": "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg",
-            "platforms": [1]
+            id: 1,
+            name: "Platinum Games",
+            date_founded: "2006-04-08",
+            num_employees: 120,
+            status: "Active",
+            address: "Umeda Sky Building Tower West 8F, 1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108",
+            map_link: "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed",
+            image_link1: "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg",
+            image_link2: "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg",
+            image_link3: "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg",
+            resource_uri: "/api/v1/developer/1/",
+            platforms:
+            [
+                "/api/v1/platform/1/"
+            ]
         }
 
 ### Update a Developer [PUT]
 + Request (application/json)
 
         {
-            "name": "Platinum Games",
-            "date_founded": "2006-04-08",
-            "num_employees": 120,
-            "status": "Active",
-            "address": "Umeda Sky Building Tower West 8F,\n1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108",
-            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed",
-            "image_link1": "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg",
-            "image_link2": "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg",
-            "image_link3": "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg",
-            "platforms": [1]
+            name: "Platinum Games",
+            date_founded: "2006-04-08",
+            num_employees: 120,
+            status: "Active",
+            address: "Umeda Sky Building Tower West 8F, 1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108",
+            map_link: "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed",
+            image_link1: "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg",
+            image_link2: "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg",
+            image_link3: "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg",
+            platforms:
+            [
+                "/api/v1/platform/1/"
+            ]
         }
         
 + Response 204
@@ -79,50 +111,6 @@ RESTful API for the Video Game Data Base
 ### Remove a Developer [DELETE]
 + Response 204
 
-## Developer's Games [/api/v1/developer/{id}/game]
-
-+ Parameters
-    + id (required, number, `1`)
-
-### Retrieve related Games [GET]
-+ Response 200 (application/json)
-
-        [{
-            "id": 1,
-            "title": "The Wonderful 101",
-            "release_date": "2013-09-15",
-            "genre": "Action",
-            "publisher": "Nintendo",
-            "ESRB_rating": "T",
-            "youtube_link": "www.youtube.com/embed/z9ueBmNNGus",
-            "image_link1": "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png",
-            "image_link2": "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg",
-            "image_link3": "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg",
-            "developer": 1, 
-            "platforms":[1]
-        }]
-
-## Developer's Platforms [/api/v1/developer/{id}/platform]
-
-+ Parameters
-    + id (required, number, `1`)
-
-### Retrieve related Platforms [GET]
-+ Response 200 (application/json)
-
-        [{
-            "id": 1,
-            "name": "Wii U",
-            "manufacturer": "Nintendo",
-            "release_date": "2012-11-18",
-            "media_format": "Physical (disks) and digital",
-            "generation": 8,
-            "youtube_link": "http://www.youtube.com/embed/qhlDHeCT-Q8",
-            "twitter_link": "446085251077373952",
-            "image_link1": "http://g-ecx.images-amazon.com/images/G/01/aplus/detail-page/B009AGXH64hardware.jpg",
-            "image_link2": "http://www.dailynintendo.nl/wp-content/uploads/2011/05/wii-u.jpg",
-            "image_link3": "http://blogs-images.forbes.com/erikkain/files/2012/11/blackcontroller_big-1.jpg"
-        }]
 
 
 
@@ -131,34 +119,59 @@ RESTful API for the Video Game Data Base
 ### List all Games [GET]
 + Response 200 (application/json)
     
-        [{
-            "id": 1,
-            "title": "The Wonderful 101"
-        }]
+        {
+            meta:
+            {
+                limit: 20,
+                next: null,
+                offset: 0,
+                previous: null,
+                total_count: 1
+            },
+            objects:
+            [
+                {
+                    id: 1,
+                    title: "The Wonderful 101",
+                    release_date: "2013-09-15",
+                    genre: "Action",
+                    publisher: "Nintendo",
+                    ESRB_rating: "T",
+                    youtube_link: "www.youtube.com/embed/z9ueBmNNGus",
+                    image_link1: "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png",
+                    image_link2: "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg",
+                    image_link3: "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg",
+                    developer: "/api/v1/developer/1/",
+                    platforms:
+                    [
+                        "/api/v1/platform/1/"
+                    ],
+                    resource_uri: "/api/v1/game/1/"
+                }
+            ]
+        }
 
 ### Create a Game [POST]
 + Request (application/json)
 
         {
-            "title": "The Wonderful 101",
-            "release_date": "2013-09-15",
-            "genre": "Action",
-            "publisher": "Nintendo",
-            "ESRB_rating": "T",
-            "youtube_link": "www.youtube.com/embed/z9ueBmNNGus",
-            "image_link1": "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png",
-            "image_link2": "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg",
-            "image_link3": "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg",
-            "developer": 1, 
-            "platforms":[1]
+            title: "The Wonderful 101",
+            release_date: "2013-09-15",
+            genre: "Action",
+            publisher: "Nintendo",
+            ESRB_rating: "T",
+            youtube_link: "www.youtube.com/embed/z9ueBmNNGus",
+            image_link1: "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png",
+            image_link2: "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg",
+            image_link3: "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg",
+            developer: "/api/v1/developer/1/",
+            platforms:
+            [
+                "/api/v1/platform/1/"
+            ]
         }
 
-+ Response 201 (application/json)
-
-        {
-            "id": 1,
-            "title": "The Wonderful 101"
-        }
++ Response 201
 
 ## Game [/api/v1/game/{id}]
 
@@ -169,85 +182,48 @@ RESTful API for the Video Game Data Base
 + Response 200 (application/json)
 
         {
-            "id": 1,
-            "title": "The Wonderful 101",
-            "release_date": "2013-09-15",
-            "genre": "Action",
-            "publisher": "Nintendo",
-            "ESRB_rating": "T",
-            "youtube_link": "www.youtube.com/embed/z9ueBmNNGus",
-            "image_link1": "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png",
-            "image_link2": "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg",
-            "image_link3": "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg",
-            "developer": 1, 
-            "platforms":[1]
+            id: 1,
+            title: "The Wonderful 101",
+            release_date: "2013-09-15",
+            genre: "Action",
+            publisher: "Nintendo",
+            ESRB_rating: "T",
+            youtube_link: "www.youtube.com/embed/z9ueBmNNGus",
+            image_link1: "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png",
+            image_link2: "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg",
+            image_link3: "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg",
+            developer: "/api/v1/developer/1/",
+            platforms:
+            [
+                "/api/v1/platform/1/"
+            ],
+            resource_uri: "/api/v1/game/1/"
         }
 
 ### Update a Game [PUT]
 + Request (application/json)
 
         {
-            "title": "The Wonderful 101",
-            "release_date": "2013-09-15",
-            "genre": "Action",
-            "publisher": "Nintendo",
-            "ESRB_rating": "T",
-            "youtube_link": "www.youtube.com/embed/z9ueBmNNGus",
-            "image_link1": "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png",
-            "image_link2": "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg",
-            "image_link3": "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg",
-            "developer": 1, 
-            "platforms":[1]
+            title: "The Wonderful 101",
+            release_date: "2013-09-15",
+            genre: "Action",
+            publisher: "Nintendo",
+            ESRB_rating: "T",
+            youtube_link: "www.youtube.com/embed/z9ueBmNNGus",
+            image_link1: "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png",
+            image_link2: "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg",
+            image_link3: "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg",
+            developer: "/api/v1/developer/1/",
+            platforms:
+            [
+                "/api/v1/platform/1/"
+            ]
         }
         
 + Response 204
 
 ### Remove a Game [DELETE]
 + Response 204
-
-## Game's Developers [/api/v1/game/{id}/developer]
-
-+ Parameters
-    + id (required, number, `1`)
-
-### Retrieve related Developer [GET]
-+ Response 200 (application/json)
-
-        {
-            "id": 1,
-            "name": "Platinum Games",
-            "date_founded": "2006-04-08",
-            "num_employees": 120,
-            "status": "Active",
-            "address": "Umeda Sky Building Tower West 8F,\n1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108",
-            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed",
-            "image_link1": "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg",
-            "image_link2": "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg",
-            "image_link3": "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg",
-            "platforms": [1]
-        }
-
-## Game's Platforms [/api/v1/game/{id}/platform]
-
-+ Parameters
-    + id (required, number, `1`)
-
-### Retrieve related Platforms [GET]
-+ Response 200 (application/json)
-
-        [{
-            "id": 1,
-            "name": "Wii U",
-            "manufacturer": "Nintendo",
-            "release_date": "2012-11-18",
-            "media_format": "Physical (disks) and digital",
-            "generation": 8,
-            "youtube_link": "http://www.youtube.com/embed/qhlDHeCT-Q8",
-            "twitter_link": "446085251077373952",
-            "image_link1": "http://g-ecx.images-amazon.com/images/G/01/aplus/detail-page/B009AGXH64hardware.jpg",
-            "image_link2": "http://www.dailynintendo.nl/wp-content/uploads/2011/05/wii-u.jpg",
-            "image_link3": "http://blogs-images.forbes.com/erikkain/files/2012/11/blackcontroller_big-1.jpg"
-        }]
 
 
 
@@ -256,33 +232,51 @@ RESTful API for the Video Game Data Base
 ### List all Platforms [GET]
 + Response 200 (application/json)
     
-        [{
-            "id": 1,
-            "name": "Wii U"
-        }]
+        {
+            meta:
+            {
+                limit: 20,
+                next: null,
+                offset: 0,
+                previous: null,
+                total_count: 1
+            },
+            objects:
+            [
+                {
+                    id: 1,
+                    name: "Wii U",
+                    manufacturer: "Nintendo",
+                    release_date: "2012-11-18",
+                    media_format: "Physical (disks) and digital",
+                    generation: 8,
+                    youtube_link: "http://www.youtube.com/embed/qhlDHeCT-Q8",
+                    twitter_link: "446085251077373952",
+                    image_link1: "http://i.walmartimages.com/i/p/00/04/54/96/88/0004549688085_500X500.jpg",
+                    image_link2: "http://nonspecificaction.co.uk/wp-content/uploads/Wii-U-Black.jpg",
+                    image_link3: "http://pisces.bbystatic.com/image2/BestBuy_US/images/products/6775/6775792_sa.jpg;canvasHeight=500;canvasWidth=500",
+                    resource_uri: "/api/v1/platform/1/"
+                }
+            ]
+        }
 
 ### Create a Platform [POST]
 + Request (application/json)
 
         {
-            "name": "Wii U",
-            "manufacturer": "Nintendo",
-            "release_date": "2012-11-18",
-            "media_format": "Physical (disks) and digital",
-            "generation": 8,
-            "youtube_link": "http://www.youtube.com/embed/qhlDHeCT-Q8",
-            "twitter_link": "446085251077373952",
-            "image_link1": "http://g-ecx.images-amazon.com/images/G/01/aplus/detail-page/B009AGXH64hardware.jpg",
-            "image_link2": "http://www.dailynintendo.nl/wp-content/uploads/2011/05/wii-u.jpg",
-            "image_link3": "http://blogs-images.forbes.com/erikkain/files/2012/11/blackcontroller_big-1.jpg"
+            name: "Wii U",
+            manufacturer: "Nintendo",
+            release_date: "2012-11-18",
+            media_format: "Physical (disks) and digital",
+            generation: 8,
+            youtube_link: "http://www.youtube.com/embed/qhlDHeCT-Q8",
+            twitter_link: "446085251077373952",
+            image_link1: "http://i.walmartimages.com/i/p/00/04/54/96/88/0004549688085_500X500.jpg",
+            image_link2: "http://nonspecificaction.co.uk/wp-content/uploads/Wii-U-Black.jpg",
+            image_link3: "http://pisces.bbystatic.com/image2/BestBuy_US/images/products/6775/6775792_sa.jpg;canvasHeight=500;canvasWidth=500"
         }
 
-+ Response 201 (application/json)
-
-        {
-            "id": 1,
-            "name": "Wii U"
-        }
++ Response 201
 
 ## Platform [/api/platform/v1/{id}]
 
@@ -293,81 +287,37 @@ RESTful API for the Video Game Data Base
 + Response 200 (application/json)
 
         {
-            "id": 1,
-            "name": "Wii U",
-            "manufacturer": "Nintendo",
-            "release_date": "2012-11-18",
-            "media_format": "Physical (disks) and digital",
-            "generation": 8,
-            "youtube_link": "http://www.youtube.com/embed/qhlDHeCT-Q8",
-            "twitter_link": "446085251077373952",
-            "image_link1": "http://g-ecx.images-amazon.com/images/G/01/aplus/detail-page/B009AGXH64hardware.jpg",
-            "image_link2": "http://www.dailynintendo.nl/wp-content/uploads/2011/05/wii-u.jpg",
-            "image_link3": "http://blogs-images.forbes.com/erikkain/files/2012/11/blackcontroller_big-1.jpg"
+            id: 1,
+            name: "Wii U",
+            manufacturer: "Nintendo",
+            release_date: "2012-11-18",
+            media_format: "Physical (disks) and digital",
+            generation: 8,
+            youtube_link: "http://www.youtube.com/embed/qhlDHeCT-Q8",
+            twitter_link: "446085251077373952",
+            image_link1: "http://i.walmartimages.com/i/p/00/04/54/96/88/0004549688085_500X500.jpg",
+            image_link2: "http://nonspecificaction.co.uk/wp-content/uploads/Wii-U-Black.jpg",
+            image_link3: "http://pisces.bbystatic.com/image2/BestBuy_US/images/products/6775/6775792_sa.jpg;canvasHeight=500;canvasWidth=500",
+            resource_uri: "/api/v1/platform/1/"
         }
 
 ### Update a Platform [PUT]
 + Request (application/json)
 
         {
-            "name": "Wii U",
-            "manufacturer": "Nintendo",
-            "release_date": "2012-11-18",
-            "media_format": "Physical (disks) and digital",
-            "generation": 8,
-            "youtube_link": "http://www.youtube.com/embed/qhlDHeCT-Q8",
-            "twitter_link": "446085251077373952",
-            "image_link1": "http://g-ecx.images-amazon.com/images/G/01/aplus/detail-page/B009AGXH64hardware.jpg",
-            "image_link2": "http://www.dailynintendo.nl/wp-content/uploads/2011/05/wii-u.jpg",
-            "image_link3": "http://blogs-images.forbes.com/erikkain/files/2012/11/blackcontroller_big-1.jpg"
+            name: "Wii U",
+            manufacturer: "Nintendo",
+            release_date: "2012-11-18",
+            media_format: "Physical (disks) and digital",
+            generation: 8,
+            youtube_link: "http://www.youtube.com/embed/qhlDHeCT-Q8",
+            twitter_link: "446085251077373952",
+            image_link1: "http://i.walmartimages.com/i/p/00/04/54/96/88/0004549688085_500X500.jpg",
+            image_link2: "http://nonspecificaction.co.uk/wp-content/uploads/Wii-U-Black.jpg",
+            image_link3: "http://pisces.bbystatic.com/image2/BestBuy_US/images/products/6775/6775792_sa.jpg;canvasHeight=500;canvasWidth=500"
         }
         
 + Response 204
 
 ### Remove a Platform [DELETE]
 + Response 204
-
-## Platform's Developers [/api/v1/platform/{id}/developer]
-
-+ Parameters
-    + id (required, number, `1`)
-
-### Retrieve related Developers [GET]
-+ Response 200 (application/json)
-
-        [{
-            "id": 1,
-            "name": "Platinum Games",
-            "date_founded": "2006-04-08",
-            "num_employees": 120,
-            "status": "Active",
-            "address": "Umeda Sky Building Tower West 8F,\n1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108",
-            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed",
-            "image_link1": "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg",
-            "image_link2": "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg",
-            "image_link3": "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg",
-            "platforms": [1]
-        }]
-
-## Platform's Games [/api/v1/platform/{id}/game]
-
-+ Parameters
-    + id (required, number, `1`)
-
-### Retrieve related Games [GET]
-+ Response 200 (application/json)
-
-        [{
-            "id": 1,
-            "title": "The Wonderful 101",
-            "release_date": "2013-09-15",
-            "genre": "Action",
-            "publisher": "Nintendo",
-            "ESRB_rating": "T",
-            "youtube_link": "www.youtube.com/embed/z9ueBmNNGus",
-            "image_link1": "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png",
-            "image_link2": "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg",
-            "image_link3": "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg",
-            "developer": 1, 
-            "platforms":[1]
-        }]
