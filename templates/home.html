@@ -19,7 +19,7 @@ IVGDb &middot; Home
             <div class="col-sm-4">
                 <li>
                     <h2>Developers</h2>
-                    <ul style="list-style-type: none">
+                    <ul style="list-style-type: none; margin-left: -30px">
                         {% for d in developer_list %}
                             <li><a href="/developer/{{ d.pk }}">{{d.name}}</a></li>
                         {% endfor %}
@@ -29,7 +29,7 @@ IVGDb &middot; Home
             <div class="col-sm-4">
                 <li>
                     <h2>Platforms</h2>
-                    <ul style="list-style-type: none">
+                    <ul style="list-style-type: none; margin-left: -30px">
                         {% for p in platform_list %}
                             <li><a href="/platform/{{ p.pk }}">{{p.name}}</a></li>
                         {% endfor %}
@@ -39,7 +39,7 @@ IVGDb &middot; Home
             <div class="col-sm-4">
                 <li>
                     <h2>Games</h2>
-                    <ul style="list-style-type: none">
+                    <ul style="list-style-type: none; margin-left: -30px">
                         {% for g in game_list %}
                             <li><a href="/game/{{ g.pk }}">{{g.title}}</a></li>
                         {% endfor %}
