@@ -8,7 +8,7 @@ class PlatformResource(ModelResource):
         queryset = Platform.objects.all()
         resource_name = 'platform'
         authorization = Authorization()
-        allowed_methods = ['get', 'post', 'put']
+        allowed_methods = ['get', 'post', 'put', 'delete']
         filtering = {
             'name': ['exact', 'starstwith', 'endswith', 'contains'],
             'manufacturer': ['exact', 'starstwith', 'endswith', 'contains'],
@@ -24,7 +24,7 @@ class DeveloperResource(ModelResource):
         queryset = Developer.objects.all()
         resource_name = 'developer'
         authorization = Authorization()
-        allowed_methods = ['get', 'post', 'put']
+        allowed_methods = ['get', 'post', 'put', 'delete']
         filtering = {
             'name' : ['exact', 'starstwith', 'endswith', 'contains'],
             'date_founded' :['exact', 'lt', 'lte', 'gt', 'gte', 'range'],
