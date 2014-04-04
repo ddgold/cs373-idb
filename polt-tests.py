@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
-from django.conf.urls import patterns, include, url
-from urllib.request import urlopen
-from urllib.request import Request
-from json import dumps, loads
-from django.test import TestCase
-from tastypie.api import Api
-from idb.resources import PlatformResource, DeveloperResource, GameResource
-import json
+import datetime
+from django.contrib.auth.models import User
+from tastypie.test import ResourceTestCase
+from idb.models import Platform, Developer, Game
+from django.shortcuts import get_object_or_404
 
 
 platinum_games = {
@@ -52,15 +49,173 @@ wii_u = {
 	"image_link3": "http://blogs-images.forbes.com/erikkain/files/2012/11/blackcontroller_big-1.jpg"
 }
 
+#----------
+# Platforms
+#----------
+class PlatformResourceTest(ResourceTestCase) :
 
+	fixtures = ['data.json']
 
+	def setUp(self):
+		super(PlatformResourceTest, self).setUp()
+		
+		# Create a user.
+		self.username = 'polt'
+		self.password = 'masher'
+		self.api_key = 'poltergust'
+		self.user = User.objects.create_user(self.username, 'poltergust@hotmail.com', self.password)
+		
+		# chose Game Boy Advance since it is the first alphabetically
+		self.platform_1 = Platform.objects.get(name='Game Boy Advance')
+		
+		self.detail_url = '/api/v1/developer/{0}/'.format(self.platform_1.pk)
+		
+		self.post_data = {
+			'user': '/api/v1/user/{0}/'.format(self.user.pk),
+			'title': 'Second Post!',
+			'slug': 'second-post',
+			'created': '2014-04-03T19:13:42',
+		}
+		
+	def get_api_credentials(self):
+		return self.create_apikey(username=self.username, api_key=self.api_key)
+        
+	def test_get_list_json(self):
+		resp = self.api_client.get('/api/v1/platform/', format='json', authentication=self.get_api_credentials())
+		self.assertValidJSONResponse(resp)
+    	
+		self.assertEqual(len(self.deserialize(resp)['objects']), 10)
+		
+		# compare with Game Boy Advance
+		self.assertEqual(self.deserialize(resp)['objects'][0], {
+			"id": self.platform_1.pk,
+			"name": str(self.platform_1.name),
+			"manufacturer": str(self.platform_1.manufacturer),
+			"release_date": str(self.platform_1.release_date),
+			"media_format": str(self.platform_1.media_format),
+			"generation": self.platform_1.generation,
+			"youtube_link": str(self.platform_1.youtube_link),
+			"twitter_link": str(self.platform_1.twitter_link),
+			"image_link1": str(self.platform_1.image_link1),
+			"image_link2": str(self.platform_1.image_link2),
+			"image_link3": str(self.platform_1.image_link3),
+			'resource_uri': '/api/v1/platform/{0}/'.format(self.platform_1.pk)
+		})
 
-class test_API(TestCase) :
+# ----------
+# Developers
+# ----------
+class DeveloperResourceTest(ResourceTestCase) :
 
-	# ----------
-	# Developers
-	# ----------
-	def test_API_get_developers(self) :
+	fixtures = ['data.json']
+
+	def setUp(self):
+		super(DeveloperResourceTest, self).setUp()
+		
+		# Create a user.
+		self.username = 'polt'
+		self.password = 'masher'
+		self.api_key = 'poltergust'
+		self.user = User.objects.create_user(self.username, 'poltergust@hotmail.com', self.password)
+		
+		# chose Cing since it is the first alphabetically
+		self.developer_1 = Developer.objects.get(name='Cing')
+		
+		self.detail_url = '/api/v1/developer/{0}/'.format(self.developer_1.pk)
+		
+		self.post_data = {
+			'user': '/api/v1/user/{0}/'.format(self.user.pk),
+			'title': 'Second Post!',
+			'slug': 'second-post',
+			'created': '2014-04-03T19:13:42',
+		}
+		
+	def get_api_credentials(self):
+		return self.create_apikey(username=self.username, api_key=self.api_key)
+		
+	#def test_get_list_unauthorzied(self):
+		#self.assertHttpUnauthorized(self.api_client.get('/api/v1/developer/', format='json'))
+        
+	def test_get_list_json(self):
+		resp = self.api_client.get('/api/v1/developer/', format='json', authentication=self.get_api_credentials())
+		self.assertValidJSONResponse(resp)
+    	
+		self.assertEqual(len(self.deserialize(resp)['objects']), 10)
+		
+		# compare with Cing
+		self.assertEqual(self.deserialize(resp)['objects'][0], {
+			"id": self.developer_1.pk,
+			"name": str(self.developer_1.name),
+			"date_founded": str(self.developer_1.date_founded),
+			"num_employees": self.developer_1.num_employees,
+			"status": str(self.developer_1.status),
+			"address": str(self.developer_1.address),
+			"map_link": str(self.developer_1.map_link),
+			"image_link1": str(self.developer_1.image_link1),
+			"image_link2": str(self.developer_1.image_link2),
+			"image_link3": str(self.developer_1.image_link3),
+			"platforms": ['/api/v1/platform/{0}/'.format(o.pk) for o in self.developer_1.platforms.all()],
+			'resource_uri': '/api/v1/developer/{0}/'.format(self.developer_1.pk)
+		})
+
+#------
+# Games
+#------
+class GameResourceTest(ResourceTestCase) :
+
+	fixtures = ['data.json']
+
+	def setUp(self):
+		super(GameResourceTest, self).setUp()
+		
+		# Create a user.
+		self.username = 'polt'
+		self.password = 'masher'
+		self.api_key = 'poltergust'
+		self.user = User.objects.create_user(self.username, 'poltergust@hotmail.com', self.password)
+		
+		# chose Call of Duty 4: Modern Warfare since it is the first alphabetically
+		self.game_1 = Game.objects.get(title='Call of Duty 4: Modern Warfare')
+		
+		self.detail_url = '/api/v1/game/{0}/'.format(self.game_1.pk)
+		
+		self.post_data = {
+			'user': '/api/v1/user/{0}/'.format(self.user.pk),
+			'title': 'Second Post!',
+			'slug': 'second-post',
+			'created': '2014-04-03T19:13:42',
+		}
+		
+	def get_api_credentials(self):
+		return self.create_apikey(username=self.username, api_key=self.api_key)
+		
+	#def test_get_list_unauthorzied(self):
+		#self.assertHttpUnauthorized(self.api_client.get('/api/v1/game/', format='json'))
+        
+	def test_get_list_json(self):
+		resp = self.api_client.get('/api/v1/game/', format='json', authentication=self.get_api_credentials())
+		self.assertValidJSONResponse(resp)
+    	
+		self.assertEqual(len(self.deserialize(resp)['objects']), 10)
+		
+		# compare with Call of Duty 4: Modern Warfare
+		self.assertEqual(self.deserialize(resp)['objects'][0], {
+			"id": self.game_1.pk,
+			"title": str(self.game_1.title),
+			"release_date": str(self.game_1.release_date),
+			"genre": str(self.game_1.genre),
+			"publisher": str(self.game_1.publisher),
+			"ESRB_rating": str(self.game_1.ESRB_rating),
+			"youtube_link": str(self.game_1.youtube_link),
+			"image_link1": str(self.game_1.image_link1),
+			"image_link2": str(self.game_1.image_link2),
+			"image_link3": str(self.game_1.image_link3),
+			'developer': '/api/v1/developer/{0}/'.format(self.game_1.developer.pk),
+			'platforms': ['/api/v1/platform/{0}/'.format(o.pk) for o in self.game_1.platforms.all()],
+			'resource_uri': '/api/v1/game/{0}/'.format(self.game_1.pk)
+		})
+
+	"""def test_API_get_developers(self) :
 		request = Request("api/v1/developer")
 		response = urlopen(request)
 		
@@ -68,6 +223,7 @@ class test_API(TestCase) :
 		self.assertTrue(response_code == 200)
 
 		response_content = loads(response.read().decode("utf-8"))
+		print(response_content + "\n\n\n\n")
 		self.assertTrue(response_content == [{"id": platinum_games["id"], "name": platinum_games["name"]}])
 
 	def test_API_post_developers(self) :
@@ -294,7 +450,7 @@ class test_API(TestCase) :
 		self.assertTrue(response_code == 200)
 
 		response_content = loads(response.read().decode("utf-8"))
-		self.assertTrue(response_content == [wii_u])
+		self.assertTrue(response_content == [wii_u]) """
 
 
 	print("Done")
