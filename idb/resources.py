@@ -1,6 +1,5 @@
 from tastypie import fields
 from tastypie.authorization import Authorization
-from tastypie.serializers import Serializer
 from tastypie.resources import ModelResource, ALL, ALL_WITH_RELATIONS
 from idb.models import Platform, Developer, Game
 
