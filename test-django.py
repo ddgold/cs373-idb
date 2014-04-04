@@ -176,6 +176,7 @@ class test_platform(TestCase) :
 		response_code = response.status_code
 		self.assertEqual(response.status_code, 404)
 
+
 """
 	def test_API_get_platform_developers(self) :
 		request = Request("http://vgdb.apiary-mock.com/api/platforms/wii_u/developers")
@@ -228,6 +229,14 @@ class test_game(TestCase) :
 		# results = the_wonderful_101.copy().update({"id": 11, 'resource_uri': '/api/v1/game/11/'})
 		# self.assertTrue(response_content, results)
 
+	def test_post_game_fail_case(self):
+		values = dumps(the_wonderful_101).encode("utf-8")
+		headers = "application/json"
+		response = self.client.post("/api/v1/poop/", values, headers)
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 404)
+
 	def test_API_get_single_game(self) :
 		response = self.client.get("/api/v1/game/4/")
 
@@ -236,8 +245,14 @@ class test_game(TestCase) :
 
 		response_content = loads(response.content.decode("utf-8"))
 		self.assertEqual(len(response_content), 13)
-		self.assertEqual(response_content["id"], 4)
+		self.assertEqual(response_content["id"], 4)	
 		self.assertEqual(response_content["title"], "Grand Theft Auto III")
+
+	def test_API_get_single_game_fail_case(self):
+		response = self.client.get("/api/v1/game/idontexist")
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 301)
 
 	def test_API_put_game(self) :
 		values = dumps(the_wonderful_101).encode("utf-8")
@@ -260,6 +275,7 @@ class test_game(TestCase) :
 		self.assertEqual(len(response_content), 13)
 		self.assertEqual(response_content["id"], 7)
 		self.assertEqual(response_content["title"], "The Wonderful 101")
+
 
 	def test_API_delete_game(self) :
 		response = self.client.delete("/api/v1/game/5/")
@@ -335,6 +351,11 @@ class test_developer(TestCase) :
 		self.assertEqual(response_content["id"], 2)
 		self.assertEqual(response_content["name"], "Infinity Ward")
 
+	def test_API_get_single_developer_fail_case(self):
+		response = self.client.get("/api/v1/developer/pie")
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 301)
+
 	def test_API_put_developer(self) :
 		values = dumps(platinum_games).encode("utf-8")
 		headers = "application/json"
@@ -357,6 +378,14 @@ class test_developer(TestCase) :
 		self.assertEqual(response_content["id"], 5)
 		self.assertEqual(response_content["name"], "Platinum Games")
 
+	def test_API_put_developer_fail_case(self):
+		values = dumps(platinum_games).encode("utf-8")
+		headers = "application/json"
+		response = self.client.put("/api/v1/developers/pie/", values, headers)
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 404)
+
 	def test_API_delete_developer(self) :
 		response = self.client.delete("/api/v1/developer/8/")
 
@@ -367,6 +396,18 @@ class test_developer(TestCase) :
 
 		response_code = response.status_code
 		self.assertEqual(response.status_code, 404)
+
+	def test_API_delete_developer_fail_case(self) :
+		response = self.client.delete("/api/v1/developer/a/")
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 404)
+
+		# response = self.client.get("/api/v1/developer/8/")
+
+		# response_code = response.status_code
+		# self.assertEqual(response.status_code, 404)
+
 
 """
 	def test_API_get_developer_games(self) :
