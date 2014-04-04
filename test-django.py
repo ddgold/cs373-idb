@@ -36,7 +36,7 @@ the_wonderful_101 = {
 wii_u = {
 	"name": "Wii U",
 	"manufacturer": "Nintendo",
-	"release_date": "2012-11-18",
+	"release_date": "2012-11-18T00:00:00",
 	"media_format": "Physical (disks) and digital",
 	"generation": 8,
 	"youtube_link": "http://www.youtube.com/embed/qhlDHeCT-Q8",
@@ -46,6 +46,62 @@ wii_u = {
 	"image_link3": "http://blogs-images.forbes.com/erikkain/files/2012/11/blackcontroller_big-1.jpg"
 }
 
+class test_main(TestCase) :
+	fixtures = ["data.json"]
+	def setUp(self):
+		self.client = Client();
+
+	def test_get_main(self) :
+		response = self.client.get("/api/v1/")
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 200)
+
+		response_content = loads(response.content.decode("utf-8"))
+		self.assertEqual(len(response_content), 3)
+		self.assertEqual(response_content["platform"]["list_endpoint"], "/api/v1/platform/")
+		self.assertEqual(response_content["game"]["list_endpoint"], "/api/v1/game/")
+		self.assertEqual(response_content["developer"]["list_endpoint"], "/api/v1/developer/")
+
+	def test_get_404(self) :
+		response = self.client.get("/api/v1/bad_address/")
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 404)
+
+		response_content = response.content.decode("utf-8")
+		self.assertEqual(response_content[4:13], "Not Found")
+
+	def test_post_404(self) :
+		values = dumps(wii_u).encode("utf-8")
+		headers = "application/json"
+		response = self.client.post("/api/v1/bad_address/", values, headers)
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 404)
+
+		response_content = response.content.decode("utf-8")
+		self.assertEqual(response_content[4:13], "Not Found")
+
+	def test_put_404(self) :
+		values = dumps(wii_u).encode("utf-8")
+		headers = "application/json"
+		response = self.client.put("/api/v1/bad_address/", values, headers)
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 404)
+
+		response_content = response.content.decode("utf-8")
+		self.assertEqual(response_content[4:13], "Not Found")
+
+	def test_delete_404(self) :
+		response = self.client.delete("/api/v1/bad_address/")
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 404)
+
+		response_content = response.content.decode("utf-8")
+		self.assertEqual(response_content[4:13], "Not Found")
 
 
 class test_platform(TestCase) :
@@ -73,7 +129,8 @@ class test_platform(TestCase) :
 		self.assertEqual(response.status_code, 201)
 
 		# response_content = loads(response.content.decode("utf-8"))
-		# print(response_content)
+		# results = wii_u.copy().update({"id": 11, 'resource_uri': '/api/v1/platform/11/'})
+		# self.assertTrue(response_content, results)
 
 	def test_API_get_single_platform(self) :
 		response = self.client.get("/api/v1/platform/1/")
@@ -95,7 +152,8 @@ class test_platform(TestCase) :
 		self.assertEqual(response.status_code, 204)
 
 		# response_content = loads(response.content.decode("utf-8"))
-		# print(response_content)
+		# results = wii_u.copy().update({"id": 3, 'resource_uri': '/api/v1/platform/3/'})
+		# self.assertTrue(response_content, results)
 
 		response = self.client.get("/api/v1/platform/3/")
 
@@ -167,7 +225,8 @@ class test_game(TestCase) :
 		self.assertEqual(response.status_code, 201)
 
 		# response_content = loads(response.content.decode("utf-8"))
-		# print(response_content)
+		# results = the_wonderful_101.copy().update({"id": 11, 'resource_uri': '/api/v1/game/11/'})
+		# self.assertTrue(response_content, results)
 
 	def test_API_get_single_game(self) :
 		response = self.client.get("/api/v1/game/4/")
@@ -189,7 +248,8 @@ class test_game(TestCase) :
 		self.assertEqual(response.status_code, 204)
 
 		# response_content = loads(response.content.decode("utf-8"))
-		# print(response_content)
+		# results = the_wonderful_101.copy().update({"id": 7, 'resource_uri': '/api/v1/game/7/'})
+		# self.assertTrue(response_content, results)
 
 		response = self.client.get("/api/v1/game/7/")
 
@@ -261,7 +321,8 @@ class test_developer(TestCase) :
 		self.assertEqual(response.status_code, 201)
 
 		# response_content = loads(response.content.decode("utf-8"))
-		# print(response_content)
+		# results = platinum_games.copy().update({"id": 11, 'resource_uri': '/api/v1/developer/11/'})
+		# self.assertTrue(response_content, results)
 
 	def test_API_get_single_developer(self) :
 		response = self.client.get("/api/v1/developer/2/")
@@ -283,7 +344,8 @@ class test_developer(TestCase) :
 		self.assertEqual(response.status_code, 204)
 
 		# response_content = loads(response.content.decode("utf-8"))
-		# print(response_content)
+		# results = platinum_games.copy().update({"id": 5, 'resource_uri': '/api/v1/developer/5/'})
+		# self.assertTrue(response_content, results)
 
 		response = self.client.get("/api/v1/developer/5/")
 
