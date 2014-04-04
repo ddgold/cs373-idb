@@ -27,3 +27,32 @@ nav {
 	width: auto;
 	margin: 0 auto;
 }
+
+body {
+     margin: 0;
+     background: url('http://freegameupdate.com/wp-content/uploads/2014/02/video-games-controller-wallpapernintendo-video-games-nes-game-console-controller-x-w5unldtl.png');
+     background-color: #000000;
+     background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+     background-repeat: no-repeat;
+     display: auto;
+     font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*.jumbotron {
+  margin-bottom: 0px;
+  height: 350px;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  background: transparent;
+}
+
+h1 span {
+   color: #fff;
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.4); 
+   line-height: 91px; 
+   padding: 8px; 
+}
+*/
