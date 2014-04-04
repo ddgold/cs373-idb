@@ -34,9 +34,9 @@ class DeveloperResource(ModelResource):
         }
 
     def dehydrate(self, bundle):
-    # convert URIs to IDs
-    bundle.data['platforms'] = [int(i.split('/')[-2]) for i in bundle.data['platforms']]
-    return bundle
+        # convert URIs to IDs
+        bundle.data['platforms'] = [int(i.split('/')[-2]) for i in bundle.data['platforms']]
+        return bundle
 
 class GameResource(ModelResource):
     developer = fields.ForeignKey(DeveloperResource, 'developer')
@@ -55,7 +55,7 @@ class GameResource(ModelResource):
         }
 
     def dehydrate(self, bundle):
-    # convert URIs to IDs
-    bundle.data['platforms'] = [int(i.split('/')[-2]) for i in bundle.data['platforms']]
-    bundle.data['developer'] = int(bundle.data['developer'].split('/')[-2])
-    return bundle
+        # convert URIs to IDs
+        bundle.data['platforms'] = [int(i.split('/')[-2]) for i in bundle.data['platforms']]
+        bundle.data['developer'] = int(bundle.data['developer'].split('/')[-2])
+        return bundle
