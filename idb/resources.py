@@ -1,4 +1,6 @@
 from tastypie import fields
+from tastypie.authorization import Authorization
+from tastypie.serializers import Serializer
 from tastypie.resources import ModelResource, ALL, ALL_WITH_RELATIONS
 from idb.models import Platform, Developer, Game
 
@@ -6,6 +8,7 @@ class PlatformResource(ModelResource):
     class Meta:
         queryset = Platform.objects.all()
         resource_name = 'platform'
+        authorization = Authorization()
         allowed_methods = ['get', 'post', 'put', 'delete']
         filtering = {
             'name': ['exact', 'starstwith', 'endswith', 'contains'],
@@ -21,6 +24,7 @@ class DeveloperResource(ModelResource):
     class Meta:
         queryset = Developer.objects.all()
         resource_name = 'developer'
+        authorization = Authorization()
         allowed_methods = ['get', 'post', 'put', 'delete']
         filtering = {
             'name' : ['exact', 'starstwith', 'endswith', 'contains'],
@@ -36,6 +40,7 @@ class GameResource(ModelResource):
     class Meta:
         queryset = Game.objects.all()
         resource_name = 'game'
+        authorization = Authorization()
         allowed_methods = ['get', 'post', 'put', 'delete']
         filtering = {
             'title' : ['exact', 'starstwith', 'endswith', 'contains'],

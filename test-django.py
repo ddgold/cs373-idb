@@ -4,50 +4,6 @@ from django.test import TestCase
 from django.test.client import Client
 from json import dumps, loads
 
-
-
-platinum_games = {
-	"name": "Platinum Games",
-	"date_founded": "2006-04-08",
-	"num_employees": 120,
-	"status": "Active",
-	"address": "Umeda Sky Building Tower West 8F,\n1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108",
-	"map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed",
-	"image_link1": "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg",
-	"image_link2": "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg",
-	"image_link3": "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg",
-	"platforms": ["/api/v1/platform/1/"]
-}
-
-the_wonderful_101 = {
-	"title": "The Wonderful 101",
-	"release_date": "2013-09-15",
-	"genre": "Action",
-	"publisher": "Nintendo",
-	"ESRB_rating": "T",
-	"youtube_link": "www.youtube.com/embed/z9ueBmNNGus",
-	"image_link1": "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png",
-	"image_link2": "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg",
-	"image_link3": "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg",
-	"developer": "/api/v1/developer/1/", 
-	"platforms":["/api/v1/platform/1/"]
-}
-
-wii_u = {
-	"name": "Wii U",
-	"manufacturer": "Nintendo",
-	"release_date": "2012-11-18",
-	"media_format": "Physical (disks) and digital",
-	"generation": 8,
-	"youtube_link": "http://www.youtube.com/embed/qhlDHeCT-Q8",
-	"twitter_link": "446085251077373952",
-	"image_link1": "http://g-ecx.images-amazon.com/images/G/01/aplus/detail-page/B009AGXH64hardware.jpg",
-	"image_link2": "http://www.dailynintendo.nl/wp-content/uploads/2011/05/wii-u.jpg",
-	"image_link3": "http://blogs-images.forbes.com/erikkain/files/2012/11/blackcontroller_big-1.jpg"
-}
-
-
-
 class test_platform(TestCase) :
 	fixtures = ["data.json"]
 	def setUp(self):
