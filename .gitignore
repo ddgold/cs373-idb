@@ -53,6 +53,3 @@ staticfiles
 
 # Sphinx documentation
 docs/_build/
-
-.idea
-db.sqlite3
