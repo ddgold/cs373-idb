@@ -147,10 +147,6 @@ class test_platform(TestCase) :
 		response_code = response.status_code
 		self.assertEqual(response.status_code, 204)
 
-		# response_content = loads(response.content.decode("utf-8"))
-		# results = wii_u.copy().update({"id": 3, 'resource_uri': '/api/v1/platform/3/'})
-		# self.assertTrue(response_content, results)
-
 		response = self.client.get("/api/v1/platform/3/")
 
 		response_code = response.status_code
@@ -195,10 +191,6 @@ class test_developer(TestCase) :
 
 		response_code = response.status_code
 		self.assertEqual(response.status_code, 201)
-
-		# response_content = loads(response.content.decode("utf-8"))
-		# results = platinum_games.copy().update({"id": 11, 'resource_uri': '/api/v1/developer/11/'})
-		# self.assertTrue(response_content, results)
 
 	def test_API_get_single_developer(self) :
 		response = self.client.get("/api/v1/developer/2/")
