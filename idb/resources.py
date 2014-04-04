@@ -33,6 +33,11 @@ class DeveloperResource(ModelResource):
             'address' : ['exact', 'contains', 'startswith', 'endswith'],
         }
 
+    def dehydrate(self, bundle):
+	# convert URIs to IDs
+	bundle.data['platforms'] = [int(i.split('/')[-2]) for i in bundle.data['platforms']]
+	return bundle
+
 class GameResource(ModelResource):
     developer = fields.ForeignKey(DeveloperResource, 'developer')
     platforms = fields.ToManyField(PlatformResource, 'platforms')
@@ -48,3 +53,9 @@ class GameResource(ModelResource):
             'publisher' : ['exact', 'starstwith', 'endswith', 'contains'],
             'ESRB_rating' : ['exact'],
         }
+
+    def dehydrate(self, bundle):
+	# convert URIs to IDs
+	bundle.data['platforms'] = [int(i.split('/')[-2]) for i in bundle.data['platforms']]
+	bundle.data['developer'] = int(bundle.data['developer'].split('/')[-2])
+	return bundle
