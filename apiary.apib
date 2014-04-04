@@ -3,7 +3,7 @@ FORMAT: 1A
 # vgdb
 RESTful API for the Video Game Data Base
 
-## Developer Collection [/api/developers]
+## Developer Collection [/api/v1/developers]
 
 ### List all Developers [GET]
 + Response 200 (application/json)
@@ -37,10 +37,10 @@ RESTful API for the Video Game Data Base
             "name": "Platinum Games"
         }
 
-## Developer [/api/developers/{name}]
+## Developer [/api/v1/developers/{id}]
 
 + Parameters
-    + name (required, string, `platinum_games`) ... String `name` of the Developer to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve a Developer [GET]
 + Response 200 (application/json)
@@ -81,10 +81,10 @@ RESTful API for the Video Game Data Base
 ### Remove a Developer [DELETE]
 + Response 204
 
-## Developer's Games [/api/developers/{name}/games]
+## Developer's Games [/api/v1/developers/{id}/games]
 
 + Parameters
-    + name (required, string, `platinum_games`) ... String `name` of the Developer to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve related Games [GET]
 + Response 200 (application/json)
@@ -104,10 +104,10 @@ RESTful API for the Video Game Data Base
             "platforms":[1]
         }]
 
-## Developer's Platforms [/api/developers/{name}/platforms]
+## Developer's Platforms [/api/v1/developers/{id}/platforms]
 
 + Parameters
-    + name (required, string, `platinum_games`) ... String `name` of the Developer to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve related Platforms [GET]
 + Response 200 (application/json)
@@ -128,7 +128,7 @@ RESTful API for the Video Game Data Base
 
 
 
-## Game Collection [/api/games]
+## Game Collection [/api/v1/games]
 
 ### List all Games [GET]
 + Response 200 (application/json)
@@ -163,10 +163,10 @@ RESTful API for the Video Game Data Base
             "title": "The Wonderful 101"
         }
 
-## Game [/api/games/{title}]
+## Game [/api/v1/games/{id}]
 
 + Parameters
-    + title (required, string, `the_wonderful_101`) ... String `title` of the Gane to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve a Game [GET]
 + Response 200 (application/json)
@@ -209,10 +209,10 @@ RESTful API for the Video Game Data Base
 ### Remove a Game [DELETE]
 + Response 204
 
-## Game's Developers [/api/games/{title}/developers]
+## Game's Developers [/api/v1/games/{id}/developers]
 
 + Parameters
-    + title (required, string, `the_wonderful_101`) ... String `title` of the Gane to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve related Developer [GET]
 + Response 200 (application/json)
@@ -231,10 +231,10 @@ RESTful API for the Video Game Data Base
             "platforms": [1]
         }
 
-## Game's Platforms [/api/games/{title}/platforms]
+## Game's Platforms [/api/v1/games/{id}/platforms]
 
 + Parameters
-    + title (required, string, `the_wonderful_101`) ... String `title` of the Gane to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve related Platforms [GET]
 + Response 200 (application/json)
@@ -255,7 +255,7 @@ RESTful API for the Video Game Data Base
 
 
 
-## Platform Collection [/api/platforms]
+## Platform Collection [/api/v1/platforms]
 
 ### List all Platforms [GET]
 + Response 200 (application/json)
@@ -289,10 +289,10 @@ RESTful API for the Video Game Data Base
             "name": "Wii U"
         }
 
-## Platform [/api/platforms/{name}]
+## Platform [/api/platforms/v1/{id}]
 
 + Parameters
-    + name (required, string, `wii_u`) ... String `name` of the Platform to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve a Platform [GET]
 + Response 200 (application/json)
@@ -333,10 +333,10 @@ RESTful API for the Video Game Data Base
 ### Remove a Platform [DELETE]
 + Response 204
 
-## Platform's Developers [/api/platforms/{name}/developers]
+## Platform's Developers [/api/v1/platforms/{id}/developers]
 
 + Parameters
-    + name (required, string, `wii_u`) ... String `name` of the Platform to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve related Developers [GET]
 + Response 200 (application/json)
@@ -355,10 +355,10 @@ RESTful API for the Video Game Data Base
             "platforms": [1]
         }]
 
-## Platform's Games [/api/platforms/{name}/games]
+## Platform's Games [/api/v1/platforms/{id}/games]
 
 + Parameters
-    + name (required, string, `wii_u`) ... String `name` of the Platform to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve related Games [GET]
 + Response 200 (application/json)
