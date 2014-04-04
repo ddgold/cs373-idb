@@ -3,7 +3,7 @@ FORMAT: 1A
 # vgdb
 RESTful API for the Video Game Data Base
 
-## Developer Collection [/api/developers]
+## Developer Collection [/api/v1/developer]
 
 ### List all Developers [GET]
 + Response 200 (application/json)
@@ -17,7 +17,6 @@ RESTful API for the Video Game Data Base
 + Request (application/json)
 
         {
-            "id": 1,
             "name": "Platinum Games",
             "date_founded": "2006-04-08",
             "num_employees": 120,
@@ -37,10 +36,10 @@ RESTful API for the Video Game Data Base
             "name": "Platinum Games"
         }
 
-## Developer [/api/developers/{name}]
+## Developer [/api/v1/developer/{id}]
 
 + Parameters
-    + name (required, string, `platinum_games`) ... String `name` of the Developer to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve a Developer [GET]
 + Response 200 (application/json)
@@ -63,7 +62,6 @@ RESTful API for the Video Game Data Base
 + Request (application/json)
 
         {
-            "id": 1,
             "name": "Platinum Games",
             "date_founded": "2006-04-08",
             "num_employees": 120,
@@ -81,10 +79,10 @@ RESTful API for the Video Game Data Base
 ### Remove a Developer [DELETE]
 + Response 204
 
-## Developer's Games [/api/developers/{name}/games]
+## Developer's Games [/api/v1/developer/{id}/game]
 
 + Parameters
-    + name (required, string, `platinum_games`) ... String `name` of the Developer to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve related Games [GET]
 + Response 200 (application/json)
@@ -104,10 +102,10 @@ RESTful API for the Video Game Data Base
             "platforms":[1]
         }]
 
-## Developer's Platforms [/api/developers/{name}/platforms]
+## Developer's Platforms [/api/v1/developer/{id}/platform]
 
 + Parameters
-    + name (required, string, `platinum_games`) ... String `name` of the Developer to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve related Platforms [GET]
 + Response 200 (application/json)
@@ -128,7 +126,7 @@ RESTful API for the Video Game Data Base
 
 
 
-## Game Collection [/api/games]
+## Game Collection [/api/v1/game]
 
 ### List all Games [GET]
 + Response 200 (application/json)
@@ -142,7 +140,6 @@ RESTful API for the Video Game Data Base
 + Request (application/json)
 
         {
-            "id": 1,
             "title": "The Wonderful 101",
             "release_date": "2013-09-15",
             "genre": "Action",
@@ -163,10 +160,10 @@ RESTful API for the Video Game Data Base
             "title": "The Wonderful 101"
         }
 
-## Game [/api/games/{title}]
+## Game [/api/v1/game/{id}]
 
 + Parameters
-    + title (required, string, `the_wonderful_101`) ... String `title` of the Gane to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve a Game [GET]
 + Response 200 (application/json)
@@ -190,7 +187,6 @@ RESTful API for the Video Game Data Base
 + Request (application/json)
 
         {
-            "id": 1,
             "title": "The Wonderful 101",
             "release_date": "2013-09-15",
             "genre": "Action",
@@ -209,10 +205,10 @@ RESTful API for the Video Game Data Base
 ### Remove a Game [DELETE]
 + Response 204
 
-## Game's Developers [/api/games/{title}/developers]
+## Game's Developers [/api/v1/game/{id}/developer]
 
 + Parameters
-    + title (required, string, `the_wonderful_101`) ... String `title` of the Gane to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve related Developer [GET]
 + Response 200 (application/json)
@@ -231,10 +227,10 @@ RESTful API for the Video Game Data Base
             "platforms": [1]
         }
 
-## Game's Platforms [/api/games/{title}/platforms]
+## Game's Platforms [/api/v1/game/{id}/platform]
 
 + Parameters
-    + title (required, string, `the_wonderful_101`) ... String `title` of the Gane to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve related Platforms [GET]
 + Response 200 (application/json)
@@ -255,7 +251,7 @@ RESTful API for the Video Game Data Base
 
 
 
-## Platform Collection [/api/platforms]
+## Platform Collection [/api/v1/platform]
 
 ### List all Platforms [GET]
 + Response 200 (application/json)
@@ -269,7 +265,6 @@ RESTful API for the Video Game Data Base
 + Request (application/json)
 
         {
-            "id": 1,
             "name": "Wii U",
             "manufacturer": "Nintendo",
             "release_date": "2012-11-18",
@@ -289,10 +284,10 @@ RESTful API for the Video Game Data Base
             "name": "Wii U"
         }
 
-## Platform [/api/platforms/{name}]
+## Platform [/api/platform/v1/{id}]
 
 + Parameters
-    + name (required, string, `wii_u`) ... String `name` of the Platform to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve a Platform [GET]
 + Response 200 (application/json)
@@ -315,7 +310,6 @@ RESTful API for the Video Game Data Base
 + Request (application/json)
 
         {
-            "id": 1,
             "name": "Wii U",
             "manufacturer": "Nintendo",
             "release_date": "2012-11-18",
@@ -333,10 +327,10 @@ RESTful API for the Video Game Data Base
 ### Remove a Platform [DELETE]
 + Response 204
 
-## Platform's Developers [/api/platforms/{name}/developers]
+## Platform's Developers [/api/v1/platform/{id}/developer]
 
 + Parameters
-    + name (required, string, `wii_u`) ... String `name` of the Platform to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve related Developers [GET]
 + Response 200 (application/json)
@@ -355,10 +349,10 @@ RESTful API for the Video Game Data Base
             "platforms": [1]
         }]
 
-## Platform's Games [/api/platforms/{name}/games]
+## Platform's Games [/api/v1/platform/{id}/game]
 
 + Parameters
-    + name (required, string, `wii_u`) ... String `name` of the Platform to perform action with. Has example value.
+    + id (required, number, `1`)
 
 ### Retrieve related Games [GET]
 + Response 200 (application/json)
