@@ -386,7 +386,7 @@ class test_developer(TestCase) :
 		response_code = response.status_code
 		self.assertEqual(response.status_code, 404)
 
-	def test_API_delete_developer(self) :
+	def test_API_delete_developer_fail_case(self) :
 		response = self.client.delete("/api/v1/developer/8/")
 
 		response_code = response.status_code
