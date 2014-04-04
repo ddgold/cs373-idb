@@ -31,9 +31,10 @@ nav {
 body {
      margin: 0;
      background: url('http://freegameupdate.com/wp-content/uploads/2014/02/video-games-controller-wallpapernintendo-video-games-nes-game-console-controller-x-w5unldtl.png');
+     background-color: #000000;
      background-position: center;
      background-attachment: fixed;
-     background-size: 100% auto;
+     background-size: cover;
      background-repeat: no-repeat;
      display: auto;
      font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
