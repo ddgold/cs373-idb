@@ -3,7 +3,7 @@ FORMAT: 1A
 # vgdb
 RESTful API for the Video Game Data Base
 
-## Developer Collection [/api/v1/developers]
+## Developer Collection [/api/v1/developer]
 
 ### List all Developers [GET]
 + Response 200 (application/json)
@@ -37,7 +37,7 @@ RESTful API for the Video Game Data Base
             "name": "Platinum Games"
         }
 
-## Developer [/api/v1/developers/{id}]
+## Developer [/api/v1/developer/{id}]
 
 + Parameters
     + id (required, number, `1`)
@@ -81,7 +81,7 @@ RESTful API for the Video Game Data Base
 ### Remove a Developer [DELETE]
 + Response 204
 
-## Developer's Games [/api/v1/developers/{id}/games]
+## Developer's Games [/api/v1/developer/{id}/game]
 
 + Parameters
     + id (required, number, `1`)
@@ -104,7 +104,7 @@ RESTful API for the Video Game Data Base
             "platforms":[1]
         }]
 
-## Developer's Platforms [/api/v1/developers/{id}/platforms]
+## Developer's Platforms [/api/v1/developer/{id}/platform]
 
 + Parameters
     + id (required, number, `1`)
@@ -128,7 +128,7 @@ RESTful API for the Video Game Data Base
 
 
 
-## Game Collection [/api/v1/games]
+## Game Collection [/api/v1/game]
 
 ### List all Games [GET]
 + Response 200 (application/json)
@@ -163,7 +163,7 @@ RESTful API for the Video Game Data Base
             "title": "The Wonderful 101"
         }
 
-## Game [/api/v1/games/{id}]
+## Game [/api/v1/game/{id}]
 
 + Parameters
     + id (required, number, `1`)
@@ -209,7 +209,7 @@ RESTful API for the Video Game Data Base
 ### Remove a Game [DELETE]
 + Response 204
 
-## Game's Developers [/api/v1/games/{id}/developers]
+## Game's Developers [/api/v1/game/{id}/developer]
 
 + Parameters
     + id (required, number, `1`)
@@ -231,7 +231,7 @@ RESTful API for the Video Game Data Base
             "platforms": [1]
         }
 
-## Game's Platforms [/api/v1/games/{id}/platforms]
+## Game's Platforms [/api/v1/game/{id}/platform]
 
 + Parameters
     + id (required, number, `1`)
@@ -255,7 +255,7 @@ RESTful API for the Video Game Data Base
 
 
 
-## Platform Collection [/api/v1/platforms]
+## Platform Collection [/api/v1/platform]
 
 ### List all Platforms [GET]
 + Response 200 (application/json)
@@ -289,7 +289,7 @@ RESTful API for the Video Game Data Base
             "name": "Wii U"
         }
 
-## Platform [/api/platforms/v1/{id}]
+## Platform [/api/platform/v1/{id}]
 
 + Parameters
     + id (required, number, `1`)
@@ -333,7 +333,7 @@ RESTful API for the Video Game Data Base
 ### Remove a Platform [DELETE]
 + Response 204
 
-## Platform's Developers [/api/v1/platforms/{id}/developers]
+## Platform's Developers [/api/v1/platform/{id}/developer]
 
 + Parameters
     + id (required, number, `1`)
@@ -355,7 +355,7 @@ RESTful API for the Video Game Data Base
             "platforms": [1]
         }]
 
-## Platform's Games [/api/v1/platforms/{id}/games]
+## Platform's Games [/api/v1/platform/{id}/game]
 
 + Parameters
     + id (required, number, `1`)
