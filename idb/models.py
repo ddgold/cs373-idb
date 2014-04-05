@@ -93,7 +93,7 @@ class Developer(models.Model):
 
 
 class Game(models.Model):
-     '''
+    '''
     Game Model that represents a video game
 
     @type title: models.CharField(255)
