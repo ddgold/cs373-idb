@@ -17,7 +17,9 @@ def developers(request):
     developer_list = get_list_or_404(Developer)
     developer_dict = {}
     for developer in developer_list :
-        letter = developer.name[0]
+        letter = developer.name[0].capitalize()
+        if not letter.isalpha() :
+            letter = "#"
         if letter in developer_dict :
             developer_dict[letter] += [developer]
         else :
@@ -36,7 +38,9 @@ def platforms(request):
     platform_list = get_list_or_404(Platform)
     platform_dict = {}
     for platform in platform_list :
-        letter = platform.name[0]
+        letter = platform.name[0].capitalize()
+        if not letter.isalpha() :
+            letter = "#"
         if letter in platform_dict :
             platform_dict[letter] += [platform]
         else :
@@ -55,7 +59,9 @@ def games(request):
     game_list = get_list_or_404(Game)
     game_dict = {}
     for game in game_list :
-        letter = game.title[0]
+        letter = game.title[0].capitalize()
+        if not letter.isalpha() :
+            letter = "#"
         if letter in game_dict :
             game_dict[letter] += [game]
         else :
