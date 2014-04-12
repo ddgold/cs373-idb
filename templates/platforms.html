@@ -18,14 +18,17 @@ IVGDb &middot; Platforms
                 {% endif %}
             {% endfor %}
         </div>
-        <div class="list-group">
+        <ul class="list-group">
             {% for k, v in platform_dict.items %}
-                <a class="list-group-item active" style="font-size: 18px;">{{k}}</a>
+                <a id="{{k}}"class="list-group-item active">{{k}}</a>
                 {% for p in v %}
-                    <a href="/platform/{{ p.pk }}" class="list-group-item">{{p.name}}</a>
+                    <li class="list-group-item list_all">
+                        <img src="{{p.image_link1}}" height="50" width="50" />
+                        <a href="/platform/{{p.pk}}">{{p.name}}</a>
+                    </li>
                 {% endfor %}
             {% endfor %}
-        </div>
+        </ul>
     </div>
 </div>
 {% endblock content %}

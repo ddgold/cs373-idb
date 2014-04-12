@@ -3953,7 +3953,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a {
   color: #ffffff;
 }
-.navbar-default .navbar-nav > .active > a{
+.navbar-default .navbar-nav > .active > a {
   color: #ffffff;
   background-color: #28415b;
 }
@@ -4642,6 +4642,7 @@ a.list-group-item.active:hover,
 a.list-group-item.active:focus {
   z-index: 2;
   color: #ffffff;
+  font-size: 18px;
   text-decoration: none;
   background-color: #28415b;
   border-color: #28415b;
@@ -4761,6 +4762,7 @@ a.list-group-item-danger.active:focus {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .panel-body {
+  font-size: 18px;
   padding: 15px;
 }
 
