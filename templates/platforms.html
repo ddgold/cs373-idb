@@ -22,7 +22,7 @@ IVGDb &middot; Platforms
             {% for k, v in platform_dict.items %}
                 <a id="{{k}}"class="list-group-item active">{{k}}</a>
                 {% for p in v %}
-                    <li class="list-group-item list_all">
+                    <li class="list-group-item">
                         <img src="{{p.image_link1}}" height="50" width="50" />
                         <a href="/platform/{{p.pk}}">{{p.name}}</a>
                     </li>
