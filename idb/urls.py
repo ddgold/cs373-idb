@@ -19,6 +19,7 @@ urlpatterns = patterns('',
     url(r'^platform/$', 'idb.views.platforms', name='platforms'),
     url(r'^game/(?P<game_id>\d+)/$', 'idb.views.game', name='game'),
     url(r'^game/$', 'idb.views.games', name='games'),
+    url(r'^search/', 'idb.views.search', name='search'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api/', include(v1_api.urls)),
 )

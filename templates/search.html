@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+IVGDb &middot; Search | {{ query }}
+{% endblock title %}
+
+{% block content %}
+<div class="container well">
+  <h1>Search results for <em class="text-info">{{ query }}</em></h1>
+  <hr/>
+  <ul style="list-style-type: none">
+    {% if developer_results %}
+      <h2>Developers</h2>
+    {% endif %}
+    {% for d in developer_results %}
+      <li style="margin-left: 20px"><a href="/developer/{{ d.pk }}">{{d.name}}</a></li>
+    {% endfor %}
+
+    {% if platform_results %}
+      <h2>Platforms</h2>
+    {% endif %}
+    {% for p in platform_results %}
+      <li style="margin-left: 20px"><a href="/platform/{{ p.pk }}">{{p.name}}</a></li>
+    {% endfor %}
+
+    {% if game_results %}
+      <h2>Games</h2>
+    {% endif %}
+    {% for g in game_results %}
+      <li style="margin-left: 20px"><a href="/game/{{ g.pk }}">{{g.title}}</a></li>
+    {% endfor %}
+  </ul>
+  {% if not game_results and not platform_results and not developer_results %}
+    <h2 class="text-danger">Your search didn't match anything!</h2>
+  {% endif %}
+</div>
+{% endblock content %}
