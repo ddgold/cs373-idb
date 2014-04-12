@@ -53,3 +53,8 @@ staticfiles
 
 # Sphinx documentation
 docs/_build/
+
+.idea
+.python-version
+_site
+*.sublime*
