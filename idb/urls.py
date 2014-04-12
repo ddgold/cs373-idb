@@ -13,9 +13,12 @@ v1_api.register(GameResource())
 
 urlpatterns = patterns('',
     url(r'^$', 'idb.views.home', name='home'),
-    url(r'^game/(?P<game_id>\d+)/$', 'idb.views.game', name='game'),
-    url(r'^platform/(?P<platform_id>\d+)/$', 'idb.views.platform', name='platform'),
     url(r'^developer/(?P<developer_id>\d+)/$', 'idb.views.developer', name='developer'),
+    url(r'^developer/$', 'idb.views.developers', name='developers'),
+    url(r'^platform/(?P<platform_id>\d+)/$', 'idb.views.platform', name='platform'),
+    url(r'^platform/$', 'idb.views.platforms', name='platforms'),
+    url(r'^game/(?P<game_id>\d+)/$', 'idb.views.game', name='game'),
+    url(r'^game/$', 'idb.views.games', name='games'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api/', include(v1_api.urls)),
 )
