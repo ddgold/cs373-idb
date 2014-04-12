@@ -80,9 +80,9 @@ def search(request):
     query = ""
 
     if request.method == 'GET':
-	query = request.GET.get('query', '')
+        query = request.GET.get('query', '')
     if not query:
-	return HttpResponseRedirect('/')
+        return HttpResponseRedirect('/')
 
     original_query = query
     query = query.lower()
@@ -95,45 +95,45 @@ def search(request):
     developer_results = []
     partial_matches = []
     for d in developer_list:
-	name = d.name.lower()
-	if query in name or all(w in name for w in query_words):
-	    developer_results.append(d)
-	else:
-	    for word in query_words:
-		if word in name:
-		    partial_matches.append(d)
-		    break
+        name = d.name.lower()
+        if query in name or all(w in name for w in query_words):
+            developer_results.append(d)
+        else:
+            for word in query_words:
+                if word in name:
+                    partial_matches.append(d)
+                    break
     developer_results += partial_matches
 
     platform_results = []
     partial_matches = []
     for p in platform_list:
-	name = p.name.lower()
-	if query in name or all(w in name for w in query_words):
-	    platform_results.append(p)
-	else:
-	    for word in query_words:
-		if word in name:
-		    partial_matches.append(p)
-		    break
+        name = p.name.lower()
+        if query in name or all(w in name for w in query_words):
+            platform_results.append(p)
+        else:
+            for word in query_words:
+                if word in name:
+                    partial_matches.append(p)
+                    break
     platform_results += partial_matches
 
     game_results = []
     partial_matches = []
     for g in game_list:
-	name = g.title.lower()
-	if query in name or all(w in name for w in query_words):
-	    game_results.append(g)
-	else:
-	    for word in query_words:
-		if word in name:
-		    partial_matches.append(g)
-		    break
+        name = g.title.lower()
+        if query in name or all(w in name for w in query_words):
+            game_results.append(g)
+        else:
+            for word in query_words:
+                if word in name:
+                    partial_matches.append(g)
+                    break
     game_results += partial_matches
 
     return render(request, 'search.html', {
-	'query': original_query,
-	'developer_results': developer_results,
-	'platform_results': platform_results,
-	'game_results': game_results,
+        'query': original_query,
+        'developer_results': developer_results,
+        'platform_results': platform_results,
+        'game_results': game_results,
     })
