@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block navbar_developer %} active {% endblock %}
+
+{% block title %}
+IVGDb &middot; Developers
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h1>Developers</h1></div>
+        <div class="panel-body letter-nav" style="font-size: 18px;"align="center">
+            {% for k in developer_dict %}
+                <a href="#{{k}}">{{k}}</a>
+                {% if not forloop.last %}
+                 - 
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="list-group">
+            {% for k, v in developer_dict.items %}
+                <a class="list-group-item active">{{k}}</a>
+                {% for d in v %}
+                    <a href="/developer/{{ d.pk }}" class="list-group-item">{{d.name}}</a>
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock content %}
