@@ -65,5 +65,22 @@
             "platforms": ###
         }
     },
+
+    {
+        "model": "idb.developer",
+        "pk": #,
+        "fields": {
+            "name": "Capcom",
+            "date_founded": "1983-06-11",
+            "num_employees": 2476,
+            "status": "Active",
+            "address": "San Mateo County, California, U.S.",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Capcom+USA+Inc,+Concar+Drive,+San+Mateo,+CA&aq=0&oq=capcom+san&sll=34.804783,-117.932739&sspn=4.482792,3.175049&ie=UTF8&hq=&hnear=&t=m&iwloc=A&ll=37.554852,-122.299782&spn=0.006295,0.006295&output=embed",
+            "image_link1": "http://gotgame.com/wp-content/uploads/2011/07/capcom.gif",
+            "image_link2": "http://d1vr6n66ssr06c.cloudfront.net/wp-content/uploads/2013/07/capcom_office_header.jpg",
+            "image_link3": "http://cdn2.dualshockers.com/wp-content/uploads/2012/09/c.jpg",
+            "platforms": ###
+        }
+    },
 ]
 
