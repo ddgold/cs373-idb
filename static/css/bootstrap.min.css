@@ -4766,16 +4766,6 @@ a.list-group-item-danger.active:focus {
   padding: 15px;
 }
 
-.panel-body > a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.panel-body > a:focus,
-.panel-body > a:hover {
-  text-decoration: underline;
-}
-
 .panel-heading {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;

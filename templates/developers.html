@@ -22,7 +22,7 @@ IVGDb &middot; Developers
             {% for k, v in developer_dict.items %}
                 <a id="{{k}}"class="list-group-item active">{{k}}</a>
                 {% for d in v %}
-                    <li class="list-group-item list_all">
+                    <li class="list-group-item">
                         <img src="{{d.image_link1}}" height="50" width="50" />
                         <a href="/developer/{{d.pk}}">{{d.name}}</a>
                     </li>
