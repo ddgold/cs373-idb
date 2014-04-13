@@ -12,6 +12,12 @@ IVGDb &middot; Search | {{ query }}
             <div class="panel-body text-danger">
                 Your search didn't match anything!
             </div>
+        {% else %}
+            <div class="panel-body" align="center">
+                {{developer_results|length}} Developer{% if developer_results|length != 1 %}s{% endif %} - 
+                {{platform_results|length}} Platform{% if platform_results|length != 1 %}s{% endif %} - 
+                {{game_results|length}} Game{% if game_results|length != 1 %}s{% endif %}
+            </div>
         {% endif %}
         <ul class="list-group">
             {% if developer_results %}
