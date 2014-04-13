@@ -5,7 +5,56 @@ IVGDb &middot; Search | {{ query }}
 {% endblock title %}
 
 {% block content %}
-<div class="container well">
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h1>Search results for <em class="text-info">{{ query }}</em></h1></div>
+        {% if not game_results and not platform_results and not developer_results %}
+            <div class="panel-body text-danger">
+                Your search didn't match anything!
+            </div>
+        {% endif %}
+        <ul class="list-group">
+            {% if developer_results %}
+                <a class="list-group-item active">Developers</a>
+                {% for d in developer_results %}
+                    <li class="list-group-item">
+                        <img src="{{d.image_link1}}" height="50" width="50" />
+                        <a href="/developer/{{d.pk}}">{{d.name}}</a>
+                    </li>
+                {% endfor %}
+            {% endif %}
+            {% if platform_results %}
+                <a class="list-group-item active">Platforms</a>
+                {% for p in platform_results %}
+                    <li class="list-group-item">
+                        <img src="{{p.image_link1}}" height="50" width="50" />
+                        <a href="/platform/{{p.pk}}">{{p.name}}</a>
+                    </li>
+                {% endfor %}
+            {% endif %}
+            {% if game_results %}
+                <a class="list-group-item active">Games</a>
+                {% for g in game_results %}
+                    <li class="list-group-item">
+                        <img src="{{g.image_link1}}" height="50" width="50" />
+                        <a href="/game/{{g.pk}}">{{g.title}}</a>
+                    </li>
+                {% endfor %}
+            {% endif %}
+        </ul>
+    </div>
+</div>
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+<!-- <div class="container well">
   <h1>Search results for <em class="text-info">{{ query }}</em></h1>
   <hr/>
   <ul style="list-style-type: none">
@@ -33,5 +82,4 @@ IVGDb &middot; Search | {{ query }}
   {% if not game_results and not platform_results and not developer_results %}
     <h2 class="text-danger">Your search didn't match anything!</h2>
   {% endif %}
-</div>
-{% endblock content %}
+</div> -->
