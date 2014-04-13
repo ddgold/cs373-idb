@@ -1,13 +1,13 @@
 [
     {
         "model": "idb.platform",
-        "pk": #,
+        "pk": 11,
         "fields": {
             "name": "PlayStation",
             "manufacturer": "Sony",
             "release_date": "1995-09-29",
             "media_format": "Physical (disks)",
-            "generation": 1,
+            "generation": 5,
             "youtube_link": "http://www.youtube.com/watch?v=mmL5-iXy-R8",
             "twitter_link": "451487729121890304",
             "image_link1": "http://3.bp.blogspot.com/-C2qS6k7kVeI/UT4h6fnaDDI/AAAAAAAATaE/IdtOBPcWbQw/s400/ps1.jpg",
@@ -18,13 +18,13 @@
 
     {
         "model": "idb.platform",
-        "pk": #,
+        "pk": 12,
         "fields": {
             "name": "PlayStation 4",
             "manufacturer": "Sony",
             "release_date": "2013-09-15",
             "media_format": "Physical (disks) and digital",
-            "generation": 4,
+            "generation": 8,
             "youtube_link": "http://www.youtube.com/watch?v=s0d9d-cdxhk",
             "twitter_link": "451487729121890304",
             "image_link1": "http://cdn.us.playstation.com/pscomauth/groups/public/documents/webasset/ps4_play_img.jpg",
@@ -35,9 +35,9 @@
 
     {
         "model": "idb.platform",
-        "pk": #,
+        "pk": 13,
         "fields": {
-            "name": "Super Nintendo Entertainment",
+            "name": "Super Nintendo Entertainment System",
             "manufacturer": "Nintendo",
             "release_date": "1991-09-21",
             "media_format": "Physical (cartridge)",
@@ -52,7 +52,7 @@
 
     {
         "model": "idb.platform",
-        "pk": #,
+        "pk": 14,
         "fields": {
             "name": "Nintendo Entertainment System",
             "manufacturer": "Nintendo",
@@ -68,13 +68,13 @@
     },
     {
         "model": "idb.platform",
-        "pk": #, 
+        "pk": 15, 
         "fields": {
             "name": "Xbox",
             "manufacturer": "Microsoft",
             "release_date": "2001-15-11",
             "media_format": "Physical (disks) and digital",
-            "generation": 1,
+            "generation": 6,
             "youtube_link": "http://www.youtube.com/watch?v=XtESAQUAHbk",
             "twitter_link": "455135780575252480",
             "image_link1": "http://cdn1.sbnation.com/products/large/1678/xbox.jpg?1316016132",
@@ -84,7 +84,7 @@
     },
     {
         "model": "idb.platform",
-        "pk": #, 
+        "pk": 16, 
         "fields": {
             "name": "Xbox One",
             "manufacturer": "Microsoft",
@@ -100,13 +100,13 @@
     },
     {
         "model": "idb.platform",
-        "pk": #, 
+        "pk": 17, 
         "fields": {
             "name": "Nintendo 3DS",
             "manufacturer": "Nintendo",
             "release_date": "2011-26-02",
-            "media_format": "Physical (disks) and digital",
-            "generation": 6,
+            "media_format": "Physical (cartridges) and digital",
+            "generation": 8,
             "youtube_link": "http://www.youtube.com/watch?v=yeQGkadrCkE",
             "twitter_link": "455138898138525696",
             "image_link1": "http://richwny15.wpengine.netdna-cdn.com/wp-content/uploads/2011/01/N3DS.jpg",
