@@ -160,6 +160,121 @@
         }
     },
     {
+        "model": "idb.platform",
+        "pk": 11,
+        "fields": {
+            "name": "PlayStation",
+            "manufacturer": "Sony",
+            "release_date": "1995-09-29",
+            "media_format": "Physical (disks)",
+            "generation": 5,
+            "youtube_link": "http://www.youtube.com/watch?v=mmL5-iXy-R8",
+            "twitter_link": "451487729121890304",
+            "image_link1": "http://3.bp.blogspot.com/-C2qS6k7kVeI/UT4h6fnaDDI/AAAAAAAATaE/IdtOBPcWbQw/s400/ps1.jpg",
+            "image_link2": "http://www.playerschoicevideogames.com/misc_images/large_ps1-console-original-1.jpg",
+            "image_link3": "http://matemedia.com/wp-content/uploads/2013/10/playstation-transparent.gif"
+        }
+    },
+
+    {
+        "model": "idb.platform",
+        "pk": 12,
+        "fields": {
+            "name": "PlayStation 4",
+            "manufacturer": "Sony",
+            "release_date": "2013-09-15",
+            "media_format": "Physical (disks) and digital",
+            "generation": 8,
+            "youtube_link": "http://www.youtube.com/watch?v=s0d9d-cdxhk",
+            "twitter_link": "451487729121890304",
+            "image_link1": "http://cdn.us.playstation.com/pscomauth/groups/public/documents/webasset/ps4_play_img.jpg",
+            "image_link2": "http://cdn3.mos.techradar.futurecdn.net////art/games_consoles/PlayStation%204/PS4%20official%20photos/Controller/artwork/pad%20with%20logo-578-80.jpg",
+            "image_link3": "http://www.pcgameshardware.de/screenshots/970x546/2013/02/ps4-logo.jpg"
+        }
+    },
+
+    {
+        "model": "idb.platform",
+        "pk": 13,
+        "fields": {
+            "name": "Super Nintendo Entertainment System",
+            "manufacturer": "Nintendo",
+            "release_date": "1991-09-21",
+            "media_format": "Physical (cartridge)",
+            "generation": 4,
+            "youtube_link": "http://www.youtube.com/watch?v=BrI-A94aLfo",
+            "twitter_link": "455138374337060867",
+            "image_link1": "http://pawnprospeterborough.com/wp-content/uploads/2013/11/P1000913.jpg",
+            "image_link2": "http://emulaacao.files.wordpress.com/2010/11/super_nintendo.gif",
+            "image_link3": "http://1.bp.blogspot.com/-TxBp-tSu1Bg/UMfg2JPFXzI/AAAAAAAABtw/ygnAek01YHs/s640/Snes_control1.jpg"
+        }
+    },
+
+    {
+        "model": "idb.platform",
+        "pk": 14,
+        "fields": {
+            "name": "Nintendo Entertainment System",
+            "manufacturer": "Nintendo",
+            "release_date": "1985-10-18",
+            "media_format": "Physical (cartridge)",
+            "generation": 3,
+            "youtube_link": "http://www.youtube.com/watch?v=cssV9F6JhbE",
+            "twitter_link": "455138374337060867",
+            "image_link1": "http://images.eurogamer.net/2013/usgamer/NES-01.jpg",
+            "image_link2": "http://static.tvtropes.org/pmwiki/pub/images/Nintendo-NES_360.jpg",
+            "image_link3": "http://fc06.deviantart.net/fs71/f/2010/059/4/a/NES_Controller_by_The_Penciler.png"
+        }
+    },
+    {
+        "model": "idb.platform",
+        "pk": 15, 
+        "fields": {
+            "name": "Xbox",
+            "manufacturer": "Microsoft",
+            "release_date": "2001-15-11",
+            "media_format": "Physical (disks) and digital",
+            "generation": 6,
+            "youtube_link": "http://www.youtube.com/watch?v=XtESAQUAHbk",
+            "twitter_link": "455135780575252480",
+            "image_link1": "http://cdn1.sbnation.com/products/large/1678/xbox.jpg?1316016132",
+            "image_link2": "http://static.trustedreviews.com/94/0000248b1/44f4_orh350w620/logo-xbox.jpg",
+            "image_link3": "http://www.campuspride.org/wp-content/uploads/Xbox-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.platform",
+        "pk": 16, 
+        "fields": {
+            "name": "Xbox One",
+            "manufacturer": "Microsoft",
+            "release_date": "2013-22-11",
+            "media_format": "Physical (disks) and digital",
+            "generation": 8,
+            "youtube_link": "http://www.youtube.com/watch?v=2i5wW6h03IE",
+            "twitter_link": "455135458809237504",
+            "image_link1": "http://www.dvice.com/sites/dvice/files/styles/blog_post_media/public/xbox-one.png",
+            "image_link2": "http://i.telegraph.co.uk/multimedia/archive/02584/Xbox-One_2584436b.jpg",
+            "image_link3": "http://www5.pcmag.com/media/images/408054-microsoft-xbox-one.jpg?thumb=y"
+        }
+    },
+    {
+        "model": "idb.platform",
+        "pk": 17, 
+        "fields": {
+            "name": "Nintendo 3DS",
+            "manufacturer": "Nintendo",
+            "release_date": "2011-26-02",
+            "media_format": "Physical (cartridges) and digital",
+            "generation": 8,
+            "youtube_link": "http://www.youtube.com/watch?v=yeQGkadrCkE",
+            "twitter_link": "455138898138525696",
+            "image_link1": "http://richwny15.wpengine.netdna-cdn.com/wp-content/uploads/2011/01/N3DS.jpg",
+            "image_link2": "http://www.nintendo.com/images/3ds/home/hardware_red.png",
+            "image_link3": "http://thegamingpixelshow.com/wp-content/uploads/2012/03/cobalt_blue_3ds_packaging.jpg"
+        }
+    },
+    {
         "model": "idb.developer",
         "pk": 1,
         "fields": {
@@ -317,6 +432,150 @@
             "image_link2": "http://www.vgblogger.com/wp-content/uploads/2008/11/11/SquareEnixQ109.jpg",
             "image_link3": "http://i1265.photobucket.com/albums/jj511/sgarmer05/SquareEnixLogo_zps95005137.jpg",
             "platforms": [10]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 12,
+        "fields": {
+            "name": "Bethesda Game Studios",
+            "date_founded": "2001-03-12",
+            "num_employees": 500,
+            "status": "Active",
+            "address": "Rockvill, Maryland, U.S.",
+            "map_link": "https://maps.google.com/maps?q=bethesda+game+studios&client=ubuntu-browser&ie=UTF8&hq=bethesda+game+studios&hnear=&radius=15000&t=m&ll=39.105245,-77.180515&spn=0.006295,0.006295&output=embed",
+            "image_link1": "http://images.wikia.com/elderscrolls/images/archive/a/a2/20110812152931!Bethesda_game_studios_logo.jpg",
+            "image_link2": "http://popcultureblog.dallasnews.com/files/2012/10/main_middle-620x221.gif",
+            "image_link3": "http://www.gamedynamo.com/images/galleries/photo/1768/bethesda-game-studios-future-generation-console-programmer-job-listing-news-1.jpg",
+            "platforms": [2,10]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 13,
+        "fields": {
+            "name": "Polyphony Digital, Inc.",
+            "date_founded": "1998-04-02",
+            "num_employees": 140,
+            "status": "Active",
+            "address": "Tokyo, Japan",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=tokyo+japan&aq=&sll=30.308284,-97.756187&sspn=0.29462,0.528374&ie=UTF8&hq=&hnear=Tokyo,+Japan&ll=35.689488,139.691706&spn=0.008662,0.016512&t=m&z=14&output=embed",
+            "image_link1": "http://upload.wikimedia.org/wikipedia/en/thumb/2/20/Polyphony_Digital_Inc.svg/300px-Polyphony_Digital_Inc.svg.png",
+            "image_link2": "http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/ed/8f/ed8fa935ac18b89cde38d33fe0ba3b75.jpg?itok=9haMLGYY",
+            "image_link3": "http://files.g4tv.com/ImageDb3/178383_S/TGS09-A-Visit-To-The-Home-of-Gran-Turismo---Polyphony-Digital.jpg",
+            "platforms": [11]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 14,
+        "fields": {
+            "name": "Namco",
+            "date_founded": "1955-06-01",
+            "num_employees": 140,
+            "status": "Active",
+            "address": "Ota, Tokyo, Japan",
+            "map_link": "https://maps.google.com/maps?f=q&amp;source=s_q&hl=en&geocode=&q=ota,+tokyo&aq=&sll=34.661436,135.50157&sspn=0.008772,0.016512&ie=UTF8&hq=&hnear=Ota,+Tokyo,+Japan&t=m&z=13&ll=35.561257,139.716051&output=embed",
+            "image_link1": "http://www.ingames.com.br/wp-content/uploads/2010/06/CALEN%C3%81RIO-NAMCO1.gif",
+            "image_link2": "http://www.mobygames.com/images/shots/l/81872-xenosaga-episode-i-der-wille-zur-macht-playstation-2-screenshot.jpg",
+            "image_link3": "http://media.psu.com/media/articles/image/Namco_Arcade_1.jpg",
+            "platforms": [4,11]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 15,
+        "fields": {
+            "name": "Capcom",
+            "date_founded": "1983-06-11",
+            "num_employees": 2476,
+            "status": "Active",
+            "address": "San Mateo County, California, U.S.",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Capcom+USA+Inc,+Concar+Drive,+San+Mateo,+CA&aq=0&oq=capcom+san&sll=34.804783,-117.932739&sspn=4.482792,3.175049&ie=UTF8&hq=&hnear=&t=m&iwloc=A&ll=37.554852,-122.299782&spn=0.006295,0.006295&output=embed",
+            "image_link1": "http://gotgame.com/wp-content/uploads/2011/07/capcom.gif",
+            "image_link2": "http://d1vr6n66ssr06c.cloudfront.net/wp-content/uploads/2013/07/capcom_office_header.jpg",
+            "image_link3": "http://cdn2.dualshockers.com/wp-content/uploads/2012/09/c.jpg",
+            "platforms": [13]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 16,
+        "fields": {
+            "name": "Nintendo EAD",
+            "date_founded": "1983-06-11",
+            "num_employees": 350,
+            "status": "Active",
+            "address": "Kyoto, Japan",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=nintendo+ead+kyoto,+japan&aq=&sll=37.0625,-95.677068&sspn=67.295907,82.705078&ie=UTF8&hq=nintendo+ead&hnear=Kyoto,+Kyoto+Prefecture,+Japan&ll=34.954002,135.776174&spn=0.138344,0.049988&t=m&output=embed",
+            "image_link1": "http://nintendookie.files.wordpress.com/2010/06/nintendo-offices.jpg",
+            "image_link2": "http://img3.wikia.nocookie.net/__cb20090523211348/nintendo/en/images/6/67/NintendoEAD.gif",
+            "image_link3": "http://www.gameware.sk/wp-content/uploads/2013/10/nintendo-logo.jpg",
+            "platforms": [5,7,14]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 17,
+        "fields": {
+            "name": "Game Freak, Inc.",
+            "date_founded": "1989-04-26",
+            "num_employees": 85,
+            "status": "Active",
+            "address": "154-0004, No. 1 chome, Setagaya-ku, Tokyo Taishido Carrot Tower 22F Japan",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=etagaya-ku,+Tokyo+Taishido+Carrot+Tower&aq=&sll=35.643703,139.669068&sspn=0.017263,0.020192&ie=UTF8&hq=Carrot+Tower&hnear=Taishido,+Setagaya,+Tokyo,+Japan&t=m&ll=35.643703,139.669068&spn=0.01023,0.006295&output=embed",
+            "image_link1": "http://img2.wikia.nocookie.net/__cb20130411095820/logopedia/images/a/aa/Game-freak-logo.jpg",
+            "image_link2":"https://d1vr6n66ssr06c.cloudfront.net/wp-content/uploads/2012/12/Game-Freak-630x324.png",
+            "image_link3": "http://upload.wikimedia.org/wikipedia/en/e/ea/Game_Freak_logo.png",
+            "platforms": [17]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 18,
+        "fields": {
+            "name": "EA Canada",
+            "date_founded": "1983-01-15",
+            "num_employees": 1300,
+            "status": "Active",
+            "address": "Burnaby, British Columbia, Canada",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=4330+Sanderson+Way,+Burnaby,+BC+V5G+&aq=&sll=49.24754,-123.00853&sspn=0.003467,0.005048&ie=UTF8&hq=&hnear=4330+Sanderson+Way,+Burnaby,+British+Columbia+V5G+4X1,+Canada&t=m&z=14&ll=49.247816,-123.008075&output=embed",
+            "image_link1": "http://upload.wikimedia.org/wikipedia/en/thumb/a/ae/EA_Canada_Logo.svg/409px-EA_Canada_Logo.svg.png",
+            "image_link2":"http://static.giantbomb.com/uploads/original/0/5022/369688-ea_canada_leadin.jpg",
+            "image_link3": "http://www.edge-online.com/wp-content/uploads/edgeonline/oldfiles/EA%20Canada%20a_0.jpg",
+            "platforms": [2,4,7,10,12,16]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 19,
+        "fields": {
+            "name": "EA Tiburon",
+            "date_founded": "1994-01-01",
+            "num_employees": 500,
+            "status": "Active",
+            "address": "1950 Summit Park Dr, Orlando, FL‎",
+            "map_link": "https://maps.google.com/maps?q=ea+tiburon&client=ubuntu-browser&ie=UTF8&hq=ea+tiburon&hnear=&radius=15000&t=m&ll=28.637197,-81.402252&spn=0.006295,0.006295&output=embed",
+            "image_link1": "http://cdn.www.easports.com/static/20140328.091049/images/easdnCommonPlugin/careers/EAS_HR_Orlando_Marquee2.jpg",
+            "image_link2":"http://www.dfcint.com/dossier/wp-content/uploads/2011/04/ea_tiburon-S.jpg",
+            "image_link3": "http://gamingbolt.com/wp-content/uploads/2011/05/electronic_arts-logo-big.gif",
+            "platforms": [2,10,12,16]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 20,
+        "fields": {
+            "name": "Bungie",
+            "date_founded": "1991-05-01",
+            "num_employees": 350,
+            "status": "Active",
+            "address": "550 106th Ave NE #207, Bellevue, WA",
+            "map_link": "https://maps.google.com/maps?q=bellevue+washington+bungie&client=ubuntu-browser&ie=UTF8&hq=&hnear=&t=m&iwloc=A&ll=47.615045,-122.198331&spn=0.006295,0.006295&output=embed",
+            "image_link1": "http://static.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/521c031de4b05e3dfb14dccd/1377567518962/bungie-logo.jpg",
+            "image_link2":"http://officesnapshots.com/wp-content/galleries/bungie/b5.jpg",
+            "image_link3": "http://hw1.pa-cdn.com/par/img/editorial/bungietour/bungie_04.jpg",
+            "platforms": [2]
         }
     },
     {
@@ -496,6 +755,248 @@
             "image_link3": "http://fc06.deviantart.net/fs51/i/2009/330/1/f/Final_Fantasy_XIII_characters_by_Cloudfan174.png",
             "developer": 10, 
             "platforms":[2,10]
+        }
+    },
+    {
+        "model": "idb.game",
+        "pk": 11,
+        "fields": {
+            "title": "Call of Duty: Ghosts",
+            "release_date": "2013-15-11",
+            "genre": "First-person shooting",
+            "publisher": "Activision",
+            "ESRB_rating": "M",
+            "youtube_link": "http://www.youtube.com/watch?v=k5E2U-YOUfQ",
+            "image_link1": "http://2.bp.blogspot.com/-4wRoJB4ikQI/UkbsAtjLGpI/AAAAAAAAB6s/rluBURi0s0U/s1600/call-of-duty-ghosts-1080p.png",
+            "image_link2": "http://www.geforce.com/sites/default/files-world/attachments/4370COD_Ghosts_Chasm_Ambush.jpg",
+            "image_link3": "http://www.geek.com/wp-content/uploads/2013/10/COD_Ghosts_05-590x330.jpg",
+            "developer": 2,
+            "platforms": [1,2,10,12,16]
+        }
+    },
+
+    {
+        "model": "idb.game",
+        "pk": 12,
+        "fields": {
+            "title": "FIFA 14",
+            "release_date": "2013-24-09",
+            "genre": "Sports, soccer simulation",
+            "publisher": "Electronic Arts",
+            "ESRB_rating": "E",
+            "youtube_link": "http://www.youtube.com/watch?v=LpiTucFQuwA",
+            "image_link1": "http://www.justpushstart.com/wp-content/uploads/2013/06/fifa-14-no-kinect.jpg",
+            "image_link2": "http://www.empireofsoccer.com/wp-content/uploads/2013/08/Tim-Cahill-FIFA-14-Cover-Boy.jpg",
+            "image_link3": "http://gamezilla.komputerswiat.pl/media/2013/203/1507466/piszczu_644x361.jpg",
+            "developer": 18, 
+            "platforms": [2,4,7,10,12,16]
+        }
+    },
+
+
+    {
+        "model": "idb.game",
+        "pk": 13,
+        "fields": {
+            "title": "Super Mario Bros. 3",
+            "release_date": "1990-23-02",
+            "genre": "Platforming",
+            "publisher": "Nintendo",
+            "ESRB_rating": "E",
+            "youtube_link": "http://www.youtube.com/watch?v=82TL-Acm4ts",
+            "image_link1": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1wOYr6PMVyEde0xyWWxezNQWS5eiSCBPUJFBAAGwpg_TybbAu",
+            "image_link2": "http://www.justpushstart.com/wp-content/uploads/2013/08/Super-Mario-Bros.-3.jpg",
+            "image_link3": "http://i2.cdnds.net/10/25/gaming_smb3_2.jpg",
+            "developer": 16, 
+            "platforms": [5,14]
+        }
+    },
+
+
+    {
+        "model": "idb.game",
+        "pk": 14,
+        "fields": {
+            "title": "Mega Man X",
+            "release_date": "1993-17-12",
+            "genre": "Platforming",
+            "publisher": "Capcom",
+            "ESRB_rating": "K-A",
+            "youtube_link": "http://www.youtube.com/watch?v=zbht_bSvKcs",
+            "image_link1": "http://2.bp.blogspot.com/-Y1JBVaQ6LOM/TmUljIkVheI/AAAAAAAAAcQ/c0jDytQlwd8/s1600/13280.jpg",
+            "image_link2": "http://fc07.deviantart.net/fs71/i/2012/105/7/1/megaman_x_co_op_by_isdailic-d4w7ivf.jpg",
+            "image_link3": "http://www.familyfriendlygaming.com/Images/2011/Pics/MEgaman%20X/IMG_0244.JPG",
+            "developer": 15, 
+            "platforms": [13]
+        }
+    },
+
+    {
+        "model": "idb.game",
+        "pk": 15,
+        "fields": {
+            "title": "Madden NFL 25",
+            "release_date": "2013-13-11",
+            "genre": "Sports, football simulation",
+            "publisher": "EA Sports",
+            "ESRB_rating": "E",
+            "youtube_link": "http://www.youtube.com/watch?v=KMvQri8A6kQ#aid=P-wb3qdSWYw",
+            "image_link1": "http://a.espncdn.com/photo/2013/0402/play_e_maddennfl25_gb1-800_576.jpg",
+            "image_link2": "http://i1.ytimg.com/vi/ebFBbGVX5t0/maxresdefault.jpg",
+            "image_link3": "http://ww2.hdnux.com/photos/23/50/40/5146661/3/628x471.jpg",
+            "developer": 19, 
+            "platforms": [2,10,12,16]
+        }
+    },
+
+    {
+        "model": "idb.game",
+        "pk": 16,
+        "fields": {
+            "title": "Pokemon Y",
+            "release_date": "2013-12-10",
+            "genre": "Turn-based role-playing",
+            "publisher": "Nintendo",
+            "ESRB_rating": "E",
+            "youtube_link": "http://www.youtube.com/watch?v=cq6L1HV5gz4",
+            "image_link1": "http://i50.tinypic.com/167t9w4.jpg",
+            "image_link2": "http://images.kpopstarz.com/data/images/full/83980/will-pokemon-x-and-y-follow-up-with-z.jpg",
+            "image_link3": "http://www.justpushstart.com/wp-content/uploads/2013/10/Pokemon-X-and-Pokemon-Y-61.jpg",
+            "developer": 17, 
+            "platforms": [17]
+        }
+    },
+
+
+    {
+        "model": "idb.game",
+        "pk": 17,
+        "fields": {
+            "title": "Metal Gear Solid 2: Sons of Liberty",
+            "release_date": "2001-01-11",
+            "genre": "Stealth",
+            "publisher": "Konami",
+            "ESRB_rating": "M",
+            "youtube_link": "http://www.youtube.com/watch?v=NhzmQaFcMfg",
+            "image_link1": "http://upload.wikimedia.org/wikipedia/en/7/7b/Metal_Gear_Solid_2-_Sons_of_Liberty_Original_Soundtrack.jpg",
+            "image_link2": "http://3.bp.blogspot.com/_sRIeN7_ZfCw/TDq8P0yvfcI/AAAAAAAAA3Q/7BPPndc8jKc/s1600/metal-gear-solid-2-sons-of-liberty-01.jpg",
+            "image_link3": "http://statici.behindthevoiceactors.com/behindthevoiceactors/_img/games/banner_13.jpg",
+            "developer": 8, 
+            "platforms": [2,4,10]
+        }
+    },
+
+    {
+        "model": "idb.game",
+        "pk": 18,
+        "fields": {
+            "title": "Grand Theft Auto: Vice City",
+            "release_date": "2002-27-10",
+            "genre": "Open world action-adventure",
+            "publisher": "Rockstar Games",
+            "ESRB_rating": "M",
+            "youtube_link": "http://www.youtube.com/watch?v=nlMkabzZNII",
+            "image_link1": "http://img1.wikia.nocookie.net/__cb20080816125146/gtawiki/images/3/36/GTA_Vice_City_Box_Art.jpg",
+            "image_link2": "http://gm1.s-ports.ru/sites/default/files/styles/565x365/public/gta_vice_city_collection_14in1-repack_1328193040-326692.jpeg",
+            "image_link3": "http://cf.shacknews.com/shack_images/sshots/gta_vicecity/gta_vicecity2.nphd.jpg",
+            "developer": 4, 
+            "platforms": [4,10,15]
+        }
+    },
+
+
+    {
+        "model": "idb.game",
+        "pk": 19,
+        "fields": {
+            "title": "Yoshi's Story",
+            "release_date": "1998-10-03",
+            "genre": "Platforming",
+            "publisher": "Nintendo",
+            "ESRB_rating": "E",
+            "youtube_link": "http://www.youtube.com/watch?v=IrXzq8ZTDCo",
+            "image_link1": "http://img1.wikia.nocookie.net/__cb20071214135827/nintendo/en/images/7/71/Yoshi's_Story_(NA).jpg",
+            "image_link2": "http://2.bp.blogspot.com/-eBMDmIxk4E4/UA9N0siSJ5I/AAAAAAAAGrw/dbFG07M9okg/s1600/yoshi's+story+N64+wii.jpg",
+            "image_link3": "http://www.vizzed.com/vizzedboard/userimages/postattachments/75600-1299547406.jpg",
+            "developer": 16, 
+            "platforms": [7]
+        }
+    },
+
+
+    {
+        "model": "idb.game",
+        "pk": 20,
+        "fields": {
+            "title": "Gran Turismo 2",
+            "release_date": "1999-23-12",
+            "genre": "Racing simulation",
+            "publisher": "Sony Computer Entertainment",
+            "ESRB_rating": "E",
+            "youtube_link": "http://www.youtube.com/watch?v=e701QHyCr0o",
+            "image_link1": "http://ca0.nitroroms.com/fileimage/1568/gran-turismo-2.jpg",
+            "image_link2": "http://2.bp.blogspot.com/-Txd_xZOWeTU/Tyl50Fu67QI/AAAAAAAABTw/fBIE4J1QiVA/s400/2.jpg",
+            "image_link3": "http://i135.photobucket.com/albums/q131/Rigret/Picture2-2.png",
+            "developer": 13, 
+            "platforms": [11]
+        }
+    },
+
+
+    {
+        "model": "idb.game",
+        "pk": 21,
+        "fields": {
+            "title": "Skyrim",
+            "release_date": "2011-11-11",
+            "genre": "Action role-playing",
+            "publisher": "Bethesda Softworks",
+            "ESRB_rating": "M",
+            "youtube_link": "http://www.youtube.com/watch?v=PjqsYzBrP-M",
+            "image_link1": "http://a.tgcdn.net/images/products/additional/large/ee05_skyrim_electronic_dragon_shout_hoodie_addtl.jpg",
+            "image_link2": "http://www.cxpulp.com/attachment.php?attachmentid=5680&d=1336517440",
+            "image_link3": "http://pad2.whstatic.com/images/thumb/a/af/Join-the-Thieves-Guild-in-Skyrim-Step-2.jpg/670px-Join-the-Thieves-Guild-in-Skyrim-Step-2.jpg",
+            "developer": 12, 
+            "platforms": [2,10]
+        }
+    },
+
+
+
+
+    {
+        "model": "idb.game",
+        "pk": 22,
+        "fields": {
+            "title": "Halo 3",
+            "release_date": "2007-25-09",
+            "genre": "First-person shooting",
+            "publisher": "Microsoft Game Studios",
+            "ESRB_rating": "M",
+            "youtube_link": "http://www.youtube.com/watch?v=MsiKUmyL_hY",
+            "image_link1": "https://lh5.googleusercontent.com/-EF3Jt42p1pQ/Tu-x9wtOI2I/AAAAAAAAACg/m3f8I0S-Nlg/w800-h800/Picture%2B002.jpg",
+            "image_link2": "http://images.amazon.com/images/G/01/videogames/detail-page/halo3-3-lg.jpg",
+            "image_link3": "http://img4.wikia.nocookie.net/__cb20101217213126/halo/es/images/e/e4/Halo3_5.jpg",
+            "developer": 20, 
+            "platforms": [2]
+        }
+    },
+
+    {
+        "model": "idb.game",
+        "pk": 23,
+        "fields": {
+            "title": "Tekken 3",
+            "release_date": "1998-26-04",
+            "genre": "Fighting",
+            "publisher": "Namco",
+            "ESRB_rating": "T",
+            "youtube_link": "http://www.youtube.com/watch?v=rxwu61WOTig",
+            "image_link1": "http://img1.wikia.nocookie.net/__cb20120811143828/tekken/en/images/a/ae/Tekken_3_Cover.jpg",
+            "image_link2": "http://www.emuparadise.me/MAME/snap/tekken3.png",
+            "image_link3": "http://www.fightersgeneration.com/np5/gm/t3-s21.jpg",
+            "developer": 14, 
+            "platforms": [4,11]
         }
     }
 ]

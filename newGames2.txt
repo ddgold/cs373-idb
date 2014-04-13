@@ -1,23 +1,7 @@
 [
     {
         "model": "idb.developer",
-        "pk": #,
-        "fields": {
-            "name": "EA Sports",
-            "date_founded": "1991-08-11",
-            "num_employees": 8000,
-            "status": "Active",
-            "address": "209 Redwood Shores Parkway,\nRedwood City, CA 94065",
-            "map_link": "https://maps.google.com/maps?q=209+Redwood+Shores+Parkway,+Redwood+City,+CA+94065&client=ubuntu-browser&ie=UTF8&amp;hq=&hnear=209+Redwood+Shores+Pkwy,+Redwood+City,+California+94065&ll=37.524562,-122.254706&spn=0.016848,0.020192&t=m&z=14&output=embed",
-            "image_link1": "http://web-vassets.ea.com/Assets/Richmedia/01_EAS_DefaultImages_EASPORTS1329439120911.jpg?cb=1329417728",
-            "image_link2": "http://d25yla7xp697oa.cloudfront.net/assets/_files/cached/aug_12/590x330/efc__1344870735_easports.jpg",
-            "image_link3": "http://www.gogaminggiant.com/wp-content/uploads/2010/04/mad11logoprimarycmykai_eps_jpgcopy.jpg",
-            "platforms": ###
-        }
-    },
-    {
-        "model": "idb.developer",
-        "pk": #,
+        "pk": 12,
         "fields": {
             "name": "Bethesda Game Studios",
             "date_founded": "2001-03-12",
@@ -28,13 +12,13 @@
             "image_link1": "http://images.wikia.com/elderscrolls/images/archive/a/a2/20110812152931!Bethesda_game_studios_logo.jpg",
             "image_link2": "http://popcultureblog.dallasnews.com/files/2012/10/main_middle-620x221.gif",
             "image_link3": "http://www.gamedynamo.com/images/galleries/photo/1768/bethesda-game-studios-future-generation-console-programmer-job-listing-news-1.jpg",
-            "platforms": ###
+            "platforms": [2,10]
         }
     },
 
     {
         "model": "idb.developer",
-        "pk": #,
+        "pk": 13,
         "fields": {
             "name": "Polyphony Digital, Inc.",
             "date_founded": "1998-04-02",
@@ -45,13 +29,13 @@
             "image_link1": "http://upload.wikimedia.org/wikipedia/en/thumb/2/20/Polyphony_Digital_Inc.svg/300px-Polyphony_Digital_Inc.svg.png",
             "image_link2": "http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/ed/8f/ed8fa935ac18b89cde38d33fe0ba3b75.jpg?itok=9haMLGYY",
             "image_link3": "http://files.g4tv.com/ImageDb3/178383_S/TGS09-A-Visit-To-The-Home-of-Gran-Turismo---Polyphony-Digital.jpg",
-            "platforms": ###
+            "platforms": [11]
         }
     },
 
     {
         "model": "idb.developer",
-        "pk": #,
+        "pk": 14,
         "fields": {
             "name": "Namco",
             "date_founded": "1955-06-01",
@@ -62,13 +46,13 @@
             "image_link1": "http://www.ingames.com.br/wp-content/uploads/2010/06/CALEN%C3%81RIO-NAMCO1.gif",
             "image_link2": "http://www.mobygames.com/images/shots/l/81872-xenosaga-episode-i-der-wille-zur-macht-playstation-2-screenshot.jpg",
             "image_link3": "http://media.psu.com/media/articles/image/Namco_Arcade_1.jpg",
-            "platforms": ###
+            "platforms": [4,11]
         }
     },
 
     {
         "model": "idb.developer",
-        "pk": #,
+        "pk": 15,
         "fields": {
             "name": "Capcom",
             "date_founded": "1983-06-11",
@@ -79,15 +63,15 @@
             "image_link1": "http://gotgame.com/wp-content/uploads/2011/07/capcom.gif",
             "image_link2": "http://d1vr6n66ssr06c.cloudfront.net/wp-content/uploads/2013/07/capcom_office_header.jpg",
             "image_link3": "http://cdn2.dualshockers.com/wp-content/uploads/2012/09/c.jpg",
-            "platforms": ###
+            "platforms": [13]
         }
     },
 
     {
         "model": "idb.developer",
-        "pk": #,
+        "pk": 16,
         "fields": {
-            "name": "Nintendo Entertainment Analysis & Development",
+            "name": "Nintendo EAD",
             "date_founded": "1983-06-11",
             "num_employees": 350,
             "status": "Active",
@@ -96,13 +80,13 @@
             "image_link1": "http://nintendookie.files.wordpress.com/2010/06/nintendo-offices.jpg",
             "image_link2": "http://img3.wikia.nocookie.net/__cb20090523211348/nintendo/en/images/6/67/NintendoEAD.gif",
             "image_link3": "http://www.gameware.sk/wp-content/uploads/2013/10/nintendo-logo.jpg",
-            "platforms": ###
+            "platforms": [5,7,14]
         }
     },
 
     {
         "model": "idb.developer",
-        "pk": #,
+        "pk": 17,
         "fields": {
             "name": "Game Freak, Inc.",
             "date_founded": "1989-04-26",
@@ -113,13 +97,13 @@
             "image_link1": "http://img2.wikia.nocookie.net/__cb20130411095820/logopedia/images/a/aa/Game-freak-logo.jpg",
             "image_link2":"https://d1vr6n66ssr06c.cloudfront.net/wp-content/uploads/2012/12/Game-Freak-630x324.png",
             "image_link3": "http://upload.wikimedia.org/wikipedia/en/e/ea/Game_Freak_logo.png",
-            "platforms": ###
+            "platforms": [17]
         }
     },
 
     {
         "model": "idb.developer",
-        "pk": #,
+        "pk": 18,
         "fields": {
             "name": "EA Canada",
             "date_founded": "1983-01-15",
@@ -130,30 +114,30 @@
             "image_link1": "http://upload.wikimedia.org/wikipedia/en/thumb/a/ae/EA_Canada_Logo.svg/409px-EA_Canada_Logo.svg.png",
             "image_link2":"http://static.giantbomb.com/uploads/original/0/5022/369688-ea_canada_leadin.jpg",
             "image_link3": "http://www.edge-online.com/wp-content/uploads/edgeonline/oldfiles/EA%20Canada%20a_0.jpg",
-            "platforms": ###
+            "platforms": [2,4,7,10,12,16]
         }
     },
 
     {
         "model": "idb.developer",
-        "pk": #,
+        "pk": 19,
         "fields": {
             "name": "EA Tiburon",
             "date_founded": "1994-01-01",
             "num_employees": 500,
             "status": "Active",
-            "address": "1950 Summit Park Dr, Orlando, FL ‎",
+            "address": "1950 Summit Park Dr, Orlando, FL‎",
             "map_link": "https://maps.google.com/maps?q=ea+tiburon&client=ubuntu-browser&ie=UTF8&hq=ea+tiburon&hnear=&radius=15000&t=m&ll=28.637197,-81.402252&spn=0.006295,0.006295&output=embed",
             "image_link1": "http://cdn.www.easports.com/static/20140328.091049/images/easdnCommonPlugin/careers/EAS_HR_Orlando_Marquee2.jpg",
             "image_link2":"http://www.dfcint.com/dossier/wp-content/uploads/2011/04/ea_tiburon-S.jpg",
             "image_link3": "http://gamingbolt.com/wp-content/uploads/2011/05/electronic_arts-logo-big.gif",
-            "platforms": ###
+            "platforms": [2,10,12,16]
         }
     },
 
     {
         "model": "idb.developer",
-        "pk": #,
+        "pk": 20,
         "fields": {
             "name": "Bungie",
             "date_founded": "1991-05-01",
@@ -164,7 +148,7 @@
             "image_link1": "http://static.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/521c031de4b05e3dfb14dccd/1377567518962/bungie-logo.jpg",
             "image_link2":"http://officesnapshots.com/wp-content/galleries/bungie/b5.jpg",
             "image_link3": "http://hw1.pa-cdn.com/par/img/editorial/bungietour/bungie_04.jpg",
-            "platforms": ###
+            "platforms": [2]
         }
     }
 
