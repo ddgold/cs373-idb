@@ -1,31 +1,29 @@
 Games: 
-
-
 {
     "model": "idb.game",
-    "pk": #,
+    "pk": 11,
     "fields": {
         "title": "Call of Duty: Ghosts",
         "release_date": "2013-15-11",
         "genre": "First-person shooting",
         "publisher": "Activision",
-        "ESRB_rating": "E",
+        "ESRB_rating": "M",
         "youtube_link": "http://www.youtube.com/watch?v=k5E2U-YOUfQ",
         "image_link1": "http://2.bp.blogspot.com/-4wRoJB4ikQI/UkbsAtjLGpI/AAAAAAAAB6s/rluBURi0s0U/s1600/call-of-duty-ghosts-1080p.png",
         "image_link2": "http://www.geforce.com/sites/default/files-world/attachments/4370COD_Ghosts_Chasm_Ambush.jpg",
         "image_link3": "http://www.geek.com/wp-content/uploads/2013/10/COD_Ghosts_05-590x330.jpg",
-        "developer": 2, (Infinity Ward)
-        "platforms":[2,10] (Xbox One, Xbox 360, Wii U, Playstation 3,4)
+        "developer": 2,
+        "platforms": [2,10] (Xbox One, Xbox 360, Wii U, Playstation 3,4)
     }
 },
 
 {
     "model": "idb.game",
-    "pk": #,
+    "pk": 12,
     "fields": {
         "title": "FIFA 14",
         "release_date": "2013-24-09",
-        "genre": "Sports, Football simulation",
+        "genre": "Sports, soccer simulation",
         "publisher": "Electronic Arts",
         "ESRB_rating": "E",
         "youtube_link": "http://www.youtube.com/watch?v=LpiTucFQuwA",
@@ -33,55 +31,55 @@ Games:
         "image_link2": "http://www.empireofsoccer.com/wp-content/uploads/2013/08/Tim-Cahill-FIFA-14-Cover-Boy.jpg",
         "image_link3": "http://gamezilla.komputerswiat.pl/media/2013/203/1507466/piszczu_644x361.jpg",
         "developer": 2 (EA Canada), 
-        "platforms":[2,10] (Xbox One, Xbox 360, Wii, Playstation 2,3,4)
+        "platforms": [2,10] (Xbox One, Xbox 360, Wii, Playstation 2,3,4)
     }
 },
 
 
 {
     "model": "idb.game",
-    "pk": #,
+    "pk": 13,
     "fields": {
         "title": "Super Mario Bros. 3",
         "release_date": "1990-23-02",
-        "genre": "Single-player, multiplayer",
+        "genre": "Platforming",
         "publisher": "Nintendo",
         "ESRB_rating": "E",
         "youtube_link": "http://www.youtube.com/watch?v=82TL-Acm4ts",
         "image_link1": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1wOYr6PMVyEde0xyWWxezNQWS5eiSCBPUJFBAAGwpg_TybbAu",
         "image_link2": "http://www.justpushstart.com/wp-content/uploads/2013/08/Super-Mario-Bros.-3.jpg",
         "image_link3": "http://i2.cdnds.net/10/25/gaming_smb3_2.jpg",
-        "developer": 2 (Nintendo R&D4), 
-        "platforms":[2,10] (Game Boy Advance, Nintendo Entertainment System)
+        "developer": 2 (Nintendo EAD), 
+        "platforms": [2,10] (Game Boy Advance, Nintendo Entertainment System)
     }
 },
 
 
 {
     "model": "idb.game",
-    "pk": #,
+    "pk": 14,
     "fields": {
         "title": "Mega Man X",
         "release_date": "1993-17-12",
-        "genre": "Single-player",
+        "genre": "Platforming",
         "publisher": "Capcom",
-        "ESRB_rating": "E",
+        "ESRB_rating": "K-A",
         "youtube_link": "http://www.youtube.com/watch?v=zbht_bSvKcs",
         "image_link1": "http://2.bp.blogspot.com/-Y1JBVaQ6LOM/TmUljIkVheI/AAAAAAAAAcQ/c0jDytQlwd8/s1600/13280.jpg",
         "image_link2": "http://fc07.deviantart.net/fs71/i/2012/105/7/1/megaman_x_co_op_by_isdailic-d4w7ivf.jpg",
         "image_link3": "http://www.familyfriendlygaming.com/Images/2011/Pics/MEgaman%20X/IMG_0244.JPG",
         "developer": 2 (Capcom), 
-        "platforms":[2,10] (Super Nintendo Entertainment System)
+        "platforms": [2,10] (Super Nintendo Entertainment System)
     }
 },
 
 {
     "model": "idb.game",
-    "pk": #,
+    "pk": 15,
     "fields": {
         "title": "Madden NFL 25",
         "release_date": "2013-13-11",
-        "genre": "Sports",
+        "genre": "Sports, football simulation",
         "publisher": "EA Sports",
         "ESRB_rating": "E",
         "youtube_link": "http://www.youtube.com/watch?v=KMvQri8A6kQ#aid=P-wb3qdSWYw",
@@ -89,17 +87,17 @@ Games:
         "image_link2": "http://i1.ytimg.com/vi/ebFBbGVX5t0/maxresdefault.jpg",
         "image_link3": "http://ww2.hdnux.com/photos/23/50/40/5146661/3/628x471.jpg",
         "developer": 2 (EA Tiburon), 
-        "platforms":[2,10] (PlayStation 3, 4, Xbox 360, Xbox One)
+        "platforms": [2,10] (PlayStation 3, 4, Xbox 360, Xbox One)
     }
 },
 
 {
     "model": "idb.game",
-    "pk": #,
+    "pk": 16,
     "fields": {
         "title": "Pokemon Y",
         "release_date": "2013-12-10",
-        "genre": "Role-playing video game",
+        "genre": "Turn-based role-playing",
         "publisher": "Nintendo",
         "ESRB_rating": "E",
         "youtube_link": "http://www.youtube.com/watch?v=cq6L1HV5gz4",
@@ -107,18 +105,18 @@ Games:
         "image_link2": "http://images.kpopstarz.com/data/images/full/83980/will-pokemon-x-and-y-follow-up-with-z.jpg",
         "image_link3": "http://www.justpushstart.com/wp-content/uploads/2013/10/Pokemon-X-and-Pokemon-Y-61.jpg",
         "developer": 2 (Game Freak), 
-        "platforms":[2,10] (Nintendo 3DS)
+        "platforms": [2,10] (Nintendo 3DS)
     }
 },
 
 
 {
     "model": "idb.game",
-    "pk": #,
+    "pk": 17,
     "fields": {
         "title": "Metal Gear Solid 2: Sons of Liberty",
         "release_date": "2001-01-11",
-        "genre": "Action-adventure, stealth",
+        "genre": "Stealth",
         "publisher": "Konami",
         "ESRB_rating": "M",
         "youtube_link": "http://www.youtube.com/watch?v=NhzmQaFcMfg",
@@ -126,17 +124,17 @@ Games:
         "image_link2": "http://3.bp.blogspot.com/_sRIeN7_ZfCw/TDq8P0yvfcI/AAAAAAAAA3Q/7BPPndc8jKc/s1600/metal-gear-solid-2-sons-of-liberty-01.jpg",
         "image_link3": "http://statici.behindthevoiceactors.com/behindthevoiceactors/_img/games/banner_13.jpg",
         "developer": 2 (KCEJ), 
-        "platforms":[2,10] (Xbox 360, Playstation 3,Playstation 2)
+        "platforms": [2,4,10]
     }
 },
 
 {
     "model": "idb.game",
-    "pk": #,
+    "pk": 18,
     "fields": {
         "title": "Grand Theft Auto: Vice City",
         "release_date": "2002-27-10",
-        "genre": "Action-adventure",
+        "genre": "Open world action-adventure",
         "publisher": "Rockstar Games",
         "ESRB_rating": "M",
         "youtube_link": "http://www.youtube.com/watch?v=nlMkabzZNII",
@@ -144,37 +142,37 @@ Games:
         "image_link2": "http://gm1.s-ports.ru/sites/default/files/styles/565x365/public/gta_vice_city_collection_14in1-repack_1328193040-326692.jpeg",
         "image_link3": "http://cf.shacknews.com/shack_images/sshots/gta_vicecity/gta_vicecity2.nphd.jpg",
         "developer": 2 (Rockstar North), 
-        "platforms":[2,10] (PlayStation 2, Xbox, PlayStation 3 (PSN))
+        "platforms": [2,10] (PlayStation 2, Xbox, PlayStation 3)
     }
 },
 
 
 {
     "model": "idb.game",
-    "pk": #,
+    "pk": 19,
     "fields": {
         "title": "Yoshi's Story",
         "release_date": "1998-10-03",
-        "genre": "Platformer",
+        "genre": "Platforming",
         "publisher": "Nintendo",
-        "ESRB_rating": "M",
+        "ESRB_rating": "E",
         "youtube_link": "http://www.youtube.com/watch?v=IrXzq8ZTDCo",
         "image_link1": "http://img1.wikia.nocookie.net/__cb20071214135827/nintendo/en/images/7/71/Yoshi's_Story_(NA).jpg",
         "image_link2": "http://2.bp.blogspot.com/-eBMDmIxk4E4/UA9N0siSJ5I/AAAAAAAAGrw/dbFG07M9okg/s1600/yoshi's+story+N64+wii.jpg",
         "image_link3": "http://www.vizzed.com/vizzedboard/userimages/postattachments/75600-1299547406.jpg",
-        "developer": 2 (Nintendo), 
-        "platforms":[2,10] (Nintendo 64, Wii )
+        "developer": 2 (Nintendo EAD), 
+        "platforms": [7,9]
     }
 },
 
 
 {
     "model": "idb.game",
-    "pk": #,
+    "pk": 20,
     "fields": {
         "title": "Gran Turismo 2",
         "release_date": "1999-23-12",
-        "genre": "Racing game",
+        "genre": "Racing simulation",
         "publisher": "Sony Computer Entertainment",
         "ESRB_rating": "E",
         "youtube_link": "http://www.youtube.com/watch?v=e701QHyCr0o",
@@ -182,14 +180,14 @@ Games:
         "image_link2": "http://2.bp.blogspot.com/-Txd_xZOWeTU/Tyl50Fu67QI/AAAAAAAABTw/fBIE4J1QiVA/s400/2.jpg",
         "image_link3": "http://i135.photobucket.com/albums/q131/Rigret/Picture2-2.png",
         "developer": 2 (Polyphony Digital), 
-        "platforms":[2,10] (PlayStation )
+        "platforms": [2,10] (PlayStation )
     }
 },
 
 
 {
     "model": "idb.game",
-    "pk": #,
+    "pk": 21,
     "fields": {
         "title": "Skyrim",
         "release_date": "2011-11-11",
@@ -201,7 +199,7 @@ Games:
         "image_link2": "http://www.cxpulp.com/attachment.php?attachmentid=5680&d=1336517440",
         "image_link3": "http://pad2.whstatic.com/images/thumb/a/af/Join-the-Thieves-Guild-in-Skyrim-Step-2.jpg/670px-Join-the-Thieves-Guild-in-Skyrim-Step-2.jpg",
         "developer": 2 (Bethesda Game Studios), 
-        "platforms":[2,10] (PlayStation 3, Xbox 360 )
+        "platforms": [2,10]
     }
 },
 
@@ -210,11 +208,11 @@ Games:
 
 {
     "model": "idb.game",
-    "pk": #,
+    "pk": 22,
     "fields": {
         "title": "Halo 3",
         "release_date": "2007-25-09",
-        "genre": "First-person shooter",
+        "genre": "First-person shooting",
         "publisher": "Microsoft Game Studios",
         "ESRB_rating": "M",
         "youtube_link": "http://www.youtube.com/watch?v=MsiKUmyL_hY",
@@ -222,24 +220,24 @@ Games:
         "image_link2": "http://images.amazon.com/images/G/01/videogames/detail-page/halo3-3-lg.jpg",
         "image_link3": "http://img4.wikia.nocookie.net/__cb20101217213126/halo/es/images/e/e4/Halo3_5.jpg",
         "developer": 2 (Bungie), 
-        "platforms":[2,10] (Xbox 360 )
+        "platforms": [2]
     }
 },
 
 {
     "model": "idb.game",
-    "pk": #,
+    "pk": 23,
     "fields": {
         "title": "Tekken 3",
         "release_date": "1998-26-04",
         "genre": "Fighting",
         "publisher": "Namco",
-        "ESRB_rating": "M",
+        "ESRB_rating": "T",
         "youtube_link": "http://www.youtube.com/watch?v=rxwu61WOTig",
         "image_link1": "http://img1.wikia.nocookie.net/__cb20120811143828/tekken/en/images/a/ae/Tekken_3_Cover.jpg",
         "image_link2": "http://www.emuparadise.me/MAME/snap/tekken3.png",
         "image_link3": "http://www.fightersgeneration.com/np5/gm/t3-s21.jpg",
         "developer": 2 (Namco), 
-        "platforms":[2,10] ( PlayStation, PlayStation 2)
+        "platforms": [2,10] ( PlayStation, PlayStation 2)
     }
 },
