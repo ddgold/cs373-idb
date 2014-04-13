@@ -1,0 +1,117 @@
+[
+    {
+        "model": "idb.platform",
+        "pk": #,
+        "fields": {
+            "name": "PlayStation",
+            "manufacturer": "Sony",
+            "release_date": "1995-09-29",
+            "media_format": "Physical (disks)",
+            "generation": 1,
+            "youtube_link": "http://www.youtube.com/watch?v=mmL5-iXy-R8",
+            "twitter_link": "451487729121890304",
+            "image_link1": "http://3.bp.blogspot.com/-C2qS6k7kVeI/UT4h6fnaDDI/AAAAAAAATaE/IdtOBPcWbQw/s400/ps1.jpg",
+            "image_link2": "http://www.playerschoicevideogames.com/misc_images/large_ps1-console-original-1.jpg",
+            "image_link3": "http://matemedia.com/wp-content/uploads/2013/10/playstation-transparent.gif"
+        }
+    },
+
+    {
+        "model": "idb.platform",
+        "pk": #,
+        "fields": {
+            "name": "PlayStation 4",
+            "manufacturer": "Sony",
+            "release_date": "2013-09-15",
+            "media_format": "Physical (disks) and digital",
+            "generation": 4,
+            "youtube_link": "http://www.youtube.com/watch?v=s0d9d-cdxhk",
+            "twitter_link": "451487729121890304",
+            "image_link1": "http://cdn.us.playstation.com/pscomauth/groups/public/documents/webasset/ps4_play_img.jpg",
+            "image_link2": "http://cdn3.mos.techradar.futurecdn.net////art/games_consoles/PlayStation%204/PS4%20official%20photos/Controller/artwork/pad%20with%20logo-578-80.jpg",
+            "image_link3": "http://www.pcgameshardware.de/screenshots/970x546/2013/02/ps4-logo.jpg"
+        }
+    },
+
+    {
+        "model": "idb.platform",
+        "pk": #,
+        "fields": {
+            "name": "Super Nintendo Entertainment",
+            "manufacturer": "Nintendo",
+            "release_date": "1991-09-21",
+            "media_format": "Physical (cartridge)",
+            "generation": 4,
+            "youtube_link": "http://www.youtube.com/watch?v=BrI-A94aLfo",
+            "twitter_link": "455138374337060867",
+            "image_link1": "http://pawnprospeterborough.com/wp-content/uploads/2013/11/P1000913.jpg",
+            "image_link2": "http://emulaacao.files.wordpress.com/2010/11/super_nintendo.gif",
+            "image_link3": "http://1.bp.blogspot.com/-TxBp-tSu1Bg/UMfg2JPFXzI/AAAAAAAABtw/ygnAek01YHs/s640/Snes_control1.jpg"
+        }
+    },
+
+    {
+        "model": "idb.platform",
+        "pk": #,
+        "fields": {
+            "name": "Nintendo Entertainment System",
+            "manufacturer": "Nintendo",
+            "release_date": "1985-10-18",
+            "media_format": "Physical (cartridge)",
+            "generation": 3,
+            "youtube_link": "http://www.youtube.com/watch?v=cssV9F6JhbE",
+            "twitter_link": "455138374337060867",
+            "image_link1": "http://images.eurogamer.net/2013/usgamer/NES-01.jpg",
+            "image_link2": "http://static.tvtropes.org/pmwiki/pub/images/Nintendo-NES_360.jpg",
+            "image_link3": "http://fc06.deviantart.net/fs71/f/2010/059/4/a/NES_Controller_by_The_Penciler.png"
+        }
+    },
+    {
+        "model": "idb.platform",
+        "pk": #, 
+        "fields": {
+            "name": "Xbox",
+            "manufacturer": "Microsoft",
+            "release_date": "2001-15-11",
+            "media_format": "Physical (disks) and digital",
+            "generation": 1,
+            "youtube_link": "http://www.youtube.com/watch?v=XtESAQUAHbk",
+            "twitter_link": "455135780575252480",
+            "image_link1": "http://cdn1.sbnation.com/products/large/1678/xbox.jpg?1316016132",
+            "image_link2": "http://static.trustedreviews.com/94/0000248b1/44f4_orh350w620/logo-xbox.jpg",
+            "image_link3": "http://www.campuspride.org/wp-content/uploads/Xbox-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.platform",
+        "pk": #, 
+        "fields": {
+            "name": "Xbox One",
+            "manufacturer": "Microsoft",
+            "release_date": "2013-22-11",
+            "media_format": "Physical (disks) and digital",
+            "generation": 8,
+            "youtube_link": "http://www.youtube.com/watch?v=2i5wW6h03IE",
+            "twitter_link": "455135458809237504",
+            "image_link1": "http://www.dvice.com/sites/dvice/files/styles/blog_post_media/public/xbox-one.png",
+            "image_link2": "http://i.telegraph.co.uk/multimedia/archive/02584/Xbox-One_2584436b.jpg",
+            "image_link3": "http://www5.pcmag.com/media/images/408054-microsoft-xbox-one.jpg?thumb=y"
+        }
+    },
+    {
+        "model": "idb.platform",
+        "pk": #, 
+        "fields": {
+            "name": "Nintendo 3DS",
+            "manufacturer": "Nintendo",
+            "release_date": "2011-26-02",
+            "media_format": "Physical (disks) and digital",
+            "generation": 6,
+            "youtube_link": "http://www.youtube.com/watch?v=yeQGkadrCkE",
+            "twitter_link": "455138898138525696",
+            "image_link1": "http://richwny15.wpengine.netdna-cdn.com/wp-content/uploads/2011/01/N3DS.jpg",
+            "image_link2": "http://www.nintendo.com/images/3ds/home/hardware_red.png",
+            "image_link3": "http://thegamingpixelshow.com/wp-content/uploads/2012/03/cobalt_blue_3ds_packaging.jpg"
+        }
+    }
+]
