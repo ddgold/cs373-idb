@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, get_list_or_404, HttpResponseRedirect
+from collections import OrderedDict
 
 from idb.models import Game, Developer, Platform
 
@@ -24,6 +25,7 @@ def developers(request):
             developer_dict[letter] += [developer]
         else :
             developer_dict[letter] = [developer]
+    developer_dict = OrderedDict(sorted(developer_dict.items()))
     return render(request, 'developers.html', {
     'developer_dict': developer_dict,
     })
@@ -45,6 +47,7 @@ def platforms(request):
             platform_dict[letter] += [platform]
         else :
             platform_dict[letter] = [platform]
+    platform_dict = OrderedDict(sorted(platform_dict.items()))
     return render(request, 'platforms.html', {
     'platform_dict': platform_dict,
     })
@@ -66,6 +69,7 @@ def games(request):
             game_dict[letter] += [game]
         else :
             game_dict[letter] = [game]
+    game_dict = OrderedDict(sorted(game_dict.items()))
     return render(request, 'games.html', {
     'game_dict': game_dict,
     })
