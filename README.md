@@ -4,7 +4,9 @@
 
 https://docs.google.com/document/d/1YaXqNVdTBHkTBSDSvb2_0uz8N0mo7ZR1ursiFVS61Dw/edit?usp=sharing
 
+## Slid.es
 
+http://slides.com/roberthammond/internet-video-game-database
 
 ## Developer Data
 
