@@ -82,5 +82,92 @@
             "platforms": ###
         }
     },
+
+    {
+        "model": "idb.developer",
+        "pk": #,
+        "fields": {
+            "name": "Nintendo Entertainment Analysis & Development",
+            "date_founded": "1983-06-11",
+            "num_employees": 350,
+            "status": "Active",
+            "address": "Kyoto, Japan",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=nintendo+ead+kyoto,+japan&aq=&sll=37.0625,-95.677068&sspn=67.295907,82.705078&ie=UTF8&hq=nintendo+ead&hnear=Kyoto,+Kyoto+Prefecture,+Japan&ll=34.954002,135.776174&spn=0.138344,0.049988&t=m&output=embed",
+            "image_link1": "http://nintendookie.files.wordpress.com/2010/06/nintendo-offices.jpg",
+            "image_link2": "http://img3.wikia.nocookie.net/__cb20090523211348/nintendo/en/images/6/67/NintendoEAD.gif",
+            "image_link3": "http://www.gameware.sk/wp-content/uploads/2013/10/nintendo-logo.jpg",
+            "platforms": ###
+        }
+    },
+
+    {
+        "model": "idb.developer",
+        "pk": #,
+        "fields": {
+            "name": "Game Freak, Inc.",
+            "date_founded": "1989-04-26",
+            "num_employees": 85,
+            "status": "Active",
+            "address": "154-0004, No. 1 chome, Setagaya-ku, Tokyo Taishido Carrot Tower 22F Japan",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=etagaya-ku,+Tokyo+Taishido+Carrot+Tower&aq=&sll=35.643703,139.669068&sspn=0.017263,0.020192&ie=UTF8&hq=Carrot+Tower&hnear=Taishido,+Setagaya,+Tokyo,+Japan&t=m&ll=35.643703,139.669068&spn=0.01023,0.006295&output=embed",
+            "image_link1": "http://img2.wikia.nocookie.net/__cb20130411095820/logopedia/images/a/aa/Game-freak-logo.jpg",
+            "image_link2":"https://d1vr6n66ssr06c.cloudfront.net/wp-content/uploads/2012/12/Game-Freak-630x324.png",
+            "image_link3": "http://upload.wikimedia.org/wikipedia/en/e/ea/Game_Freak_logo.png",
+            "platforms": ###
+        }
+    },
+
+    {
+        "model": "idb.developer",
+        "pk": #,
+        "fields": {
+            "name": "EA Canada",
+            "date_founded": "1983-01-15",
+            "num_employees": 1300,
+            "status": "Active",
+            "address": "Burnaby, British Columbia, Canada",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=4330+Sanderson+Way,+Burnaby,+BC+V5G+&aq=&sll=49.24754,-123.00853&sspn=0.003467,0.005048&ie=UTF8&hq=&hnear=4330+Sanderson+Way,+Burnaby,+British+Columbia+V5G+4X1,+Canada&t=m&z=14&ll=49.247816,-123.008075&output=embed",
+            "image_link1": "http://upload.wikimedia.org/wikipedia/en/thumb/a/ae/EA_Canada_Logo.svg/409px-EA_Canada_Logo.svg.png",
+            "image_link2":"http://static.giantbomb.com/uploads/original/0/5022/369688-ea_canada_leadin.jpg",
+            "image_link3": "http://www.edge-online.com/wp-content/uploads/edgeonline/oldfiles/EA%20Canada%20a_0.jpg",
+            "platforms": ###
+        }
+    },
+
+    {
+        "model": "idb.developer",
+        "pk": #,
+        "fields": {
+            "name": "EA Tiburon",
+            "date_founded": "1994-01-01",
+            "num_employees": 500,
+            "status": "Active",
+            "address": "1950 Summit Park Dr, Orlando, FL ‎",
+            "map_link": "https://maps.google.com/maps?q=ea+tiburon&client=ubuntu-browser&ie=UTF8&hq=ea+tiburon&hnear=&radius=15000&t=m&ll=28.637197,-81.402252&spn=0.006295,0.006295&output=embed",
+            "image_link1": "http://cdn.www.easports.com/static/20140328.091049/images/easdnCommonPlugin/careers/EAS_HR_Orlando_Marquee2.jpg",
+            "image_link2":"http://www.dfcint.com/dossier/wp-content/uploads/2011/04/ea_tiburon-S.jpg",
+            "image_link3": "http://gamingbolt.com/wp-content/uploads/2011/05/electronic_arts-logo-big.gif",
+            "platforms": ###
+        }
+    },
+
+    {
+        "model": "idb.developer",
+        "pk": #,
+        "fields": {
+            "name": "Bungie",
+            "date_founded": "1991-05-01",
+            "num_employees": 350,
+            "status": "Active",
+            "address": "550 106th Ave NE #207, Bellevue, WA",
+            "map_link": "https://maps.google.com/maps?q=bellevue+washington+bungie&client=ubuntu-browser&ie=UTF8&hq=&hnear=&t=m&iwloc=A&ll=47.615045,-122.198331&spn=0.006295,0.006295&output=embed",
+            "image_link1": "http://static.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/521c031de4b05e3dfb14dccd/1377567518962/bungie-logo.jpg",
+            "image_link2":"http://officesnapshots.com/wp-content/galleries/bungie/b5.jpg",
+            "image_link3": "http://hw1.pa-cdn.com/par/img/editorial/bungietour/bungie_04.jpg",
+            "platforms": ###
+        }
+    }
+
 ]
+
 
