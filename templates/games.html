@@ -20,7 +20,7 @@ IVGDb &middot; Games
         </div>
         <ul class="list-group">
             {% for k, v in game_dict.items %}
-                <a id="{{k}}"class="list-group-item active">{{k}}</a>
+                <a id="{{k}}" class="list-group-item active">{{k}}</a>
                 {% for g in v %}
                     <li class="list-group-item">
                         <img src="{{g.image_link1}}" height="50" width="50" />
