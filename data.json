@@ -1,5 +1,414 @@
 [
     {
+        "model": "idb.image",
+        "pk": 1,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i.walmartimages.com/i/p/00/04/54/96/88/0004549688085_500X500.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 2,
+        "fields": {
+            "description": "Testing",
+            "link": "http://nonspecificaction.co.uk/wp-content/uploads/Wii-U-Black.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 3,
+        "fields": {
+            "description": "Testing",
+            "link": "http://pisces.bbystatic.com/image2/BestBuy_US/images/products/6775/6775792_sa.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 4,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img1.wikia.nocookie.net/__cb20120715144003/halo/images/5/52/Xbox_360_Slim.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 5,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.toysrus.com/graphics/product_images/pTRU1-16249948dt.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 6,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i.walmartimages.com/i/p/00/88/22/24/39/0088222439011_500X500.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 7,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.buypakistan.com/images/products/originals/335107ps_500h.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 8,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i.walmartimages.com/i/p/00/04/54/96/71/0004549671835_500X500.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 9,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.toptenreviews.com/i/rev/prod/large/50385-nintendo-ds-lite-box.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 10,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.toystoreinc.com/catalog/ps2.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 11,
+        "fields": {
+            "description": "Testing",
+            "link": "http://localonlinegaragesale.com/image/cache/data/PS2-500x500.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 12,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img.rakuten.com/PIC/57406081/0/1/500/57406081.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 13,
+        "fields": {
+            "description": "Testing",
+            "link": "http://ecx.images-amazon.com/images/I/41C297PQC7L.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 14,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.lukiegames.com/assets/images/gbasp_flaw_sys_lime_green.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 15,
+        "fields": {
+            "description": "Testing",
+            "link": "http://ecx.images-amazon.com/images/I/41MPBQW8JRL.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 16,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.retrogame.biz/wp-content/uploads/2010/05/GameCube-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 17,
+        "fields": {
+            "description": "Testing",
+            "link": "http://oldschoolgameblog.files.wordpress.com/2012/02/nintendogamecubeblue.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 18,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.gaminggenerations.com/store/images/images_extra/wavebird.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 19,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i.walmartimages.com/i/p/11/13/00/01/83/1113000183505_500X500.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 20,
+        "fields": {
+            "description": "Testing",
+            "link": "http://ecx.images-amazon.com/images/I/416RD9PN1ML.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 21,
+        "fields": {
+            "description": "Testing",
+            "link": "http://0.tqn.com/d/nintendo/1/0/f/7/-/-/wii_classic_controller_pro.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 22,
+        "fields": {
+            "description": "Testing",
+            "link": "http://upload.wikimedia.org/wikipedia/commons/d/d2/Yamaha_msx_ax120_1.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 23,
+        "fields": {
+            "description": "Testing",
+            "link": "http://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Canon_V-20_MSX_computer.jpg/640px-Canon_V-20_MSX_computer.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 24,
+        "fields": {
+            "description": "Testing",
+            "link": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/OCM_007.jpg/640px-OCM_007.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 25,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.argusjeux.fr/medias/n64-noire-transparente-e39506.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 26,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.360blog.org/wp-content/uploads/2009/05/nintendo-nintendo-64-controllers1.bmp"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 27,
+        "fields": {
+            "description": "Testing",
+            "link": "http://collectortoys.net/wp-content/uploads/2014/01/nintendo-64-logo-with-shadows---rocketdock-ohhebcdd.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 28,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i.walmartimages.com/i/p/00/71/17/19/84/0071171984230_500X500.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 29,
+        "fields": {
+            "description": "Testing",
+            "link": "http://arlume.com/bigpic/486/487/20091121094713.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 30,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img.rakuten.com/PIC/50353496/0/1/500/50353496.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 31,
+        "fields": {
+            "description": "Testing",
+            "link": "http://3.bp.blogspot.com/-C2qS6k7kVeI/UT4h6fnaDDI/AAAAAAAATaE/IdtOBPcWbQw/s400/ps1.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 32,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.playerschoicevideogames.com/misc_images/large_ps1-console-original-1.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 33,
+        "fields": {
+            "description": "Testing",
+            "link": "http://matemedia.com/wp-content/uploads/2013/10/playstation-transparent.gif"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 34,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn.us.playstation.com/pscomauth/groups/public/documents/webasset/ps4_play_img.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 35,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn3.mos.techradar.futurecdn.net////art/games_consoles/PlayStation%204/PS4%20official%20photos/Controller/artwork/pad%20with%20logo-578-80.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 36,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.pcgameshardware.de/screenshots/970x546/2013/02/ps4-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 37,
+        "fields": {
+            "description": "Testing",
+            "link": "http://pawnprospeterborough.com/wp-content/uploads/2013/11/P1000913.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 38,
+        "fields": {
+            "description": "Testing",
+            "link": "http://emulaacao.files.wordpress.com/2010/11/super_nintendo.gif"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 39,
+        "fields": {
+            "description": "Testing",
+            "link": "http://1.bp.blogspot.com/-TxBp-tSu1Bg/UMfg2JPFXzI/AAAAAAAABtw/ygnAek01YHs/s640/Snes_control1.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 40,
+        "fields": {
+            "description": "Testing",
+            "link": "http://images.eurogamer.net/2013/usgamer/NES-01.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 41,
+        "fields": {
+            "description": "Testing",
+            "link": "http://static.tvtropes.org/pmwiki/pub/images/Nintendo-NES_360.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 42,
+        "fields": {
+            "description": "Testing",
+            "link": "http://fc06.deviantart.net/fs71/f/2010/059/4/a/NES_Controller_by_The_Penciler.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 43,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn1.sbnation.com/products/large/1678/xbox.jpg?1316016132"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 44,
+        "fields": {
+            "description": "Testing",
+            "link": "http://static.trustedreviews.com/94/0000248b1/44f4_orh350w620/logo-xbox.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 45,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.campuspride.org/wp-content/uploads/Xbox-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 46,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.dvice.com/sites/dvice/files/styles/blog_post_media/public/xbox-one.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 47,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i.telegraph.co.uk/multimedia/archive/02584/Xbox-One_2584436b.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 48,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www5.pcmag.com/media/images/408054-microsoft-xbox-one.jpg?thumb=y"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 49,
+        "fields": {
+            "description": "Testing",
+            "link": "http://richwny15.wpengine.netdna-cdn.com/wp-content/uploads/2011/01/N3DS.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 50,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.nintendo.com/images/3ds/home/hardware_red.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 51,
+        "fields": {
+            "description": "Testing",
+            "link": "http://thegamingpixelshow.com/wp-content/uploads/2012/03/cobalt_blue_3ds_packaging.jpg"
+        }
+    },
+    
+    {
         "model": "idb.platform",
         "pk": 1,
         "fields": {
@@ -10,9 +419,7 @@
             "generation": 8,
             "youtube_link": "www.youtube.com/embed/qhlDHeCT-Q8",
             "twitter_link": "446085251077373952",
-            "image_link1": "http://i.walmartimages.com/i/p/00/04/54/96/88/0004549688085_500X500.jpg",
-            "image_link2": "http://nonspecificaction.co.uk/wp-content/uploads/Wii-U-Black.jpg",
-            "image_link3": "http://pisces.bbystatic.com/image2/BestBuy_US/images/products/6775/6775792_sa.jpg;canvasHeight=500;canvasWidth=500"
+            "images": [1,2,3]
         }
     },
     {
@@ -26,9 +433,7 @@
             "generation": 7,
             "youtube_link": "www.youtube.com/embed/n0VOM7e5Hug",
             "twitter_link": "446089933564805120",
-            "image_link1": "http://img1.wikia.nocookie.net/__cb20120715144003/halo/images/5/52/Xbox_360_Slim.jpg",
-            "image_link2": "http://www.toysrus.com/graphics/product_images/pTRU1-16249948dt.jpg",
-            "image_link3": "http://i.walmartimages.com/i/p/00/88/22/24/39/0088222439011_500X500.jpg"
+            "images": [4,5,6]
         }
     },
     {
@@ -42,9 +447,7 @@
             "generation": 7,
             "youtube_link": "www.youtube.com/embed/TaA-lYUQom0",
             "twitter_link": "446090501683294208",
-            "image_link1": "http://www.buypakistan.com/images/products/originals/335107ps_500h.jpg",
-            "image_link2": "http://i.walmartimages.com/i/p/00/04/54/96/71/0004549671835_500X500.jpg",
-            "image_link3": "http://www.toptenreviews.com/i/rev/prod/large/50385-nintendo-ds-lite-box.jpg"
+            "images": [7,8,9]
         }
     },
     {
@@ -58,9 +461,7 @@
             "generation": 6,
             "youtube_link": "www.youtube.com/embed/xtPyB6b-Pjc",
             "twitter_link": "451487729121890304",
-            "image_link1": "http://www.toystoreinc.com/catalog/ps2.jpg",
-            "image_link2": "http://localonlinegaragesale.com/image/cache/data/PS2-500x500.png",
-            "image_link3": "http://img.rakuten.com/PIC/57406081/0/1/500/57406081.jpg"
+            "images": [10,11,12]
         }
     },
     {
@@ -74,9 +475,7 @@
             "generation": 6,
             "youtube_link": "www.youtube.com/embed/pC1HNYNg04I",
             "twitter_link": "451488919134027776",
-            "image_link1": "http://ecx.images-amazon.com/images/I/41C297PQC7L.jpg",
-            "image_link2": "http://www.lukiegames.com/assets/images/gbasp_flaw_sys_lime_green.jpg",
-            "image_link3": "http://ecx.images-amazon.com/images/I/41MPBQW8JRL.jpg"
+            "images": [13,14,15]
         }
     },
     {
@@ -90,9 +489,7 @@
             "generation": 6,
             "youtube_link": "www.youtube.com/embed/nXmksX1t3Bg",
             "twitter_link": "451488919134027776",
-            "image_link1": "http://www.retrogame.biz/wp-content/uploads/2010/05/GameCube-logo.jpg",
-            "image_link2": "http://oldschoolgameblog.files.wordpress.com/2012/02/nintendogamecubeblue.jpg",
-            "image_link3": "http://www.gaminggenerations.com/store/images/images_extra/wavebird.jpg"
+            "images": [16,17,18]
         }
     },
     {
@@ -106,9 +503,7 @@
             "generation": 7,
             "youtube_link": "www.youtube.com/embed/EqqtQQYIch8",
             "twitter_link": "451489591527104512",
-            "image_link1": "http://i.walmartimages.com/i/p/11/13/00/01/83/1113000183505_500X500.jpg",
-            "image_link2": "http://ecx.images-amazon.com/images/I/416RD9PN1ML.jpg",
-            "image_link3": "http://0.tqn.com/d/nintendo/1/0/f/7/-/-/wii_classic_controller_pro.jpg"
+            "images": [19,20,21]
         }
     },
     {
@@ -122,9 +517,7 @@
             "generation": 3,
             "youtube_link": "www.youtube.com/embed/HxS-cY4xEpw",
             "twitter_link": "451490288708497408",
-            "image_link1": "http://upload.wikimedia.org/wikipedia/commons/d/d2/Yamaha_msx_ax120_1.jpg",
-            "image_link2": "http://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Canon_V-20_MSX_computer.jpg/640px-Canon_V-20_MSX_computer.jpg",
-            "image_link3": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/OCM_007.jpg/640px-OCM_007.jpg"
+            "images": [22,23,24]
         }
     },
     {
@@ -138,9 +531,7 @@
             "generation": 5,
             "youtube_link": "www.youtube.com/embed/lDoZBnkdvOU",
             "twitter_link": "451488919134027776",
-            "image_link1": "http://www.argusjeux.fr/medias/n64-noire-transparente-e39506.jpg",
-            "image_link2": "http://www.360blog.org/wp-content/uploads/2009/05/nintendo-nintendo-64-controllers1.bmp",
-            "image_link3": "http://collectortoys.net/wp-content/uploads/2014/01/nintendo-64-logo-with-shadows---rocketdock-ohhebcdd.png"
+            "images": [25,26,27]
         }
     },
     {
@@ -154,9 +545,7 @@
             "generation": 7,
             "youtube_link": "www.youtube.com/embed/qKt3HzKtEls",
             "twitter_link": "451487729121890304",
-            "image_link1": "http://i.walmartimages.com/i/p/00/71/17/19/84/0071171984230_500X500.jpg",
-            "image_link2": "http://arlume.com/bigpic/486/487/20091121094713.jpg",
-            "image_link3": "http://img.rakuten.com/PIC/50353496/0/1/500/50353496.jpg"
+            "images": [28,29,30]
         }
     },
     {
@@ -170,9 +559,7 @@
             "generation": 5,
             "youtube_link": "www.youtube.com/embed/mmL5-iXy-R8",
             "twitter_link": "451487729121890304",
-            "image_link1": "http://3.bp.blogspot.com/-C2qS6k7kVeI/UT4h6fnaDDI/AAAAAAAATaE/IdtOBPcWbQw/s400/ps1.jpg",
-            "image_link2": "http://www.playerschoicevideogames.com/misc_images/large_ps1-console-original-1.jpg",
-            "image_link3": "http://matemedia.com/wp-content/uploads/2013/10/playstation-transparent.gif"
+            "images": [31,32,33]
         }
     },
 
@@ -187,9 +574,7 @@
             "generation": 8,
             "youtube_link": "www.youtube.com/embed/s0d9d-cdxhk",
             "twitter_link": "451487729121890304",
-            "image_link1": "http://cdn.us.playstation.com/pscomauth/groups/public/documents/webasset/ps4_play_img.jpg",
-            "image_link2": "http://cdn3.mos.techradar.futurecdn.net////art/games_consoles/PlayStation%204/PS4%20official%20photos/Controller/artwork/pad%20with%20logo-578-80.jpg",
-            "image_link3": "http://www.pcgameshardware.de/screenshots/970x546/2013/02/ps4-logo.jpg"
+            "images": [34,35,36]
         }
     },
 
@@ -204,9 +589,7 @@
             "generation": 4,
             "youtube_link": "www.youtube.com/embed/BrI-A94aLfo",
             "twitter_link": "455138374337060867",
-            "image_link1": "http://pawnprospeterborough.com/wp-content/uploads/2013/11/P1000913.jpg",
-            "image_link2": "http://emulaacao.files.wordpress.com/2010/11/super_nintendo.gif",
-            "image_link3": "http://1.bp.blogspot.com/-TxBp-tSu1Bg/UMfg2JPFXzI/AAAAAAAABtw/ygnAek01YHs/s640/Snes_control1.jpg"
+            "images": [37,38,39]
         }
     },
 
@@ -221,9 +604,7 @@
             "generation": 3,
             "youtube_link": "www.youtube.com/embed/cssV9F6JhbE",
             "twitter_link": "455138374337060867",
-            "image_link1": "http://images.eurogamer.net/2013/usgamer/NES-01.jpg",
-            "image_link2": "http://static.tvtropes.org/pmwiki/pub/images/Nintendo-NES_360.jpg",
-            "image_link3": "http://fc06.deviantart.net/fs71/f/2010/059/4/a/NES_Controller_by_The_Penciler.png"
+            "images": [40,41,42]
         }
     },
     {
@@ -237,9 +618,7 @@
             "generation": 6,
             "youtube_link": "www.youtube.com/embed/XtESAQUAHbk",
             "twitter_link": "455135780575252480",
-            "image_link1": "http://cdn1.sbnation.com/products/large/1678/xbox.jpg?1316016132",
-            "image_link2": "http://static.trustedreviews.com/94/0000248b1/44f4_orh350w620/logo-xbox.jpg",
-            "image_link3": "http://www.campuspride.org/wp-content/uploads/Xbox-logo.jpg"
+            "images": [43,44,45]
         }
     },
     {
@@ -253,9 +632,7 @@
             "generation": 8,
             "youtube_link": "www.youtube.com/embed/2i5wW6h03IE",
             "twitter_link": "455135458809237504",
-            "image_link1": "http://www.dvice.com/sites/dvice/files/styles/blog_post_media/public/xbox-one.png",
-            "image_link2": "http://i.telegraph.co.uk/multimedia/archive/02584/Xbox-One_2584436b.jpg",
-            "image_link3": "http://www5.pcmag.com/media/images/408054-microsoft-xbox-one.jpg?thumb=y"
+            "images": [46,47,48]
         }
     },
     {
@@ -269,9 +646,463 @@
             "generation": 8,
             "youtube_link": "www.youtube.com/embed/yeQGkadrCkE",
             "twitter_link": "455138898138525696",
-            "image_link1": "http://richwny15.wpengine.netdna-cdn.com/wp-content/uploads/2011/01/N3DS.jpg",
-            "image_link2": "http://www.nintendo.com/images/3ds/home/hardware_red.png",
-            "image_link3": "http://thegamingpixelshow.com/wp-content/uploads/2012/03/cobalt_blue_3ds_packaging.jpg"
+            "images": [49,50,51]
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 52,
+        "fields": {
+            "description": "Testing",
+            "link": "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 53,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 54,
+        "fields": {
+            "description": "Testing",
+            "link": "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 55,
+        "fields": {
+            "description": "Testing",
+            "link": "http://markderidder.squarespace.com/storage/InfinityWard.jpg?__SQUARESPACE_CACHEVERSION=1294423775776"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 56,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i1-news.softpedia-static.com/images/news2/Infinity-Ward-Might-Work-on-New-IP-2.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 57,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.infinityward.com/content/dam/atvi/infinityward/web/home-carousel/iw-lobby3.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 58,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i.imgur.com/QFR1BYR.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 59,
+        "fields": {
+            "description": "Testing",
+            "link": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLZlODn9tXFteFVmJzcyEV7mIRGy0CwawhzO8MXBhl7j8TngH9"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 60,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i.imgur.com/orPseLp.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 61,
+        "fields": {
+            "description": "Testing",
+            "link": "http://a1.s6img.com/cdn/0023/p/9307314_1824545_lz.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 62,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn3.whatculture.com/wp-content/uploads/2013/09/rockstar-games-source-944553.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 63,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn.cultofandroid.com/wp-content/uploads/2012/12/rockstargames.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 64,
+        "fields": {
+            "description": "Testing",
+            "link": "http://1.bp.blogspot.com/-j6uN4WlB6-c/UWRBgVq_vlI/AAAAAAAACOc/T-9JhqQCMAc/s640/url.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 65,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i.kinja-img.com/gawker-media/image/upload/18hh1ux83kghvjpg.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 66,
+        "fields": {
+            "description": "Testing",
+            "link": "http://blogs.popzara.com/media/12/20100217-sonic_dimps_01.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 67,
+        "fields": {
+            "description": "Testing",
+            "link": "http://media.ignimgs.com/media/ign/imgs/minisites/topN/video-game-makers/top-50-video-game-makers_hal.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 68,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.blogcdn.com/www.joystiq.com/media/2011/03/nint-gdc11-keynote-0022.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 69,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img.gamefaqs.net/screens/c/c/4/gfs_28117_1_2.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 70,
+        "fields": {
+            "description": "Testing",
+            "link": "http://gimmegimmegames.com/wp-content/uploads/2012/05/Monolith-Soft-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 71,
+        "fields": {
+            "description": "Testing",
+            "link": "http://wiiudaily.com/wp-content/uploads/2011/06/xenoblade-wii-u.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 72,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.level30.nl/wp-content/uploads/2012/10/disaster.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 73,
+        "fields": {
+            "description": "Testing",
+            "link": "http://media1.gameinformer.com/imagefeed/featured/konami/konamilogo125.gif"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 74,
+        "fields": {
+            "description": "Testing",
+            "link": "http://bulk2.destructoid.com/ul/134757-konami_header.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 75,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.plughitzlive.com/images/news/logos/konami.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 76,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn1-www.playstationlifestyle.net/assets/uploads/2009/08/midway-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 77,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img3.wikia.nocookie.net/__cb20100825154942/mk_/images/8/81/MK_2011_2ndlogo.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 78,
+        "fields": {
+            "description": "Testing",
+            "link": "http://gamingtrend.com/wp-content/uploads/2012/11/midway_logo-533x400.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 79,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.dsksic.com/images/media/66_Square_Enix_logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 80,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.vgblogger.com/wp-content/uploads/2008/11/11/SquareEnixQ109.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 81,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i1265.photobucket.com/albums/jj511/sgarmer05/SquareEnixLogo_zps95005137.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 82,
+        "fields": {
+            "description": "Testing",
+            "link": "http://images.wikia.com/elderscrolls/images/archive/a/a2/20110812152931!Bethesda_game_studios_logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 83,
+        "fields": {
+            "description": "Testing",
+            "link": "http://popcultureblog.dallasnews.com/files/2012/10/main_middle-620x221.gif"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 84,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.gamedynamo.com/images/galleries/photo/1768/bethesda-game-studios-future-generation-console-programmer-job-listing-news-1.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 85,
+        "fields": {
+            "description": "Testing",
+            "link": "http://upload.wikimedia.org/wikipedia/en/thumb/2/20/Polyphony_Digital_Inc.svg/300px-Polyphony_Digital_Inc.svg.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 86,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/ed/8f/ed8fa935ac18b89cde38d33fe0ba3b75.jpg?itok=9haMLGYY"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 87,
+        "fields": {
+            "description": "Testing",
+            "link": "http://files.g4tv.com/ImageDb3/178383_S/TGS09-A-Visit-To-The-Home-of-Gran-Turismo---Polyphony-Digital.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 88,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.ingames.com.br/wp-content/uploads/2010/06/CALEN%C3%81RIO-NAMCO1.gif"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 89,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.mobygames.com/images/shots/l/81872-xenosaga-episode-i-der-wille-zur-macht-playstation-2-screenshot.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 90,
+        "fields": {
+            "description": "Testing",
+            "link": "http://media.psu.com/media/articles/image/Namco_Arcade_1.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 91,
+        "fields": {
+            "description": "Testing",
+            "link": "http://gotgame.com/wp-content/uploads/2011/07/capcom.gif"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 92,
+        "fields": {
+            "description": "Testing",
+            "link": "http://d1vr6n66ssr06c.cloudfront.net/wp-content/uploads/2013/07/capcom_office_header.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 93,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn2.dualshockers.com/wp-content/uploads/2012/09/c.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 94,
+        "fields": {
+            "description": "Testing",
+            "link": "http://nintendookie.files.wordpress.com/2010/06/nintendo-offices.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 95,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img3.wikia.nocookie.net/__cb20090523211348/nintendo/en/images/6/67/NintendoEAD.gif"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 96,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.gameware.sk/wp-content/uploads/2013/10/nintendo-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 97,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img2.wikia.nocookie.net/__cb20130411095820/logopedia/images/a/aa/Game-freak-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 98,
+        "fields": {
+            "description": "Testing",
+            "link": "https://d1vr6n66ssr06c.cloudfront.net/wp-content/uploads/2012/12/Game-Freak-630x324.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 99,
+        "fields": {
+            "description": "Testing",
+            "link": "http://upload.wikimedia.org/wikipedia/en/e/ea/Game_Freak_logo.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 100,
+        "fields": {
+            "description": "Testing",
+            "link": "http://upload.wikimedia.org/wikipedia/en/thumb/a/ae/EA_Canada_Logo.svg/409px-EA_Canada_Logo.svg.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 101,
+        "fields": {
+            "description": "Testing",
+            "link": "http://static.giantbomb.com/uploads/original/0/5022/369688-ea_canada_leadin.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 102,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.edge-online.com/wp-content/uploads/edgeonline/oldfiles/EA%20Canada%20a_0.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 103,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn.www.easports.com/static/20140328.091049/images/easdnCommonPlugin/careers/EAS_HR_Orlando_Marquee2.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 104,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.dfcint.com/dossier/wp-content/uploads/2011/04/ea_tiburon-S.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 105,
+        "fields": {
+            "description": "Testing",
+            "link": "http://gamingbolt.com/wp-content/uploads/2011/05/electronic_arts-logo-big.gif"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 106,
+        "fields": {
+            "description": "Testing",
+            "link": "http://static.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/521c031de4b05e3dfb14dccd/1377567518962/bungie-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 107,
+        "fields": {
+            "description": "Testing",
+            "link": "http://officesnapshots.com/wp-content/galleries/bungie/b5.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 108,
+        "fields": {
+            "description": "Testing",
+            "link": "http://hw1.pa-cdn.com/par/img/editorial/bungietour/bungie_04.jpg"
         }
     },
     {
@@ -284,9 +1115,7 @@
             "status": "Active",
             "address": "Umeda Sky Building Tower West 8F,\n1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108",
             "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed",
-            "image_link1": "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg",
-            "image_link2": "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg",
-            "image_link3": "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg",
+            "images": [52, 53, 54],
             "platforms": [1]
         }
     },
@@ -300,9 +1129,7 @@
             "status": "Active",
             "address": "15821 Ventura Boulevard,\nSuite 590, Encino, CA 91436",
             "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=15821+Ventura+Boulevard,+Suite+590,+Encino,+CA+91436&aq=&sll=34.70533,135.489699&sspn=0.008758,0.016512&g=1-1-30+Oyodonaka,+Kita-ku,+Osaka,+531-6108&ie=UTF8&hq=&hnear=15821+Ventura+Blvd,+Encino,+California+91436&ll=34.156041,-118.478162&spn=0.002204,0.004128&t=m&z=14&output=embed",
-            "image_link1": "http://markderidder.squarespace.com/storage/InfinityWard.jpg?__SQUARESPACE_CACHEVERSION=1294423775776",
-            "image_link2": "http://i1-news.softpedia-static.com/images/news2/Infinity-Ward-Might-Work-on-New-IP-2.jpg",
-            "image_link3": "http://www.infinityward.com/content/dam/atvi/infinityward/web/home-carousel/iw-lobby3.jpg",
+            "images": [55, 56, 57],
             "platforms": [2]
         }
     },
@@ -316,9 +1143,7 @@
             "status": "Defunct",
             "address": "Fukuoka, Japan",
             "map_link": "",
-            "image_link1": "http://i.imgur.com/QFR1BYR.png",
-            "image_link2": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLZlODn9tXFteFVmJzcyEV7mIRGy0CwawhzO8MXBhl7j8TngH9",
-            "image_link3": "http://i.imgur.com/orPseLp.jpg",
+            "images": [58, 59, 60],
             "platforms": [3]
         }
     },
@@ -332,9 +1157,7 @@
             "status": "Active",
             "address": "622 Broadway,\nNew York, NY 10012",
             "map_link": "https://maps.google.com/maps?client=ubuntu-browser&q=622+Broadway+New+York,+NY+10012&ie=UTF8&hq=&hnear=622+Broadway,+New+York,+10012&t=m&z=14&ll=40.725807,-73.996195&output=embed",
-            "image_link1": "http://a1.s6img.com/cdn/0023/p/9307314_1824545_lz.jpg",
-            "image_link2": "http://cdn3.whatculture.com/wp-content/uploads/2013/09/rockstar-games-source-944553.jpg",
-            "image_link3": "http://cdn.cultofandroid.com/wp-content/uploads/2012/12/rockstargames.jpg",
+            "images": [61, 62, 63],
             "platforms": [4]
         }
     },
@@ -348,9 +1171,7 @@
             "status": "Active",
             "address": "4-4-6, Nishinakajima, Yodogawa-ku, Osaka-shi,\nOsaka, 532-0011, Japan",
             "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=4-4-6,+Nishinakajima,+Yodogawa-ku,+Osaka-shi,+Osaka,+532-0011,+Japan&aq=&sll=35.6956,139.769727&sspn=0.017304,0.012381&ie=UTF8&hq=&hnear=Japan,+%C5%8Csaka-fu,+%C5%8Csaka-shi,+Yodogawa-ku,+Nishinakajima,+4+Chome%E2%88%923%E2%88%924+%E3%83%81%E3%82%B5%E3%83%B3%E7%AC%AC%EF%BC%96%E6%96%B0%E5%A4%A7%E9%98%AA&t=m&z=14&ll=34.727226,135.497759&output=embed",
-            "image_link1": "http://1.bp.blogspot.com/-j6uN4WlB6-c/UWRBgVq_vlI/AAAAAAAACOc/T-9JhqQCMAc/s640/url.png",
-            "image_link2": "http://i.kinja-img.com/gawker-media/image/upload/18hh1ux83kghvjpg.jpg",
-            "image_link3": "http://blogs.popzara.com/media/12/20100217-sonic_dimps_01.jpg",
+            "images": [64, 65, 66],
             "platforms": [5]
         }
     },
@@ -364,9 +1185,7 @@
             "status": "Active",
             "address": "1-22, Kandasuda-cho, Chiyoda-ku,\nTokyo 101-0041, Japan",
             "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Kanda+Sudacho,+Chiyoda,+Tokyo,+Japan&aq=&sll=35.677178,139.736124&sspn=0.017308,0.012381&ie=UTF8&hq=&hnear=Kanda+Sudacho,+Chiyoda,+Tokyo,+Japan&t=m&z=14&ll=35.6956,139.769727&output=embed",
-            "image_link1": "http://media.ignimgs.com/media/ign/imgs/minisites/topN/video-game-makers/top-50-video-game-makers_hal.jpg",
-            "image_link2": "http://www.blogcdn.com/www.joystiq.com/media/2011/03/nint-gdc11-keynote-0022.jpg",
-            "image_link3": "http://img.gamefaqs.net/screens/c/c/4/gfs_28117_1_2.jpg",
+            "images": [67, 68, 69],
             "platforms": [6]
         }
     },
@@ -380,9 +1199,7 @@
             "status": "Active",
             "address": "Tokyo, Japan",
             "map_link": "",
-            "image_link1": "http://gimmegimmegames.com/wp-content/uploads/2012/05/Monolith-Soft-logo.jpg",
-            "image_link2": "http://wiiudaily.com/wp-content/uploads/2011/06/xenoblade-wii-u.jpg ",
-            "image_link3": "http://www.level30.nl/wp-content/uploads/2012/10/disaster.jpg",
+            "images": [70, 71, 72],
             "platforms": [7]
         }
     },
@@ -396,9 +1213,7 @@
             "status": "Active",
             "address": "9-7-2, Akasaka, Minato-ku,\nTokyo 107-8323, Japan",
             "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=9-7-2,+Akasaka,+Minato-ku,+Tokyo+107-8323,+Japan&aq=&sll=35.696615,139.708657&sspn=0.017304,0.012381&ie=UTF8&hq=&hnear=Japan,+T%C5%8Dky%C5%8D-to,+Minato-ku,+Akasaka,+3+Chome%E2%88%929%E2%88%9215+%E7%AC%AC%EF%BC%92%E3%82%AF%E3%83%AF%E3%83%A0%E3%83%A9%E3%83%93%E3%83%AB&t=m&z=14&ll=35.677178,139.736124&output=embed",
-            "image_link1": "http://media1.gameinformer.com/imagefeed/featured/konami/konamilogo125.gif",
-            "image_link2": "http://bulk2.destructoid.com/ul/134757-konami_header.jpg",
-            "image_link3": "http://www.plughitzlive.com/images/news/logos/konami.png",
+            "images": [73, 74, 75],
             "platforms": [8]
         }
     },
@@ -412,9 +1227,7 @@
             "status": "Defunct",
             "address": "Chicago, Illinois, U.S.",
             "map_link": "",
-            "image_link1": "http://cdn1-www.playstationlifestyle.net/assets/uploads/2009/08/midway-logo.jpg",
-            "image_link2": "http://img3.wikia.nocookie.net/__cb20100825154942/mk_/images/8/81/MK_2011_2ndlogo.png",
-            "image_link3": "http://gamingtrend.com/wp-content/uploads/2012/11/midway_logo-533x400.jpg",
+            "images": [76, 77, 78],
             "platforms": [9]
         }
     },
@@ -428,9 +1241,7 @@
             "status": "Active",
             "address": "6-27-30 Shinjuku, Shinjuku-ku,\nTokyo 160-8430, Japan",
             "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=6-27-30+Shinjuku,+Shinjuku-ku,+Tokyo+160-8430,+Japan&aq=&sll=35.696615,139.708657&sspn=0.017304,0.012381&ie=UTF8&hq=&hnear=6+Chome-27-30+Shinjuku,+Shinjuku-ku,+T%C5%8Dky%C5%8D-to,+Japan&t=m&z=14&ll=35.696615,139.708657&output=embed",
-            "image_link1": "http://www.dsksic.com/images/media/66_Square_Enix_logo.jpg",
-            "image_link2": "http://www.vgblogger.com/wp-content/uploads/2008/11/11/SquareEnixQ109.jpg",
-            "image_link3": "http://i1265.photobucket.com/albums/jj511/sgarmer05/SquareEnixLogo_zps95005137.jpg",
+            "images": [79, 80, 81],
             "platforms": [10]
         }
     },
@@ -444,9 +1255,7 @@
             "status": "Active",
             "address": "Rockvill, Maryland, U.S.",
             "map_link": "https://maps.google.com/maps?q=bethesda+game+studios&client=ubuntu-browser&ie=UTF8&hq=bethesda+game+studios&hnear=&radius=15000&t=m&ll=39.105245,-77.180515&spn=0.006295,0.006295&output=embed",
-            "image_link1": "http://images.wikia.com/elderscrolls/images/archive/a/a2/20110812152931!Bethesda_game_studios_logo.jpg",
-            "image_link2": "http://popcultureblog.dallasnews.com/files/2012/10/main_middle-620x221.gif",
-            "image_link3": "http://www.gamedynamo.com/images/galleries/photo/1768/bethesda-game-studios-future-generation-console-programmer-job-listing-news-1.jpg",
+            "images": [82, 83, 84],
             "platforms": [2,10]
         }
     },
@@ -460,9 +1269,7 @@
             "status": "Active",
             "address": "Tokyo, Japan",
             "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=tokyo+japan&aq=&sll=30.308284,-97.756187&sspn=0.29462,0.528374&ie=UTF8&hq=&hnear=Tokyo,+Japan&ll=35.689488,139.691706&spn=0.008662,0.016512&t=m&z=14&output=embed",
-            "image_link1": "http://upload.wikimedia.org/wikipedia/en/thumb/2/20/Polyphony_Digital_Inc.svg/300px-Polyphony_Digital_Inc.svg.png",
-            "image_link2": "http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/ed/8f/ed8fa935ac18b89cde38d33fe0ba3b75.jpg?itok=9haMLGYY",
-            "image_link3": "http://files.g4tv.com/ImageDb3/178383_S/TGS09-A-Visit-To-The-Home-of-Gran-Turismo---Polyphony-Digital.jpg",
+            "images": [85, 86, 87],
             "platforms": [11]
         }
     },
@@ -476,9 +1283,7 @@
             "status": "Active",
             "address": "Ota, Tokyo, Japan",
             "map_link": "https://maps.google.com/maps?f=q&amp;source=s_q&hl=en&geocode=&q=ota,+tokyo&aq=&sll=34.661436,135.50157&sspn=0.008772,0.016512&ie=UTF8&hq=&hnear=Ota,+Tokyo,+Japan&t=m&z=13&ll=35.561257,139.716051&output=embed",
-            "image_link1": "http://www.ingames.com.br/wp-content/uploads/2010/06/CALEN%C3%81RIO-NAMCO1.gif",
-            "image_link2": "http://www.mobygames.com/images/shots/l/81872-xenosaga-episode-i-der-wille-zur-macht-playstation-2-screenshot.jpg",
-            "image_link3": "http://media.psu.com/media/articles/image/Namco_Arcade_1.jpg",
+            "images": [88, 89, 90],
             "platforms": [4,11]
         }
     },
@@ -492,9 +1297,7 @@
             "status": "Active",
             "address": "San Mateo County, California, U.S.",
             "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Capcom+USA+Inc,+Concar+Drive,+San+Mateo,+CA&aq=0&oq=capcom+san&sll=34.804783,-117.932739&sspn=4.482792,3.175049&ie=UTF8&hq=&hnear=&t=m&iwloc=A&ll=37.554852,-122.299782&spn=0.006295,0.006295&output=embed",
-            "image_link1": "http://gotgame.com/wp-content/uploads/2011/07/capcom.gif",
-            "image_link2": "http://d1vr6n66ssr06c.cloudfront.net/wp-content/uploads/2013/07/capcom_office_header.jpg",
-            "image_link3": "http://cdn2.dualshockers.com/wp-content/uploads/2012/09/c.jpg",
+            "images": [91, 92, 93],
             "platforms": [13]
         }
     },
@@ -508,9 +1311,7 @@
             "status": "Active",
             "address": "Kyoto, Japan",
             "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=nintendo+ead+kyoto,+japan&aq=&sll=37.0625,-95.677068&sspn=67.295907,82.705078&ie=UTF8&hq=nintendo+ead&hnear=Kyoto,+Kyoto+Prefecture,+Japan&ll=34.954002,135.776174&spn=0.138344,0.049988&t=m&output=embed",
-            "image_link1": "http://nintendookie.files.wordpress.com/2010/06/nintendo-offices.jpg",
-            "image_link2": "http://img3.wikia.nocookie.net/__cb20090523211348/nintendo/en/images/6/67/NintendoEAD.gif",
-            "image_link3": "http://www.gameware.sk/wp-content/uploads/2013/10/nintendo-logo.jpg",
+            "images": [94, 95, 96],
             "platforms": [5,7,14]
         }
     },
@@ -524,9 +1325,7 @@
             "status": "Active",
             "address": "154-0004, No. 1 chome, Setagaya-ku, Tokyo Taishido Carrot Tower 22F Japan",
             "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=etagaya-ku,+Tokyo+Taishido+Carrot+Tower&aq=&sll=35.643703,139.669068&sspn=0.017263,0.020192&ie=UTF8&hq=Carrot+Tower&hnear=Taishido,+Setagaya,+Tokyo,+Japan&t=m&ll=35.643703,139.669068&spn=0.01023,0.006295&output=embed",
-            "image_link1": "http://img2.wikia.nocookie.net/__cb20130411095820/logopedia/images/a/aa/Game-freak-logo.jpg",
-            "image_link2":"https://d1vr6n66ssr06c.cloudfront.net/wp-content/uploads/2012/12/Game-Freak-630x324.png",
-            "image_link3": "http://upload.wikimedia.org/wikipedia/en/e/ea/Game_Freak_logo.png",
+            "images": [97, 98, 99],
             "platforms": [17]
         }
     },
@@ -540,9 +1339,7 @@
             "status": "Active",
             "address": "Burnaby, British Columbia, Canada",
             "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=4330+Sanderson+Way,+Burnaby,+BC+V5G+&aq=&sll=49.24754,-123.00853&sspn=0.003467,0.005048&ie=UTF8&hq=&hnear=4330+Sanderson+Way,+Burnaby,+British+Columbia+V5G+4X1,+Canada&t=m&z=14&ll=49.247816,-123.008075&output=embed",
-            "image_link1": "http://upload.wikimedia.org/wikipedia/en/thumb/a/ae/EA_Canada_Logo.svg/409px-EA_Canada_Logo.svg.png",
-            "image_link2":"http://static.giantbomb.com/uploads/original/0/5022/369688-ea_canada_leadin.jpg",
-            "image_link3": "http://www.edge-online.com/wp-content/uploads/edgeonline/oldfiles/EA%20Canada%20a_0.jpg",
+            "images": [100, 101, 102],
             "platforms": [2,4,7,10,12,16]
         }
     },
@@ -556,9 +1353,7 @@
             "status": "Active",
             "address": "1950 Summit Park Dr, Orlando, FL‎",
             "map_link": "https://maps.google.com/maps?q=ea+tiburon&client=ubuntu-browser&ie=UTF8&hq=ea+tiburon&hnear=&radius=15000&t=m&ll=28.637197,-81.402252&spn=0.006295,0.006295&output=embed",
-            "image_link1": "http://cdn.www.easports.com/static/20140328.091049/images/easdnCommonPlugin/careers/EAS_HR_Orlando_Marquee2.jpg",
-            "image_link2":"http://www.dfcint.com/dossier/wp-content/uploads/2011/04/ea_tiburon-S.jpg",
-            "image_link3": "http://gamingbolt.com/wp-content/uploads/2011/05/electronic_arts-logo-big.gif",
+            "images": [103, 104, 105],
             "platforms": [2,10,12,16]
         }
     },
@@ -572,10 +1367,560 @@
             "status": "Active",
             "address": "550 106th Ave NE #207, Bellevue, WA",
             "map_link": "https://maps.google.com/maps?q=bellevue+washington+bungie&client=ubuntu-browser&ie=UTF8&hq=&hnear=&t=m&iwloc=A&ll=47.615045,-122.198331&spn=0.006295,0.006295&output=embed",
-            "image_link1": "http://static.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/521c031de4b05e3dfb14dccd/1377567518962/bungie-logo.jpg",
-            "image_link2":"http://officesnapshots.com/wp-content/galleries/bungie/b5.jpg",
-            "image_link3": "http://hw1.pa-cdn.com/par/img/editorial/bungietour/bungie_04.jpg",
+            "images": [106, 107, 108],
             "platforms": [2]
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 109,
+        "fields": {
+            "description": "Testing",
+            "link": "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 110,
+        "fields": {
+            "description": "Testing",
+            "link": "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 111,
+        "fields": {
+            "description": "Testing",
+            "link": "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 112,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.maclife.com/files/u220903/call_of_duty_4_modern_warfare_620px.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 113,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn.macrumors.com/article-new/2012/06/NewImage32.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 114,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img3.wikia.nocookie.net/__cb20120604062555/callofduty/images/7/7e/Operation_Kingfish_2013_group_crop.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 115,
+        "fields": {
+            "description": "Testing",
+            "link": "http://upload.wikimedia.org/wikipedia/en/5/51/Hotel_Dusk.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 116,
+        "fields": {
+            "description": "Testing",
+            "link": "http://oyster.ignimgs.com/wordpress/write.ign.com/86032/2011/12/dunning.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 117,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.geekshow.us/wp/wp-content/uploads/2009/03/hotel-dusk-louie.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 118,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.slashgear.com/wp-content/uploads/2011/12/gta_3_android_0.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 119,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn.appstorm.net/ipad.appstorm.net/files/2011/12/gtaIII_2.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 120,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.gouranga.com/images/gta3/gta3_394.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 121,
+        "fields": {
+            "description": "Testing",
+            "link": "http://bulk.destructoid.com/ul/user/1/14375-194296-SonicAdvancetitlescreenjpg-620x.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 122,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img841.imageshack.us/img841/5249/s2built002.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 123,
+        "fields": {
+            "description": "Testing",
+            "link": "http://fc00.deviantart.net/fs71/i/2011/018/1/7/sonic_advance_2__sonic_final_by_iamsupersonic-d37iz9y.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 124,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img.gamefaqs.net/box/0/8/7/14087_front.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 125,
+        "fields": {
+            "description": "Testing",
+            "link": "http://faqsmedia.ign.com/faqs/image/ali1mg_ssbm_010.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 126,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.technologytell.com/gaming/files/2013/07/smash-bros.-melee.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 127,
+        "fields": {
+            "description": "Testing",
+            "link": "http://upload.wikimedia.org/wikipedia/en/d/d9/Xenoblade_box_artwork.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 128,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.vgchartz.com/games/pics/xenoblade-chronicles-958102.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 129,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i.imgur.com/drijgxV.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 130,
+        "fields": {
+            "description": "Testing",
+            "link": "http://upload.wikimedia.org/wikipedia/en/b/bd/Metal_Gear_cover.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 131,
+        "fields": {
+            "description": "Testing",
+            "link": "http://static.giantbomb.com/uploads/original/0/4648/2019227-solid.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 132,
+        "fields": {
+            "description": "Testing",
+            "link": "http://einfogames.com/hub/files/2014/02/nes-metal-gear-jeu.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 133,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img1.wikia.nocookie.net/__cb20080510223920/doom/images/b/b7/Doom_64-box-cover.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 134,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.pixlbit.com/media/products/6773/57131.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 135,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i.imgur.com/YgemoOh.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 136,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img3.wikia.nocookie.net/__cb20120614005423/finalfantasy/images/9/94/Final_Fantasy_XIII_Logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 137,
+        "fields": {
+            "description": "Testing",
+            "link": "http://86bb71d19d3bcb79effc-d9e6924a0395cb1b5b9f03b7640d26eb.r91.cf1.rackcdn.com/wp-content/uploads/2010/03/final-fantasy-xiii-ps3-theme-unlockable-artwork.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 138,
+        "fields": {
+            "description": "Testing",
+            "link": "http://fc06.deviantart.net/fs51/i/2009/330/1/f/Final_Fantasy_XIII_characters_by_Cloudfan174.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 139,
+        "fields": {
+            "description": "Testing",
+            "link": "http://2.bp.blogspot.com/-4wRoJB4ikQI/UkbsAtjLGpI/AAAAAAAAB6s/rluBURi0s0U/s1600/call-of-duty-ghosts-1080p.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 140,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.geforce.com/sites/default/files-world/attachments/4370COD_Ghosts_Chasm_Ambush.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 141,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.geek.com/wp-content/uploads/2013/10/COD_Ghosts_05-590x330.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 142,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.justpushstart.com/wp-content/uploads/2013/06/fifa-14-no-kinect.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 143,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.empireofsoccer.com/wp-content/uploads/2013/08/Tim-Cahill-FIFA-14-Cover-Boy.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 144,
+        "fields": {
+            "description": "Testing",
+            "link": "http://gamezilla.komputerswiat.pl/media/2013/203/1507466/piszczu_644x361.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 145,
+        "fields": {
+            "description": "Testing",
+            "link": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1wOYr6PMVyEde0xyWWxezNQWS5eiSCBPUJFBAAGwpg_TybbAu"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 146,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.justpushstart.com/wp-content/uploads/2013/08/Super-Mario-Bros.-3.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 147,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i2.cdnds.net/10/25/gaming_smb3_2.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 148,
+        "fields": {
+            "description": "Testing",
+            "link": "http://2.bp.blogspot.com/-Y1JBVaQ6LOM/TmUljIkVheI/AAAAAAAAAcQ/c0jDytQlwd8/s1600/13280.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 149,
+        "fields": {
+            "description": "Testing",
+            "link": "http://fc07.deviantart.net/fs71/i/2012/105/7/1/megaman_x_co_op_by_isdailic-d4w7ivf.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 150,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.familyfriendlygaming.com/Images/2011/Pics/MEgaman%20X/IMG_0244.JPG"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 151,
+        "fields": {
+            "description": "Testing",
+            "link": "http://a.espncdn.com/photo/2013/0402/play_e_maddennfl25_gb1-800_576.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 152,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i1.ytimg.com/vi/ebFBbGVX5t0/maxresdefault.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 153,
+        "fields": {
+            "description": "Testing",
+            "link": "http://ww2.hdnux.com/photos/23/50/40/5146661/3/628x471.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 154,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i50.tinypic.com/167t9w4.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 155,
+        "fields": {
+            "description": "Testing",
+            "link": "http://images.kpopstarz.com/data/images/full/83980/will-pokemon-x-and-y-follow-up-with-z.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 156,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.justpushstart.com/wp-content/uploads/2013/10/Pokemon-X-and-Pokemon-Y-61.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 157,
+        "fields": {
+            "description": "Testing",
+            "link": "http://upload.wikimedia.org/wikipedia/en/7/7b/Metal_Gear_Solid_2-_Sons_of_Liberty_Original_Soundtrack.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 158,
+        "fields": {
+            "description": "Testing",
+            "link": "http://3.bp.blogspot.com/_sRIeN7_ZfCw/TDq8P0yvfcI/AAAAAAAAA3Q/7BPPndc8jKc/s1600/metal-gear-solid-2-sons-of-liberty-01.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 159,
+        "fields": {
+            "description": "Testing",
+            "link": "http://statici.behindthevoiceactors.com/behindthevoiceactors/_img/games/banner_13.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 160,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img1.wikia.nocookie.net/__cb20080816125146/gtawiki/images/3/36/GTA_Vice_City_Box_Art.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 161,
+        "fields": {
+            "description": "Testing",
+            "link": "http://gm1.s-ports.ru/sites/default/files/styles/565x365/public/gta_vice_city_collection_14in1-repack_1328193040-326692.jpeg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 162,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cf.shacknews.com/shack_images/sshots/gta_vicecity/gta_vicecity2.nphd.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 163,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img1.wikia.nocookie.net/__cb20071214135827/nintendo/en/images/7/71/Yoshi's_Story_(NA).jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 164,
+        "fields": {
+            "description": "Testing",
+            "link": "http://2.bp.blogspot.com/-eBMDmIxk4E4/UA9N0siSJ5I/AAAAAAAAGrw/dbFG07M9okg/s1600/yoshi's+story+N64+wii.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 165,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.vizzed.com/vizzedboard/userimages/postattachments/75600-1299547406.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 166,
+        "fields": {
+            "description": "Testing",
+            "link": "http://ca0.nitroroms.com/fileimage/1568/gran-turismo-2.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 167,
+        "fields": {
+            "description": "Testing",
+            "link": "http://2.bp.blogspot.com/-Txd_xZOWeTU/Tyl50Fu67QI/AAAAAAAABTw/fBIE4J1QiVA/s400/2.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 168,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i135.photobucket.com/albums/q131/Rigret/Picture2-2.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 169,
+        "fields": {
+            "description": "Testing",
+            "link": "http://a.tgcdn.net/images/products/additional/large/ee05_skyrim_electronic_dragon_shout_hoodie_addtl.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 170,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.cxpulp.com/attachment.php?attachmentid=5680&d=1336517440"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 171,
+        "fields": {
+            "description": "Testing",
+            "link": "http://pad2.whstatic.com/images/thumb/a/af/Join-the-Thieves-Guild-in-Skyrim-Step-2.jpg/670px-Join-the-Thieves-Guild-in-Skyrim-Step-2.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 172,
+        "fields": {
+            "description": "Testing",
+            "link": "https://lh5.googleusercontent.com/-EF3Jt42p1pQ/Tu-x9wtOI2I/AAAAAAAAACg/m3f8I0S-Nlg/w800-h800/Picture%2B002.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 173,
+        "fields": {
+            "description": "Testing",
+            "link": "http://images.amazon.com/images/G/01/videogames/detail-page/halo3-3-lg.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 174,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img4.wikia.nocookie.net/__cb20101217213126/halo/es/images/e/e4/Halo3_5.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 175,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img1.wikia.nocookie.net/__cb20120811143828/tekken/en/images/a/ae/Tekken_3_Cover.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 176,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.emuparadise.me/MAME/snap/tekken3.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 177,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.fightersgeneration.com/np5/gm/t3-s21.jpg"
         }
     },
     {
@@ -588,9 +1933,7 @@
             "publisher": "Nintendo",
             "ESRB_rating": "T",
             "youtube_link": "www.youtube.com/embed/z9ueBmNNGus",
-            "image_link1": "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png",
-            "image_link2": "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg",
-            "image_link3": "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg",
+            "images": [109,110,111],
             "developer": 1, 
             "platforms":[1]
         }
@@ -605,14 +1948,11 @@
             "publisher": "Activision",
             "ESRB_rating": "M",
             "youtube_link": "www.youtube.com/embed/JmZ1WQ_GEKg",
-            "image_link1": "http://www.maclife.com/files/u220903/call_of_duty_4_modern_warfare_620px.png",
-            "image_link2": "http://cdn.macrumors.com/article-new/2012/06/NewImage32.png",
-            "image_link3": "http://img3.wikia.nocookie.net/__cb20120604062555/callofduty/images/7/7e/Operation_Kingfish_2013_group_crop.png",
+            "images": [112,113,114],
             "developer": 2, 
             "platforms":[2,10]
         }
     },
-
     {
         "model": "idb.game",
         "pk": 3,
@@ -623,14 +1963,11 @@
             "publisher": "Nintendo",
             "ESRB_rating": "T",
             "youtube_link": "www.youtube.com/embed/6iVfUWVDLPk",
-            "image_link1": "http://upload.wikimedia.org/wikipedia/en/5/51/Hotel_Dusk.jpg",
-            "image_link2": "http://oyster.ignimgs.com/wordpress/write.ign.com/86032/2011/12/dunning.jpg",
-            "image_link3": "http://www.geekshow.us/wp/wp-content/uploads/2009/03/hotel-dusk-louie.jpg",
+            "images": [115,116,117],
             "developer": 3, 
             "platforms":[3]
         }
     },
-
     {
         "model": "idb.game",
         "pk": 4,
@@ -641,14 +1978,11 @@
             "publisher": "Rockstar Games",
             "ESRB_rating": "M",
             "youtube_link": "www.youtube.com/embed/WUi3davvBmM",
-            "image_link1": "http://www.slashgear.com/wp-content/uploads/2011/12/gta_3_android_0.png",
-            "image_link2": "http://cdn.appstorm.net/ipad.appstorm.net/files/2011/12/gtaIII_2.png",
-            "image_link3": "http://www.gouranga.com/images/gta3/gta3_394.jpg",
+            "images": [118,119,120],
             "developer": 4, 
             "platforms":[4]
         }
     },
-
     {
         "model": "idb.game",
         "pk": 5,
@@ -659,14 +1993,11 @@
             "publisher": "THQ",
             "ESRB_rating": "E",
             "youtube_link": "www.youtube.com/embed/_75jMO4v2Vs",
-            "image_link1": "http://bulk.destructoid.com/ul/user/1/14375-194296-SonicAdvancetitlescreenjpg-620x.jpg",
-            "image_link2": "http://img841.imageshack.us/img841/5249/s2built002.png",
-            "image_link3": "http://fc00.deviantart.net/fs71/i/2011/018/1/7/sonic_advance_2__sonic_final_by_iamsupersonic-d37iz9y.png",
+            "images": [121,122,123],
             "developer": 5, 
             "platforms":[5]
         }
     },
-
     {
         "model": "idb.game",
         "pk": 6,
@@ -677,14 +2008,11 @@
             "publisher": "Nintendo",
             "ESRB_rating": "T",
             "youtube_link": "www.youtube.com/embed/O0O173xIuO0",
-            "image_link1": "http://img.gamefaqs.net/box/0/8/7/14087_front.jpg",
-            "image_link2": "http://faqsmedia.ign.com/faqs/image/ali1mg_ssbm_010.jpg",
-            "image_link3": "http://www.technologytell.com/gaming/files/2013/07/smash-bros.-melee.jpg",
+            "images": [124,125,126],
             "developer": 6, 
             "platforms":[6]
         }
     },
-
     {
         "model": "idb.game",
         "pk": 7,
@@ -695,14 +2023,11 @@
             "publisher": "Nintendo",
             "ESRB_rating": "T",
             "youtube_link": "www.youtube.com/embed/N7Xc6in86rs",
-            "image_link1": "http://upload.wikimedia.org/wikipedia/en/d/d9/Xenoblade_box_artwork.png",
-            "image_link2": "http://www.vgchartz.com/games/pics/xenoblade-chronicles-958102.jpg",
-            "image_link3": "http://i.imgur.com/drijgxV.jpg",
+            "images": [127,128,129],
             "developer": 7, 
             "platforms":[7]
         }
     },
-
     {
         "model": "idb.game",
         "pk": 8,
@@ -713,14 +2038,11 @@
             "publisher": "Konami",
             "ESRB_rating": "N/A",
             "youtube_link": "www.youtube.com/embed/caG6dkbhAK4",
-            "image_link1": "http://upload.wikimedia.org/wikipedia/en/b/bd/Metal_Gear_cover.jpg",
-            "image_link2": "http://static.giantbomb.com/uploads/original/0/4648/2019227-solid.jpg",
-            "image_link3": "http://einfogames.com/hub/files/2014/02/nes-metal-gear-jeu.jpg",
+            "images": [130,131,132],
             "developer": 8, 
             "platforms":[8]
         }
     },
-
     {
         "model": "idb.game",
         "pk": 9,
@@ -731,14 +2053,11 @@
             "publisher": "Midway Games",
             "ESRB_rating": "M",
             "youtube_link": "www.youtube.com/embed/eUjItXOa-GM",
-            "image_link1": "http://img1.wikia.nocookie.net/__cb20080510223920/doom/images/b/b7/Doom_64-box-cover.jpg",
-            "image_link2": "http://www.pixlbit.com/media/products/6773/57131.jpg",
-            "image_link3": "http://i.imgur.com/YgemoOh.jpg",
+            "images": [133,134,135],
             "developer": 9, 
             "platforms":[9]
         }
     },
-
      {
         "model": "idb.game",
         "pk": 10,
@@ -749,9 +2068,7 @@
             "publisher": "Square Enix",
             "ESRB_rating": "T",
             "youtube_link": "www.youtube.com/embed/eJPbozRomX4",
-            "image_link1": "http://img3.wikia.nocookie.net/__cb20120614005423/finalfantasy/images/9/94/Final_Fantasy_XIII_Logo.jpg",
-            "image_link2": "http://86bb71d19d3bcb79effc-d9e6924a0395cb1b5b9f03b7640d26eb.r91.cf1.rackcdn.com/wp-content/uploads/2010/03/final-fantasy-xiii-ps3-theme-unlockable-artwork.jpg",
-            "image_link3": "http://fc06.deviantart.net/fs51/i/2009/330/1/f/Final_Fantasy_XIII_characters_by_Cloudfan174.png",
+            "images": [136,137,138],
             "developer": 10, 
             "platforms":[2,10]
         }
@@ -766,14 +2083,11 @@
             "publisher": "Activision",
             "ESRB_rating": "M",
             "youtube_link": "www.youtube.com/embed/k5E2U-YOUfQ",
-            "image_link1": "http://2.bp.blogspot.com/-4wRoJB4ikQI/UkbsAtjLGpI/AAAAAAAAB6s/rluBURi0s0U/s1600/call-of-duty-ghosts-1080p.png",
-            "image_link2": "http://www.geforce.com/sites/default/files-world/attachments/4370COD_Ghosts_Chasm_Ambush.jpg",
-            "image_link3": "http://www.geek.com/wp-content/uploads/2013/10/COD_Ghosts_05-590x330.jpg",
+            "images": [139,140,141],
             "developer": 2,
             "platforms": [1,2,10,12,16]
         }
     },
-
     {
         "model": "idb.game",
         "pk": 12,
@@ -784,15 +2098,11 @@
             "publisher": "Electronic Arts",
             "ESRB_rating": "E",
             "youtube_link": "www.youtube.com/embed/LpiTucFQuwA",
-            "image_link1": "http://www.justpushstart.com/wp-content/uploads/2013/06/fifa-14-no-kinect.jpg",
-            "image_link2": "http://www.empireofsoccer.com/wp-content/uploads/2013/08/Tim-Cahill-FIFA-14-Cover-Boy.jpg",
-            "image_link3": "http://gamezilla.komputerswiat.pl/media/2013/203/1507466/piszczu_644x361.jpg",
+            "images": [142,143,144],
             "developer": 18, 
             "platforms": [2,4,7,10,12,16]
         }
     },
-
-
     {
         "model": "idb.game",
         "pk": 13,
@@ -803,15 +2113,11 @@
             "publisher": "Nintendo",
             "ESRB_rating": "E",
             "youtube_link": "www.youtube.com/embed/82TL-Acm4ts",
-            "image_link1": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1wOYr6PMVyEde0xyWWxezNQWS5eiSCBPUJFBAAGwpg_TybbAu",
-            "image_link2": "http://www.justpushstart.com/wp-content/uploads/2013/08/Super-Mario-Bros.-3.jpg",
-            "image_link3": "http://i2.cdnds.net/10/25/gaming_smb3_2.jpg",
+            "images": [145,146,147],
             "developer": 16, 
             "platforms": [5,14]
         }
     },
-
-
     {
         "model": "idb.game",
         "pk": 14,
@@ -822,14 +2128,11 @@
             "publisher": "Capcom",
             "ESRB_rating": "K-A",
             "youtube_link": "www.youtube.com/embed/zbht_bSvKcs",
-            "image_link1": "http://2.bp.blogspot.com/-Y1JBVaQ6LOM/TmUljIkVheI/AAAAAAAAAcQ/c0jDytQlwd8/s1600/13280.jpg",
-            "image_link2": "http://fc07.deviantart.net/fs71/i/2012/105/7/1/megaman_x_co_op_by_isdailic-d4w7ivf.jpg",
-            "image_link3": "http://www.familyfriendlygaming.com/Images/2011/Pics/MEgaman%20X/IMG_0244.JPG",
+            "images": [148,149,150],
             "developer": 15, 
             "platforms": [13]
         }
     },
-
     {
         "model": "idb.game",
         "pk": 15,
@@ -840,14 +2143,11 @@
             "publisher": "EA Sports",
             "ESRB_rating": "E",
             "youtube_link": "www.youtube.com/embed/KMvQri8A6kQ",
-            "image_link1": "http://a.espncdn.com/photo/2013/0402/play_e_maddennfl25_gb1-800_576.jpg",
-            "image_link2": "http://i1.ytimg.com/vi/ebFBbGVX5t0/maxresdefault.jpg",
-            "image_link3": "http://ww2.hdnux.com/photos/23/50/40/5146661/3/628x471.jpg",
+            "images": [151,152,153],
             "developer": 19, 
             "platforms": [2,10,12,16]
         }
     },
-
     {
         "model": "idb.game",
         "pk": 16,
@@ -858,15 +2158,11 @@
             "publisher": "Nintendo",
             "ESRB_rating": "E",
             "youtube_link": "www.youtube.com/embed/cq6L1HV5gz4",
-            "image_link1": "http://i50.tinypic.com/167t9w4.jpg",
-            "image_link2": "http://images.kpopstarz.com/data/images/full/83980/will-pokemon-x-and-y-follow-up-with-z.jpg",
-            "image_link3": "http://www.justpushstart.com/wp-content/uploads/2013/10/Pokemon-X-and-Pokemon-Y-61.jpg",
+            "images": [154,155,156],
             "developer": 17, 
             "platforms": [17]
         }
     },
-
-
     {
         "model": "idb.game",
         "pk": 17,
@@ -877,14 +2173,11 @@
             "publisher": "Konami",
             "ESRB_rating": "M",
             "youtube_link": "www.youtube.com/embed/NhzmQaFcMfg",
-            "image_link1": "http://upload.wikimedia.org/wikipedia/en/7/7b/Metal_Gear_Solid_2-_Sons_of_Liberty_Original_Soundtrack.jpg",
-            "image_link2": "http://3.bp.blogspot.com/_sRIeN7_ZfCw/TDq8P0yvfcI/AAAAAAAAA3Q/7BPPndc8jKc/s1600/metal-gear-solid-2-sons-of-liberty-01.jpg",
-            "image_link3": "http://statici.behindthevoiceactors.com/behindthevoiceactors/_img/games/banner_13.jpg",
+            "images": [157,158,159],
             "developer": 8, 
             "platforms": [2,4,10]
         }
     },
-
     {
         "model": "idb.game",
         "pk": 18,
@@ -895,15 +2188,11 @@
             "publisher": "Rockstar Games",
             "ESRB_rating": "M",
             "youtube_link": "www.youtube.com/embed/nlMkabzZNII",
-            "image_link1": "http://img1.wikia.nocookie.net/__cb20080816125146/gtawiki/images/3/36/GTA_Vice_City_Box_Art.jpg",
-            "image_link2": "http://gm1.s-ports.ru/sites/default/files/styles/565x365/public/gta_vice_city_collection_14in1-repack_1328193040-326692.jpeg",
-            "image_link3": "http://cf.shacknews.com/shack_images/sshots/gta_vicecity/gta_vicecity2.nphd.jpg",
+            "images": [160,161,162],
             "developer": 4, 
             "platforms": [4,10,15]
         }
     },
-
-
     {
         "model": "idb.game",
         "pk": 19,
@@ -914,15 +2203,11 @@
             "publisher": "Nintendo",
             "ESRB_rating": "E",
             "youtube_link": "www.youtube.com/embed/IrXzq8ZTDCo",
-            "image_link1": "http://img1.wikia.nocookie.net/__cb20071214135827/nintendo/en/images/7/71/Yoshi's_Story_(NA).jpg",
-            "image_link2": "http://2.bp.blogspot.com/-eBMDmIxk4E4/UA9N0siSJ5I/AAAAAAAAGrw/dbFG07M9okg/s1600/yoshi's+story+N64+wii.jpg",
-            "image_link3": "http://www.vizzed.com/vizzedboard/userimages/postattachments/75600-1299547406.jpg",
-            "developer": 16, 
+            "images": [163,164,165],
+            "developer": 16,
             "platforms": [7]
         }
     },
-
-
     {
         "model": "idb.game",
         "pk": 20,
@@ -933,15 +2218,11 @@
             "publisher": "Sony Computer Entertainment",
             "ESRB_rating": "E",
             "youtube_link": "www.youtube.com/embed/e701QHyCr0o",
-            "image_link1": "http://ca0.nitroroms.com/fileimage/1568/gran-turismo-2.jpg",
-            "image_link2": "http://2.bp.blogspot.com/-Txd_xZOWeTU/Tyl50Fu67QI/AAAAAAAABTw/fBIE4J1QiVA/s400/2.jpg",
-            "image_link3": "http://i135.photobucket.com/albums/q131/Rigret/Picture2-2.png",
+            "images": [166,167,168],
             "developer": 13, 
             "platforms": [11]
         }
     },
-
-
     {
         "model": "idb.game",
         "pk": 21,
@@ -952,17 +2233,11 @@
             "publisher": "Bethesda Softworks",
             "ESRB_rating": "M",
             "youtube_link": "www.youtube.com/embed/PjqsYzBrP-M",
-            "image_link1": "http://a.tgcdn.net/images/products/additional/large/ee05_skyrim_electronic_dragon_shout_hoodie_addtl.jpg",
-            "image_link2": "http://www.cxpulp.com/attachment.php?attachmentid=5680&d=1336517440",
-            "image_link3": "http://pad2.whstatic.com/images/thumb/a/af/Join-the-Thieves-Guild-in-Skyrim-Step-2.jpg/670px-Join-the-Thieves-Guild-in-Skyrim-Step-2.jpg",
+            "images": [169,170,171],
             "developer": 12, 
             "platforms": [2,10]
         }
     },
-
-
-
-
     {
         "model": "idb.game",
         "pk": 22,
@@ -973,14 +2248,11 @@
             "publisher": "Microsoft Game Studios",
             "ESRB_rating": "M",
             "youtube_link": "www.youtube.com/embed/MsiKUmyL_hY",
-            "image_link1": "https://lh5.googleusercontent.com/-EF3Jt42p1pQ/Tu-x9wtOI2I/AAAAAAAAACg/m3f8I0S-Nlg/w800-h800/Picture%2B002.jpg",
-            "image_link2": "http://images.amazon.com/images/G/01/videogames/detail-page/halo3-3-lg.jpg",
-            "image_link3": "http://img4.wikia.nocookie.net/__cb20101217213126/halo/es/images/e/e4/Halo3_5.jpg",
+            "images": [172,173,174],
             "developer": 20, 
             "platforms": [2]
         }
     },
-
     {
         "model": "idb.game",
         "pk": 23,
@@ -991,9 +2263,7 @@
             "publisher": "Namco",
             "ESRB_rating": "T",
             "youtube_link": "www.youtube.com/embed/rxwu61WOTig",
-            "image_link1": "http://img1.wikia.nocookie.net/__cb20120811143828/tekken/en/images/a/ae/Tekken_3_Cover.jpg",
-            "image_link2": "http://www.emuparadise.me/MAME/snap/tekken3.png",
-            "image_link3": "http://www.fightersgeneration.com/np5/gm/t3-s21.jpg",
+            "images": [175,176,177],
             "developer": 14, 
             "platforms": [4,11]
         }
