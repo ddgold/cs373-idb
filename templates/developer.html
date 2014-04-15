@@ -8,75 +8,65 @@ IVGDb &middot; Developer | {{ developer.name }}
 
 {% block content %}
 <div class="container">
-  <div class="panel panel-default">
-    <!-- Default panel contents -->
-    <div class="panel-heading"><h1>{{ developer.name }}</h1></div>
-    <div class="panel-body">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src={{ developer.image_link1 }} alt="developer image link 1">
-            <div class="carousel-caption"> 
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><h1>{{ developer.name }}</h1></div>
+        <div class="panel-body">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    {% for i in developer.images.all %}
+                        <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+                    {% endfor %}
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    {% for i in developer.images.all %}
+                        <div class="item{% if forloop.first %} active{% endif %}">
+                            <img src={{ i.link }} alt="{{ i.description }}">
+                            <div class="carousel-caption"> 
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
             </div>
-          </div>
-          <div class="item">
-             <img src={{ developer.image_link2 }} alt="developer image link 2">
-            <div class="carousel-caption"> 
-            </div>
-          </div>
-          <div class="item">
-             <img src={{ developer.image_link3 }} alt="developer image link 3">
-            <div class="carousel-caption"> 
-            </div>
-          </div>
         </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
-    </div>
 
     <!-- List group -->
     <ul class="list-group">
-      <li class="list-group-item"><b>Founded:</b> {{ developer.date_founded }}</li>
-      <li class="list-group-item"><b>Number of Employees:</b> {{ developer.num_employees }}</li>
-      <li class="list-group-item"><b>Status:</b> {{ developer.status }}</li>
-      <li class="list-group-item"><b>Platform(s):</b> 
-        {% for p in developer.platforms.all %}
-          <a href="/platform/{{ p.pk }}/">{{ p.name }}</a>{% if not forloop.last %},  {% endif %}
-        {% endfor %}
-      </li>
-      <li class="list-group-item"><b>Game(s):</b> 
-        {% for g in developer.game_set.all %}
-          <a href="/game/{{ g.pk }}/">{{ g.title }}</a>{% if not forloop.last %},  {% endif %}
-        {% endfor %}
-      </li>
-      <div class="row">
-        <div class="col-md-6">
-          <li class="list-group-item">
-            <b>Address:</b> {{developer.address}}<br /><br />
-            {% if "" != developer.map_link %}
-            <div class="media-container">
-              <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src={{developer.map_link}}></iframe><br />
+        <li class="list-group-item"><b>Founded:</b> {{ developer.date_founded }}</li>
+        <li class="list-group-item"><b>Number of Employees:</b> {{ developer.num_employees }}</li>
+        <li class="list-group-item"><b>Status:</b> {{ developer.status }}</li>
+        <li class="list-group-item"><b>Platform(s):</b> 
+            {% for p in developer.platforms.all %}
+            <a href="/platform/{{ p.pk }}/">{{ p.name }}</a>{% if not forloop.last %},  {% endif %}
+            {% endfor %}
+        </li>
+        <li class="list-group-item"><b>Game(s):</b> 
+            {% for g in developer.game_set.all %}
+            <a href="/game/{{ g.pk }}/">{{ g.title }}</a>{% if not forloop.last %},  {% endif %}
+            {% endfor %}
+        </li>
+        <div class="row">
+            <div class="col-md-6">
+                <li class="list-group-item">
+                <b>Address:</b> {{developer.address}}<br /><br />
+                    {% if "" != developer.map_link %}
+                        <div class="media-container">
+                            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src={{developer.map_link}}></iframe><br />
+                        </div>
+                    {% endif %}
+                </li>
             </div>
-            {% endif %}
-          </li>
         </div>
-      </div>
     </ul>
-  </div>
-
+    </div>
 </div>
 {% endblock content %}
