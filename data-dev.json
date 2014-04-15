@@ -1,0 +1,724 @@
+[
+    {
+        "model": "idb.image",
+        "pk": 52,
+        "fields": {
+            "description": "Testing",
+            "link": "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 53,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 54,
+        "fields": {
+            "description": "Testing",
+            "link": "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 55,
+        "fields": {
+            "description": "Testing",
+            "link": "http://markderidder.squarespace.com/storage/InfinityWard.jpg?__SQUARESPACE_CACHEVERSION=1294423775776"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 56,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i1-news.softpedia-static.com/images/news2/Infinity-Ward-Might-Work-on-New-IP-2.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 57,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.infinityward.com/content/dam/atvi/infinityward/web/home-carousel/iw-lobby3.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 58,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i.imgur.com/QFR1BYR.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 59,
+        "fields": {
+            "description": "Testing",
+            "link": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLZlODn9tXFteFVmJzcyEV7mIRGy0CwawhzO8MXBhl7j8TngH9"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 60,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i.imgur.com/orPseLp.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 61,
+        "fields": {
+            "description": "Testing",
+            "link": "http://a1.s6img.com/cdn/0023/p/9307314_1824545_lz.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 62,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn3.whatculture.com/wp-content/uploads/2013/09/rockstar-games-source-944553.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 63,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn.cultofandroid.com/wp-content/uploads/2012/12/rockstargames.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 64,
+        "fields": {
+            "description": "Testing",
+            "link": "http://1.bp.blogspot.com/-j6uN4WlB6-c/UWRBgVq_vlI/AAAAAAAACOc/T-9JhqQCMAc/s640/url.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 65,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i.kinja-img.com/gawker-media/image/upload/18hh1ux83kghvjpg.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 66,
+        "fields": {
+            "description": "Testing",
+            "link": "http://blogs.popzara.com/media/12/20100217-sonic_dimps_01.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 67,
+        "fields": {
+            "description": "Testing",
+            "link": "http://media.ignimgs.com/media/ign/imgs/minisites/topN/video-game-makers/top-50-video-game-makers_hal.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 68,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.blogcdn.com/www.joystiq.com/media/2011/03/nint-gdc11-keynote-0022.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 69,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img.gamefaqs.net/screens/c/c/4/gfs_28117_1_2.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 70,
+        "fields": {
+            "description": "Testing",
+            "link": "http://gimmegimmegames.com/wp-content/uploads/2012/05/Monolith-Soft-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 71,
+        "fields": {
+            "description": "Testing",
+            "link": "http://wiiudaily.com/wp-content/uploads/2011/06/xenoblade-wii-u.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 72,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.level30.nl/wp-content/uploads/2012/10/disaster.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 73,
+        "fields": {
+            "description": "Testing",
+            "link": "http://media1.gameinformer.com/imagefeed/featured/konami/konamilogo125.gif"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 74,
+        "fields": {
+            "description": "Testing",
+            "link": "http://bulk2.destructoid.com/ul/134757-konami_header.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 75,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.plughitzlive.com/images/news/logos/konami.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 76,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn1-www.playstationlifestyle.net/assets/uploads/2009/08/midway-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 77,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img3.wikia.nocookie.net/__cb20100825154942/mk_/images/8/81/MK_2011_2ndlogo.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 78,
+        "fields": {
+            "description": "Testing",
+            "link": "http://gamingtrend.com/wp-content/uploads/2012/11/midway_logo-533x400.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 79,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.dsksic.com/images/media/66_Square_Enix_logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 80,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.vgblogger.com/wp-content/uploads/2008/11/11/SquareEnixQ109.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 81,
+        "fields": {
+            "description": "Testing",
+            "link": "http://i1265.photobucket.com/albums/jj511/sgarmer05/SquareEnixLogo_zps95005137.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 82,
+        "fields": {
+            "description": "Testing",
+            "link": "http://images.wikia.com/elderscrolls/images/archive/a/a2/20110812152931!Bethesda_game_studios_logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 83,
+        "fields": {
+            "description": "Testing",
+            "link": "http://popcultureblog.dallasnews.com/files/2012/10/main_middle-620x221.gif"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 84,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.gamedynamo.com/images/galleries/photo/1768/bethesda-game-studios-future-generation-console-programmer-job-listing-news-1.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 85,
+        "fields": {
+            "description": "Testing",
+            "link": "http://upload.wikimedia.org/wikipedia/en/thumb/2/20/Polyphony_Digital_Inc.svg/300px-Polyphony_Digital_Inc.svg.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 86,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/ed/8f/ed8fa935ac18b89cde38d33fe0ba3b75.jpg?itok=9haMLGYY"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 87,
+        "fields": {
+            "description": "Testing",
+            "link": "http://files.g4tv.com/ImageDb3/178383_S/TGS09-A-Visit-To-The-Home-of-Gran-Turismo---Polyphony-Digital.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 88,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.ingames.com.br/wp-content/uploads/2010/06/CALEN%C3%81RIO-NAMCO1.gif"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 89,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.mobygames.com/images/shots/l/81872-xenosaga-episode-i-der-wille-zur-macht-playstation-2-screenshot.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 90,
+        "fields": {
+            "description": "Testing",
+            "link": "http://media.psu.com/media/articles/image/Namco_Arcade_1.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 91,
+        "fields": {
+            "description": "Testing",
+            "link": "http://gotgame.com/wp-content/uploads/2011/07/capcom.gif"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 92,
+        "fields": {
+            "description": "Testing",
+            "link": "http://d1vr6n66ssr06c.cloudfront.net/wp-content/uploads/2013/07/capcom_office_header.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 93,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn2.dualshockers.com/wp-content/uploads/2012/09/c.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 94,
+        "fields": {
+            "description": "Testing",
+            "link": "http://nintendookie.files.wordpress.com/2010/06/nintendo-offices.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 95,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img3.wikia.nocookie.net/__cb20090523211348/nintendo/en/images/6/67/NintendoEAD.gif"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 96,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.gameware.sk/wp-content/uploads/2013/10/nintendo-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 97,
+        "fields": {
+            "description": "Testing",
+            "link": "http://img2.wikia.nocookie.net/__cb20130411095820/logopedia/images/a/aa/Game-freak-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 98,
+        "fields": {
+            "description": "Testing",
+            "link": "https://d1vr6n66ssr06c.cloudfront.net/wp-content/uploads/2012/12/Game-Freak-630x324.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 99,
+        "fields": {
+            "description": "Testing",
+            "link": "http://upload.wikimedia.org/wikipedia/en/e/ea/Game_Freak_logo.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 100,
+        "fields": {
+            "description": "Testing",
+            "link": "http://upload.wikimedia.org/wikipedia/en/thumb/a/ae/EA_Canada_Logo.svg/409px-EA_Canada_Logo.svg.png"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 101,
+        "fields": {
+            "description": "Testing",
+            "link": "http://static.giantbomb.com/uploads/original/0/5022/369688-ea_canada_leadin.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 102,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.edge-online.com/wp-content/uploads/edgeonline/oldfiles/EA%20Canada%20a_0.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 103,
+        "fields": {
+            "description": "Testing",
+            "link": "http://cdn.www.easports.com/static/20140328.091049/images/easdnCommonPlugin/careers/EAS_HR_Orlando_Marquee2.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 104,
+        "fields": {
+            "description": "Testing",
+            "link": "http://www.dfcint.com/dossier/wp-content/uploads/2011/04/ea_tiburon-S.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 105,
+        "fields": {
+            "description": "Testing",
+            "link": "http://gamingbolt.com/wp-content/uploads/2011/05/electronic_arts-logo-big.gif"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 106,
+        "fields": {
+            "description": "Testing",
+            "link": "http://static.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/521c031de4b05e3dfb14dccd/1377567518962/bungie-logo.jpg"
+        }
+    },
+    {
+        "model": "idb.image",
+        "pk": 107,
+        "fields": {
+            "description": "Testing",
+            "link": "http://officesnapshots.com/wp-content/galleries/bungie/b5.jpg"
+        }"http://hw1.pa-cdn.com/par/img/editorial/bungietour/bungie_04.jpg"
+    },
+    {
+        "model": "idb.image",
+        "pk": 108,
+        "fields": {
+            "description": "Testing",
+            "link": 
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 1,
+        "fields": {
+            "name": "Platinum Games",
+            "date_founded": "2006-04-08",
+            "num_employees": 120,
+            "status": "Active",
+            "address": "Umeda Sky Building Tower West 8F,\n1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed",
+            "images": [52, 53, 54],
+            "platforms": [1]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 2,
+        "fields": {
+            "name": "Infinity Ward",
+            "date_founded": "2002-05-23",
+            "num_employees": 125,
+            "status": "Active",
+            "address": "15821 Ventura Boulevard,\nSuite 590, Encino, CA 91436",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=15821+Ventura+Boulevard,+Suite+590,+Encino,+CA+91436&aq=&sll=34.70533,135.489699&sspn=0.008758,0.016512&g=1-1-30+Oyodonaka,+Kita-ku,+Osaka,+531-6108&ie=UTF8&hq=&hnear=15821+Ventura+Blvd,+Encino,+California+91436&ll=34.156041,-118.478162&spn=0.002204,0.004128&t=m&z=14&output=embed",
+            "images": [55, 56, 57],
+            "platforms": [2]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 3,
+        "fields": {
+            "name": "Cing",
+            "date_founded": "1999-12-23",
+            "num_employees": 29,
+            "status": "Defunct",
+            "address": "Fukuoka, Japan",
+            "map_link": "",
+            "images": [58, 59, 60],
+            "platforms": [3]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 4,
+        "fields": {
+            "name": "Rockstar Games",
+            "date_founded": "1998-03-29",
+            "num_employees": 900,
+            "status": "Active",
+            "address": "622 Broadway,\nNew York, NY 10012",
+            "map_link": "https://maps.google.com/maps?client=ubuntu-browser&q=622+Broadway+New+York,+NY+10012&ie=UTF8&hq=&hnear=622+Broadway,+New+York,+10012&t=m&z=14&ll=40.725807,-73.996195&output=embed",
+            "images": [61, 62, 63],
+            "platforms": [4]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 5,
+        "fields": {
+            "name": "Dimps",
+            "date_founded": "1990-02-27",
+            "num_employees": 145,
+            "status": "Active",
+            "address": "4-4-6, Nishinakajima, Yodogawa-ku, Osaka-shi,\nOsaka, 532-0011, Japan",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=4-4-6,+Nishinakajima,+Yodogawa-ku,+Osaka-shi,+Osaka,+532-0011,+Japan&aq=&sll=35.6956,139.769727&sspn=0.017304,0.012381&ie=UTF8&hq=&hnear=Japan,+%C5%8Csaka-fu,+%C5%8Csaka-shi,+Yodogawa-ku,+Nishinakajima,+4+Chome%E2%88%923%E2%88%924+%E3%83%81%E3%82%B5%E3%83%B3%E7%AC%AC%EF%BC%96%E6%96%B0%E5%A4%A7%E9%98%AA&t=m&z=14&ll=34.727226,135.497759&output=embed",
+            "images": [64, 65, 66],
+            "platforms": [5]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 6,
+        "fields": {
+            "name": "HAL Laboratories",
+            "date_founded": "1980-01-05",
+            "num_employees": 145,
+            "status": "Active",
+            "address": "1-22, Kandasuda-cho, Chiyoda-ku,\nTokyo 101-0041, Japan",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Kanda+Sudacho,+Chiyoda,+Tokyo,+Japan&aq=&sll=35.677178,139.736124&sspn=0.017308,0.012381&ie=UTF8&hq=&hnear=Kanda+Sudacho,+Chiyoda,+Tokyo,+Japan&t=m&z=14&ll=35.6956,139.769727&output=embed",
+            "images": [67, 68, 69],
+            "platforms": [6]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 7,
+        "fields": {
+            "name": "Monolith Soft",
+            "date_founded": "1999-05-20",
+            "num_employees": 108,
+            "status": "Active",
+            "address": "Tokyo, Japan",
+            "map_link": "",
+            "images": [70, 71, 72],
+            "platforms": [7]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 8,
+        "fields": {
+            "name": "Konami",
+            "date_founded": "1969-10-13",
+            "num_employees": 5759,
+            "status": "Active",
+            "address": "9-7-2, Akasaka, Minato-ku,\nTokyo 107-8323, Japan",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=9-7-2,+Akasaka,+Minato-ku,+Tokyo+107-8323,+Japan&aq=&sll=35.696615,139.708657&sspn=0.017304,0.012381&ie=UTF8&hq=&hnear=Japan,+T%C5%8Dky%C5%8D-to,+Minato-ku,+Akasaka,+3+Chome%E2%88%929%E2%88%9215+%E7%AC%AC%EF%BC%92%E3%82%AF%E3%83%AF%E3%83%A0%E3%83%A9%E3%83%93%E3%83%AB&t=m&z=14&ll=35.677178,139.736124&output=embed",
+            "images": [73, 74, 75],
+            "platforms": [8]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 9,
+        "fields": {
+            "name": "Midway Games",
+            "date_founded": "1988-03-12",
+            "num_employees": 540,
+            "status": "Defunct",
+            "address": "Chicago, Illinois, U.S.",
+            "map_link": "",
+            "images": [76, 77, 78],
+            "platforms": [9]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 10,
+        "fields": {
+            "name": "Square Enix",
+            "date_founded": "2003-06-15",
+            "num_employees": 3242,
+            "status": "Active",
+            "address": "6-27-30 Shinjuku, Shinjuku-ku,\nTokyo 160-8430, Japan",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=6-27-30+Shinjuku,+Shinjuku-ku,+Tokyo+160-8430,+Japan&aq=&sll=35.696615,139.708657&sspn=0.017304,0.012381&ie=UTF8&hq=&hnear=6+Chome-27-30+Shinjuku,+Shinjuku-ku,+T%C5%8Dky%C5%8D-to,+Japan&t=m&z=14&ll=35.696615,139.708657&output=embed",
+            "images": [79, 80, 81],
+            "platforms": [10]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 12,
+        "fields": {
+            "name": "Bethesda Game Studios",
+            "date_founded": "2001-03-12",
+            "num_employees": 500,
+            "status": "Active",
+            "address": "Rockvill, Maryland, U.S.",
+            "map_link": "https://maps.google.com/maps?q=bethesda+game+studios&client=ubuntu-browser&ie=UTF8&hq=bethesda+game+studios&hnear=&radius=15000&t=m&ll=39.105245,-77.180515&spn=0.006295,0.006295&output=embed",
+            "images": [82, 83, 84],
+            "platforms": [2,10]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 13,
+        "fields": {
+            "name": "Polyphony Digital, Inc.",
+            "date_founded": "1998-04-02",
+            "num_employees": 140,
+            "status": "Active",
+            "address": "Tokyo, Japan",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=tokyo+japan&aq=&sll=30.308284,-97.756187&sspn=0.29462,0.528374&ie=UTF8&hq=&hnear=Tokyo,+Japan&ll=35.689488,139.691706&spn=0.008662,0.016512&t=m&z=14&output=embed",
+            "images": [85, 86, 87],
+            "platforms": [11]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 14,
+        "fields": {
+            "name": "Namco",
+            "date_founded": "1955-06-01",
+            "num_employees": 140,
+            "status": "Active",
+            "address": "Ota, Tokyo, Japan",
+            "map_link": "https://maps.google.com/maps?f=q&amp;source=s_q&hl=en&geocode=&q=ota,+tokyo&aq=&sll=34.661436,135.50157&sspn=0.008772,0.016512&ie=UTF8&hq=&hnear=Ota,+Tokyo,+Japan&t=m&z=13&ll=35.561257,139.716051&output=embed",
+            "images": [88, 89, 90],
+            "platforms": [4,11]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 15,
+        "fields": {
+            "name": "Capcom",
+            "date_founded": "1983-06-11",
+            "num_employees": 2476,
+            "status": "Active",
+            "address": "San Mateo County, California, U.S.",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Capcom+USA+Inc,+Concar+Drive,+San+Mateo,+CA&aq=0&oq=capcom+san&sll=34.804783,-117.932739&sspn=4.482792,3.175049&ie=UTF8&hq=&hnear=&t=m&iwloc=A&ll=37.554852,-122.299782&spn=0.006295,0.006295&output=embed",
+            "images": [91, 92, 93],
+            "platforms": [13]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 16,
+        "fields": {
+            "name": "Nintendo EAD",
+            "date_founded": "1983-06-11",
+            "num_employees": 350,
+            "status": "Active",
+            "address": "Kyoto, Japan",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=nintendo+ead+kyoto,+japan&aq=&sll=37.0625,-95.677068&sspn=67.295907,82.705078&ie=UTF8&hq=nintendo+ead&hnear=Kyoto,+Kyoto+Prefecture,+Japan&ll=34.954002,135.776174&spn=0.138344,0.049988&t=m&output=embed",
+            "images": [94, 95, 96],
+            "platforms": [5,7,14]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 17,
+        "fields": {
+            "name": "Game Freak, Inc.",
+            "date_founded": "1989-04-26",
+            "num_employees": 85,
+            "status": "Active",
+            "address": "154-0004, No. 1 chome, Setagaya-ku, Tokyo Taishido Carrot Tower 22F Japan",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=etagaya-ku,+Tokyo+Taishido+Carrot+Tower&aq=&sll=35.643703,139.669068&sspn=0.017263,0.020192&ie=UTF8&hq=Carrot+Tower&hnear=Taishido,+Setagaya,+Tokyo,+Japan&t=m&ll=35.643703,139.669068&spn=0.01023,0.006295&output=embed",
+            "images": [97, 98, 99],
+            "platforms": [17]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 18,
+        "fields": {
+            "name": "EA Canada",
+            "date_founded": "1983-01-15",
+            "num_employees": 1300,
+            "status": "Active",
+            "address": "Burnaby, British Columbia, Canada",
+            "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=4330+Sanderson+Way,+Burnaby,+BC+V5G+&aq=&sll=49.24754,-123.00853&sspn=0.003467,0.005048&ie=UTF8&hq=&hnear=4330+Sanderson+Way,+Burnaby,+British+Columbia+V5G+4X1,+Canada&t=m&z=14&ll=49.247816,-123.008075&output=embed",
+            "images": [100, 101, 102],
+            "platforms": [2,4,7,10,12,16]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 19,
+        "fields": {
+            "name": "EA Tiburon",
+            "date_founded": "1994-01-01",
+            "num_employees": 500,
+            "status": "Active",
+            "address": "1950 Summit Park Dr, Orlando, FL‎",
+            "map_link": "https://maps.google.com/maps?q=ea+tiburon&client=ubuntu-browser&ie=UTF8&hq=ea+tiburon&hnear=&radius=15000&t=m&ll=28.637197,-81.402252&spn=0.006295,0.006295&output=embed",
+            "images": [103, 104, 105],
+            "platforms": [2,10,12,16]
+        }
+    },
+    {
+        "model": "idb.developer",
+        "pk": 20,
+        "fields": {
+            "name": "Bungie",
+            "date_founded": "1991-05-01",
+            "num_employees": 350,
+            "status": "Active",
+            "address": "550 106th Ave NE #207, Bellevue, WA",
+            "map_link": "https://maps.google.com/maps?q=bellevue+washington+bungie&client=ubuntu-browser&ie=UTF8&hq=&hnear=&t=m&iwloc=A&ll=47.615045,-122.198331&spn=0.006295,0.006295&output=embed",
+            "images": [106, 107, 108],
+            "platforms": [2]
+        }
+    }
+]

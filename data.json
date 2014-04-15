@@ -595,7 +595,6 @@
             "platforms":[1]
         }
     },
-
     {
         "model": "idb.game",
         "pk": 2,

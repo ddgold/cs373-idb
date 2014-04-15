@@ -8,71 +8,59 @@ IVGDb &middot; Game | {{ game.title }}
 
 {% block content %}
 <div class="container">
-	<div class="panel panel-default">
-	  <!-- Default panel contents -->
-	  <div class="panel-heading"><h1>{{ game.title }}</h1></div>
-	  <div class="panel-body">
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			  </ol>
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><h1>{{ game.title }}</h1></div>
+        <div class="panel-body">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    {% for i in game.images.all %}
+                        <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+                    {% endfor %}
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    {% for i in game.images.all %}
+                        <div class="item{% if forloop.first %} active{% endif %}">
+                            <img src={{ i.link }} alt="{{ i.description }}">
+                            <div class="carousel-caption"> 
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
 
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner">
-			    <div class="item active">
-			      <img src={{ game.image_link1 }} alt="game image link 1">
-			      <div class="carousel-caption"> 
-			      </div>
-			    </div>
-			    <div class="item">
-			       <img src={{ game.image_link2 }} alt="game image link 2">
-			      <div class="carousel-caption"> 
-			      </div>
-			    </div>
-			    <div class="item">
-			       <img src={{ game.image_link3 }} alt="game image link 3">
-			      <div class="carousel-caption"> 
-			      </div>
-			    </div>
-			  </div>
-			  <!-- Controls -->
-			  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-			    <span class="glyphicon glyphicon-chevron-left"></span>
-			  </a>
-			  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-			    <span class="glyphicon glyphicon-chevron-right"></span>
-			  </a>
-			</div>
-
-	  </div>
-
-	  <!-- List group -->
-	  <ul class="list-group">
-	    <li class="list-group-item"><b>Publisher:</b> {{ game.publisher }}</li>
-	    <li class="list-group-item"><b>US Release Date:</b> {{ game.release_date }}</li>
-	    <li class="list-group-item"><b>ESRB Rating:</b> {{ game.ESRB_rating }}</li>
-	    <li class="list-group-item"><b>Genre:</b> {{ game.genre }}</li>
-	    <li class="list-group-item"><b>Developed by:</b> <a href="/developer/{{ game.developer.pk }}/">{{ game.developer.name }}</a></li>
-	    <li class="list-group-item"><b>Platform(s):</b>
-		{% for p in game.platforms.all %}
-			<a href="/platform/{{ p.pk }}/">{{ p.name }}</a>{% if not forloop.last %},  {% endif %}
-		{% endfor %}
-	    </li>
-	    <div class="row">
-		    <div class="col-md-6">
-			<li class="list-group-item" style="text-align: center">
-				<div class="media-container">
-					<iframe src=//{{game.youtube_link}} frameborder="0" allowfullscreen></iframe>
-				</div>
-			</li>
-		</div>
-	</div>
-	  </ul>
-	</div>
-
-
+        <!-- List group -->
+        <ul class="list-group">
+            <li class="list-group-item"><b>Publisher:</b> {{ game.publisher }}</li>
+            <li class="list-group-item"><b>US Release Date:</b> {{ game.release_date }}</li>
+            <li class="list-group-item"><b>ESRB Rating:</b> {{ game.ESRB_rating }}</li>
+            <li class="list-group-item"><b>Genre:</b> {{ game.genre }}</li>
+            <li class="list-group-item"><b>Developed by:</b> <a href="/developer/{{ game.developer.pk }}/">{{ game.developer.name }}</a></li>
+            <li class="list-group-item"><b>Platform(s):</b>
+                {% for p in game.platforms.all %}
+                    <a href="/platform/{{ p.pk }}/">{{ p.name }}</a>{% if not forloop.last %},  {% endif %}
+                {% endfor %}
+            </li>
+            <div class="row">
+                <div class="col-md-6">
+                    <li class="list-group-item" style="text-align: center">
+                        <div class="media-container">
+                            <iframe src=//{{game.youtube_link}} frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </ul>
+    </div>s
 </div>
 {% endblock content %}
