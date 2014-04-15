@@ -26,6 +26,7 @@ urlpatterns = patterns('',
         url(r'^(?P<game_id>\d+)/$', 'idb.views.game', name='game'),
     ))),
     url(r'^search/', 'idb.views.search', name='search'),
+    url(r'^dynamic/', TemplateView.as_view(template_name="dynamic.html")),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api/', include(v1_api.urls)),
 )

@@ -12,8 +12,10 @@ angular.module('myApp.controllers', [])
         $scope.games = data.objects;
       }).
       error(function(data, status) {
+        alert("hi");
         $scope.games = data || status;
       });
     }
  $scope.getGames();
+ $scope.orderProp = "title";
  }])

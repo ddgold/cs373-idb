@@ -1,4 +1,5 @@
 <!doctype html>
+{% load staticfiles %}
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
@@ -6,21 +7,27 @@
   <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
   <link href="{% static "css/angular.css" %}" rel="stylesheet">
 </head>
-<body>
+<body ng-controller="MyCtrl1">
   <div class="container">
     <h1>Dynamic IVGDb</h1>
     <div class="row">
       <div class="col-md-10">
         <table class="table table-striped">
           <tr>
-            <th>Game Title</th>
+            <th>Title</th>
             <th>Publisher</th>
+            <th>Genre</th>
+            <th>Relese Date</th>
             <th></th>
           </tr>
           <tr ng-repeat="game in games | filter:query | orderBy:orderProp">
+            {% verbatim %}
             <td><a href="/">{{game.title}}</a></td>
             <td>{{game.publisher}}</td>
+            <td>{{game.genre}}</td>
+            <td>{{game.release_date}}</td>
             <td><span class="glyphicon glyphicon-minus-sign text-danger" ng-click="deleteGame(game)"></span></td>
+            {% endverbatim %}
           </tr>
         </table>
       </div>
@@ -49,6 +56,5 @@
   <script src="{% static "js/controllers.js" %}"></script>
   <script src="{% static "js/filters.js" %}"></script>
   <script src="{% static "js/directives.js" %}"></script>
-  <script src="{% static "js/angular.js" %}"></script>
 </body>
 </html>
