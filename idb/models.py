@@ -3,6 +3,23 @@ import datetime
 from django.db import models
 
 
+
+
+class Image(models.Model):
+    '''
+    Image link
+    '''
+    description = models.CharField(max_length=255)
+    link = models.CharField(max_length=255)
+
+    def __unicode__(self):
+        return self.description
+
+    class Meta:
+        ordering = ['description']
+        verbose_name_plural = "Images'"
+
+
 class Platform(models.Model):
     '''
     Platform Model that represents a video game platform
@@ -19,12 +36,6 @@ class Platform(models.Model):
     @cvar generation: the console generation of the platform
     @type youtube_link: models.CharField(255)
     @cvar youtube_link: link to a youtube video
-    @type image_link1: models.CharField(255)
-    @cvar image_link1: link to an image
-    @type image_link2: models.CharField(255)
-    @cvar image_link2: link to an image
-    @type image_link3: models.CharField(255)
-    @cvar image_link3: link to an image
     '''
     name = models.CharField(max_length=255)
     manufacturer = models.CharField(max_length=255)
@@ -33,9 +44,8 @@ class Platform(models.Model):
     generation = models.SmallIntegerField()
     youtube_link = models.CharField(max_length=255)
     twitter_link = models.CharField(max_length=255)
-    image_link1 = models.CharField(max_length=255)
-    image_link2 = models.CharField(max_length=255)
-    image_link3 = models.CharField(max_length=255)
+
+    images = models.ManyToManyField(Image)
     
 
     def __unicode__(self):
@@ -62,12 +72,6 @@ class Developer(models.Model):
     @cvar address: the address of the developer's HQ
     @type map_link: models.CharField(511)
     @cvar map_link: link to the Google Map of the address
-    @type image_link1: models.CharField(255)
-    @cvar image_link1: link to an image
-    @type image_link2: models.CharField(255)
-    @cvar image_link2: link to an image
-    @type image_link3: models.CharField(255)
-    @cvar image_link3: link to an image
     @type platforms: models.ManyToManyField('Platform')
     @cvar platforms: The platforms this studio developers for
     '''
@@ -77,11 +81,9 @@ class Developer(models.Model):
     status = models.CharField(max_length=255)
     address = models.CharField(max_length=255)
     map_link = models.CharField(max_length=511)
-    image_link1 = models.CharField(max_length=255)
-    image_link2 = models.CharField(max_length=255)
-    image_link3 = models.CharField(max_length=255)
     
     platforms = models.ManyToManyField(Platform)
+    images = models.ManyToManyField(Image)
 
 
     def __unicode__(self):
@@ -108,12 +110,6 @@ class Game(models.Model):
     @cvar ESRB_rating: the offical ESRB rating
     @type youtube_link: models.CharField(255)
     @cvar youtube_link: link to a youtube video
-    @type image_link1: models.CharField(255)
-    @cvar image_link1: link to an image
-    @type image_link2: models.CharField(255)
-    @cvar image_link2: link to an image
-    @type image_link3: models.CharField(255)
-    @cvar image_link3: link to an image
     '''
     title = models.CharField(max_length=255)
     release_date = models.DateField('release date')
@@ -121,12 +117,10 @@ class Game(models.Model):
     publisher = models.CharField(max_length=255)
     ESRB_rating = models.CharField(max_length=255)
     youtube_link = models.CharField(max_length=255)
-    image_link1 = models.CharField(max_length=255)
-    image_link2 = models.CharField(max_length=255)
-    image_link3 = models.CharField(max_length=255)
     
     developer = models.ForeignKey(Developer)
     platforms = models.ManyToManyField(Platform)
+    images = models.ManyToManyField(Image)
 
     def __unicode__(self):
         return self.title
