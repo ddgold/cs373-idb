@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Dynamic IVGDb</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Dynamic IVGDb</h1>
+    <div class="row">
+      <div class="col-md-10">
+        <table class="table table-striped">
+          <tr>
+            <th>Game Title</th>
+            <th>Publisher</th>
+            <th></th>
+          </tr>
+          <tr ng-repeat="game in games | filter:query | orderBy:orderProp">
+            <td><a href="/">{{game.title}}</a></td>
+            <td>{{game.publisher}}</td>
+            <td><span class="glyphicon glyphicon-minus-sign text-danger" ng-click="deleteGame(game)"></span></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-2">
+        <!--Sidebar content-->
+       <div class="input-group">
+         <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+         <input type="search" class="form-control input-sm" ng-model="query">
+       </div>
+        <select style="margin-top: 10px" class="form-control" ng-model="orderProp">
+          <option value="title">Alphabetical</option>
+          <option value="-release_date">Newest</option>
+          <option value="release_date">Oldest</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/angular-route/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>
