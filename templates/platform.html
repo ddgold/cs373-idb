@@ -8,80 +8,69 @@ IVGDb &middot; Platform | {{ platform.name }}
 
 {% block content %}
 <div class="container">
-  <div class="panel panel-default">
-    <!-- Default panel contents -->
-    <div class="panel-heading"><h1>{{ platform.name }}</h1></div>
-    <div class="panel-body">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src={{ platform.image_link1 }} alt="platform image link 1">
-            <div class="carousel-caption"> 
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><h1>{{ platform.name }}</h1></div>
+        <div class="panel-body">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    {% for i in platform.images.all %}
+                        <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+                    {% endfor %}
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    {% for i in platform.images.all %}
+                        <div class="item{% if forloop.first %} active{% endif %}">
+                            <img src={{ i.link }} alt="{{ i.description }}">
+                            <div class="carousel-caption"> 
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
             </div>
-          </div>
-          <div class="item">
-             <img src={{ platform.image_link2 }} alt="platform image link 2">
-            <div class="carousel-caption"> 
-            </div>
-          </div>
-          <div class="item">
-             <img src={{ platform.image_link3 }} alt="platform image link 3">
-            <div class="carousel-caption"> 
-            </div>
-          </div>
         </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
+
+        <!-- List group -->
+        <ul class="list-group">
+            <li class="list-group-item"><b>Manufacturer:</b> {{ platform.manufacturer }}</li>
+            <li class="list-group-item"><b>US Release Date:</b> {{ platform.release_date }}</li>
+            <li class="list-group-item"><b>Media:</b> {{ platform.media_format }}</li>
+            <li class="list-group-item"><b>Generation:</b> {{ platform.generation }}</li>
+            <li class="list-group-item"><b>Developer(s): </b> 
+                {% for d in platform.developer_set.all %}
+                    <a href="/developer/{{ d.pk }}/">{{ d.name }}</a>{% if not forloop.last %},  {% endif %}
+                {% endfor %}
+            </li>
+            <li class="list-group-item"><b>Game(s):</b> 
+                {% for g in platform.game_set.all %}
+                    <a href="/game/{{ g.pk }}/">{{ g.title }}</a>{% if not forloop.last %},  {% endif %}
+                {% endfor %}
+            </li>
+            <div class="row">
+                <div class="col-md-6">
+                    <li class="list-group-item">
+                    <div class="media-container">
+                        <iframe src="//{{ platform.youtube_link }}" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </li>
+                </div>
+                <div class="col-md-6">
+                    <li class="list-group-item">
+                        <a class="twitter-timeline" data-dnt="true" href="" data-widget-id="{{ platform.twitter_link }}"></a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    </li>
+                </div>
+            </div>
+        </ul>
     </div>
-
-    <!-- List group -->
-    <ul class="list-group">
-      <li class="list-group-item"><b>Manufacturer:</b> {{ platform.manufacturer }}</li>
-      <li class="list-group-item"><b>US Release Date:</b> {{ platform.release_date }}</li>
-      <li class="list-group-item"><b>Media:</b> {{ platform.media_format }}</li>
-      <li class="list-group-item"><b>Generation:</b> {{ platform.generation }}</li>
-      <li class="list-group-item"><b>Developer(s): </b> 
-        {% for d in platform.developer_set.all %}
-          <a href="/developer/{{ d.pk }}/">{{ d.name }}</a>{% if not forloop.last %},  {% endif %}
-        {% endfor %}
-      </li>
-      <li class="list-group-item"><b>Game(s):</b> 
-        {% for g in platform.game_set.all %}
-          <a href="/game/{{ g.pk }}/">{{ g.title }}</a>{% if not forloop.last %},  {% endif %}
-        {% endfor %}
-      </li>
-      <div class="row">
-        <div class="col-md-6">
-          <li class="list-group-item">
-            <div class="media-container">
-              <iframe src="//{{ platform.youtube_link }}" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </li>
-        </div>
-        <div class="col-md-6">
-          <li class="list-group-item">
-            <a class="twitter-timeline" data-dnt="true" href="" data-widget-id="{{ platform.twitter_link }}"></a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          </li>
-        </div>
-      </div>
-    </ul>
-
-  </div>
-
 </div>
 {% endblock content %}
