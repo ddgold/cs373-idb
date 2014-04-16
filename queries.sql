@@ -8,12 +8,12 @@ select title, count(*)
     from idb_game inner join idb_game_platforms
     where idb_game.id = idb_game_platforms.game_id
     group by id
-    having count(*) > 1);
+    having count(*) > 1;
 
 -- Get the video games that were created by now defunct developers. --                     
 select title, genre, publisher
     from idb_game
-    where developer_id in (select id
+    where developer_id in (select idb_developer.id
                                from idb_developer
                                where status = 'Defunct');
 
@@ -31,5 +31,5 @@ select name, status
     where id in (select developer_id
                      from idb_developer_platforms
                      where platform_id in (select id
-                                               from idb_platforms
+                                               from idb_platform
                                                where generation = 6));
