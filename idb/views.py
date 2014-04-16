@@ -107,12 +107,12 @@ def search(request):
     developer_results = []
     partial_matches = []
     for d in developer_list:
-        name = d.name.lower()
-        if query in name or all(w in name for w in query_words):
+        data = ' '.join([d.name.lower(), d.status.lower(), d.address.lower()])
+        if query in data or all(w in data for w in query_words):
             developer_results.append(d)
         else:
             for word in query_words:
-                if word in name:
+                if word in data:
                     partial_matches.append(d)
                     break
     developer_results += partial_matches
@@ -120,12 +120,12 @@ def search(request):
     platform_results = []
     partial_matches = []
     for p in platform_list:
-        name = p.name.lower()
-        if query in name or all(w in name for w in query_words):
+        data = ' '.join([p.name.lower(), p.manufacturer.lower()])
+        if query in data or all(w in data for w in query_words):
             platform_results.append(p)
         else:
             for word in query_words:
-                if word in name:
+                if word in data:
                     partial_matches.append(p)
                     break
     platform_results += partial_matches
@@ -133,12 +133,12 @@ def search(request):
     game_results = []
     partial_matches = []
     for g in game_list:
-        name = g.title.lower()
-        if query in name or all(w in name for w in query_words):
+        data = ' '.join([g.title.lower(), g.genre.lower(), g.publisher.lower()])
+        if query in data or all(w in data for w in query_words):
             game_results.append(g)
         else:
             for word in query_words:
-                if word in name:
+                if word in data:
                     partial_matches.append(g)
                     break
     game_results += partial_matches
