@@ -8,12 +8,22 @@ IVGDb &middot; SQL Queries
 
 {% block content %}
 <div class="container">
-	<div class="panel panel-default">
-	        <!-- Default panel contents -->
-	        <div class="panel-heading"><h1>Select a query</h1></div>
-	        <div class="panel-body">
-		    
-	    	</div>
-	</div>
+    <div class="panel panel-default">
+        <div class="panel-heading"><h1>Select a query</h1></div>
+        <div class="panel-body" align="center">
+            {% for k in platform_dict %}
+                <a href="#{{k}}">{{k}}</a>
+                {% if not forloop.last %}
+                 - 
+                {% endif %}
+            {% endfor %}
+        </div>
+        <ul class="list-group">
+                <a id="{{k}}" class="list-group-item active">Get the video games that do not have an ESRB rating of M, but have an another valid ESRB rating.</a>
+                    <li class="list-group-item">
+                        <a href="/queries/1">select title, ESRB_Rating from idb_game where ESRB_Rating != 'M' and ESRB_Rating != 'N/A';</a>
+                    </li>
+        </ul>
+    </div>
 </div>
 {% endblock content %}
