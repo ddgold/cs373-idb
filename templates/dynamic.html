@@ -9,7 +9,8 @@
 </head>
 <body ng-controller="MyCtrl1">
   <div class="container">
-    <h1>Dynamic IVGDb</h1>
+    <h1 class="well">Dynamic IVGDb</h1>
+    <h3 id="games">Games</h3>
     <div class="row">
       <div class="col-md-10">
         <table class="table table-striped">
@@ -17,7 +18,7 @@
             <th>Title</th>
             <th>Publisher</th>
             <th>Genre</th>
-            <th>Relese Date</th>
+            <th>Release Date</th>
             <th></th>
           </tr>
           <tr ng-repeat="game in games | filter:query | filter:genre | orderBy:orderProp">
