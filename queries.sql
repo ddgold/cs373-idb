@@ -1,7 +1,7 @@
 -- Get the video games that do not have an ESRB rating of M, but have an another valid ESRB rating. --
 select title, ESRB_Rating
     from idb_game
-    where ESRB_Rating != 'M' and ESRB_Rating != 'N/A';
+    where ESRB_Rating != 'M' and ESRB_rating != 'N/A';
 
 -- Get the video games that appear on more than one platform. --
 select title, count(*)
