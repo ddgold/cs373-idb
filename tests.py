@@ -47,6 +47,7 @@ wii_u = {
     "image_link3": "http://blogs-images.forbes.com/erikkain/files/2012/11/blackcontroller_big-1.jpg"
 }
 
+
 class test_main(TestCase) :
 	fixtures = ["data.json"]
 	def setUp(self):
@@ -103,6 +104,7 @@ class test_main(TestCase) :
 
 		response_content = response.content.decode("utf-8")
 		self.assertEqual(response_content[4:13], "Not Found")
+
 
 class test_platform(TestCase) :
 	fixtures = ["data.json"]
@@ -167,6 +169,7 @@ class test_platform(TestCase) :
 
 		response_code = response.status_code
 		self.assertEqual(response.status_code, 404)
+
 
 class test_developer(TestCase) :
 	fixtures = ["data.json"]
@@ -251,6 +254,7 @@ class test_developer(TestCase) :
 		response_code = response.status_code
 		self.assertEqual(response.status_code, 404)
 
+
 class test_game(TestCase) :
 	fixtures = ["data.json"]
 	def setUp(self):
@@ -329,6 +333,32 @@ class test_game(TestCase) :
 
 		response_code = response.status_code
 		self.assertEqual(response.status_code, 404)
+
+
+class test_search(TestCase) :
+	fixtures = ["data.json"]
+	def setUp(self):
+		self.client = Client();
+
+	def test_get_main(self) :
+		response = self.client.get("http://ivgdb.herokuapp.com/search/?query=super")
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 200)
+
+		response_content = response.content.decode("utf-8").split('\n')
+		self.assertEqual(response_content.count('                    <li class="list-group-item">'), 3)
+		self.assertEqual(response_content[56], '                0 Developers - ')
+		self.assertEqual(response_content[57], '                1 Platform - ')
+		self.assertEqual(response_content[58], '                2 Games')
+
+
+# while (i < len(response_content)):
+# 			if "list-group-item" in response_content[i]:
+# 				print (str(i) + " - " + response_content[i])
+# 			i = i + 1
+
+# 		print ()
+
 
 #----------------------------------
 # Testing Platform through Tastypie
