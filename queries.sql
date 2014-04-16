@@ -4,12 +4,11 @@ select title, ESRB_Rating
     where ESRB_Rating != 'M' and ESRB_Rating != 'N/A';
 
 -- Get the video games that appear on more than one platform. --
-select title
-    from idb_game
-    where id in (select game_id
-                     from idb_game_platforms
-                     group by game_id
-                     having count(*) > 1);
+select title, count(*)
+    from idb_game inner join idb_game_platforms
+    where idb_game.id = idb_game_platforms.game_id
+    group by id
+    having count(*) > 1);
 
 -- Get the video games that were created by now defunct developers. --                     
 select title, genre, publisher
