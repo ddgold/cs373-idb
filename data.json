@@ -1974,7 +1974,7 @@
         "fields": {
             "title": "Grand Theft Auto III",
             "release_date": "2001-10-22",
-            "genre": "Open-world action-adventure",
+            "genre": "Open world action-adventure",
             "publisher": "Rockstar Games",
             "esrb_rating": "M",
             "youtube_link": "www.youtube.com/embed/WUi3davvBmM",
@@ -2094,7 +2094,7 @@
         "fields": {
             "title": "FIFA 14",
             "release_date": "2013-09-24",
-            "genre": "Sports, soccer simulation",
+            "genre": "Sports",
             "publisher": "Electronic Arts",
             "esrb_rating": "E",
             "youtube_link": "www.youtube.com/embed/LpiTucFQuwA",
@@ -2109,7 +2109,7 @@
         "fields": {
             "title": "Super Mario Bros. 3",
             "release_date": "1990-02-23",
-            "genre": "Platforming",
+            "genre": "Platformer",
             "publisher": "Nintendo",
             "esrb_rating": "E",
             "youtube_link": "www.youtube.com/embed/82TL-Acm4ts",
@@ -2124,7 +2124,7 @@
         "fields": {
             "title": "Mega Man X",
             "release_date": "1993-12-17",
-            "genre": "Platforming",
+            "genre": "Platformer",
             "publisher": "Capcom",
             "esrb_rating": "K-A",
             "youtube_link": "www.youtube.com/embed/zbht_bSvKcs",
@@ -2139,7 +2139,7 @@
         "fields": {
             "title": "Madden NFL 25",
             "release_date": "2013-11-13",
-            "genre": "Sports, football simulation",
+            "genre": "Sports",
             "publisher": "EA Sports",
             "esrb_rating": "E",
             "youtube_link": "www.youtube.com/embed/KMvQri8A6kQ",
