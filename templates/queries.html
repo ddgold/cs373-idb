@@ -15,11 +15,17 @@ IVGDb &middot; SQL Queries
                 <a class="list-group-item active">{{ q.description }}</a>
                 <li class="list-group-item">{{ q.sql|linebreaksbr }}</li>
                 <li class="list-group-item">
-                    {% for r in q.results %}
-                        {% for i in r %}
-                            {{ i }}{% if not forloop.last %},{% endif%}
-                        {% endfor %}<br />
-                    {% endfor %}
+                    <table class="query">
+                        {% for r in q.results %}
+                            <tr>
+                                {% for i in r %}
+                                    <td>
+                                        {{ i }}
+                                    </td>
+                                {% endfor %}
+                            </tr>
+                        {% endfor %}
+                    </table>
                 </li>
             {% endfor %}
         </ul>

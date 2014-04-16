@@ -14,9 +14,9 @@ IVGDb &middot; Search | {{ query }}
             </div>
         {% else %}
             <div class="panel-body" align="center">
-                {{developer_results|length}} Developer{% if developer_results|length != 1 %}s{% endif %} - 
-                {{platform_results|length}} Platform{% if platform_results|length != 1 %}s{% endif %} - 
-                {{game_results|length}} Game{% if game_results|length != 1 %}s{% endif %}
+                {{ developer_results|length }} Developer{{ developer_results|length|pluralize }} - 
+                {{ platform_results|length }} Platform{{ platform_results|length|pluralize }} - 
+                {{ game_results|length }} Game{{ game_results|length|pluralize }}
             </div>
         {% endif %}
         <ul class="list-group">
