@@ -60,5 +60,5 @@ class GameResource(ModelResource):
             'release_date' : ['exact', 'lt', 'lte', 'gt', 'gte', 'range'],
             'genre' : ['exact', 'starstwith', 'endswith', 'contains'],
             'publisher' : ['exact', 'starstwith', 'endswith', 'contains'],
-            'ESRB_rating' : ['exact'],
+            'esrb_rating' : ['exact'],
         }
