@@ -22,7 +22,7 @@
           </tr>
           <tr ng-repeat="game in games | filter:query | filter:genre | orderBy:orderProp">
             {% verbatim %}
-            <td><a href="/">{{game.title}}</a></td>
+            <td><a href="/game/{{ game.id }}">{{game.title}}</a></td>
             <td>{{game.publisher}}</td>
             <td>{{game.genre}}</td>
             <td>{{game.release_date}}</td>
