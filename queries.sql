@@ -6,7 +6,7 @@ select title, ESRB_Rating
 -- Get the video games that appear on more than one platform. --
 select title, count(*)
     from idb_game inner join idb_game_platforms
-    where idb_game.id = idb_game_platforms.game_id
+    on idb_game.id = idb_game_platforms.game_id
     group by id
     having count(*) > 1;
 

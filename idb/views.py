@@ -149,10 +149,10 @@ def queries(request):
             "description": "Get the video games that do not have an ESRB rating of M, but have an another valid ESRB rating.",
             "sql": "select title, esrb_rating\nfrom idb_game\nwhere esrb_rating != 'M' and ESRB_rating != 'N/A';",
         },
-        # {
-        #     "description": "Get the video games that appear on more than one platform.",
-        #     "sql": "select title, count(*)\nfrom idb_game inner join idb_game_platforms\nwhere idb_game.id == idb_game_platforms.game_id\ngroup by idb_game.id\nhaving count(*) > 1;",
-        # },
+        {
+            "description": "Get the video games that appear on more than one platform.",
+            "sql": "select title, count(*)\nfrom idb_game inner join idb_game_platforms\non idb_game.id = idb_game_platforms.game_id\ngroup by idb_game.id\nhaving count(*) > 1;",
+        },
         {
             "description": "Get the video games that were created by now defunct developers.",
             "sql": "select title, genre, publisher\nfrom idb_game\nwhere developer_id in (select idb_developer.id\nfrom idb_developer\nwhere status = 'Defunct');",
