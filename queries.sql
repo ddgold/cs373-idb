@@ -1,16 +1,36 @@
--- 1980's video games developed by studios with more then 1000 enployees --
-select * 
-    from Games inner join Developers
-        where Games.developer = Developers.id
-            and Developers.num_employees > 1000
-            and Games.
+-- Get the video games that do not have an ESRB rating of M, but have an another valid ESRB rating. --
+select title, ESRB_Rating
+    from idb_game
+    where ESRB_Rating != 'M' and ESRB_Rating != 'N/A';
 
+-- Get the video games that appear on more than one platform. --
+select title
+    from idb_game
+    where id in (select game_id
+                     from idb_game_platforms
+                     group by game_id
+                     having count(*) > 1);
 
--- Video games with multiple platforms --
-select *, count(distinct name)
-    from Games inner join 
+-- Get the video games that were created by now defunct developers. --                     
+select title, genre, publisher
+    from idb_game
+    where developer_id in (select id
+                               from idb_developer
+                               where status = 'Defunct');
 
-
-select name
-	from Developer
-	where count(platforms) = 1;
+-- Get the platforms in which only one developer in the database has worked on. --       
+select name, manufacturer
+    from idb_platform
+    where id in (select platform_id
+                     from idb_developer_platforms
+                     group by platform_id
+                     having count(platform_id) = 1);
+                                         
+-- Get the developers that created a game during the 6th generation of consoles. --
+select name, status
+    from idb_developer
+    where id in (select developer_id
+                     from idb_developer_platforms
+                     where platform_id in (select id
+                                               from idb_platforms
+                                               where generation = 6));
