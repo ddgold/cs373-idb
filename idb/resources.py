@@ -1,9 +1,21 @@
 from tastypie import fields
 from tastypie.authorization import Authorization
 from tastypie.resources import ModelResource, ALL, ALL_WITH_RELATIONS
-from idb.models import Platform, Developer, Game
+from idb.models import Image, Platform, Developer, Game
+
+class ImageResource(ModelResource):
+    class Meta:
+        queryset = Image.objects.all()
+        resource_name = 'image'
+        authorization = Authorization()
+        allowed_methods = ['get', 'post', 'put', 'delete']
+        filtering = {
+            'description': ['exact', 'starstwith', 'endswith', 'contains'],
+        }
+
 
 class PlatformResource(ModelResource):
+    images = fields.ToManyField(ImageResource, 'images')
     class Meta:
         queryset = Platform.objects.all()
         resource_name = 'platform'
@@ -20,6 +32,7 @@ class PlatformResource(ModelResource):
 
 class DeveloperResource(ModelResource):
     platforms = fields.ToManyField(PlatformResource, 'platforms')
+    images = fields.ToManyField(ImageResource, 'images')
     class Meta:
         queryset = Developer.objects.all()
         resource_name = 'developer'
@@ -36,6 +49,7 @@ class DeveloperResource(ModelResource):
 class GameResource(ModelResource):
     developer = fields.ForeignKey(DeveloperResource, 'developer')
     platforms = fields.ToManyField(PlatformResource, 'platforms')
+    images = fields.ToManyField(ImageResource, 'images')
     class Meta:
         queryset = Game.objects.all()
         resource_name = 'game'

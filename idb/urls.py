@@ -3,10 +3,11 @@ from django.views.generic.base import TemplateView
 from django.contrib import admin
 
 from tastypie.api import Api
-from idb.resources import PlatformResource, DeveloperResource, GameResource
+from idb.resources import ImageResource, PlatformResource, DeveloperResource, GameResource
 
 admin.autodiscover()
 v1_api = Api(api_name='v1')
+v1_api.register(ImageResource())
 v1_api.register(PlatformResource())
 v1_api.register(DeveloperResource())
 v1_api.register(GameResource())
