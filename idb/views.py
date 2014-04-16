@@ -147,7 +147,7 @@ def queries(request):
     queries = [
         {
             "description": "Get the video games that do not have an ESRB rating of M, but have an another valid ESRB rating.",
-            "sql": "select title, ESRB_Rating\nfrom idb_game\nwhere ESRB_Rating != 'M' and ESRB_Rating != 'N/A';",
+            "sql": "select title, ESRB_rating\nfrom idb_game\nwhere ESRB_rating != 'M' and ESRB_rating != 'N/A';",
         },
         {
             "description": "Get the video games that appear on more than one platform.",
