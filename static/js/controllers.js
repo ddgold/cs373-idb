@@ -20,7 +20,7 @@ angular.module('myApp.controllers', [])
 
    $scope.getGames();
    $scope.getGenres = function(){
-     genres = [];
+     var genres = [];
      for (var i = $scope.games.length - 1; i >= 0; i--) {
        genres.push($scope.games[i].genre);
      };
@@ -29,7 +29,7 @@ angular.module('myApp.controllers', [])
      genres = genres.filter(function(elem, pos) {
        return genres.indexOf(elem) == pos;
      })
-     
+
      return genres;
    }
    $scope.genre = "";

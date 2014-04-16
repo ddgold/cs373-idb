@@ -15,11 +15,11 @@
       <div class="col-md-10">
         <table class="table table-striped">
           <tr>
-            <th>Title</th>
-            <th>Publisher</th>
-            <th>Genre</th>
-            <th>Release Date</th>
-            <th></th>
+            <th class="text-info">Title</th>
+            <th class="text-info">Publisher</th>
+            <th class="text-info">Genre</th>
+            <th class="text-info">Release Date</th>
+            <th class="text-info"></th>
           </tr>
           <tr ng-repeat="game in games | filter:query | filter:genre | orderBy:orderProp">
             {% verbatim %}
