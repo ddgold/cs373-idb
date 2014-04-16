@@ -1,13 +1,21 @@
 from django.shortcuts import render, get_object_or_404, get_list_or_404, HttpResponseRedirect
 from collections import OrderedDict
+from random import sample
+from operator import itemgetter, attrgetter
 
 from idb.models import Game, Developer, Platform
 
 
 def home(request):
     developer_list = get_list_or_404(Developer)
+    if (len(developer_list) > 5):
+        developer_list = sorted(sample(developer_list, 10), key=attrgetter('name'))
     platform_list = get_list_or_404(Platform)
+    if (len(platform_list) > 5):
+        platform_list = sorted(sample(platform_list, 10), key=attrgetter('name'))
     game_list = get_list_or_404(Game)
+    if (len(game_list) > 5):
+        game_list = sorted(sample(game_list, 10), key=attrgetter('title'))
     return render(request, 'home.html', {
     'developer_list': developer_list,
     'platform_list': platform_list,
