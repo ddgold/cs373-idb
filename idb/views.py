@@ -155,23 +155,23 @@ def queries(request):
     queries = [
         {
             "description": "Get the video games that do not have an ESRB rating of M, but have an another valid ESRB rating.",
-            "sql": "select title, esrb_rating\nfrom idb_game\nwhere esrb_rating != 'M' and ESRB_rating != 'N/A';",
+            "sql": "select title, esrb_rating\n\tfrom idb_game\n\twhere esrb_rating != 'M' and ESRB_rating != 'N/A';",
         },
         {
             "description": "Get the video games that appear on more than one platform.",
-            "sql": "select title, count(*)\nfrom idb_game inner join idb_game_platforms\non idb_game.id = idb_game_platforms.game_id\ngroup by idb_game.id\nhaving count(*) > 1;",
+            "sql": "select title, count(*)\n\tfrom idb_game inner join idb_game_platforms\n\ton idb_game.id = idb_game_platforms.game_id\n\tgroup by idb_game.id\n\thaving count(*) > 1;",
         },
         {
             "description": "Get the video games that were created by now defunct developers.",
-            "sql": "select title, genre, publisher\nfrom idb_game\nwhere developer_id in (select idb_developer.id\nfrom idb_developer\nwhere status = 'Defunct');",
+            "sql": "select title, genre, publisher\n\tfrom idb_game\n\twhere developer_id in\n\t\t(select idb_developer.id\n\t\t\tfrom idb_developer\n\t\t\twhere status = 'Defunct');",
         },
         {
             "description": "Get the platforms in which only one developer in the database has worked on.",
-            "sql": "select name, manufacturer\nfrom idb_platform\nwhere id in (select platform_id\nfrom idb_developer_platforms\ngroup by platform_id\nhaving count(platform_id) = 1);",
+            "sql": "select name, manufacturer\n\tfrom idb_platform\n\twhere id in\n\t\t(select platform_id\n\t\t\tfrom idb_developer_platforms\n\t\t\tgroup by platform_id\n\t\t\thaving count(platform_id) = 1);",
         },
         {
             "description": "Get the developers that created a game during the 6th generation of consoles.",
-            "sql": "select name, status\nfrom idb_developer\nwhere id in (select developer_id\nfrom idb_developer_platforms\nwhere platform_id in (select id\nfrom idb_platform\nwhere generation = 6));",
+            "sql": "select name, status\n\tfrom idb_developer\n\twhere id in\n\t\t(select developer_id\n\t\t\tfrom idb_developer_platforms\n\t\t\twhere platform_id in\n\t\t\t\t(select id\n\t\t\t\t\tfrom idb_platform\n\t\t\t\t\twhere generation = 6));",
         },
     ]
 
