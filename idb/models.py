@@ -106,8 +106,8 @@ class Game(models.Model):
     @cvar genre: genre of the game
     @type publisher: models.CharField(255)
     @cvar publisher: the publisher firm that released this game
-    @type ESRB_rating: models.CharField(255)
-    @cvar ESRB_rating: the offical ESRB rating
+    @type esrb_rating: models.CharField(255)
+    @cvar esrb_rating: the offical ESRB rating
     @type youtube_link: models.CharField(255)
     @cvar youtube_link: link to a youtube video
     '''
@@ -115,7 +115,7 @@ class Game(models.Model):
     release_date = models.DateField('release date')
     genre = models.CharField(max_length=255)
     publisher = models.CharField(max_length=255)
-    ESRB_rating = models.CharField(max_length=255)
+    esrb_rating = models.CharField(max_length=255)
     youtube_link = models.CharField(max_length=255)
     
     developer = models.ForeignKey(Developer)
