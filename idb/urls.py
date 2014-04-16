@@ -27,6 +27,7 @@ urlpatterns = patterns('',
     ))),
     url(r'^search/', 'idb.views.search', name='search'),
     url(r'^dynamic/', TemplateView.as_view(template_name="dynamic.html")),
+    url(r'^queries/', TemplateView.as_view(template_name="queries.html")),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api/', include(v1_api.urls)),
 )
