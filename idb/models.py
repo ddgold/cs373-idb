@@ -14,6 +14,7 @@ class Image(models.Model):
     @type link: models.CharField(255)
     @cvar link: URL to the image
     '''
+    description = models.CharField(max_length=255)
     link = models.CharField(max_length=255)
 
     def __unicode__(self):
