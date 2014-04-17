@@ -33,7 +33,7 @@ ng-controller="MyCtrl1" style="background: #222222"
       	  <th class="text-info">Genre</th>
       	  <th class="text-info">Release Date</th>
       	</tr>
-      	<tr ng-repeat="game in games | filter:{title:game_query} | filter:genre | orderBy:gameOrderProp">
+      	<tr ng-repeat="game in games | filter:{title:game_query} | filter:{genre:genre}:exactCompare | orderBy:gameOrderProp">
           {% verbatim %}
       	  <td><a href="/game/{{ game.id }}">{{game.title}}</a></td>
       	  <td>{{game.publisher}}</td>

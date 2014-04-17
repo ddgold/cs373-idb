@@ -67,6 +67,12 @@ angular.module('myApp.controllers', [])
  
       return manufacturers;
     }
+    $scope.exactCompare = function (actual, input) {
+      if (input === "") {
+         return true;
+      }
+      return angular.equals(input, actual);
+    }
 
     $scope.getGames();
     $scope.getDevelopers();
