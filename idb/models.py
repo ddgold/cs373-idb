@@ -8,8 +8,12 @@ from django.db import models
 class Image(models.Model):
     '''
     Image link
+
+    @type description: models.CharField(255)
+    @cvar description: Description of the image
+    @type link: models.CharField(255)
+    @cvar link: URL to the image
     '''
-    description = models.CharField(max_length=255)
     link = models.CharField(max_length=255)
 
     def __unicode__(self):
@@ -72,8 +76,6 @@ class Developer(models.Model):
     @cvar address: the address of the developer's HQ
     @type map_link: models.CharField(511)
     @cvar map_link: link to the Google Map of the address
-    @type platforms: models.ManyToManyField('Platform')
-    @cvar platforms: The platforms this studio developers for
     '''
     name = models.CharField(max_length=255)
     date_founded = models.DateField('date established')
