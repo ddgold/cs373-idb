@@ -458,6 +458,8 @@ class test_search(TestCase) :
 		self.assertEqual(response_content[58], '                5 Developers - ')
 		self.assertEqual(response_content[59], '                2 Platforms - ')
 		self.assertEqual(response_content[60], '                4 Games')
+		self.assertEqual(response_content[98], '                        <a href="/platform/6">GameCube</a>')
+		self.assertEqual(response_content[103], '                        <a href="/platform/5">Game Boy Advance</a>')
 
 	def test_search_4(self) :
 		response = self.client.get("http://ivgdb.herokuapp.com/search/?query=new+york")
@@ -480,8 +482,16 @@ class test_search(TestCase) :
 		self.assertEqual(response_content[58], '                2 Developers - ')
 		self.assertEqual(response_content[59], '                0 Platforms - ')
 		self.assertEqual(response_content[60], '                0 Games')
+		
+	def test_search_6(self) :
+		response = self.client.get("http://ivgdb.herokuapp.com/search/?query=kghrio")
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 200)
 
-# 		print ()
+		response_content = response.content.decode("utf-8").split('\n')
+		self.assertEqual(response_content.count('                    <li class="list-group-item">'), 0)
+		self.assertEqual(response_content[58], "                Your search didn't match anything!")
+
 
 
 #----------------------------------
@@ -548,7 +558,7 @@ class ImageResourceTest(ResourceTestCase) :
 		# Grab the current data & modify it slightly.
 		original_data = self.deserialize(self.api_client.get(self.detail_url, format='json', authentication=self.get_credentials()))
 		new_data = original_data.copy()
-		new_data['description'] = 'Updated: Testing Tastypie'
+		new_data['description'] = 'Updated: Tastypie Testing'
 
 		self.assertEqual(Image.objects.count(), 177)
 		self.assertHttpAccepted(self.api_client.put(self.detail_url, format='json', data=new_data, authentication=self.get_credentials()))
@@ -556,7 +566,7 @@ class ImageResourceTest(ResourceTestCase) :
 		# Make sure the count hasn't changed & we did an update.
 		self.assertEqual(Image.objects.count(), 177)
 		# Check for updated data.
-		self.assertEqual(Image.objects.get(pk=1).description, 'Updated: Testing Tastypie')
+		self.assertEqual(Image.objects.get(pk=1).description, 'Updated: Tastypie Testing')
 		
 	def test_delete_detail(self):
 		self.assertEqual(Image.objects.count(), 177)
