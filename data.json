@@ -3,7 +3,7 @@
         "model": "idb.image",
         "pk": 1,
         "fields": {
-            "description": "Testing",
+            "description": "Wii_U_1",
             "link": "http://i.walmartimages.com/i/p/00/04/54/96/88/0004549688085_500X500.jpg"
         }
     },
@@ -11,7 +11,7 @@
         "model": "idb.image",
         "pk": 2,
         "fields": {
-            "description": "Testing",
+            "description": "Wii_U_2",
             "link": "http://nonspecificaction.co.uk/wp-content/uploads/Wii-U-Black.jpg"
         }
     },
@@ -19,7 +19,7 @@
         "model": "idb.image",
         "pk": 3,
         "fields": {
-            "description": "Testing",
+            "description": "Wii_U_3",
             "link": "http://pisces.bbystatic.com/image2/BestBuy_US/images/products/6775/6775792_sa.jpg"
         }
     },
@@ -27,7 +27,7 @@
         "model": "idb.image",
         "pk": 4,
         "fields": {
-            "description": "Testing",
+            "description": "Xbox_360_1",
             "link": "http://img1.wikia.nocookie.net/__cb20120715144003/halo/images/5/52/Xbox_360_Slim.jpg"
         }
     },
@@ -35,7 +35,7 @@
         "model": "idb.image",
         "pk": 5,
         "fields": {
-            "description": "Testing",
+            "description": "Xbox_360_2",
             "link": "http://www.toysrus.com/graphics/product_images/pTRU1-16249948dt.jpg"
         }
     },
@@ -43,7 +43,7 @@
         "model": "idb.image",
         "pk": 6,
         "fields": {
-            "description": "Testing",
+            "description": "Xbox_360_3",
             "link": "http://i.walmartimages.com/i/p/00/88/22/24/39/0088222439011_500X500.jpg"
         }
     },
@@ -51,7 +51,7 @@
         "model": "idb.image",
         "pk": 7,
         "fields": {
-            "description": "Testing",
+            "description": "Nintendo_DS_1",
             "link": "http://www.buypakistan.com/images/products/originals/335107ps_500h.jpg"
         }
     },
@@ -59,7 +59,7 @@
         "model": "idb.image",
         "pk": 8,
         "fields": {
-            "description": "Testing",
+            "description": "Nintendo_DS_2",
             "link": "http://i.walmartimages.com/i/p/00/04/54/96/71/0004549671835_500X500.jpg"
         }
     },
@@ -67,7 +67,7 @@
         "model": "idb.image",
         "pk": 9,
         "fields": {
-            "description": "Testing",
+            "description": "Nintendo_DS_3",
             "link": "http://www.toptenreviews.com/i/rev/prod/large/50385-nintendo-ds-lite-box.jpg"
         }
     },
@@ -75,7 +75,7 @@
         "model": "idb.image",
         "pk": 10,
         "fields": {
-            "description": "Testing",
+            "description": "Playstation2_1",
             "link": "http://www.toystoreinc.com/catalog/ps2.jpg"
         }
     },
@@ -83,7 +83,7 @@
         "model": "idb.image",
         "pk": 11,
         "fields": {
-            "description": "Testing",
+            "description": "Playstation2_2",
             "link": "http://localonlinegaragesale.com/image/cache/data/PS2-500x500.png"
         }
     },
@@ -91,7 +91,7 @@
         "model": "idb.image",
         "pk": 12,
         "fields": {
-            "description": "Testing",
+            "description": "Playstation2_3",
             "link": "http://img.rakuten.com/PIC/57406081/0/1/500/57406081.jpg"
         }
     },
@@ -99,7 +99,7 @@
         "model": "idb.image",
         "pk": 13,
         "fields": {
-            "description": "Testing",
+            "description": "Gameboy_advance_1",
             "link": "http://ecx.images-amazon.com/images/I/41C297PQC7L.jpg"
         }
     },
@@ -107,7 +107,7 @@
         "model": "idb.image",
         "pk": 14,
         "fields": {
-            "description": "Testing",
+            "description": "Gameboy_advance_2",
             "link": "http://www.lukiegames.com/assets/images/gbasp_flaw_sys_lime_green.jpg"
         }
     },
@@ -115,7 +115,7 @@
         "model": "idb.image",
         "pk": 15,
         "fields": {
-            "description": "Testing",
+            "description": "Gameboy_advance_3",
             "link": "http://ecx.images-amazon.com/images/I/41MPBQW8JRL.jpg"
         }
     },
@@ -123,7 +123,7 @@
         "model": "idb.image",
         "pk": 16,
         "fields": {
-            "description": "Testing",
+            "description": "Gamecube_1",
             "link": "http://www.retrogame.biz/wp-content/uploads/2010/05/GameCube-logo.jpg"
         }
     },
@@ -131,7 +131,7 @@
         "model": "idb.image",
         "pk": 17,
         "fields": {
-            "description": "Testing",
+            "description": "Gamecube_2",
             "link": "http://oldschoolgameblog.files.wordpress.com/2012/02/nintendogamecubeblue.jpg"
         }
     },
@@ -139,7 +139,7 @@
         "model": "idb.image",
         "pk": 18,
         "fields": {
-            "description": "Testing",
+            "description": "Gamecube_3",
             "link": "http://www.gaminggenerations.com/store/images/images_extra/wavebird.jpg"
         }
     },
@@ -147,7 +147,7 @@
         "model": "idb.image",
         "pk": 19,
         "fields": {
-            "description": "Testing",
+            "description": "Nintendo_wii_1",
             "link": "http://i.walmartimages.com/i/p/11/13/00/01/83/1113000183505_500X500.jpg"
         }
     },
@@ -155,7 +155,7 @@
         "model": "idb.image",
         "pk": 20,
         "fields": {
-            "description": "Testing",
+            "description": "Nintendo_wii_2",
             "link": "http://ecx.images-amazon.com/images/I/416RD9PN1ML.jpg"
         }
     },
@@ -163,7 +163,7 @@
         "model": "idb.image",
         "pk": 21,
         "fields": {
-            "description": "Testing",
+            "description": "Nintendo_wii_3",
             "link": "http://0.tqn.com/d/nintendo/1/0/f/7/-/-/wii_classic_controller_pro.jpg"
         }
     },
@@ -171,7 +171,7 @@
         "model": "idb.image",
         "pk": 22,
         "fields": {
-            "description": "Testing",
+            "description": "MSX_1",
             "link": "http://upload.wikimedia.org/wikipedia/commons/d/d2/Yamaha_msx_ax120_1.jpg"
         }
     },
@@ -179,7 +179,7 @@
         "model": "idb.image",
         "pk": 23,
         "fields": {
-            "description": "Testing",
+            "description": "MSX_2",
             "link": "http://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Canon_V-20_MSX_computer.jpg/640px-Canon_V-20_MSX_computer.jpg"
         }
     },
@@ -187,7 +187,7 @@
         "model": "idb.image",
         "pk": 24,
         "fields": {
-            "description": "Testing",
+            "description": "MSX_3",
             "link": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/OCM_007.jpg/640px-OCM_007.jpg"
         }
     },
@@ -195,7 +195,7 @@
         "model": "idb.image",
         "pk": 25,
         "fields": {
-            "description": "Testing",
+            "description": "Nintendo64_1",
             "link": "http://www.argusjeux.fr/medias/n64-noire-transparente-e39506.jpg"
         }
     },
@@ -203,7 +203,7 @@
         "model": "idb.image",
         "pk": 26,
         "fields": {
-            "description": "Testing",
+            "description": "Nintendo64_2",
             "link": "http://www.360blog.org/wp-content/uploads/2009/05/nintendo-nintendo-64-controllers1.bmp"
         }
     },
@@ -211,7 +211,7 @@
         "model": "idb.image",
         "pk": 27,
         "fields": {
-            "description": "Testing",
+            "description": "Nintendo64_3",
             "link": "http://collectortoys.net/wp-content/uploads/2014/01/nintendo-64-logo-with-shadows---rocketdock-ohhebcdd.png"
         }
     },
@@ -219,7 +219,7 @@
         "model": "idb.image",
         "pk": 28,
         "fields": {
-            "description": "Testing",
+            "description": "Playstation3_1",
             "link": "http://i.walmartimages.com/i/p/00/71/17/19/84/0071171984230_500X500.jpg"
         }
     },
@@ -227,7 +227,7 @@
         "model": "idb.image",
         "pk": 29,
         "fields": {
-            "description": "Testing",
+            "description": "Playstation3_2",
             "link": "http://arlume.com/bigpic/486/487/20091121094713.jpg"
         }
     },
@@ -235,7 +235,7 @@
         "model": "idb.image",
         "pk": 30,
         "fields": {
-            "description": "Testing",
+            "description": "Playstation3_3",
             "link": "http://img.rakuten.com/PIC/50353496/0/1/500/50353496.jpg"
         }
     },
@@ -243,7 +243,7 @@
         "model": "idb.image",
         "pk": 31,
         "fields": {
-            "description": "Testing",
+            "description": "Playstation_1",
             "link": "http://3.bp.blogspot.com/-C2qS6k7kVeI/UT4h6fnaDDI/AAAAAAAATaE/IdtOBPcWbQw/s400/ps1.jpg"
         }
     },
@@ -251,7 +251,7 @@
         "model": "idb.image",
         "pk": 32,
         "fields": {
-            "description": "Testing",
+            "description": "Playstation_2",
             "link": "http://www.playerschoicevideogames.com/misc_images/large_ps1-console-original-1.jpg"
         }
     },
@@ -259,7 +259,7 @@
         "model": "idb.image",
         "pk": 33,
         "fields": {
-            "description": "Testing",
+            "description": "Playstation_3",
             "link": "http://matemedia.com/wp-content/uploads/2013/10/playstation-transparent.gif"
         }
     },
@@ -267,7 +267,7 @@
         "model": "idb.image",
         "pk": 34,
         "fields": {
-            "description": "Testing",
+            "description": "Playstation4_1",
             "link": "http://cdn.us.playstation.com/pscomauth/groups/public/documents/webasset/ps4_play_img.jpg"
         }
     },
@@ -275,7 +275,7 @@
         "model": "idb.image",
         "pk": 35,
         "fields": {
-            "description": "Testing",
+            "description": "Playstation4_2",
             "link": "http://cdn3.mos.techradar.futurecdn.net////art/games_consoles/PlayStation%204/PS4%20official%20photos/Controller/artwork/pad%20with%20logo-578-80.jpg"
         }
     },
@@ -283,7 +283,7 @@
         "model": "idb.image",
         "pk": 36,
         "fields": {
-            "description": "Testing",
+            "description": "Playstation4_3",
             "link": "http://www.pcgameshardware.de/screenshots/970x546/2013/02/ps4-logo.jpg"
         }
     },
@@ -291,7 +291,7 @@
         "model": "idb.image",
         "pk": 37,
         "fields": {
-            "description": "Testing",
+            "description": "SuperNintendo_1",
             "link": "http://pawnprospeterborough.com/wp-content/uploads/2013/11/P1000913.jpg"
         }
     },
@@ -299,7 +299,7 @@
         "model": "idb.image",
         "pk": 38,
         "fields": {
-            "description": "Testing",
+            "description": "SuperNintendo_2",
             "link": "http://emulaacao.files.wordpress.com/2010/11/super_nintendo.gif"
         }
     },
@@ -307,7 +307,7 @@
         "model": "idb.image",
         "pk": 39,
         "fields": {
-            "description": "Testing",
+            "description": "SuperNintendo_3",
             "link": "http://1.bp.blogspot.com/-TxBp-tSu1Bg/UMfg2JPFXzI/AAAAAAAABtw/ygnAek01YHs/s640/Snes_control1.jpg"
         }
     },
@@ -315,7 +315,7 @@
         "model": "idb.image",
         "pk": 40,
         "fields": {
-            "description": "Testing",
+            "description": "NintendoEntertainmentSystem_1",
             "link": "http://images.eurogamer.net/2013/usgamer/NES-01.jpg"
         }
     },
@@ -323,7 +323,7 @@
         "model": "idb.image",
         "pk": 41,
         "fields": {
-            "description": "Testing",
+            "description": "NintendoEntertainmentSystem_2",
             "link": "http://static.tvtropes.org/pmwiki/pub/images/Nintendo-NES_360.jpg"
         }
     },
@@ -331,7 +331,7 @@
         "model": "idb.image",
         "pk": 42,
         "fields": {
-            "description": "Testing",
+            "description": "NintendoEntertainmentSystem_3",
             "link": "http://fc06.deviantart.net/fs71/f/2010/059/4/a/NES_Controller_by_The_Penciler.png"
         }
     },
@@ -339,7 +339,7 @@
         "model": "idb.image",
         "pk": 43,
         "fields": {
-            "description": "Testing",
+            "description": "Xbox_1",
             "link": "http://cdn1.sbnation.com/products/large/1678/xbox.jpg?1316016132"
         }
     },
@@ -347,7 +347,7 @@
         "model": "idb.image",
         "pk": 44,
         "fields": {
-            "description": "Testing",
+            "description": "Xbox_2",
             "link": "http://static.trustedreviews.com/94/0000248b1/44f4_orh350w620/logo-xbox.jpg"
         }
     },
@@ -355,7 +355,7 @@
         "model": "idb.image",
         "pk": 45,
         "fields": {
-            "description": "Testing",
+            "description": "Xbox_3",
             "link": "http://www.campuspride.org/wp-content/uploads/Xbox-logo.jpg"
         }
     },
@@ -363,7 +363,7 @@
         "model": "idb.image",
         "pk": 46,
         "fields": {
-            "description": "Testing",
+            "description": "XboxOne_1",
             "link": "http://www.dvice.com/sites/dvice/files/styles/blog_post_media/public/xbox-one.png"
         }
     },
@@ -371,7 +371,7 @@
         "model": "idb.image",
         "pk": 47,
         "fields": {
-            "description": "Testing",
+            "description": "XboxOne_2",
             "link": "http://i.telegraph.co.uk/multimedia/archive/02584/Xbox-One_2584436b.jpg"
         }
     },
@@ -379,7 +379,7 @@
         "model": "idb.image",
         "pk": 48,
         "fields": {
-            "description": "Testing",
+            "description": "XboxOne_3",
             "link": "http://www5.pcmag.com/media/images/408054-microsoft-xbox-one.jpg?thumb=y"
         }
     },
@@ -387,7 +387,7 @@
         "model": "idb.image",
         "pk": 49,
         "fields": {
-            "description": "Testing",
+            "description": "Nintendo3DS_1",
             "link": "http://richwny15.wpengine.netdna-cdn.com/wp-content/uploads/2011/01/N3DS.jpg"
         }
     },
@@ -395,7 +395,7 @@
         "model": "idb.image",
         "pk": 50,
         "fields": {
-            "description": "Testing",
+            "description": "Nintendo3DS_2",
             "link": "http://www.nintendo.com/images/3ds/home/hardware_red.png"
         }
     },
@@ -403,7 +403,7 @@
         "model": "idb.image",
         "pk": 51,
         "fields": {
-            "description": "Testing",
+            "description": "Nintendo3DS_3",
             "link": "http://thegamingpixelshow.com/wp-content/uploads/2012/03/cobalt_blue_3ds_packaging.jpg"
         }
     },
