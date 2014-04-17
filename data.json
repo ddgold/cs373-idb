@@ -653,7 +653,7 @@
         "model": "idb.image",
         "pk": 52,
         "fields": {
-            "description": "Testing",
+            "description": "Platinum Games #1",
             "link": "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg"
         }
     },
@@ -661,7 +661,7 @@
         "model": "idb.image",
         "pk": 53,
         "fields": {
-            "description": "Testing",
+            "description": "Platinum Games #2",
             "link": "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg"
         }
     },
@@ -669,7 +669,7 @@
         "model": "idb.image",
         "pk": 54,
         "fields": {
-            "description": "Testing",
+            "description": "Platinum Games #3",
             "link": "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg"
         }
     },
@@ -677,7 +677,7 @@
         "model": "idb.image",
         "pk": 55,
         "fields": {
-            "description": "Testing",
+            "description": "Infinity Ward #1",
             "link": "http://markderidder.squarespace.com/storage/InfinityWard.jpg?__SQUARESPACE_CACHEVERSION=1294423775776"
         }
     },
@@ -685,7 +685,7 @@
         "model": "idb.image",
         "pk": 56,
         "fields": {
-            "description": "Testing",
+            "description": "Infinity Ward #2",
             "link": "http://i1-news.softpedia-static.com/images/news2/Infinity-Ward-Might-Work-on-New-IP-2.jpg"
         }
     },
@@ -693,7 +693,7 @@
         "model": "idb.image",
         "pk": 57,
         "fields": {
-            "description": "Testing",
+            "description": "Infinity Ward #3",
             "link": "http://www.infinityward.com/content/dam/atvi/infinityward/web/home-carousel/iw-lobby3.jpg"
         }
     },
@@ -701,7 +701,7 @@
         "model": "idb.image",
         "pk": 58,
         "fields": {
-            "description": "Testing",
+            "description": "Cing #1",
             "link": "http://i.imgur.com/QFR1BYR.png"
         }
     },
@@ -709,7 +709,7 @@
         "model": "idb.image",
         "pk": 59,
         "fields": {
-            "description": "Testing",
+            "description": "Cing #2",
             "link": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLZlODn9tXFteFVmJzcyEV7mIRGy0CwawhzO8MXBhl7j8TngH9"
         }
     },
@@ -717,7 +717,7 @@
         "model": "idb.image",
         "pk": 60,
         "fields": {
-            "description": "Testing",
+            "description": "Cing #3",
             "link": "http://i.imgur.com/orPseLp.jpg"
         }
     },
@@ -725,7 +725,7 @@
         "model": "idb.image",
         "pk": 61,
         "fields": {
-            "description": "Testing",
+            "description": "Rockstar Games #1",
             "link": "http://a1.s6img.com/cdn/0023/p/9307314_1824545_lz.jpg"
         }
     },
@@ -733,7 +733,7 @@
         "model": "idb.image",
         "pk": 62,
         "fields": {
-            "description": "Testing",
+            "description": "Rockstar Games #2",
             "link": "http://cdn3.whatculture.com/wp-content/uploads/2013/09/rockstar-games-source-944553.jpg"
         }
     },
@@ -741,7 +741,7 @@
         "model": "idb.image",
         "pk": 63,
         "fields": {
-            "description": "Testing",
+            "description": "Rockstar Games #3",
             "link": "http://cdn.cultofandroid.com/wp-content/uploads/2012/12/rockstargames.jpg"
         }
     },
@@ -749,7 +749,7 @@
         "model": "idb.image",
         "pk": 64,
         "fields": {
-            "description": "Testing",
+            "description": "Dimps #1",
             "link": "http://1.bp.blogspot.com/-j6uN4WlB6-c/UWRBgVq_vlI/AAAAAAAACOc/T-9JhqQCMAc/s640/url.png"
         }
     },
@@ -757,7 +757,7 @@
         "model": "idb.image",
         "pk": 65,
         "fields": {
-            "description": "Testing",
+            "description": "Dimps #2",
             "link": "http://i.kinja-img.com/gawker-media/image/upload/18hh1ux83kghvjpg.jpg"
         }
     },
@@ -765,7 +765,7 @@
         "model": "idb.image",
         "pk": 66,
         "fields": {
-            "description": "Testing",
+            "description": "Dimps #3",
             "link": "http://blogs.popzara.com/media/12/20100217-sonic_dimps_01.jpg"
         }
     },
@@ -773,7 +773,7 @@
         "model": "idb.image",
         "pk": 67,
         "fields": {
-            "description": "Testing",
+            "description": "HAL Laboratories #1",
             "link": "http://media.ignimgs.com/media/ign/imgs/minisites/topN/video-game-makers/top-50-video-game-makers_hal.jpg"
         }
     },
@@ -781,7 +781,7 @@
         "model": "idb.image",
         "pk": 68,
         "fields": {
-            "description": "Testing",
+            "description": "HAL Laboratories #2",
             "link": "http://www.blogcdn.com/www.joystiq.com/media/2011/03/nint-gdc11-keynote-0022.jpg"
         }
     },
@@ -789,7 +789,7 @@
         "model": "idb.image",
         "pk": 69,
         "fields": {
-            "description": "Testing",
+            "description": "HAL Laboratories #3",
             "link": "http://img.gamefaqs.net/screens/c/c/4/gfs_28117_1_2.jpg"
         }
     },
@@ -797,7 +797,7 @@
         "model": "idb.image",
         "pk": 70,
         "fields": {
-            "description": "Testing",
+            "description": "Monolith Soft #1",
             "link": "http://gimmegimmegames.com/wp-content/uploads/2012/05/Monolith-Soft-logo.jpg"
         }
     },
@@ -805,7 +805,7 @@
         "model": "idb.image",
         "pk": 71,
         "fields": {
-            "description": "Testing",
+            "description": "Monolith Soft #2",
             "link": "http://wiiudaily.com/wp-content/uploads/2011/06/xenoblade-wii-u.jpg"
         }
     },
@@ -813,7 +813,7 @@
         "model": "idb.image",
         "pk": 72,
         "fields": {
-            "description": "Testing",
+            "description": "Monolith Soft #3",
             "link": "http://www.level30.nl/wp-content/uploads/2012/10/disaster.jpg"
         }
     },
@@ -821,7 +821,7 @@
         "model": "idb.image",
         "pk": 73,
         "fields": {
-            "description": "Testing",
+            "description": "Konami #1",
             "link": "http://media1.gameinformer.com/imagefeed/featured/konami/konamilogo125.gif"
         }
     },
@@ -829,7 +829,7 @@
         "model": "idb.image",
         "pk": 74,
         "fields": {
-            "description": "Testing",
+            "description": "Konami #2",
             "link": "http://bulk2.destructoid.com/ul/134757-konami_header.jpg"
         }
     },
@@ -837,7 +837,7 @@
         "model": "idb.image",
         "pk": 75,
         "fields": {
-            "description": "Testing",
+            "description": "Konami #3",
             "link": "http://www.plughitzlive.com/images/news/logos/konami.png"
         }
     },
@@ -845,7 +845,7 @@
         "model": "idb.image",
         "pk": 76,
         "fields": {
-            "description": "Testing",
+            "description": "Midway Games #1",
             "link": "http://cdn1-www.playstationlifestyle.net/assets/uploads/2009/08/midway-logo.jpg"
         }
     },
@@ -853,7 +853,7 @@
         "model": "idb.image",
         "pk": 77,
         "fields": {
-            "description": "Testing",
+            "description": "Midway Games #2",
             "link": "http://img3.wikia.nocookie.net/__cb20100825154942/mk_/images/8/81/MK_2011_2ndlogo.png"
         }
     },
@@ -861,7 +861,7 @@
         "model": "idb.image",
         "pk": 78,
         "fields": {
-            "description": "Testing",
+            "description": "Midway Games #3",
             "link": "http://gamingtrend.com/wp-content/uploads/2012/11/midway_logo-533x400.jpg"
         }
     },
@@ -869,7 +869,7 @@
         "model": "idb.image",
         "pk": 79,
         "fields": {
-            "description": "Testing",
+            "description": "Square Enix #1",
             "link": "http://www.dsksic.com/images/media/66_Square_Enix_logo.jpg"
         }
     },
@@ -877,7 +877,7 @@
         "model": "idb.image",
         "pk": 80,
         "fields": {
-            "description": "Testing",
+            "description": "Square Enix #2",
             "link": "http://www.vgblogger.com/wp-content/uploads/2008/11/11/SquareEnixQ109.jpg"
         }
     },
@@ -885,7 +885,7 @@
         "model": "idb.image",
         "pk": 81,
         "fields": {
-            "description": "Testing",
+            "description": "Square Enix #3",
             "link": "http://i1265.photobucket.com/albums/jj511/sgarmer05/SquareEnixLogo_zps95005137.jpg"
         }
     },
@@ -893,7 +893,7 @@
         "model": "idb.image",
         "pk": 82,
         "fields": {
-            "description": "Testing",
+            "description": "Bethesda Game Studios #1",
             "link": "http://images.wikia.com/elderscrolls/images/archive/a/a2/20110812152931!Bethesda_game_studios_logo.jpg"
         }
     },
@@ -901,7 +901,7 @@
         "model": "idb.image",
         "pk": 83,
         "fields": {
-            "description": "Testing",
+            "description": "Bethesda Game Studios #2",
             "link": "http://popcultureblog.dallasnews.com/files/2012/10/main_middle-620x221.gif"
         }
     },
@@ -909,7 +909,7 @@
         "model": "idb.image",
         "pk": 84,
         "fields": {
-            "description": "Testing",
+            "description": "Bethesda Game Studios #3",
             "link": "http://www.gamedynamo.com/images/galleries/photo/1768/bethesda-game-studios-future-generation-console-programmer-job-listing-news-1.jpg"
         }
     },
@@ -917,7 +917,7 @@
         "model": "idb.image",
         "pk": 85,
         "fields": {
-            "description": "Testing",
+            "description": "Polyphony Digital, Inc. #1",
             "link": "http://upload.wikimedia.org/wikipedia/en/thumb/2/20/Polyphony_Digital_Inc.svg/300px-Polyphony_Digital_Inc.svg.png"
         }
     },
@@ -925,7 +925,7 @@
         "model": "idb.image",
         "pk": 86,
         "fields": {
-            "description": "Testing",
+            "description": "Polyphony Digital, Inc. #2",
             "link": "http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/ed/8f/ed8fa935ac18b89cde38d33fe0ba3b75.jpg?itok=9haMLGYY"
         }
     },
@@ -933,7 +933,7 @@
         "model": "idb.image",
         "pk": 87,
         "fields": {
-            "description": "Testing",
+            "description": "Polyphony Digital, Inc. #3",
             "link": "http://files.g4tv.com/ImageDb3/178383_S/TGS09-A-Visit-To-The-Home-of-Gran-Turismo---Polyphony-Digital.jpg"
         }
     },
@@ -941,7 +941,7 @@
         "model": "idb.image",
         "pk": 88,
         "fields": {
-            "description": "Testing",
+            "description": "Namco #1",
             "link": "http://www.ingames.com.br/wp-content/uploads/2010/06/CALEN%C3%81RIO-NAMCO1.gif"
         }
     },
@@ -949,7 +949,7 @@
         "model": "idb.image",
         "pk": 89,
         "fields": {
-            "description": "Testing",
+            "description": "Namco #2",
             "link": "http://www.mobygames.com/images/shots/l/81872-xenosaga-episode-i-der-wille-zur-macht-playstation-2-screenshot.jpg"
         }
     },
@@ -957,7 +957,7 @@
         "model": "idb.image",
         "pk": 90,
         "fields": {
-            "description": "Testing",
+            "description": "Namco #3",
             "link": "http://media.psu.com/media/articles/image/Namco_Arcade_1.jpg"
         }
     },
@@ -965,7 +965,7 @@
         "model": "idb.image",
         "pk": 91,
         "fields": {
-            "description": "Testing",
+            "description": "Capcom #1",
             "link": "http://gotgame.com/wp-content/uploads/2011/07/capcom.gif"
         }
     },
@@ -973,7 +973,7 @@
         "model": "idb.image",
         "pk": 92,
         "fields": {
-            "description": "Testing",
+            "description": "Capcom #2",
             "link": "http://d1vr6n66ssr06c.cloudfront.net/wp-content/uploads/2013/07/capcom_office_header.jpg"
         }
     },
@@ -981,7 +981,7 @@
         "model": "idb.image",
         "pk": 93,
         "fields": {
-            "description": "Testing",
+            "description": "Capcom #3",
             "link": "http://cdn2.dualshockers.com/wp-content/uploads/2012/09/c.jpg"
         }
     },
@@ -989,7 +989,7 @@
         "model": "idb.image",
         "pk": 94,
         "fields": {
-            "description": "Testing",
+            "description": "Nintendo EAD #1",
             "link": "http://nintendookie.files.wordpress.com/2010/06/nintendo-offices.jpg"
         }
     },
@@ -997,7 +997,7 @@
         "model": "idb.image",
         "pk": 95,
         "fields": {
-            "description": "Testing",
+            "description": "Nintendo EAD #2",
             "link": "http://img3.wikia.nocookie.net/__cb20090523211348/nintendo/en/images/6/67/NintendoEAD.gif"
         }
     },
@@ -1005,7 +1005,7 @@
         "model": "idb.image",
         "pk": 96,
         "fields": {
-            "description": "Testing",
+            "description": "Nintendo EAD #3",
             "link": "http://www.gameware.sk/wp-content/uploads/2013/10/nintendo-logo.jpg"
         }
     },
@@ -1013,7 +1013,7 @@
         "model": "idb.image",
         "pk": 97,
         "fields": {
-            "description": "Testing",
+            "description": "Game Freak, Inc. #1",
             "link": "http://img2.wikia.nocookie.net/__cb20130411095820/logopedia/images/a/aa/Game-freak-logo.jpg"
         }
     },
@@ -1021,7 +1021,7 @@
         "model": "idb.image",
         "pk": 98,
         "fields": {
-            "description": "Testing",
+            "description": "Game Freak, Inc. #2",
             "link": "https://d1vr6n66ssr06c.cloudfront.net/wp-content/uploads/2012/12/Game-Freak-630x324.png"
         }
     },
@@ -1029,7 +1029,7 @@
         "model": "idb.image",
         "pk": 99,
         "fields": {
-            "description": "Testing",
+            "description": "Game Freak, Inc. #3",
             "link": "http://upload.wikimedia.org/wikipedia/en/e/ea/Game_Freak_logo.png"
         }
     },
@@ -1037,7 +1037,7 @@
         "model": "idb.image",
         "pk": 100,
         "fields": {
-            "description": "Testing",
+            "description": "EA Canada #1",
             "link": "http://upload.wikimedia.org/wikipedia/en/thumb/a/ae/EA_Canada_Logo.svg/409px-EA_Canada_Logo.svg.png"
         }
     },
@@ -1045,7 +1045,7 @@
         "model": "idb.image",
         "pk": 101,
         "fields": {
-            "description": "Testing",
+            "description": "EA Canada #2",
             "link": "http://static.giantbomb.com/uploads/original/0/5022/369688-ea_canada_leadin.jpg"
         }
     },
@@ -1053,7 +1053,7 @@
         "model": "idb.image",
         "pk": 102,
         "fields": {
-            "description": "Testing",
+            "description": "EA Canada #3",
             "link": "http://www.edge-online.com/wp-content/uploads/edgeonline/oldfiles/EA%20Canada%20a_0.jpg"
         }
     },
@@ -1061,7 +1061,7 @@
         "model": "idb.image",
         "pk": 103,
         "fields": {
-            "description": "Testing",
+            "description": "EA Tiburon #1",
             "link": "http://cdn.www.easports.com/static/20140328.091049/images/easdnCommonPlugin/careers/EAS_HR_Orlando_Marquee2.jpg"
         }
     },
@@ -1069,7 +1069,7 @@
         "model": "idb.image",
         "pk": 104,
         "fields": {
-            "description": "Testing",
+            "description": "EA Tiburon #2",
             "link": "http://www.dfcint.com/dossier/wp-content/uploads/2011/04/ea_tiburon-S.jpg"
         }
     },
@@ -1077,7 +1077,7 @@
         "model": "idb.image",
         "pk": 105,
         "fields": {
-            "description": "Testing",
+            "description": "EA Tiburon #3",
             "link": "http://gamingbolt.com/wp-content/uploads/2011/05/electronic_arts-logo-big.gif"
         }
     },
@@ -1085,7 +1085,7 @@
         "model": "idb.image",
         "pk": 106,
         "fields": {
-            "description": "Testing",
+            "description": "Bungie #1",
             "link": "http://static.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/521c031de4b05e3dfb14dccd/1377567518962/bungie-logo.jpg"
         }
     },
@@ -1093,7 +1093,7 @@
         "model": "idb.image",
         "pk": 107,
         "fields": {
-            "description": "Testing",
+            "description": "Bungie #2",
             "link": "http://officesnapshots.com/wp-content/galleries/bungie/b5.jpg"
         }
     },
@@ -1101,7 +1101,7 @@
         "model": "idb.image",
         "pk": 108,
         "fields": {
-            "description": "Testing",
+            "description": "Bungie #3",
             "link": "http://hw1.pa-cdn.com/par/img/editorial/bungietour/bungie_04.jpg"
         }
     },
@@ -1375,7 +1375,7 @@
         "model": "idb.image",
         "pk": 109,
         "fields": {
-            "description": "Testing",
+            "description": "The Wonderful 101 #1",
             "link": "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png"
         }
     },
@@ -1383,7 +1383,7 @@
         "model": "idb.image",
         "pk": 110,
         "fields": {
-            "description": "Testing",
+            "description": "The Wonderful 101 #2",
             "link": "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg"
         }
     },
@@ -1391,7 +1391,7 @@
         "model": "idb.image",
         "pk": 111,
         "fields": {
-            "description": "Testing",
+            "description": "The Wonderful 101 #3",
             "link": "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg"
         }
     },
@@ -1399,7 +1399,7 @@
         "model": "idb.image",
         "pk": 112,
         "fields": {
-            "description": "Testing",
+            "description": "Call of Duty 4: Modern Warfare #1",
             "link": "http://www.maclife.com/files/u220903/call_of_duty_4_modern_warfare_620px.png"
         }
     },
@@ -1407,7 +1407,7 @@
         "model": "idb.image",
         "pk": 113,
         "fields": {
-            "description": "Testing",
+            "description": "Call of Duty 4: Modern Warfare #2",
             "link": "http://cdn.macrumors.com/article-new/2012/06/NewImage32.png"
         }
     },
@@ -1415,7 +1415,7 @@
         "model": "idb.image",
         "pk": 114,
         "fields": {
-            "description": "Testing",
+            "description": "Call of Duty 4: Modern Warfare #3",
             "link": "http://img3.wikia.nocookie.net/__cb20120604062555/callofduty/images/7/7e/Operation_Kingfish_2013_group_crop.png"
         }
     },
@@ -1423,7 +1423,7 @@
         "model": "idb.image",
         "pk": 115,
         "fields": {
-            "description": "Testing",
+            "description": "Hotel Dusk: Room 215 #1",
             "link": "http://upload.wikimedia.org/wikipedia/en/5/51/Hotel_Dusk.jpg"
         }
     },
@@ -1431,7 +1431,7 @@
         "model": "idb.image",
         "pk": 116,
         "fields": {
-            "description": "Testing",
+            "description": "Hotel Dusk: Room 215 #2",
             "link": "http://oyster.ignimgs.com/wordpress/write.ign.com/86032/2011/12/dunning.jpg"
         }
     },
@@ -1439,7 +1439,7 @@
         "model": "idb.image",
         "pk": 117,
         "fields": {
-            "description": "Testing",
+            "description": "Hotel Dusk: Room 215 #3",
             "link": "http://www.geekshow.us/wp/wp-content/uploads/2009/03/hotel-dusk-louie.jpg"
         }
     },
@@ -1447,7 +1447,7 @@
         "model": "idb.image",
         "pk": 118,
         "fields": {
-            "description": "Testing",
+            "description": "Grand Theft Auto III #1",
             "link": "http://www.slashgear.com/wp-content/uploads/2011/12/gta_3_android_0.png"
         }
     },
@@ -1455,7 +1455,7 @@
         "model": "idb.image",
         "pk": 119,
         "fields": {
-            "description": "Testing",
+            "description": "Grand Theft Auto III #2",
             "link": "http://cdn.appstorm.net/ipad.appstorm.net/files/2011/12/gtaIII_2.png"
         }
     },
@@ -1463,7 +1463,7 @@
         "model": "idb.image",
         "pk": 120,
         "fields": {
-            "description": "Testing",
+            "description": "Grand Theft Auto III #3",
             "link": "http://www.gouranga.com/images/gta3/gta3_394.jpg"
         }
     },
@@ -1471,7 +1471,7 @@
         "model": "idb.image",
         "pk": 121,
         "fields": {
-            "description": "Testing",
+            "description": "Sonic Advance #1",
             "link": "http://bulk.destructoid.com/ul/user/1/14375-194296-SonicAdvancetitlescreenjpg-620x.jpg"
         }
     },
@@ -1479,7 +1479,7 @@
         "model": "idb.image",
         "pk": 122,
         "fields": {
-            "description": "Testing",
+            "description": "Sonic Advance #2",
             "link": "http://img841.imageshack.us/img841/5249/s2built002.png"
         }
     },
@@ -1487,7 +1487,7 @@
         "model": "idb.image",
         "pk": 123,
         "fields": {
-            "description": "Testing",
+            "description": "Sonic Advance #3",
             "link": "http://fc00.deviantart.net/fs71/i/2011/018/1/7/sonic_advance_2__sonic_final_by_iamsupersonic-d37iz9y.png"
         }
     },
@@ -1495,7 +1495,7 @@
         "model": "idb.image",
         "pk": 124,
         "fields": {
-            "description": "Testing",
+            "description": "Super Smash Bros. Melee #1",
             "link": "http://img.gamefaqs.net/box/0/8/7/14087_front.jpg"
         }
     },
@@ -1503,7 +1503,7 @@
         "model": "idb.image",
         "pk": 125,
         "fields": {
-            "description": "Testing",
+            "description": "Super Smash Bros. Melee #2",
             "link": "http://faqsmedia.ign.com/faqs/image/ali1mg_ssbm_010.jpg"
         }
     },
@@ -1511,7 +1511,7 @@
         "model": "idb.image",
         "pk": 126,
         "fields": {
-            "description": "Testing",
+            "description": "Super Smash Bros. Melee #3",
             "link": "http://www.technologytell.com/gaming/files/2013/07/smash-bros.-melee.jpg"
         }
     },
@@ -1519,7 +1519,7 @@
         "model": "idb.image",
         "pk": 127,
         "fields": {
-            "description": "Testing",
+            "description": "Xenoblade Chronicles #1",
             "link": "http://upload.wikimedia.org/wikipedia/en/d/d9/Xenoblade_box_artwork.png"
         }
     },
@@ -1527,7 +1527,7 @@
         "model": "idb.image",
         "pk": 128,
         "fields": {
-            "description": "Testing",
+            "description": "Xenoblade Chronicles #2",
             "link": "http://www.vgchartz.com/games/pics/xenoblade-chronicles-958102.jpg"
         }
     },
@@ -1535,7 +1535,7 @@
         "model": "idb.image",
         "pk": 129,
         "fields": {
-            "description": "Testing",
+            "description": "Xenoblade Chronicles #3",
             "link": "http://i.imgur.com/drijgxV.jpg"
         }
     },
@@ -1543,7 +1543,7 @@
         "model": "idb.image",
         "pk": 130,
         "fields": {
-            "description": "Testing",
+            "description": "Metal Gear #1",
             "link": "http://upload.wikimedia.org/wikipedia/en/b/bd/Metal_Gear_cover.jpg"
         }
     },
@@ -1551,7 +1551,7 @@
         "model": "idb.image",
         "pk": 131,
         "fields": {
-            "description": "Testing",
+            "description": "Metal Gear #2",
             "link": "http://static.giantbomb.com/uploads/original/0/4648/2019227-solid.jpg"
         }
     },
@@ -1559,7 +1559,7 @@
         "model": "idb.image",
         "pk": 132,
         "fields": {
-            "description": "Testing",
+            "description": "Metal Gear #3",
             "link": "http://einfogames.com/hub/files/2014/02/nes-metal-gear-jeu.jpg"
         }
     },
@@ -1567,7 +1567,7 @@
         "model": "idb.image",
         "pk": 133,
         "fields": {
-            "description": "Testing",
+            "description": "Doom 64 #1",
             "link": "http://img1.wikia.nocookie.net/__cb20080510223920/doom/images/b/b7/Doom_64-box-cover.jpg"
         }
     },
@@ -1575,7 +1575,7 @@
         "model": "idb.image",
         "pk": 134,
         "fields": {
-            "description": "Testing",
+            "description": "Doom 64 #2",
             "link": "http://www.pixlbit.com/media/products/6773/57131.jpg"
         }
     },
@@ -1583,7 +1583,7 @@
         "model": "idb.image",
         "pk": 135,
         "fields": {
-            "description": "Testing",
+            "description": "Doom 64 #3",
             "link": "http://i.imgur.com/YgemoOh.jpg"
         }
     },
@@ -1591,7 +1591,7 @@
         "model": "idb.image",
         "pk": 136,
         "fields": {
-            "description": "Testing",
+            "description": "Final Fantasy XIII #1",
             "link": "http://img3.wikia.nocookie.net/__cb20120614005423/finalfantasy/images/9/94/Final_Fantasy_XIII_Logo.jpg"
         }
     },
@@ -1599,7 +1599,7 @@
         "model": "idb.image",
         "pk": 137,
         "fields": {
-            "description": "Testing",
+            "description": "Final Fantasy XIII #2",
             "link": "http://86bb71d19d3bcb79effc-d9e6924a0395cb1b5b9f03b7640d26eb.r91.cf1.rackcdn.com/wp-content/uploads/2010/03/final-fantasy-xiii-ps3-theme-unlockable-artwork.jpg"
         }
     },
@@ -1607,7 +1607,7 @@
         "model": "idb.image",
         "pk": 138,
         "fields": {
-            "description": "Testing",
+            "description": "Final Fantasy XIII #3",
             "link": "http://fc06.deviantart.net/fs51/i/2009/330/1/f/Final_Fantasy_XIII_characters_by_Cloudfan174.png"
         }
     },
@@ -1615,7 +1615,7 @@
         "model": "idb.image",
         "pk": 139,
         "fields": {
-            "description": "Testing",
+            "description": "Call of Duty: Ghosts #1",
             "link": "http://2.bp.blogspot.com/-4wRoJB4ikQI/UkbsAtjLGpI/AAAAAAAAB6s/rluBURi0s0U/s1600/call-of-duty-ghosts-1080p.png"
         }
     },
@@ -1623,7 +1623,7 @@
         "model": "idb.image",
         "pk": 140,
         "fields": {
-            "description": "Testing",
+            "description": "Call of Duty: Ghosts #2",
             "link": "http://www.geforce.com/sites/default/files-world/attachments/4370COD_Ghosts_Chasm_Ambush.jpg"
         }
     },
@@ -1631,7 +1631,7 @@
         "model": "idb.image",
         "pk": 141,
         "fields": {
-            "description": "Testing",
+            "description": "Call of Duty: Ghosts #3",
             "link": "http://www.geek.com/wp-content/uploads/2013/10/COD_Ghosts_05-590x330.jpg"
         }
     },
@@ -1639,7 +1639,7 @@
         "model": "idb.image",
         "pk": 142,
         "fields": {
-            "description": "Testing",
+            "description": "FIFA 14 #1",
             "link": "http://www.justpushstart.com/wp-content/uploads/2013/06/fifa-14-no-kinect.jpg"
         }
     },
@@ -1647,7 +1647,7 @@
         "model": "idb.image",
         "pk": 143,
         "fields": {
-            "description": "Testing",
+            "description": "FIFA 14 #2",
             "link": "http://www.empireofsoccer.com/wp-content/uploads/2013/08/Tim-Cahill-FIFA-14-Cover-Boy.jpg"
         }
     },
@@ -1655,7 +1655,7 @@
         "model": "idb.image",
         "pk": 144,
         "fields": {
-            "description": "Testing",
+            "description": "FIFA 14 #3",
             "link": "http://gamezilla.komputerswiat.pl/media/2013/203/1507466/piszczu_644x361.jpg"
         }
     },
@@ -1663,7 +1663,7 @@
         "model": "idb.image",
         "pk": 145,
         "fields": {
-            "description": "Testing",
+            "description": "Super Mario Bros. 3 #1",
             "link": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1wOYr6PMVyEde0xyWWxezNQWS5eiSCBPUJFBAAGwpg_TybbAu"
         }
     },
@@ -1671,7 +1671,7 @@
         "model": "idb.image",
         "pk": 146,
         "fields": {
-            "description": "Testing",
+            "description": "Super Mario Bros. 3 #2",
             "link": "http://www.justpushstart.com/wp-content/uploads/2013/08/Super-Mario-Bros.-3.jpg"
         }
     },
@@ -1679,7 +1679,7 @@
         "model": "idb.image",
         "pk": 147,
         "fields": {
-            "description": "Testing",
+            "description": "Super Mario Bros. 3 #3",
             "link": "http://i2.cdnds.net/10/25/gaming_smb3_2.jpg"
         }
     },
@@ -1687,7 +1687,7 @@
         "model": "idb.image",
         "pk": 148,
         "fields": {
-            "description": "Testing",
+            "description": "Mega Man X #1",
             "link": "http://2.bp.blogspot.com/-Y1JBVaQ6LOM/TmUljIkVheI/AAAAAAAAAcQ/c0jDytQlwd8/s1600/13280.jpg"
         }
     },
@@ -1695,7 +1695,7 @@
         "model": "idb.image",
         "pk": 149,
         "fields": {
-            "description": "Testing",
+            "description": "Mega Man X #2",
             "link": "http://fc07.deviantart.net/fs71/i/2012/105/7/1/megaman_x_co_op_by_isdailic-d4w7ivf.jpg"
         }
     },
@@ -1703,7 +1703,7 @@
         "model": "idb.image",
         "pk": 150,
         "fields": {
-            "description": "Testing",
+            "description": "Mega Man X #3",
             "link": "http://www.familyfriendlygaming.com/Images/2011/Pics/MEgaman%20X/IMG_0244.JPG"
         }
     },
@@ -1711,7 +1711,7 @@
         "model": "idb.image",
         "pk": 151,
         "fields": {
-            "description": "Testing",
+            "description": "Madden NFL 25 #1",
             "link": "http://a.espncdn.com/photo/2013/0402/play_e_maddennfl25_gb1-800_576.jpg"
         }
     },
@@ -1719,7 +1719,7 @@
         "model": "idb.image",
         "pk": 152,
         "fields": {
-            "description": "Testing",
+            "description": "Madden NFL 25 #2",
             "link": "http://i1.ytimg.com/vi/ebFBbGVX5t0/maxresdefault.jpg"
         }
     },
@@ -1727,7 +1727,7 @@
         "model": "idb.image",
         "pk": 153,
         "fields": {
-            "description": "Testing",
+            "description": "Madden NFL 25 #3",
             "link": "http://ww2.hdnux.com/photos/23/50/40/5146661/3/628x471.jpg"
         }
     },
@@ -1735,7 +1735,7 @@
         "model": "idb.image",
         "pk": 154,
         "fields": {
-            "description": "Testing",
+            "description": "Pokemon Y #1",
             "link": "http://i50.tinypic.com/167t9w4.jpg"
         }
     },
@@ -1743,7 +1743,7 @@
         "model": "idb.image",
         "pk": 155,
         "fields": {
-            "description": "Testing",
+            "description": "Pokemon Y #2",
             "link": "http://images.kpopstarz.com/data/images/full/83980/will-pokemon-x-and-y-follow-up-with-z.jpg"
         }
     },
@@ -1751,7 +1751,7 @@
         "model": "idb.image",
         "pk": 156,
         "fields": {
-            "description": "Testing",
+            "description": "Pokemon Y #3",
             "link": "http://www.justpushstart.com/wp-content/uploads/2013/10/Pokemon-X-and-Pokemon-Y-61.jpg"
         }
     },
@@ -1759,7 +1759,7 @@
         "model": "idb.image",
         "pk": 157,
         "fields": {
-            "description": "Testing",
+            "description": "Metal Gear Solid 2: Sons of Liberty #1",
             "link": "http://upload.wikimedia.org/wikipedia/en/7/7b/Metal_Gear_Solid_2-_Sons_of_Liberty_Original_Soundtrack.jpg"
         }
     },
@@ -1767,7 +1767,7 @@
         "model": "idb.image",
         "pk": 158,
         "fields": {
-            "description": "Testing",
+            "description": "Metal Gear Solid 2: Sons of Liberty #2",
             "link": "http://3.bp.blogspot.com/_sRIeN7_ZfCw/TDq8P0yvfcI/AAAAAAAAA3Q/7BPPndc8jKc/s1600/metal-gear-solid-2-sons-of-liberty-01.jpg"
         }
     },
@@ -1775,7 +1775,7 @@
         "model": "idb.image",
         "pk": 159,
         "fields": {
-            "description": "Testing",
+            "description": "Metal Gear Solid 2: Sons of Liberty #3",
             "link": "http://statici.behindthevoiceactors.com/behindthevoiceactors/_img/games/banner_13.jpg"
         }
     },
@@ -1783,7 +1783,7 @@
         "model": "idb.image",
         "pk": 160,
         "fields": {
-            "description": "Testing",
+            "description": "Grand Theft Auto: Vice City #1",
             "link": "http://img1.wikia.nocookie.net/__cb20080816125146/gtawiki/images/3/36/GTA_Vice_City_Box_Art.jpg"
         }
     },
@@ -1791,7 +1791,7 @@
         "model": "idb.image",
         "pk": 161,
         "fields": {
-            "description": "Testing",
+            "description": "Grand Theft Auto: Vice City #2",
             "link": "http://gm1.s-ports.ru/sites/default/files/styles/565x365/public/gta_vice_city_collection_14in1-repack_1328193040-326692.jpeg"
         }
     },
@@ -1799,7 +1799,7 @@
         "model": "idb.image",
         "pk": 162,
         "fields": {
-            "description": "Testing",
+            "description": "Grand Theft Auto: Vice City #3",
             "link": "http://cf.shacknews.com/shack_images/sshots/gta_vicecity/gta_vicecity2.nphd.jpg"
         }
     },
@@ -1807,7 +1807,7 @@
         "model": "idb.image",
         "pk": 163,
         "fields": {
-            "description": "Testing",
+            "description": "Yoshi's Story #1",
             "link": "http://img1.wikia.nocookie.net/__cb20071214135827/nintendo/en/images/7/71/Yoshi's_Story_(NA).jpg"
         }
     },
@@ -1815,7 +1815,7 @@
         "model": "idb.image",
         "pk": 164,
         "fields": {
-            "description": "Testing",
+            "description": "Yoshi's Story #2",
             "link": "http://2.bp.blogspot.com/-eBMDmIxk4E4/UA9N0siSJ5I/AAAAAAAAGrw/dbFG07M9okg/s1600/yoshi's+story+N64+wii.jpg"
         }
     },
@@ -1823,7 +1823,7 @@
         "model": "idb.image",
         "pk": 165,
         "fields": {
-            "description": "Testing",
+            "description": "Yoshi's Story #3",
             "link": "http://www.vizzed.com/vizzedboard/userimages/postattachments/75600-1299547406.jpg"
         }
     },
@@ -1831,7 +1831,7 @@
         "model": "idb.image",
         "pk": 166,
         "fields": {
-            "description": "Testing",
+            "description": "Gran Turismo 2 #1",
             "link": "http://ca0.nitroroms.com/fileimage/1568/gran-turismo-2.jpg"
         }
     },
@@ -1839,7 +1839,7 @@
         "model": "idb.image",
         "pk": 167,
         "fields": {
-            "description": "Testing",
+            "description": "Gran Turismo 2 #2",
             "link": "http://2.bp.blogspot.com/-Txd_xZOWeTU/Tyl50Fu67QI/AAAAAAAABTw/fBIE4J1QiVA/s400/2.jpg"
         }
     },
@@ -1847,7 +1847,7 @@
         "model": "idb.image",
         "pk": 168,
         "fields": {
-            "description": "Testing",
+            "description": "Gran Turismo 2 #3",
             "link": "http://i135.photobucket.com/albums/q131/Rigret/Picture2-2.png"
         }
     },
@@ -1855,7 +1855,7 @@
         "model": "idb.image",
         "pk": 169,
         "fields": {
-            "description": "Testing",
+            "description": "Skyrim #1",
             "link": "http://a.tgcdn.net/images/products/additional/large/ee05_skyrim_electronic_dragon_shout_hoodie_addtl.jpg"
         }
     },
@@ -1863,7 +1863,7 @@
         "model": "idb.image",
         "pk": 170,
         "fields": {
-            "description": "Testing",
+            "description": "Skyrim #2",
             "link": "http://www.cxpulp.com/attachment.php?attachmentid=5680&d=1336517440"
         }
     },
@@ -1871,7 +1871,7 @@
         "model": "idb.image",
         "pk": 171,
         "fields": {
-            "description": "Testing",
+            "description": "Skyrim #3",
             "link": "http://pad2.whstatic.com/images/thumb/a/af/Join-the-Thieves-Guild-in-Skyrim-Step-2.jpg/670px-Join-the-Thieves-Guild-in-Skyrim-Step-2.jpg"
         }
     },
@@ -1879,7 +1879,7 @@
         "model": "idb.image",
         "pk": 172,
         "fields": {
-            "description": "Testing",
+            "description": "Halo 3 #1",
             "link": "https://lh5.googleusercontent.com/-EF3Jt42p1pQ/Tu-x9wtOI2I/AAAAAAAAACg/m3f8I0S-Nlg/w800-h800/Picture%2B002.jpg"
         }
     },
@@ -1887,7 +1887,7 @@
         "model": "idb.image",
         "pk": 173,
         "fields": {
-            "description": "Testing",
+            "description": "Halo 3 #2",
             "link": "http://images.amazon.com/images/G/01/videogames/detail-page/halo3-3-lg.jpg"
         }
     },
@@ -1895,7 +1895,7 @@
         "model": "idb.image",
         "pk": 174,
         "fields": {
-            "description": "Testing",
+            "description": "Halo 3 #3",
             "link": "http://img4.wikia.nocookie.net/__cb20101217213126/halo/es/images/e/e4/Halo3_5.jpg"
         }
     },
@@ -1903,7 +1903,7 @@
         "model": "idb.image",
         "pk": 175,
         "fields": {
-            "description": "Testing",
+            "description": "Tekken 3 #1",
             "link": "http://img1.wikia.nocookie.net/__cb20120811143828/tekken/en/images/a/ae/Tekken_3_Cover.jpg"
         }
     },
@@ -1911,7 +1911,7 @@
         "model": "idb.image",
         "pk": 176,
         "fields": {
-            "description": "Testing",
+            "description": "Tekken 3 #2",
             "link": "http://www.emuparadise.me/MAME/snap/tekken3.png"
         }
     },
@@ -1919,7 +1919,7 @@
         "model": "idb.image",
         "pk": 177,
         "fields": {
-            "description": "Testing",
+            "description": "Tekken 3 #3",
             "link": "http://www.fightersgeneration.com/np5/gm/t3-s21.jpg"
         }
     },
