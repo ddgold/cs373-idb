@@ -33,7 +33,7 @@ ng-controller="MyCtrl1" style="background: #222222"
       	  <th class="text-info">Genre</th>
       	  <th class="text-info">Release Date</th>
       	</tr>
-      	<tr ng-repeat="game in games | filter:game_query | filter:genre | orderBy:gameOrderProp">
+      	<tr ng-repeat="game in games | filter:{title:game_query} | filter:genre | orderBy:gameOrderProp">
           {% verbatim %}
       	  <td><a href="/game/{{ game.id }}">{{game.title}}</a></td>
       	  <td>{{game.publisher}}</td>
@@ -53,6 +53,7 @@ ng-controller="MyCtrl1" style="background: #222222"
       	<option value="title">Alphabetical</option>
       	<option value="-release_date">Newest</option>
       	<option value="release_date">Oldest</option>
+        <option value="publisher">Publisher</option>
       </select>
       <select style="margin-top: 10px" class="form-control" ng-model="genre">
       	<option value="">All Genres</option>
@@ -73,7 +74,7 @@ ng-controller="MyCtrl1" style="background: #222222"
           <th class="text-info">Generation</th>
           <th class="text-info">Release Date</th>
         </tr>
-        <tr ng-repeat="platform in platforms | filter:platform_query | filter:manufacturer | orderBy:platformOrderProp">
+        <tr ng-repeat="platform in platforms | filter:{name:platform_query} | filter:manufacturer | orderBy:platformOrderProp">
           {% verbatim %}
           <td><a href="/platform/{{ platform.id }}">{{platform.name}}</a></td>
           <td>{{platform.manufacturer}}</td>
@@ -113,7 +114,7 @@ ng-controller="MyCtrl1" style="background: #222222"
           <th class="text-info">Status</th>
           <th class="text-info">Date Founded</th>
         </tr>
-        <tr ng-repeat="developer in developers | filter:developer_query | orderBy:developerOrderProp">
+        <tr ng-repeat="developer in developers | filter:{name:developer_query} | orderBy:developerOrderProp">
           {% verbatim %}
           <td><a href="/developer/{{ developer.id }}">{{developer.name}}</a></td>
           <td>{{developer.num_employees}}</td>
