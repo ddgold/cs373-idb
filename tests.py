@@ -119,7 +119,7 @@ class test_image(TestCase) :
 
 		response_content = loads(response.content.decode("utf-8"))
 		self.assertEqual(response_content["meta"]["total_count"], 177)
-		self.assertEqual(response_content["objects"][0]["link"], "http://i.walmartimages.com/i/p/00/04/54/96/88/0004549688085_500X500.jpg")
+		self.assertEqual(response_content["objects"][0]["link"], "http://images.wikia.com/elderscrolls/images/archive/a/a2/20110812152931!Bethesda_game_studios_logo.jpg")
 		self.assertEqual(response_content["objects"][17]["link"], "http://www.gaminggenerations.com/store/images/images_extra/wavebird.jpg")
 
 	def test_post_image(self) :
