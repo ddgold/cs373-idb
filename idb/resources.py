@@ -8,6 +8,7 @@ class ImageResource(ModelResource):
         queryset = Image.objects.all()
         resource_name = 'image'
         authorization = Authorization()
+        limit = 200
         allowed_methods = ['get', 'post', 'put', 'delete']
         filtering = {
             'description': ['exact', 'starstwith', 'endswith', 'contains'],
@@ -54,11 +55,12 @@ class GameResource(ModelResource):
         queryset = Game.objects.all()
         resource_name = 'game'
         authorization = Authorization()
+        limit = 25
         allowed_methods = ['get', 'post', 'put', 'delete']
         filtering = {
             'title' : ['exact', 'starstwith', 'endswith', 'contains'],
             'release_date' : ['exact', 'lt', 'lte', 'gt', 'gte', 'range'],
             'genre' : ['exact', 'starstwith', 'endswith', 'contains'],
             'publisher' : ['exact', 'starstwith', 'endswith', 'contains'],
-            'ESRB_rating' : ['exact'],
+            'esrb_rating' : ['exact'],
         }
