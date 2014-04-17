@@ -23,121 +23,129 @@ ng-controller="MyCtrl1" style="background: #222222"
 {% block content %}
 <div class="container">
   <h1 class="well">Dynamic IVGDb</h1>
-  <h3 id="games">Games</h3>
-  <div class="row">
-    <div class="col-md-10">
-      <table class="table table-striped">
-      	<tr>
-      	  <th class="text-info">Title</th>
-      	  <th class="text-info">Publisher</th>
-      	  <th class="text-info">Genre</th>
-      	  <th class="text-info">Release Date</th>
-      	</tr>
-      	<tr ng-repeat="game in games | filter:{title:game_query} | filter:{genre:genre}:exactCompare | orderBy:gameOrderProp">
-          {% verbatim %}
-      	  <td><a href="/game/{{ game.id }}">{{game.title}}</a></td>
-      	  <td>{{game.publisher}}</td>
-      	  <td>{{game.genre}}</td>
-      	  <td>{{game.release_date}}</td>
-          {% endverbatim %}
-      	</tr>
-      </table>
-    </div>
-    <div class="col-md-2">
-      <!--Sidebar content-->
-     <div class="input-group">
-       <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
-       <input placeholder="Search Games" type="search" class="form-control input-sm" ng-model="game_query">
-     </div>
-      <select style="margin-top: 10px" class="form-control" ng-model="gameOrderProp">
-      	<option value="title">Alphabetical</option>
-      	<option value="-release_date">Newest</option>
-      	<option value="release_date">Oldest</option>
-        <option value="publisher">Publisher</option>
-      </select>
-      <select style="margin-top: 10px" class="form-control" ng-model="genre">
-      	<option value="">All Genres</option>
-        {% verbatim %}
-      	<option ng-repeat="g in getGenres()" value="{{ g }}">{{ g }}</option>
-      	{% endverbatim %}
-      </select>
-    </div>
-  </div>
+  <tabset justified="true">
+    <tab heading="Games">
+      <h3 id="games">Games</h3>
+      <div class="row">
+        <div class="col-md-10">
+          <table class="table table-striped">
+            <tr>
+              <th class="text-info">Title</th>
+              <th class="text-info">Publisher</th>
+              <th class="text-info">Genre</th>
+              <th class="text-info">Release Date</th>
+            </tr>
+            <tr ng-repeat="game in games | filter:{title:game_query} | filter:{genre:genre}:exactCompare | orderBy:gameOrderProp">
+              {% verbatim %}
+              <td><a href="/game/{{ game.id }}">{{game.title}}</a></td>
+              <td>{{game.publisher}}</td>
+              <td>{{game.genre}}</td>
+              <td>{{game.release_date}}</td>
+              {% endverbatim %}
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-2">
+          <!--Sidebar content-->
+         <div class="input-group">
+           <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+           <input placeholder="Search Games" type="search" class="form-control input-sm" ng-model="game_query">
+         </div>
+          <select style="margin-top: 10px" class="form-control" ng-model="gameOrderProp">
+            <option value="title">Alphabetical</option>
+            <option value="-release_date">Newest</option>
+            <option value="release_date">Oldest</option>
+            <option value="publisher">Publisher</option>
+          </select>
+          <select style="margin-top: 10px" class="form-control" ng-model="genre">
+            <option value="">All Genres</option>
+            {% verbatim %}
+            <option ng-repeat="g in getGenres()" value="{{ g }}">{{ g }}</option>
+            {% endverbatim %}
+          </select>
+        </div>
+      </div>
+    </tab>
+    <tab heading="Platforms">
+      <h3 id="platforms">Platforms</h3>
+      <div class="row">
+        <div class="col-md-10">
+          <table class="table table-striped">
+            <tr>
+              <th class="text-info">Name</th>
+              <th class="text-info">Manufacturer</th>
+              <th class="text-info">Generation</th>
+              <th class="text-info">Release Date</th>
+            </tr>
+            <tr ng-repeat="platform in platforms | filter:{name:platform_query} | filter:manufacturer | orderBy:platformOrderProp">
+              {% verbatim %}
+              <td><a href="/platform/{{ platform.id }}">{{platform.name}}</a></td>
+              <td>{{platform.manufacturer}}</td>
+              <td>{{platform.generation}}</td>
+              <td>{{platform.release_date}}</td>
+              {% endverbatim %}
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-2">
+          <!--Sidebar content-->
+         <div class="input-group">
+           <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+           <input placeholder="Search Platforms" type="search" class="form-control input-sm" ng-model="platform_query">
+         </div>
+          <select style="margin-top: 10px" class="form-control" ng-model="platformOrderProp">
+            <option value="name">Alphabetical</option>
+            <option value="-release_date">Newest</option>
+            <option value="release_date">Oldest</option>
+          </select>
+          <select style="margin-top: 10px" class="form-control" ng-model="manufacturer">
+            <option value="">All Manufacturers</option>
+            {% verbatim %}
+            <option ng-repeat="m in getManufacturers()" value="{{ m }}">{{ m }}</option>
+            {% endverbatim %}
+          </select>
+        </div>
+      </div>
+    </tab>
+    <tab heading="Developers">
+      <h3 id="developers">Developers</h3>
+      <div class="row">
+        <div class="col-md-10">
+          <table class="table table-striped">
+            <tr>
+              <th class="text-info">Name</th>
+              <th class="text-info">Number of Employees</th>
+              <th class="text-info">Status</th>
+              <th class="text-info">Date Founded</th>
+            </tr>
+            <tr ng-repeat="developer in developers | filter:{name:developer_query} | orderBy:developerOrderProp">
+              {% verbatim %}
+              <td><a href="/developer/{{ developer.id }}">{{developer.name}}</a></td>
+              <td>{{developer.num_employees}}</td>
+              <td>{{developer.status}}</td>
+              <td>{{developer.date_founded}}</td>
+              {% endverbatim %}
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-2">
+          <!--Sidebar content-->
+         <div class="input-group">
+           <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+           <input placeholder="Search Developers" type="search" class="form-control input-sm" ng-model="developer_query">
+         </div>
+          <select style="margin-top: 10px" class="form-control" ng-model="developerOrderProp">
+            <option value="name">Alphabetical</option>
+            <option value="-date_founded">Newest</option>
+            <option value="date_founded">Oldest</option>
+            <option value="-num_employees">Size</option>
+          </select>
+        </div>
+      </div>
+    </tab>
+  </tabset>
 
-  <h3 id="platforms">Platforms</h3>
-  <div class="row">
-    <div class="col-md-10">
-      <table class="table table-striped">
-        <tr>
-          <th class="text-info">Name</th>
-          <th class="text-info">Manufacturer</th>
-          <th class="text-info">Generation</th>
-          <th class="text-info">Release Date</th>
-        </tr>
-        <tr ng-repeat="platform in platforms | filter:{name:platform_query} | filter:manufacturer | orderBy:platformOrderProp">
-          {% verbatim %}
-          <td><a href="/platform/{{ platform.id }}">{{platform.name}}</a></td>
-          <td>{{platform.manufacturer}}</td>
-          <td>{{platform.generation}}</td>
-          <td>{{platform.release_date}}</td>
-          {% endverbatim %}
-        </tr>
-      </table>
-    </div>
-    <div class="col-md-2">
-      <!--Sidebar content-->
-     <div class="input-group">
-       <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
-       <input placeholder="Search Platforms" type="search" class="form-control input-sm" ng-model="platform_query">
-     </div>
-      <select style="margin-top: 10px" class="form-control" ng-model="platformOrderProp">
-        <option value="name">Alphabetical</option>
-        <option value="-release_date">Newest</option>
-        <option value="release_date">Oldest</option>
-      </select>
-      <select style="margin-top: 10px" class="form-control" ng-model="manufacturer">
-        <option value="">All Manufacturers</option>
-        {% verbatim %}
-        <option ng-repeat="m in getManufacturers()" value="{{ m }}">{{ m }}</option>
-        {% endverbatim %}
-      </select>
-    </div>
-  </div>
 
-  <h3 id="developers">Developers</h3>
-  <div class="row">
-    <div class="col-md-10">
-      <table class="table table-striped">
-        <tr>
-          <th class="text-info">Name</th>
-          <th class="text-info">Number of Employees</th>
-          <th class="text-info">Status</th>
-          <th class="text-info">Date Founded</th>
-        </tr>
-        <tr ng-repeat="developer in developers | filter:{name:developer_query} | orderBy:developerOrderProp">
-          {% verbatim %}
-          <td><a href="/developer/{{ developer.id }}">{{developer.name}}</a></td>
-          <td>{{developer.num_employees}}</td>
-          <td>{{developer.status}}</td>
-          <td>{{developer.date_founded}}</td>
-          {% endverbatim %}
-        </tr>
-      </table>
-    </div>
-    <div class="col-md-2">
-      <!--Sidebar content-->
-     <div class="input-group">
-       <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
-       <input placeholder="Search Developers" type="search" class="form-control input-sm" ng-model="developer_query">
-     </div>
-      <select style="margin-top: 10px" class="form-control" ng-model="developerOrderProp">
-        <option value="name">Alphabetical</option>
-        <option value="-date_founded">Newest</option>
-        <option value="date_founded">Oldest</option>
-        <option value="-num_employees">Size</option>
-      </select>
-    </div>
-  </div>
 </div>
 
 <!-- In production use:
@@ -145,6 +153,7 @@ ng-controller="MyCtrl1" style="background: #222222"
 -->
 <script src="{% static "js/angular.js" %}"></script>
 <script src="{% static "js/angular-route.js" %}"></script>
+<script src="{% static "js/ui-bootstrap-tpls.min.js" %}"></script>
 <script src="{% static "js/app.js" %}"></script>
 <script src="{% static "js/services.js" %}"></script>
 <script src="{% static "js/controllers.js" %}"></script>
