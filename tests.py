@@ -522,7 +522,7 @@ class ImageResourceTest(ResourceTestCase) :
 		self.user = User.objects.create_user(self.username, 'poltergust@hotmail.com', self.password)
 		
 		# chose Game Boy Advance since it is the first alphabetically
-		self.image_1 = Image.objects.get(pk=1)
+		self.image_1 = Image.objects.get(pk=82)
 		
 		self.detail_url = '/api/v1/image/{0}/'.format(self.image_1.pk)
 		
@@ -569,7 +569,7 @@ class ImageResourceTest(ResourceTestCase) :
 		# Grab the current data & modify it slightly.
 		original_data = self.deserialize(self.api_client.get(self.detail_url, format='json', authentication=self.get_credentials()))
 		new_data = original_data.copy()
-		new_data['description'] = 'Updated: Tastypie Testing'
+		new_data['description'] = 'Updated: Bethesda Game Studios #1'
 
 		self.assertEqual(Image.objects.count(), 177)
 		self.assertHttpAccepted(self.api_client.put(self.detail_url, format='json', data=new_data, authentication=self.get_credentials()))
@@ -577,7 +577,7 @@ class ImageResourceTest(ResourceTestCase) :
 		# Make sure the count hasn't changed & we did an update.
 		self.assertEqual(Image.objects.count(), 177)
 		# Check for updated data.
-		self.assertEqual(Image.objects.get(pk=1).description, 'Updated: Tastypie Testing')
+		self.assertEqual(Image.objects.get(pk=82).description, 'Updated: Bethesda Game Studios #1')
 		
 	def test_delete_detail(self):
 		self.assertEqual(Image.objects.count(), 177)
