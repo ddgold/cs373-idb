@@ -42,9 +42,11 @@ angular.module('myApp.controllers', [])
 
     $scope.getGenres = function(){
       var genres = [];
-      for (var i = $scope.games.length - 1; i >= 0; i--) {
-        genres.push($scope.games[i].genre);
-      };
+      if ($scope.games){
+	for (var i = $scope.games.length - 1; i >= 0; i--) {
+	  genres.push($scope.games[i].genre);
+	};
+      }
  
       // remove duplicates
       genres = genres.filter(function(elem, pos) {
@@ -56,9 +58,11 @@ angular.module('myApp.controllers', [])
 
     $scope.getManufacturers = function(){
       var manufacturers = [];
-      for (var i = $scope.platforms.length - 1; i >= 0; i--) {
-        manufacturers.push($scope.platforms[i].manufacturer);
-      };
+      if ($scope.platforms){
+	for (var i = $scope.platforms.length - 1; i >= 0; i--) {
+	  manufacturers.push($scope.platforms[i].manufacturer);
+	};
+      }
  
       // remove duplicates
       manufacturers = manufacturers.filter(function(elem, pos) {
