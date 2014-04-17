@@ -7,17 +7,20 @@ from django.test import TestCase
 from django.test.client import Client
 from json import dumps, loads
 
-"""platinum_games = {
+image = {
+	"description": "Testing",
+	"link": "http://i.walmartimages.com/i/p/00/04/54/96/88/0004549688085_500X500.jpg",
+}
+
+platinum_games = {
     "name": "Platinum Games",
     "date_founded": "2006-04-08",
     "num_employees": 120,
     "status": "Active",
     "address": "Umeda Sky Building Tower West 8F,\n1-1-30 Oyodo-naka, Kita-ku, Osaka, 531-6108",
     "map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu,+Japan&ll=34.70533,135.489699&spn=0.035033,0.066047&t=m&z=14&output=embed",
-    "image_link1": "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg",
-    "image_link2": "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg",
-    "image_link3": "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg",
-    "platforms": ["/api/v1/platform/1/"]
+    "images": ["/api/v1/image/52/", "/api/v1/image/53/", "/api/v1/image/54/"],
+    "platforms": ["/api/v1/platform/1/"],
 }
 
 the_wonderful_101 = {
@@ -27,11 +30,9 @@ the_wonderful_101 = {
     "publisher": "Nintendo",
     "ESRB_rating": "T",
     "youtube_link": "www.youtube.com/embed/z9ueBmNNGus",
-    "image_link1": "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png",
-    "image_link2": "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg",
-    "image_link3": "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg",
+    "images": ["/api/v1/image/109/", "/api/v1/image/110/", "/api/v1/image/110/"],
     "developer": "/api/v1/developer/1/",
-    "platforms":["/api/v1/platform/1/"]
+    "platforms":["/api/v1/platform/1/"],
 }
 
 wii_u = {
@@ -42,9 +43,7 @@ wii_u = {
     "generation": 8,
     "youtube_link": "http://www.youtube.com/embed/qhlDHeCT-Q8",
     "twitter_link": "446085251077373952",
-    "image_link1": "http://g-ecx.images-amazon.com/images/G/01/aplus/detail-page/B009AGXH64hardware.jpg",
-    "image_link2": "http://www.dailynintendo.nl/wp-content/uploads/2011/05/wii-u.jpg",
-    "image_link3": "http://blogs-images.forbes.com/erikkain/files/2012/11/blackcontroller_big-1.jpg"
+    "images": ["/api/v1/image/1/", "/api/v1/image/2/", "/api/v1/image/3/"],
 }
 
 
@@ -60,7 +59,7 @@ class test_main(TestCase) :
 		self.assertEqual(response.status_code, 200)
 
 		response_content = loads(response.content.decode("utf-8"))
-		self.assertEqual(len(response_content), 3)
+		self.assertEqual(len(response_content), 4)
 		self.assertEqual(response_content["platform"]["list_endpoint"], "/api/v1/platform/")
 		self.assertEqual(response_content["game"]["list_endpoint"], "/api/v1/game/")
 		self.assertEqual(response_content["developer"]["list_endpoint"], "/api/v1/developer/")
@@ -106,6 +105,90 @@ class test_main(TestCase) :
 		self.assertEqual(response_content[4:13], "Not Found")
 
 
+
+class test_image(TestCase) :
+	fixtures = ["data.json"]
+	def setUp(self):
+		self.client = Client();
+
+	def test_get_all_image(self) :
+		response = self.client.get("/api/v1/image/")
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 200)
+
+		response_content = loads(response.content.decode("utf-8"))
+		self.assertEqual(response_content["meta"]["total_count"], 177)
+		self.assertEqual(response_content["objects"][0]["link"], "http://i.walmartimages.com/i/p/00/04/54/96/88/0004549688085_500X500.jpg")
+		self.assertEqual(response_content["objects"][17]["link"], "http://www.gaminggenerations.com/store/images/images_extra/wavebird.jpg")
+
+	def test_post_image(self) :
+		values = dumps(image).encode("utf-8")
+		headers = "application/json"
+		response = self.client.post("/api/v1/image/", values, headers)
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 201)
+
+	def test_API_get_single_image(self) :
+		response = self.client.get("/api/v1/image/1/")
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 200)
+
+		response_content = loads(response.content.decode("utf-8"))
+		self.assertEqual(len(response_content), 4)
+		self.assertEqual(response_content["id"], 1)
+		self.assertEqual(response_content["link"], image["link"])
+
+	def test_API_put_image(self) :
+		values = dumps(image).encode("utf-8")
+		headers = "application/json"
+		response = self.client.put("/api/v1/image/3/", values, headers)
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 204)
+
+		response = self.client.get("/api/v1/image/3/")
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 200)
+
+		response_content = loads(response.content.decode("utf-8"))
+		self.assertEqual(len(response_content), 4)
+		self.assertEqual(response_content["id"], 3)
+		self.assertEqual(response_content["link"], image["link"])
+
+	def test_API_delete_image(self) :
+		response = self.client.delete("/api/v1/image/3/")
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 204)
+
+		response = self.client.get("/api/v1/image/3/")
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 404)
+
+	def test_API_delete_image_fail_case(self) :
+		response = self.client.delete("/api/v1/iamge/2/")
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 204)
+
+		response = self.client.get("/api/v1/image/2/")
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 404)
+
+	def test_API_delete_image_fail_case(self) :
+		response = self.client.delete("/api/v1/image/foo/")
+
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 404)
+
+
+
 class test_platform(TestCase) :
 	fixtures = ["data.json"]
 	def setUp(self):
@@ -118,9 +201,9 @@ class test_platform(TestCase) :
 		self.assertEqual(response.status_code, 200)
 
 		response_content = loads(response.content.decode("utf-8"))
-		self.assertEqual(response_content["meta"]["total_count"], 10)
+		self.assertEqual(response_content["meta"]["total_count"], 17)
 		self.assertEqual(response_content["objects"][0]["name"], "Game Boy Advance")
-		self.assertEqual(response_content["objects"][4]["name"], "Nintendo DS")
+		self.assertEqual(response_content["objects"][4]["name"], "Nintendo 64")
 
 	def test_post_platform(self) :
 		values = dumps(wii_u).encode("utf-8")
@@ -137,7 +220,7 @@ class test_platform(TestCase) :
 		self.assertEqual(response.status_code, 200)
 
 		response_content = loads(response.content.decode("utf-8"))
-		self.assertEqual(len(response_content), 12)
+		self.assertEqual(len(response_content), 10)
 		self.assertEqual(response_content["id"], 1)
 		self.assertEqual(response_content["name"], "Wii U")
 
@@ -155,7 +238,7 @@ class test_platform(TestCase) :
 		self.assertEqual(response.status_code, 200)
 
 		response_content = loads(response.content.decode("utf-8"))
-		self.assertEqual(len(response_content), 12)
+		self.assertEqual(len(response_content), 10)
 		self.assertEqual(response_content["id"], 3)
 		self.assertEqual(response_content["name"], "Wii U")
 
@@ -171,6 +254,7 @@ class test_platform(TestCase) :
 		self.assertEqual(response.status_code, 404)
 
 
+
 class test_developer(TestCase) :
 	fixtures = ["data.json"]
 	def setUp(self):
@@ -183,9 +267,9 @@ class test_developer(TestCase) :
 		self.assertEqual(response.status_code, 200)
 
 		response_content = loads(response.content.decode("utf-8"))
-		self.assertEqual(response_content["meta"]["total_count"], 10)
-		self.assertEqual(response_content["objects"][2]["name"], "HAL Laboratories")
-		self.assertEqual(response_content["objects"][4]["name"], "Konami")
+		self.assertEqual(response_content["meta"]["total_count"], 19)
+		self.assertEqual(response_content["objects"][2]["name"], "Capcom")
+		self.assertEqual(response_content["objects"][4]["name"], "Dimps")
 
 	def test_post_developer(self) :
 		values = dumps(platinum_games).encode("utf-8")
@@ -202,7 +286,7 @@ class test_developer(TestCase) :
 		self.assertEqual(response.status_code, 200)
 
 		response_content = loads(response.content.decode("utf-8"))
-		self.assertEqual(len(response_content), 12)
+		self.assertEqual(len(response_content), 10)
 		self.assertEqual(response_content["id"], 2)
 		self.assertEqual(response_content["name"], "Infinity Ward")
 
@@ -225,7 +309,7 @@ class test_developer(TestCase) :
 		self.assertEqual(response.status_code, 200)
 
 		response_content = loads(response.content.decode("utf-8"))
-		self.assertEqual(len(response_content), 12)
+		self.assertEqual(len(response_content), 10)
 		self.assertEqual(response_content["id"], 5)
 		self.assertEqual(response_content["name"], "Platinum Games")
 
@@ -255,6 +339,7 @@ class test_developer(TestCase) :
 		self.assertEqual(response.status_code, 404)
 
 
+
 class test_game(TestCase) :
 	fixtures = ["data.json"]
 	def setUp(self):
@@ -267,9 +352,9 @@ class test_game(TestCase) :
 		self.assertEqual(response.status_code, 200)
 
 		response_content = loads(response.content.decode("utf-8"))
-		self.assertEqual(response_content["meta"]["total_count"], 10)
-		self.assertEqual(response_content["objects"][1]["title"], "Doom 64")
-		self.assertEqual(response_content["objects"][8]["title"], "The Wonderful 101")
+		self.assertEqual(response_content["meta"]["total_count"], 23)
+		self.assertEqual(response_content["objects"][1]["title"], "Call of Duty: Ghosts")
+		self.assertEqual(response_content["objects"][8]["title"], "Halo 3")
 
 	def test_post_game(self) :
 		values = dumps(the_wonderful_101).encode("utf-8")
@@ -294,7 +379,7 @@ class test_game(TestCase) :
 		self.assertEqual(response.status_code, 200)
 
 		response_content = loads(response.content.decode("utf-8"))
-		self.assertEqual(len(response_content), 13)
+		self.assertEqual(len(response_content), 11)
 		self.assertEqual(response_content["id"], 4)	
 		self.assertEqual(response_content["title"], "Grand Theft Auto III")
 
@@ -318,7 +403,7 @@ class test_game(TestCase) :
 		self.assertEqual(response.status_code, 200)
 
 		response_content = loads(response.content.decode("utf-8"))
-		self.assertEqual(len(response_content), 13)
+		self.assertEqual(len(response_content), 11)
 		self.assertEqual(response_content["id"], 7)
 		self.assertEqual(response_content["title"], "The Wonderful 101")
 
@@ -335,30 +420,69 @@ class test_game(TestCase) :
 		self.assertEqual(response.status_code, 404)
 
 
+
 class test_search(TestCase) :
 	fixtures = ["data.json"]
 	def setUp(self):
 		self.client = Client();
 
-	def test_get_main(self) :
+	def test_search_1(self) :
 		response = self.client.get("http://ivgdb.herokuapp.com/search/?query=super")
 		response_code = response.status_code
 		self.assertEqual(response.status_code, 200)
 
 		response_content = response.content.decode("utf-8").split('\n')
 		self.assertEqual(response_content.count('                    <li class="list-group-item">'), 3)
-		self.assertEqual(response_content[56], '                0 Developers - ')
-		self.assertEqual(response_content[57], '                1 Platform - ')
-		self.assertEqual(response_content[58], '                2 Games')
+		self.assertEqual(response_content[58], '                0 Developers - ')
+		self.assertEqual(response_content[59], '                1 Platform - ')
+		self.assertEqual(response_content[60], '                2 Games')
 
+	def test_search_2(self) :
+		response = self.client.get("http://ivgdb.herokuapp.com/search/?query=nintendo")
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 200)
 
-# while (i < len(response_content)):
-# 			if "list-group-item" in response_content[i]:
-# 				print (str(i) + " - " + response_content[i])
-# 			i = i + 1
+		response_content = response.content.decode("utf-8").split('\n')
+		self.assertEqual(response_content.count('                    <li class="list-group-item">'), 17)
+		self.assertEqual(response_content[58], '                1 Developer - ')
+		self.assertEqual(response_content[59], '                9 Platforms - ')
+		self.assertEqual(response_content[60], '                7 Games')
+
+	def test_search_3(self) :
+		response = self.client.get("http://ivgdb.herokuapp.com/search/?query=game+cube")
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 200)
+
+		response_content = response.content.decode("utf-8").split('\n')
+		self.assertEqual(response_content.count('                    <li class="list-group-item">'), 11)
+		self.assertEqual(response_content[58], '                5 Developers - ')
+		self.assertEqual(response_content[59], '                2 Platforms - ')
+		self.assertEqual(response_content[60], '                4 Games')
+
+	def test_search_4(self) :
+		response = self.client.get("http://ivgdb.herokuapp.com/search/?query=new+york")
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 200)
+
+		response_content = response.content.decode("utf-8").split('\n')
+		self.assertEqual(response_content.count('                    <li class="list-group-item">'), 1)
+		self.assertEqual(response_content[58], '                1 Developer - ')
+		self.assertEqual(response_content[59], '                0 Platforms - ')
+		self.assertEqual(response_content[60], '                0 Games')
+
+	def test_search_5(self) :
+		response = self.client.get("http://ivgdb.herokuapp.com/search/?query=defunct")
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 200)
+
+		response_content = response.content.decode("utf-8").split('\n')
+		self.assertEqual(response_content.count('                    <li class="list-group-item">'), 2)
+		self.assertEqual(response_content[58], '                2 Developers - ')
+		self.assertEqual(response_content[59], '                0 Platforms - ')
+		self.assertEqual(response_content[60], '                0 Games')
 
 # 		print ()
-"""
+
 
 #----------------------------------
 # Testing Image through Tastypie
