@@ -4,7 +4,6 @@
 
 angular.module('myApp.controllers', [])
   .controller('MyCtrl1', ['$scope', '$http', function($scope, $http) {
-    $scope.games = [];
     $scope.getGames = function() {
     $http({method: 'GET', url: '/api/v1/game/'}).
       success(function(data, status, headers, config) {
