@@ -43,9 +43,9 @@ angular.module('myApp.controllers', [])
     $scope.getGenres = function(){
       var genres = [];
       if ($scope.games){
-	for (var i = $scope.games.length - 1; i >= 0; i--) {
-	  genres.push($scope.games[i].genre);
-	};
+        for (var i = $scope.games.length - 1; i >= 0; i--) {
+          genres.push($scope.games[i].genre);
+        };
       }
  
       // remove duplicates
@@ -59,9 +59,9 @@ angular.module('myApp.controllers', [])
     $scope.getManufacturers = function(){
       var manufacturers = [];
       if ($scope.platforms){
-	for (var i = $scope.platforms.length - 1; i >= 0; i--) {
-	  manufacturers.push($scope.platforms[i].manufacturer);
-	};
+        for (var i = $scope.platforms.length - 1; i >= 0; i--) {
+          manufacturers.push($scope.platforms[i].manufacturer);
+        };
       }
  
       // remove duplicates
