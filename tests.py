@@ -433,9 +433,9 @@ class test_search(TestCase) :
 
 		response_content = response.content.decode("utf-8").split('\n')
 		self.assertEqual(response_content.count('                    <li class="list-group-item">'), 3)
-		self.assertEqual(response_content[58], '                0 Developers - ')
-		self.assertEqual(response_content[59], '                1 Platform - ')
-		self.assertEqual(response_content[60], '                2 Games')
+		self.assertEqual(response_content[60], '                0 Developers - ')
+		self.assertEqual(response_content[61], '                1 Platform - ')
+		self.assertEqual(response_content[62], '                2 Games')
 
 	def test_search_2(self) :
 		response = self.client.get("http://ivgdb.herokuapp.com/search/?query=nintendo")
@@ -444,9 +444,9 @@ class test_search(TestCase) :
 
 		response_content = response.content.decode("utf-8").split('\n')
 		self.assertEqual(response_content.count('                    <li class="list-group-item">'), 17)
-		self.assertEqual(response_content[58], '                1 Developer - ')
-		self.assertEqual(response_content[59], '                9 Platforms - ')
-		self.assertEqual(response_content[60], '                7 Games')
+		self.assertEqual(response_content[60], '                1 Developer - ')
+		self.assertEqual(response_content[61], '                9 Platforms - ')
+		self.assertEqual(response_content[62], '                7 Games')
 
 	def test_search_3(self) :
 		response = self.client.get("http://ivgdb.herokuapp.com/search/?query=game+cube")
@@ -455,11 +455,11 @@ class test_search(TestCase) :
 
 		response_content = response.content.decode("utf-8").split('\n')
 		self.assertEqual(response_content.count('                    <li class="list-group-item">'), 11)
-		self.assertEqual(response_content[58], '                5 Developers - ')
-		self.assertEqual(response_content[59], '                2 Platforms - ')
-		self.assertEqual(response_content[60], '                4 Games')
-		self.assertEqual(response_content[98], '                        <a href="/platform/6">GameCube</a>')
-		self.assertEqual(response_content[103], '                        <a href="/platform/5">Game Boy Advance</a>')
+		self.assertEqual(response_content[60], '                5 Developers - ')
+		self.assertEqual(response_content[61], '                2 Platforms - ')
+		self.assertEqual(response_content[62], '                4 Games')
+		self.assertEqual(response_content[100], '                        <a href="/platform/6">GameCube</a>')
+		self.assertEqual(response_content[105], '                        <a href="/platform/5">Game Boy Advance</a>')
 
 	def test_search_4(self) :
 		response = self.client.get("http://ivgdb.herokuapp.com/search/?query=new+york")
@@ -468,9 +468,9 @@ class test_search(TestCase) :
 
 		response_content = response.content.decode("utf-8").split('\n')
 		self.assertEqual(response_content.count('                    <li class="list-group-item">'), 1)
-		self.assertEqual(response_content[58], '                1 Developer - ')
-		self.assertEqual(response_content[59], '                0 Platforms - ')
-		self.assertEqual(response_content[60], '                0 Games')
+		self.assertEqual(response_content[60], '                1 Developer - ')
+		self.assertEqual(response_content[61], '                0 Platforms - ')
+		self.assertEqual(response_content[62], '                0 Games')
 
 	def test_search_5(self) :
 		response = self.client.get("http://ivgdb.herokuapp.com/search/?query=defunct")
@@ -479,9 +479,9 @@ class test_search(TestCase) :
 
 		response_content = response.content.decode("utf-8").split('\n')
 		self.assertEqual(response_content.count('                    <li class="list-group-item">'), 2)
-		self.assertEqual(response_content[58], '                2 Developers - ')
-		self.assertEqual(response_content[59], '                0 Platforms - ')
-		self.assertEqual(response_content[60], '                0 Games')
+		self.assertEqual(response_content[60], '                2 Developers - ')
+		self.assertEqual(response_content[61], '                0 Platforms - ')
+		self.assertEqual(response_content[62], '                0 Games')
 		
 	def test_search_6(self) :
 		response = self.client.get("http://ivgdb.herokuapp.com/search/?query=kghrio")
@@ -490,9 +490,20 @@ class test_search(TestCase) :
 
 		response_content = response.content.decode("utf-8").split('\n')
 		self.assertEqual(response_content.count('                    <li class="list-group-item">'), 0)
-		self.assertEqual(response_content[58], "                Your search didn't match anything!")
+		self.assertEqual(response_content[60], "                Your search didn't match anything!")
 
+	def test_search_7(self) :
+		response = self.client.get("http://ivgdb.herokuapp.com/search/?query=cube+game")
+		response_code = response.status_code
+		self.assertEqual(response.status_code, 200)
 
+		response_content = response.content.decode("utf-8").split('\n')
+		self.assertEqual(response_content.count('                    <li class="list-group-item">'), 11)
+		self.assertEqual(response_content[60], '                5 Developers - ')
+		self.assertEqual(response_content[61], '                2 Platforms - ')
+		self.assertEqual(response_content[62], '                4 Games')
+		self.assertEqual(response_content[100], '                        <a href="/platform/6">GameCube</a>')
+		self.assertEqual(response_content[105], '                        <a href="/platform/5">Game Boy Advance</a>')
 
 #----------------------------------
 # Testing Image through Tastypie
