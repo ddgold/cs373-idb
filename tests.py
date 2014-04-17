@@ -2,12 +2,12 @@
 import datetime
 from django.contrib.auth.models import User
 from tastypie.test import ResourceTestCase
-from idb.models import Platform, Developer, Game
+from idb.models import Image, Platform, Developer, Game
 from django.test import TestCase
 from django.test.client import Client
 from json import dumps, loads
 
-platinum_games = {
+"""platinum_games = {
     "name": "Platinum Games",
     "date_founded": "2006-04-08",
     "num_employees": 120,
@@ -358,7 +358,86 @@ class test_search(TestCase) :
 # 			i = i + 1
 
 # 		print ()
+"""
 
+#----------------------------------
+# Testing Image through Tastypie
+#----------------------------------
+class ImageResourceTest(ResourceTestCase) :
+
+	fixtures = ['data.json']
+
+	def setUp(self):
+		super(ImageResourceTest, self).setUp()
+		
+		# Create a user.
+		self.username = 'polt'
+		self.password = 'masher'
+		self.api_key = 'poltergust'
+		self.user = User.objects.create_user(self.username, 'poltergust@hotmail.com', self.password)
+		
+		# chose Game Boy Advance since it is the first alphabetically
+		self.image_1 = Image.objects.get(pk=1)
+		
+		self.detail_url = '/api/v1/image/{0}/'.format(self.image_1.pk)
+		
+		self.post_data = {
+			"id": 178,
+			"description": "Tastypie Testing",
+			"link": "http://upload.wikimedia.org/wikipedia/en/5/51/Hotel_Dusk.jpg",
+			"resource_uri": '/api/v1/image/178/'
+		}
+		
+	def get_credentials(self):
+		return self.create_apikey(username=self.username, api_key=self.api_key)
+        
+	def test_get_list_json(self):
+		resp = self.api_client.get('/api/v1/image/', format='json', authentication=self.get_credentials())
+		self.assertValidJSONResponse(resp)
+    	
+		self.assertEqual(len(self.deserialize(resp)['objects']), 177)
+		
+		# compare with Game Boy Advance
+		self.assertEqual(self.deserialize(resp)['objects'][0], {
+			"id": self.image_1.pk,
+			"description": str(self.image_1.description),
+			"link": str(self.image_1.link),
+			"resource_uri": '/api/v1/image/{0}/'.format(self.image_1.pk)
+		})
+		
+	def test_get_detail_json(self):
+		resp = self.api_client.get(self.detail_url, format='json', authentication=self.get_credentials())
+		self.assertValidJSONResponse(resp)
+
+        # We use ``assertKeys`` here to just verify the keys, not all the data.
+		self.assertKeys(self.deserialize(resp), ['description', 'id', 'link', 'resource_uri'])
+		self.assertEqual(self.deserialize(resp)['description'], str(self.image_1.description))
+		
+	def test_post_list(self):
+        # Check how many are there first.
+		self.assertEqual(Image.objects.count(), 177)
+		self.assertHttpCreated(self.api_client.post('/api/v1/image/', format='json', data=self.post_data, authentication=self.get_credentials()))
+        # Verify a new one has been added.
+		self.assertEqual(Image.objects.count(), 178)
+		
+	def test_put_detail(self):
+		# Grab the current data & modify it slightly.
+		original_data = self.deserialize(self.api_client.get(self.detail_url, format='json', authentication=self.get_credentials()))
+		new_data = original_data.copy()
+		new_data['description'] = 'Updated: Testing Tastypie'
+
+		self.assertEqual(Image.objects.count(), 177)
+		self.assertHttpAccepted(self.api_client.put(self.detail_url, format='json', data=new_data, authentication=self.get_credentials()))
+		
+		# Make sure the count hasn't changed & we did an update.
+		self.assertEqual(Image.objects.count(), 177)
+		# Check for updated data.
+		self.assertEqual(Image.objects.get(pk=1).description, 'Updated: Testing Tastypie')
+		
+	def test_delete_detail(self):
+		self.assertEqual(Image.objects.count(), 177)
+		self.assertHttpAccepted(self.api_client.delete(self.detail_url, format='json', authentication=self.get_credentials()))
+		self.assertEqual(Image.objects.count(), 176)
 
 #----------------------------------
 # Testing Platform through Tastypie
@@ -382,7 +461,7 @@ class PlatformResourceTest(ResourceTestCase) :
 		self.detail_url = '/api/v1/platform/{0}/'.format(self.platform_1.pk)
 		
 		self.post_data = {
-			"id": 11,
+			"id": 18,
 			"name": "Genesis",
 			"manufacturer": "Sega",
 			"release_date": "1991-06-17",
@@ -390,10 +469,8 @@ class PlatformResourceTest(ResourceTestCase) :
 			"generation": 4,
 			"youtube_link": "http://www.youtube.com/embed/qhlDHeCT-Q8",
 			"twitter_link": "446085251077373952",
-			"image_link1": "http://g-ecx.images-amazon.com/images/G/01/aplus/detail-page/B009AGXH64hardware.jpg",
-			"image_link2": "http://www.dailynintendo.nl/wp-content/uploads/2011/05/wii-u.jpg",
-			"image_link3": "http://blogs-images.forbes.com/erikkain/files/2012/11/blackcontroller_big-1.jpg",
-			"resource_uri": '/api/v1/platform/11/'
+			"images": ['/api/v1/image/{0}/'.format(Image.objects.get(pk=1).pk), '/api/v1/image/{0}/'.format(Image.objects.get(pk=2).pk), '/api/v1/image/{0}/'.format(Image.objects.get(pk=3).pk)],
+			"resource_uri": '/api/v1/platform/18/'
 		}
 		
 	def get_credentials(self):
@@ -403,7 +480,7 @@ class PlatformResourceTest(ResourceTestCase) :
 		resp = self.api_client.get('/api/v1/platform/', format='json', authentication=self.get_credentials())
 		self.assertValidJSONResponse(resp)
     	
-		self.assertEqual(len(self.deserialize(resp)['objects']), 10)
+		self.assertEqual(len(self.deserialize(resp)['objects']), 17)
 		
 		# compare with Game Boy Advance
 		self.assertEqual(self.deserialize(resp)['objects'][0], {
@@ -415,9 +492,7 @@ class PlatformResourceTest(ResourceTestCase) :
 			"generation": self.platform_1.generation,
 			"youtube_link": str(self.platform_1.youtube_link),
 			"twitter_link": str(self.platform_1.twitter_link),
-			"image_link1": str(self.platform_1.image_link1),
-			"image_link2": str(self.platform_1.image_link2),
-			"image_link3": str(self.platform_1.image_link3),
+			"images": ['/api/v1/image/{0}/'.format(o.pk) for o in self.platform_1.images.all()],
 			"resource_uri": '/api/v1/platform/{0}/'.format(self.platform_1.pk)
 		})
 		
@@ -426,15 +501,15 @@ class PlatformResourceTest(ResourceTestCase) :
 		self.assertValidJSONResponse(resp)
 
         # We use ``assertKeys`` here to just verify the keys, not all the data.
-		self.assertKeys(self.deserialize(resp), ['generation', 'id', 'image_link1', 'image_link2', 'image_link3', 'manufacturer', 'media_format', 'name', 'release_date', 'resource_uri', 'twitter_link', 'youtube_link'])
+		self.assertKeys(self.deserialize(resp), ['generation', 'id', 'images', 'manufacturer', 'media_format', 'name', 'release_date', 'resource_uri', 'twitter_link', 'youtube_link'])
 		self.assertEqual(self.deserialize(resp)['name'], str(self.platform_1.name))
 		
 	def test_post_list(self):
         # Check how many are there first.
-		self.assertEqual(Platform.objects.count(), 10)
+		self.assertEqual(Platform.objects.count(), 17)
 		self.assertHttpCreated(self.api_client.post('/api/v1/platform/', format='json', data=self.post_data, authentication=self.get_credentials()))
         # Verify a new one has been added.
-		self.assertEqual(Platform.objects.count(), 11)
+		self.assertEqual(Platform.objects.count(), 18)
 		
 	def test_put_detail(self):
 		# Grab the current data & modify it slightly.
@@ -442,19 +517,19 @@ class PlatformResourceTest(ResourceTestCase) :
 		new_data = original_data.copy()
 		new_data['name'] = 'Updated: Game Boy Advance'
 
-		self.assertEqual(Platform.objects.count(), 10)
+		self.assertEqual(Platform.objects.count(), 17)
 		self.assertHttpAccepted(self.api_client.put(self.detail_url, format='json', data=new_data, authentication=self.get_credentials()))
 		
 		# Make sure the count hasn't changed & we did an update.
-		self.assertEqual(Platform.objects.count(), 10)
+		self.assertEqual(Platform.objects.count(), 17)
 		# Check for updated data.
 		self.assertEqual(Platform.objects.get(pk=5).name, 'Updated: Game Boy Advance')
 		self.assertEqual(Platform.objects.get(pk=5).manufacturer, 'Nintendo')
 		
 	def test_delete_detail(self):
-		self.assertEqual(Platform.objects.count(), 10)
+		self.assertEqual(Platform.objects.count(), 17)
 		self.assertHttpAccepted(self.api_client.delete(self.detail_url, format='json', authentication=self.get_credentials()))
-		self.assertEqual(Platform.objects.count(), 9)
+		self.assertEqual(Platform.objects.count(), 16)
 
 #-----------------------------------
 # Testing Developer through Tastypie
@@ -473,23 +548,21 @@ class DeveloperResourceTest(ResourceTestCase) :
 		self.user = User.objects.create_user(self.username, 'poltergust@hotmail.com', self.password)
 		
 		# chose Cing since it is the first alphabetically
-		self.developer_1 = Developer.objects.get(name='Cing')
+		self.developer_1 = Developer.objects.get(name='Bethesda Game Studios')
 		
 		self.detail_url = '/api/v1/developer/{0}/'.format(self.developer_1.pk)
 		
 		self.post_data = {
-			"id": 11,
+			"id": 21,
 			"name": "Sega",
 			"date_founded": "1987-02-23",
 			"num_employees": 324,
 			"status": "Active",
 			"address": "Tokyo, Japan",
 			"map_link": "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1-1-30+Oyodo-naka,+Kita-ku,+Osaka,+531-6108&aq=&sll=34.704426,135.485297&sspn=0.004397,0.008256&ie=UTF8&hq=&hnear=1+Chome-1-30+%C5%8Cyodonaka,+Kita-ku,+%C5%8Csaka-shi,+%C5%8Csaka-fu",
-			"image_link1": "http://nonspecificaction.co.uk/wp-content/uploads/platinum-games-logo.jpg",
-			"image_link2": "http://www.gamechup.com/wp-content/uploads/2014/01/platinum-games-project-nagano.jpg",
-			"image_link3": "http://3.bp.blogspot.com/_Z50Ik1LwTlQ/TUAHdjb-3oI/AAAAAAAAEYA/pj5C9fp1ctg/s1600/platgamesega.jpg",
+			"images": ['/api/v1/image/{0}/'.format(Image.objects.get(pk=52).pk), '/api/v1/image/{0}/'.format(Image.objects.get(pk=53).pk), '/api/v1/image/{0}/'.format(Image.objects.get(pk=54).pk)],
 			"platforms": ['/api/v1/platform/{0}/'.format(Platform.objects.get(pk=1).pk), '/api/v1/platform/{0}/'.format(Platform.objects.get(pk=6).pk)],
-			'resource_uri': '/api/v1/developer/11/'
+			'resource_uri': '/api/v1/developer/21/'
 		}
 		
 	def get_credentials(self):
@@ -502,7 +575,7 @@ class DeveloperResourceTest(ResourceTestCase) :
 		resp = self.api_client.get('/api/v1/developer/', format='json', authentication=self.get_credentials())
 		self.assertValidJSONResponse(resp)
     	
-		self.assertEqual(len(self.deserialize(resp)['objects']), 10)
+		self.assertEqual(len(self.deserialize(resp)['objects']), 19)
 		
 		# compare with Cing
 		self.assertEqual(self.deserialize(resp)['objects'][0], {
@@ -513,9 +586,7 @@ class DeveloperResourceTest(ResourceTestCase) :
 			"status": str(self.developer_1.status),
 			"address": str(self.developer_1.address),
 			"map_link": str(self.developer_1.map_link),
-			"image_link1": str(self.developer_1.image_link1),
-			"image_link2": str(self.developer_1.image_link2),
-			"image_link3": str(self.developer_1.image_link3),
+			"images": ['/api/v1/image/{0}/'.format(o.pk) for o in self.developer_1.images.all()],
 			"platforms": ['/api/v1/platform/{0}/'.format(o.pk) for o in self.developer_1.platforms.all()],
 			'resource_uri': '/api/v1/developer/{0}/'.format(self.developer_1.pk)
 		})
@@ -525,35 +596,35 @@ class DeveloperResourceTest(ResourceTestCase) :
 		self.assertValidJSONResponse(resp)
 
         # We use ``assertKeys`` here to just verify the keys, not all the data.
-		self.assertKeys(self.deserialize(resp), ['address', 'date_founded', 'id', 'image_link1', 'image_link2', 'image_link3', 'map_link', 'name', 'num_employees', 'platforms', 'resource_uri', 'status'])
+		self.assertKeys(self.deserialize(resp), ['address', 'date_founded', 'id', 'images', 'map_link', 'name', 'num_employees', 'platforms', 'resource_uri', 'status'])
 		self.assertEqual(self.deserialize(resp)['name'], str(self.developer_1.name))
 		
 	def test_post_list(self):
         # Check how many are there first.
-		self.assertEqual(Developer.objects.count(), 10)
+		self.assertEqual(Developer.objects.count(), 19)
 		self.assertHttpCreated(self.api_client.post('/api/v1/developer/', format='json', data=self.post_data, authentication=self.get_credentials()))
         # Verify a new one has been added.
-		self.assertEqual(Developer.objects.count(), 11)
+		self.assertEqual(Developer.objects.count(), 20)
 		
 	def test_put_detail(self):
 		# Grab the current data & modify it slightly.
 		original_data = self.deserialize(self.api_client.get(self.detail_url, format='json', authentication=self.get_credentials()))
 		new_data = original_data.copy()
-		new_data['name'] = 'Updated: Cing'
+		new_data['name'] = 'Updated: Bethesda Game Studios'
 
-		self.assertEqual(Developer.objects.count(), 10)
+		self.assertEqual(Developer.objects.count(), 19)
 		self.assertHttpAccepted(self.api_client.put(self.detail_url, format='json', data=new_data, authentication=self.get_credentials()))
 		
 		# Make sure the count hasn't changed & we did an update.
-		self.assertEqual(Developer.objects.count(), 10)
+		self.assertEqual(Developer.objects.count(), 19)
 		# Check for updated data.
-		self.assertEqual(Developer.objects.get(pk=3).name, 'Updated: Cing')
-		self.assertEqual(Developer.objects.get(pk=3).status, 'Defunct')
+		self.assertEqual(Developer.objects.get(pk=12).name, 'Updated: Bethesda Game Studios')
+		self.assertEqual(Developer.objects.get(pk=12).status, 'Active')
 		
 	def test_delete_detail(self):
-		self.assertEqual(Developer.objects.count(), 10)
+		self.assertEqual(Developer.objects.count(), 19)
 		self.assertHttpAccepted(self.api_client.delete(self.detail_url, format='json', authentication=self.get_credentials()))
-		self.assertEqual(Developer.objects.count(), 9)
+		self.assertEqual(Developer.objects.count(), 18)
 
 #------------------------------
 # Testing Game through Tastypie
@@ -577,19 +648,17 @@ class GameResourceTest(ResourceTestCase) :
 		self.detail_url = '/api/v1/game/{0}/'.format(self.game_1.pk)
 		
 		self.post_data = {
-			"id": 11,
+			"id": 24,
 			"title": "Bayonetta",
 			"release_date": "2010-07-12",
 			"genre": "Action",
 			"publisher": "Sega",
-			"ESRB_rating": "M",
+			"esrb_rating": "M",
 			"youtube_link": "www.youtube.com/embed/z9ueBmNNGus",
-			"image_link1": "http://s11.postimg.org/xjy2jtm6b/the_wonderful_101_logo.png",
-			"image_link2": "http://venturebeat.files.wordpress.com/2013/05/the-wonderful-101.jpg",
-			"image_link3": "http://stickskills.com/wp-content/uploads/2013/01/The-Wonderful-101.jpg",
+			"images" : ['/api/v1/image/{0}/'.format(Image.objects.get(pk=109).pk), '/api/v1/image/{0}/'.format(Image.objects.get(pk=110).pk), '/api/v1/image/{0}/'.format(Image.objects.get(pk=111).pk)],
 			'developer': '/api/v1/developer/{0}/'.format(Developer.objects.get(pk=1).pk),
 			'platforms': ['/api/v1/platform/{0}/'.format(Platform.objects.get(pk=2).pk), '/api/v1/platform/{0}/'.format(Platform.objects.get(pk=10).pk)],
-			'resource_uri': '/api/v1/game/11/'
+			'resource_uri': '/api/v1/game/24/'
 		}
 		
 	def get_credentials(self):
@@ -602,7 +671,7 @@ class GameResourceTest(ResourceTestCase) :
 		resp = self.api_client.get('/api/v1/game/', format='json', authentication=self.get_credentials())
 		self.assertValidJSONResponse(resp)
     	
-		self.assertEqual(len(self.deserialize(resp)['objects']), 10)
+		self.assertEqual(len(self.deserialize(resp)['objects']), 23)
 		
 		# compare with Call of Duty 4: Modern Warfare
 		self.assertEqual(self.deserialize(resp)['objects'][0], {
@@ -611,11 +680,9 @@ class GameResourceTest(ResourceTestCase) :
 			"release_date": str(self.game_1.release_date),
 			"genre": str(self.game_1.genre),
 			"publisher": str(self.game_1.publisher),
-			"ESRB_rating": str(self.game_1.ESRB_rating),
+			"esrb_rating": str(self.game_1.esrb_rating),
 			"youtube_link": str(self.game_1.youtube_link),
-			"image_link1": str(self.game_1.image_link1),
-			"image_link2": str(self.game_1.image_link2),
-			"image_link3": str(self.game_1.image_link3),
+			"images": ['/api/v1/image/{0}/'.format(o.pk) for o in self.game_1.images.all()],
 			'developer': '/api/v1/developer/{0}/'.format(self.game_1.developer.pk),
 			'platforms': ['/api/v1/platform/{0}/'.format(o.pk) for o in self.game_1.platforms.all()],
 			'resource_uri': '/api/v1/game/{0}/'.format(self.game_1.pk)
@@ -626,15 +693,15 @@ class GameResourceTest(ResourceTestCase) :
 		self.assertValidJSONResponse(resp)
 
         # We use ``assertKeys`` here to just verify the keys, not all the data.
-		self.assertKeys(self.deserialize(resp), ['developer', 'ESRB_rating', 'genre', 'id', 'image_link1', 'image_link2', 'image_link3', 'platforms', 'publisher', 'release_date', 'resource_uri', 'title', 'youtube_link'])
+		self.assertKeys(self.deserialize(resp), ['developer', 'esrb_rating', 'genre', 'id', 'images', 'platforms', 'publisher', 'release_date', 'resource_uri', 'title', 'youtube_link'])
 		self.assertEqual(self.deserialize(resp)['title'], str(self.game_1.title))
 		
 	def test_post_list(self):
         # Check how many are there first.
-		self.assertEqual(Game.objects.count(), 10)
+		self.assertEqual(Game.objects.count(), 23)
 		self.assertHttpCreated(self.api_client.post('/api/v1/game/', format='json', data=self.post_data, authentication=self.get_credentials()))
         # Verify a new one has been added.
-		self.assertEqual(Game.objects.count(), 11)
+		self.assertEqual(Game.objects.count(), 24)
 		
 	def test_put_detail(self):
 		# Grab the current data & modify it slightly.
@@ -642,18 +709,18 @@ class GameResourceTest(ResourceTestCase) :
 		new_data = original_data.copy()
 		new_data['title'] = 'Updated: Call of Duty 4: Modern Warfare'
 
-		self.assertEqual(Game.objects.count(), 10)
+		self.assertEqual(Game.objects.count(), 23)
 		self.assertHttpAccepted(self.api_client.put(self.detail_url, format='json', data=new_data, authentication=self.get_credentials()))
 		
 		# Make sure the count hasn't changed & we did an update.
-		self.assertEqual(Game.objects.count(), 10)
+		self.assertEqual(Game.objects.count(), 23)
 		# Check for updated data.
 		self.assertEqual(Game.objects.get(pk=2).title, 'Updated: Call of Duty 4: Modern Warfare')
 		self.assertEqual(Game.objects.get(pk=2).genre, 'First-person shooting')
 		
 	def test_delete_detail(self):
-		self.assertEqual(Game.objects.count(), 10)
+		self.assertEqual(Game.objects.count(), 23)
 		self.assertHttpAccepted(self.api_client.delete(self.detail_url, format='json', authentication=self.get_credentials()))
-		self.assertEqual(Game.objects.count(), 9)
+		self.assertEqual(Game.objects.count(), 22)
 
 print("Done")
